@@ -1,0 +1,273 @@
+#!/usr/bin/env python3
+"""pd: command-line client for the piston-door test tools. Run `./pd help`."""
+import argparse
+import json
+import os
+import signal
+import socket
+import subprocess
+import sys
+import time
+import urllib.request
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+PY_STATE = HERE / ".pd_py"          # where the Python session listens: {"port", "token", "pid"}
+PY_MAX_OUTPUT = 30000               # characters of output returned per `pd py` call
+PY_IDLE_SECONDS = 6 * 3600          # an unused Python session exits after this long
+
+
+def server():
+    url = os.environ.get("PD_SERVER")
+    if not url and (HERE / ".pd_server").exists():
+        url = (HERE / ".pd_server").read_text().strip()
+    if not url:
+        sys.exit("pd: no tool server configured (set PD_SERVER or create .pd_server)")
+    return url
+
+
+def call(tool, **args):
+    req = urllib.request.Request(server(), data=json.dumps({"tool": tool, "args": args}).encode(),
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=900) as r:
+            return json.loads(r.read())["text"]
+    except OSError as e:
+        sys.exit(f"pd: cannot reach the tool server at {server()}: {e}")
+
+
+def design(path):
+    try:
+        return json.loads(Path(path).read_text())
+    except (OSError, ValueError) as e:
+        sys.exit(f"pd: cannot read design {path}: {e}")
+
+
+# ---------------------------------------------------------------- the Python session
+
+def py_serve():
+    """The long-lived interpreter behind `pd py`. Runs each piece of code in one shared namespace."""
+    import ast
+    import contextlib
+    import io
+    import secrets
+    import traceback
+
+    os.chdir(HERE)
+    sys.path.insert(0, str(HERE))
+    ns = {"__name__": "__main__"}
+    exec("from pdbuild import Design\nfrom pdlab import *", ns)
+    srv = socket.socket()
+    srv.bind(("127.0.0.1", 0))
+    srv.listen(4)
+    srv.settimeout(float(os.environ.get("PD_PY_IDLE_SECONDS", PY_IDLE_SECONDS)))   # the variable is for tests
+    token = secrets.token_hex(16)
+    tmp = PY_STATE.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"port": srv.getsockname()[1], "token": token, "pid": os.getpid()}))
+    tmp.replace(PY_STATE)
+
+    def run(code):
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+            try:
+                tree = ast.parse(code, "<pd py>")
+                last = tree.body.pop() if tree.body and isinstance(tree.body[-1], ast.Expr) else None
+                exec(compile(tree, "<pd py>", "exec"), ns)
+                if last is not None:
+                    value = eval(compile(ast.Expression(last.value), "<pd py>", "eval"), ns)
+                    if value is not None:
+                        print(repr(value))
+                ok = True
+            except SyntaxError as e:
+                traceback.print_exception(type(e), e, None)
+                ok = False
+            except BaseException as e:  # the session outlives any error, exit() included
+                traceback.print_exception(type(e), e, e.__traceback__.tb_next)  # without this function's own frame
+                ok = False
+        out = buf.getvalue()
+        if len(out) > PY_MAX_OUTPUT:
+            out = out[:PY_MAX_OUTPUT] + f"\n... output cut off here: {len(out)} characters in all, {PY_MAX_OUTPUT} shown\n"
+        return {"out": out, "ok": ok}
+
+    try:
+        while True:
+            try:
+                conn, _ = srv.accept()
+            except socket.timeout:
+                break
+            with conn, conn.makefile("rwb") as f:
+                try:
+                    msg = json.loads(f.readline())
+                except ValueError:
+                    continue
+                if msg.get("token") != token:
+                    continue
+                f.write((json.dumps(run(msg.get("code", ""))) + "\n").encode())
+                f.flush()
+    finally:
+        try:
+            if json.loads(PY_STATE.read_text()).get("pid") == os.getpid():
+                PY_STATE.unlink()
+        except (OSError, ValueError):
+            pass
+
+
+def py_state():
+    try:
+        return json.loads(PY_STATE.read_text())
+    except (OSError, ValueError):
+        return None
+
+
+def py_stop():
+    """Stop the Python session, if there is one. Returns True if one was running."""
+    st = py_state()
+    try:
+        PY_STATE.unlink()
+    except OSError:
+        pass
+    if not st:
+        return False
+    try:
+        os.kill(st["pid"], signal.SIGKILL)
+    except OSError:
+        return False
+    return True
+
+
+def py_connect():
+    st = py_state()
+    if st:
+        try:
+            return socket.create_connection(("127.0.0.1", st["port"]), timeout=5), st
+        except OSError:
+            py_stop()  # stale: the process is gone
+    log = open(HERE / ".pd_py.log", "ab")
+    subprocess.Popen([sys.executable, str(Path(__file__).resolve()), "_pyserve"], cwd=HERE, stdin=subprocess.DEVNULL,
+                     stdout=log, stderr=log, start_new_session=True)
+    deadline = time.time() + 20
+    while time.time() < deadline:
+        st = py_state()
+        if st:
+            try:
+                return socket.create_connection(("127.0.0.1", st["port"]), timeout=5), st
+            except OSError:
+                pass
+        time.sleep(0.05)
+    sys.exit("pd py: could not start the Python session (see .pd_py.log)")
+
+
+def py_run(code, timeout):
+    conn, st = py_connect()
+    with conn, conn.makefile("rwb") as f:
+        conn.settimeout(timeout)
+        f.write((json.dumps({"token": st["token"], "code": code}) + "\n").encode())
+        f.flush()
+        try:
+            line = f.readline()
+        except (socket.timeout, TimeoutError):
+            py_stop()
+            sys.exit(f"pd py: no reply after {timeout} s. The session was stopped and its variables are gone; "
+                     "the next `./pd py` starts a new one.")
+    if not line:
+        py_stop()
+        sys.exit("pd py: the session ended while running this code. Its variables are gone; the next `./pd py` starts a new one.")
+    reply = json.loads(line)
+    sys.stdout.write(reply["out"])
+    return 0 if reply["ok"] else 1
+
+
+def main():
+    if sys.argv[1:] == ["_pyserve"]:  # internal: `pd py` starts its interpreter this way
+        return py_serve()
+    ap = argparse.ArgumentParser(prog="pd", description="Piston-door test tools")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("status", help="task, remaining budget, best result so far")
+    sub.add_parser("blocks", help="the allowed blocks and their properties")
+    t = sub.add_parser("test", help="full test of a design: valid or not, volume, timings (uses a test call)")
+    t.add_argument("file")
+    tr = sub.add_parser("trace", help="every block change tick by tick, after placement and each lever flip")
+    tr.add_argument("file")
+    tr.add_argument("--flips", type=int, default=2, help="number of lever flips to simulate (default 2)")
+    tr.add_argument("--ticks", type=int, help="max ticks to run after each flip (default: the time cap)")
+    tr.add_argument("--grep", help="only show change lines containing this text, e.g. piston or '(3,'")
+    tr.add_argument("--limit", type=int, default=80, help="max change lines per phase (default 80)")
+    v = sub.add_parser("view", help="ASCII picture of the build, one grid per z layer")
+    v.add_argument("file")
+    v.add_argument("--flips", type=int, default=0, help="show the state after this many lever flips (default 0)")
+    v.add_argument("--z", help="only these layers, e.g. 0 or -1..2")
+    s = sub.add_parser("submit", help="nominate a design for final scoring (the last submit counts)")
+    s.add_argument("file")
+
+    lab = sub.add_parser("lab", help="a free-form world for trying out parts, one step at a time")
+    ls = lab.add_subparsers(dest="lab_cmd", required=True)
+    n = ls.add_parser("new", help="empty the lab and place the blocks of this file (a design, or a JSON list of blocks)")
+    n.add_argument("file")
+    n.add_argument("--walls", action="store_true", help="also place the hallway walls")
+    fl = ls.add_parser("flip", help="flip the lever at X Y Z; no tick passes")
+    fl.add_argument("x", type=int)
+    fl.add_argument("y", type=int)
+    fl.add_argument("z", type=int)
+    st = ls.add_parser("step", help="advance exactly N game ticks (default 1)")
+    st.add_argument("ticks", type=int, nargs="?", default=1)
+    rs = ls.add_parser("rest", help="advance until nothing has changed for 20 ticks in a row")
+    rs.add_argument("--max", type=int, default=200, help="give up after this many ticks (default 200)")
+    for q in (st, rs):
+        q.add_argument("--grep", help="only show change lines containing this text")
+        q.add_argument("--limit", type=int, default=80, help="max change lines shown (default 80)")
+    lk = ls.add_parser("look", help="the state of every block in the lab, or of chosen cells")
+    lk.add_argument("--at", type=int, nargs=3, action="append", metavar=("X", "Y", "Z"), help="only this cell (repeatable)")
+    lk.add_argument("--grep", help="only show lines containing this text")
+    lv = ls.add_parser("view", help="ASCII picture of the lab as it is now")
+    lv.add_argument("--z", help="only these layers, e.g. 0 or -1..2")
+
+    py = sub.add_parser("py", help="run Python in a session that keeps its variables between calls")
+    py.add_argument("file", nargs="?", help="a Python file to run; without it or -c, code is read from standard input")
+    py.add_argument("-c", dest="code", help="code to run")
+    py.add_argument("--timeout", type=int, default=300, help="seconds to wait for the code to finish (default 300)")
+    py.add_argument("--reset", action="store_true", help="end the session, forgetting every variable")
+
+    a = ap.parse_args()
+    if a.cmd == "py":
+        if a.reset:
+            print("Python session ended; its variables are gone." if py_stop() else "There was no Python session.")
+            return 0
+        if a.code is not None:
+            code = a.code
+        elif a.file:
+            try:
+                code = Path(a.file).read_text()
+            except OSError as e:
+                sys.exit(f"pd py: cannot read {a.file}: {e}")
+        else:
+            code = sys.stdin.read()
+        return py_run(code, a.timeout)
+    if a.cmd == "lab":
+        if a.lab_cmd == "new":
+            print(call("lab_new", blocks=design(a.file), walls=a.walls))
+        elif a.lab_cmd == "flip":
+            print(call("lab_flip", pos=[a.x, a.y, a.z]))
+        elif a.lab_cmd == "step":
+            print(call("lab_step", ticks=a.ticks, grep=a.grep, limit=a.limit))
+        elif a.lab_cmd == "rest":
+            print(call("lab_rest", max_ticks=a.max, grep=a.grep, limit=a.limit))
+        elif a.lab_cmd == "look":
+            print(call("lab_look", cells=a.at, grep=a.grep))
+        elif a.lab_cmd == "view":
+            print(call("lab_view", z=a.z))
+        return 0
+    if a.cmd in ("status", "blocks"):
+        print(call(a.cmd))
+    elif a.cmd == "test":
+        print(call("test", design=design(a.file)))
+    elif a.cmd == "trace":
+        print(call("trace", design=design(a.file), flips=a.flips, ticks=a.ticks, grep=a.grep, limit=a.limit))
+    elif a.cmd == "view":
+        print(call("view", design=design(a.file), flips=a.flips, z=a.z))
+    elif a.cmd == "submit":
+        print(call("submit", design=design(a.file)))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
