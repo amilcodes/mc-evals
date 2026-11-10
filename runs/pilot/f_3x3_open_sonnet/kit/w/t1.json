@@ -1,0 +1,7 @@
+{"initial_state":"open","blocks":[
+{"pos":[-6,-1,0],"id":"stone"},
+{"pos":[-6,0,0],"id":"lever","props":{"face":"floor","facing":"north"}},
+{"pos":[-5,0,0],"id":"observer","props":{"facing":"west"}},
+{"pos":[-4,0,0],"id":"sticky_piston","props":{"facing":"east"}},
+{"pos":[-3,0,0],"id":"stone"}
+]}

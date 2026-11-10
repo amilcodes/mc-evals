@@ -1,0 +1,4 @@
+{"t": 0.0, "kind": "start", "n": 3, "track": "open", "budget": {"test": 120, "sim": 300}, "time_cap": 200}
+{"t": 2782.67, "kind": "trace", "digest": "352f19a8792f", "flips": 1}
+{"t": 4077.71, "kind": "trace", "digest": "a386b0d67951", "flips": 1}
+{"t": 4252.72, "kind": "test", "digest": "b4f0ec9be0d6", "valid": false, "stage": "cycles", "volume": 24, "dims": [6, 4, 1], "block_count": 3, "failures": ["did_not_close"], "open_ticks": null, "close_ticks": null, "best": null, "design": {"initial_state": "open", "blocks": [{"pos": [-3, -1, 0], "id": "stone"}, {"pos": [-3, 0, 0], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-2, 0, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-1, 0, 0], "id": "stone"}]}}

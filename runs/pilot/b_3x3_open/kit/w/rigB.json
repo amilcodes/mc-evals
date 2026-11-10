@@ -1,0 +1,9 @@
+{"initial_state": "open",
+ "blocks": [
+  {"pos": [10, 0, 5], "id": "stone"},
+  {"pos": [10, 1, 5], "id": "lever", "props": {"face": "floor", "facing": "north"}},
+  {"pos": [11, -1, 5], "id": "stone"},
+  {"pos": [11, 0, 4], "id": "piston", "props": {"facing": "up"}},
+  {"pos": [11, 0, 5], "id": "redstone_wire", "props": {"north": "side", "south": "side", "east": "side", "west": "side"}},
+  {"pos": [12, 0, 5], "id": "piston", "props": {"facing": "up"}}
+ ]}

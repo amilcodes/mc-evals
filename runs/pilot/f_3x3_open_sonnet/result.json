@@ -1,0 +1,17 @@
+{
+ "n": 3,
+ "track": "open",
+ "seconds": 4252.72,
+ "test_calls": 1,
+ "rejected_before_simulation": 0,
+ "sim_calls": 2,
+ "valid_tests": 0,
+ "first_valid_at_test": null,
+ "best_dev_volume": null,
+ "progress": [],
+ "candidate_source": null,
+ "final": null,
+ "valid": false,
+ "volume": null,
+ "score": null
+}
