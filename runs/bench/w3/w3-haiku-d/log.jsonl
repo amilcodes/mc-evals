@@ -1,0 +1,94 @@
+{"t": 0.0, "unix": 1794555581.88, "kind": "start", "n": 3, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 120}
+{"t": 0.0, "unix": 1794579843.12, "kind": "resume", "seconds_since_last_entry": 24261.2, "used": {"test": 0, "sim": 0, "lab": 0}, "best": null, "excluded": [[1794558325.0, 1794579665.0]], "minutes_used": null}
+{"t": 2644.8, "unix": 1794582487.92, "kind": "first_call"}
+{"t": 2991.04, "unix": 1794582834.17, "kind": "lab", "op": "new", "lab": 1, "walls": false, "blocks": [{"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [1, 2, 0], "id": "stone"}, {"pos": [2, -2, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [3, -2, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794582834.39, "kind": "lab", "op": "flip", "lab": 1, "pos": [2, -2, 0]}
+{"t": 23, "unix": 1794582834.5, "kind": "lab", "op": "rest", "lab": 1, "ticks": 23}
+{"t": 23, "unix": 1794582834.73, "kind": "lab", "op": "flip", "lab": 1, "pos": [2, -2, 0]}
+{"t": 46, "unix": 1794582834.84, "kind": "lab", "op": "rest", "lab": 1, "ticks": 23}
+{"t": 3205.81, "unix": 1794583048.93, "kind": "lab", "op": "new", "lab": 2, "walls": false, "blocks": [{"pos": [2, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [3, -2, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [4, -2, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794583048.99, "kind": "lab", "op": "flip", "lab": 2, "pos": [3, -2, 0]}
+{"t": 2, "unix": 1794583049.05, "kind": "lab", "op": "step", "lab": 2, "ticks": 2}
+{"t": 2, "unix": 1794583049.16, "kind": "lab", "op": "flip", "lab": 2, "pos": [3, -2, 0]}
+{"t": 25, "unix": 1794583049.22, "kind": "lab", "op": "rest", "lab": 2, "ticks": 23}
+{"t": 3255.0, "unix": 1794583098.13, "kind": "lab", "op": "new", "lab": 3, "walls": false, "blocks": [{"pos": [-4, 0, 0], "id": "stone"}, {"pos": [-4, 1, 0], "id": "stone"}, {"pos": [-4, 2, 0], "id": "stone"}, {"pos": [-3, -1, 0], "id": "stone"}, {"pos": [-3, 0, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-3, 1, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-3, 2, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-2, -1, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-2, 0, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-2, 1, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-2, 2, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-1, -1, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [0, 0, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [0, 2, 0], "id": "stone"}, {"pos": [0, 3, 0], "id": "stone"}, {"pos": [1, -3, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [1, 2, 0], "id": "stone"}, {"pos": [1, 4, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, -3, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [2, -2, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [2, -1, 0], "id": "stone"}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [2, 2, 0], "id": "stone"}, {"pos": [2, 3, 0], "id": "stone"}, {"pos": [2, 4, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [3, -3, 0], "id": "stone"}, {"pos": [3, -2, 0], "id": "stone"}, {"pos": [3, 4, 0], "id": "stone"}, {"pos": [4, 0, 0], "id": "sticky_piston", "props": {"facing": "west"}}, {"pos": [4, 1, 0], "id": "sticky_piston", "props": {"facing": "west"}}, {"pos": [4, 2, 0], "id": "sticky_piston", "props": {"facing": "west"}}, {"pos": [5, 0, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [5, 1, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [5, 2, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [6, 0, 0], "id": "stone"}, {"pos": [6, 1, 0], "id": "stone"}, {"pos": [6, 2, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794583098.14, "kind": "lab", "op": "flip", "lab": 3, "pos": [-3, 0, 0]}
+{"t": 0, "unix": 1794583098.15, "kind": "lab", "op": "flip", "lab": 3, "pos": [-3, 1, 0]}
+{"t": 0, "unix": 1794583098.16, "kind": "lab", "op": "flip", "lab": 3, "pos": [-3, 2, 0]}
+{"t": 0, "unix": 1794583098.17, "kind": "lab", "op": "flip", "lab": 3, "pos": [5, 0, 0]}
+{"t": 0, "unix": 1794583098.19, "kind": "lab", "op": "flip", "lab": 3, "pos": [5, 1, 0]}
+{"t": 0, "unix": 1794583098.2, "kind": "lab", "op": "flip", "lab": 3, "pos": [5, 2, 0]}
+{"t": 0, "unix": 1794583098.21, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, 4, 0]}
+{"t": 23, "unix": 1794583098.22, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 23, "unix": 1794583098.25, "kind": "lab", "op": "flip", "lab": 3, "pos": [-3, 0, 0]}
+{"t": 23, "unix": 1794583098.26, "kind": "lab", "op": "flip", "lab": 3, "pos": [-3, 1, 0]}
+{"t": 23, "unix": 1794583098.28, "kind": "lab", "op": "flip", "lab": 3, "pos": [-3, 2, 0]}
+{"t": 23, "unix": 1794583098.29, "kind": "lab", "op": "flip", "lab": 3, "pos": [5, 0, 0]}
+{"t": 23, "unix": 1794583098.3, "kind": "lab", "op": "flip", "lab": 3, "pos": [5, 1, 0]}
+{"t": 23, "unix": 1794583098.31, "kind": "lab", "op": "flip", "lab": 3, "pos": [5, 2, 0]}
+{"t": 23, "unix": 1794583098.32, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, 4, 0]}
+{"t": 46, "unix": 1794583098.34, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 46, "unix": 1794583098.41, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -2, 0]}
+{"t": 69, "unix": 1794583098.42, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 69, "unix": 1794583098.43, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -2, 0]}
+{"t": 92, "unix": 1794583098.45, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 92, "unix": 1794583098.49, "kind": "lab", "op": "flip", "lab": 3, "pos": [-2, -1, 0]}
+{"t": 115, "unix": 1794583098.51, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 115, "unix": 1794583098.53, "kind": "lab", "op": "flip", "lab": 3, "pos": [-2, -1, 0]}
+{"t": 138, "unix": 1794583098.56, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 138, "unix": 1794583106.59, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -3, 0]}
+{"t": 161, "unix": 1794583106.64, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 161, "unix": 1794583106.76, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -2, 0]}
+{"t": 181, "unix": 1794583106.82, "kind": "lab", "op": "rest", "lab": 3, "ticks": 20}
+{"t": 181, "unix": 1794583106.86, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -2, 0]}
+{"t": 201, "unix": 1794583106.9, "kind": "lab", "op": "rest", "lab": 3, "ticks": 20}
+{"t": 201, "unix": 1794583107.0, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -3, 0]}
+{"t": 224, "unix": 1794583107.03, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 224, "unix": 1794583107.14, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -2, 0]}
+{"t": 247, "unix": 1794583107.19, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 247, "unix": 1794583107.25, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, -2, 0]}
+{"t": 270, "unix": 1794583107.29, "kind": "lab", "op": "rest", "lab": 3, "ticks": 23}
+{"t": 3361.28, "unix": 1794583204.41, "kind": "lab", "op": "new", "lab": 4, "walls": false, "blocks": [{"pos": [-4, 0, 0], "id": "stone"}, {"pos": [-4, 1, 0], "id": "stone"}, {"pos": [-4, 2, 0], "id": "stone"}, {"pos": [-3, -1, 0], "id": "stone"}, {"pos": [-3, 0, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-3, 1, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-3, 2, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-2, -1, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-2, 0, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-2, 1, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-2, 2, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-1, -1, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [0, 0, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [0, 2, 0], "id": "stone"}, {"pos": [0, 3, 0], "id": "stone"}, {"pos": [1, -3, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [1, 2, 0], "id": "stone"}, {"pos": [1, 4, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, -3, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [2, -2, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [2, -1, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [2, 2, 0], "id": "stone"}, {"pos": [2, 3, 0], "id": "stone"}, {"pos": [2, 4, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [3, -3, 0], "id": "stone"}, {"pos": [3, -2, 0], "id": "stone"}, {"pos": [3, -1, 0], "id": "stone"}, {"pos": [3, 4, 0], "id": "stone"}, {"pos": [4, 0, 0], "id": "sticky_piston", "props": {"facing": "west"}}, {"pos": [4, 1, 0], "id": "sticky_piston", "props": {"facing": "west"}}, {"pos": [4, 2, 0], "id": "sticky_piston", "props": {"facing": "west"}}, {"pos": [5, 0, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [5, 1, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [5, 2, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [6, 0, 0], "id": "stone"}, {"pos": [6, 1, 0], "id": "stone"}, {"pos": [6, 2, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794583204.42, "kind": "lab", "op": "flip", "lab": 4, "pos": [-3, 0, 0]}
+{"t": 0, "unix": 1794583204.42, "kind": "lab", "op": "flip", "lab": 4, "pos": [-3, 1, 0]}
+{"t": 0, "unix": 1794583204.43, "kind": "lab", "op": "flip", "lab": 4, "pos": [-3, 2, 0]}
+{"t": 0, "unix": 1794583204.44, "kind": "lab", "op": "flip", "lab": 4, "pos": [5, 0, 0]}
+{"t": 0, "unix": 1794583204.44, "kind": "lab", "op": "flip", "lab": 4, "pos": [5, 1, 0]}
+{"t": 0, "unix": 1794583204.45, "kind": "lab", "op": "flip", "lab": 4, "pos": [5, 2, 0]}
+{"t": 0, "unix": 1794583204.46, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, 4, 0]}
+{"t": 23, "unix": 1794583204.47, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 23, "unix": 1794583204.49, "kind": "lab", "op": "flip", "lab": 4, "pos": [-3, 0, 0]}
+{"t": 23, "unix": 1794583204.5, "kind": "lab", "op": "flip", "lab": 4, "pos": [-3, 1, 0]}
+{"t": 23, "unix": 1794583204.5, "kind": "lab", "op": "flip", "lab": 4, "pos": [-3, 2, 0]}
+{"t": 23, "unix": 1794583204.51, "kind": "lab", "op": "flip", "lab": 4, "pos": [5, 0, 0]}
+{"t": 23, "unix": 1794583204.52, "kind": "lab", "op": "flip", "lab": 4, "pos": [5, 1, 0]}
+{"t": 23, "unix": 1794583204.53, "kind": "lab", "op": "flip", "lab": 4, "pos": [5, 2, 0]}
+{"t": 23, "unix": 1794583204.54, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, 4, 0]}
+{"t": 46, "unix": 1794583204.55, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 46, "unix": 1794583204.56, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -2, 0]}
+{"t": 69, "unix": 1794583204.58, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 69, "unix": 1794583204.59, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -2, 0]}
+{"t": 92, "unix": 1794583204.61, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 92, "unix": 1794583204.63, "kind": "lab", "op": "flip", "lab": 4, "pos": [-2, -1, 0]}
+{"t": 115, "unix": 1794583204.65, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 115, "unix": 1794583204.66, "kind": "lab", "op": "flip", "lab": 4, "pos": [-2, -1, 0]}
+{"t": 138, "unix": 1794583204.68, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 138, "unix": 1794583204.7, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -3, 0]}
+{"t": 161, "unix": 1794583204.72, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 161, "unix": 1794583204.74, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -1, 0]}
+{"t": 184, "unix": 1794583204.77, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 184, "unix": 1794583204.79, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -1, 0]}
+{"t": 207, "unix": 1794583204.81, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 207, "unix": 1794583204.84, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -3, 0]}
+{"t": 230, "unix": 1794583204.87, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 230, "unix": 1794583204.89, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -1, 0]}
+{"t": 250, "unix": 1794583204.92, "kind": "lab", "op": "rest", "lab": 4, "ticks": 20}
+{"t": 250, "unix": 1794583204.95, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -1, 0]}
+{"t": 270, "unix": 1794583204.98, "kind": "lab", "op": "rest", "lab": 4, "ticks": 20}
+{"t": 270, "unix": 1794583210.09, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -2, 0]}
+{"t": 293, "unix": 1794583210.12, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 293, "unix": 1794583210.15, "kind": "lab", "op": "flip", "lab": 4, "pos": [2, -2, 0]}
+{"t": 316, "unix": 1794583210.19, "kind": "lab", "op": "rest", "lab": 4, "ticks": 23}
+{"t": 3444.5, "unix": 1794583287.62, "kind": "lab", "op": "new", "lab": 5, "walls": false, "blocks": [{"pos": [1, -3, 0], "id": "lever", "props": {"face": "wall", "facing": "west"}}, {"pos": [1, -2, 0], "id": "observer", "props": {"facing": "down"}}, {"pos": [1, -1, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [2, -3, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794583287.63, "kind": "lab", "op": "flip", "lab": 5, "pos": [1, -3, 0]}
+{"t": 26, "unix": 1794583287.64, "kind": "lab", "op": "rest", "lab": 5, "ticks": 26}

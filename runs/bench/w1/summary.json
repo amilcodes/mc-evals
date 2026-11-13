@@ -1,0 +1,1280 @@
+{
+ "wave": "w1",
+ "task": "3x3 seamless scratch",
+ "n": 3,
+ "track": "seamless",
+ "minutes": 120,
+ "prices": {
+  "claude-fable-5-2": {
+   "in": 8.0,
+   "w5": 10.0,
+   "w1h": 16.0,
+   "read": 0.2,
+   "out": 40.0
+  },
+  "claude-opus-5-5": {
+   "in": 4.0,
+   "w5": 5.0,
+   "w1h": 8.0,
+   "read": 0.2,
+   "out": 20.0
+  },
+  "claude-sonnet-5-5": {
+   "in": 2.0,
+   "w5": 2.5,
+   "w1h": 4.0,
+   "read": 0.1,
+   "out": 10.0
+  },
+  "claude-haiku-5-5": {
+   "in": 0.1,
+   "w5": 0.125,
+   "w1h": 0.2,
+   "read": 0.01,
+   "out": 0.5
+  }
+ },
+ "runs": [
+  {
+   "name": "w1-fable-a",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "112 at about minute 91; 80 then 70 (single layer, lever off-plane at z = 1) after the continues; continue cap reached."
+   ],
+   "minutes_active": 104.49,
+   "excluded_windows": [],
+   "agent_minutes": 105.1,
+   "model_calls": 42,
+   "tokens": {
+    "in": 88,
+    "w5": 2280883,
+    "w1h": 0,
+    "read": 16333188,
+    "out": 528326
+   },
+   "cost": 47.21,
+   "test_calls": 22,
+   "sim_calls": 20,
+   "lab_worlds": 15,
+   "lab_ticks": 15881,
+   "best_dev_volume": 70,
+   "best_partial": 1.0,
+   "first_valid_minutes": 24.53,
+   "first_valid_cost": 9.5053,
+   "reference": 192,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 21.73,
+     "cost": 6.9982,
+     "valid": false,
+     "volume": 504,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 2,
+     "minutes": 22.83,
+     "cost": 8.8478,
+     "valid": false,
+     "volume": 560,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 3,
+     "minutes": 23.69,
+     "cost": 9.1832,
+     "valid": false,
+     "volume": 560,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 4,
+     "minutes": 24.53,
+     "cost": 9.5053,
+     "valid": true,
+     "volume": 560,
+     "best": 560,
+     "score": 0.3429,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 27.08,
+     "cost": 10.2092,
+     "valid": true,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 1.0
+    },
+    {
+     "test": 6,
+     "minutes": 45.21,
+     "cost": 17.1365,
+     "valid": false,
+     "volume": 224,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 0.1481
+    },
+    {
+     "test": 7,
+     "minutes": 57.05,
+     "cost": 20.269,
+     "valid": false,
+     "volume": 224,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 0.1481
+    },
+    {
+     "test": 8,
+     "minutes": 60.32,
+     "cost": 25.0033,
+     "valid": true,
+     "volume": 224,
+     "best": 224,
+     "score": 0.8571,
+     "partial": 1.0
+    },
+    {
+     "test": 9,
+     "minutes": 64.42,
+     "cost": 26.1013,
+     "valid": false,
+     "volume": 168,
+     "best": 224,
+     "score": 0.8571,
+     "partial": 0.1481
+    },
+    {
+     "test": 10,
+     "minutes": 65.65,
+     "cost": 26.6624,
+     "valid": false,
+     "volume": 168,
+     "best": 224,
+     "score": 0.8571,
+     "partial": 0.1481
+    },
+    {
+     "test": 11,
+     "minutes": 66.58,
+     "cost": 27.1078,
+     "valid": true,
+     "volume": 168,
+     "best": 168,
+     "score": 1.1429,
+     "partial": 1.0
+    },
+    {
+     "test": 12,
+     "minutes": 80.97,
+     "cost": 34.8961,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 1.0
+    },
+    {
+     "test": 13,
+     "minutes": 83.11,
+     "cost": 40.3721,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 1.0
+    },
+    {
+     "test": 14,
+     "minutes": 84.51,
+     "cost": 40.7305,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 1.0
+    },
+    {
+     "test": 15,
+     "minutes": 88.61,
+     "cost": 41.5495,
+     "valid": false,
+     "volume": 112,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 0.3148
+    },
+    {
+     "test": 16,
+     "minutes": 92.16,
+     "cost": 42.7144,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 1.0
+    },
+    {
+     "test": 17,
+     "minutes": 93.33,
+     "cost": 43.1671,
+     "valid": false,
+     "volume": 90,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 0.1111
+    },
+    {
+     "test": 18,
+     "minutes": 97.64,
+     "cost": 44.9274,
+     "valid": false,
+     "volume": 90,
+     "best": 112,
+     "score": 1.7143,
+     "partial": 0.0
+    },
+    {
+     "test": 19,
+     "minutes": 98.2,
+     "cost": 45.2383,
+     "valid": true,
+     "volume": 90,
+     "best": 90,
+     "score": 2.1333,
+     "partial": 1.0
+    },
+    {
+     "test": 20,
+     "minutes": 98.77,
+     "cost": 45.4939,
+     "valid": true,
+     "volume": 80,
+     "best": 80,
+     "score": 2.4,
+     "partial": 1.0
+    },
+    {
+     "test": 21,
+     "minutes": 102.13,
+     "cost": 46.1437,
+     "valid": true,
+     "volume": 80,
+     "best": 80,
+     "score": 2.4,
+     "partial": 1.0
+    },
+    {
+     "test": 22,
+     "minutes": 103.38,
+     "cost": 46.6801,
+     "valid": true,
+     "volume": 70,
+     "best": 70,
+     "score": 2.7429,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 70,
+    "dims": [
+     7,
+     10,
+     1
+    ],
+    "score": 2.7429,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 2.7429
+  },
+  {
+   "name": "w1-fable-b",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "252 at about minute 75; 210 then 189 after the first continue; continue cap reached."
+   ],
+   "minutes_active": 93.23,
+   "excluded_windows": [],
+   "agent_minutes": 93.5,
+   "model_calls": 33,
+   "tokens": {
+    "in": 70,
+    "w5": 1315098,
+    "w1h": 0,
+    "read": 11729257,
+    "out": 489656
+   },
+   "cost": 35.08,
+   "test_calls": 29,
+   "sim_calls": 2,
+   "lab_worlds": 13,
+   "lab_ticks": 6768,
+   "best_dev_volume": 189,
+   "best_partial": 1.0,
+   "first_valid_minutes": 39.58,
+   "first_valid_cost": 15.8606,
+   "reference": 192,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 39.28,
+     "cost": 15.5625,
+     "valid": false,
+     "volume": 280,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1296
+    },
+    {
+     "test": 2,
+     "minutes": 39.58,
+     "cost": 15.8606,
+     "valid": true,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 42.99,
+     "cost": 16.729,
+     "valid": false,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 0.3148
+    },
+    {
+     "test": 4,
+     "minutes": 42.99,
+     "cost": 16.729,
+     "valid": true,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 42.99,
+     "cost": 16.729,
+     "valid": true,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 1.0
+    },
+    {
+     "test": 6,
+     "minutes": 42.99,
+     "cost": 16.729,
+     "valid": false,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 0.2963
+    },
+    {
+     "test": 7,
+     "minutes": 42.99,
+     "cost": 16.729,
+     "valid": false,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 0.3148
+    },
+    {
+     "test": 8,
+     "minutes": 43.0,
+     "cost": 16.729,
+     "valid": false,
+     "volume": 280,
+     "best": 280,
+     "score": 0.6857,
+     "partial": 0.3148
+    },
+    {
+     "test": 9,
+     "minutes": 46.87,
+     "cost": 17.8305,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 10,
+     "minutes": 51.78,
+     "cost": 19.1891,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 11,
+     "minutes": 51.78,
+     "cost": 19.1891,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 12,
+     "minutes": 51.78,
+     "cost": 19.1891,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 13,
+     "minutes": 73.0,
+     "cost": 28.315,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 14,
+     "minutes": 77.52,
+     "cost": 29.7585,
+     "valid": false,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 0.2963
+    },
+    {
+     "test": 15,
+     "minutes": 77.52,
+     "cost": 29.7585,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 16,
+     "minutes": 77.52,
+     "cost": 29.7585,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 17,
+     "minutes": 78.48,
+     "cost": 30.196,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 18,
+     "minutes": 80.62,
+     "cost": 30.8029,
+     "valid": false,
+     "volume": 189,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 0.1296
+    },
+    {
+     "test": 19,
+     "minutes": 86.81,
+     "cost": 32.657,
+     "valid": true,
+     "volume": 210,
+     "best": 210,
+     "score": 0.9143,
+     "partial": 1.0
+    },
+    {
+     "test": 20,
+     "minutes": 87.04,
+     "cost": 32.8458,
+     "valid": false,
+     "volume": 210,
+     "best": 210,
+     "score": 0.9143,
+     "partial": 0.3148
+    },
+    {
+     "test": 21,
+     "minutes": 87.04,
+     "cost": 32.8458,
+     "valid": true,
+     "volume": 210,
+     "best": 210,
+     "score": 0.9143,
+     "partial": 1.0
+    },
+    {
+     "test": 22,
+     "minutes": 87.04,
+     "cost": 32.8458,
+     "valid": true,
+     "volume": 210,
+     "best": 210,
+     "score": 0.9143,
+     "partial": 1.0
+    },
+    {
+     "test": 23,
+     "minutes": 87.04,
+     "cost": 32.8458,
+     "valid": true,
+     "volume": 210,
+     "best": 210,
+     "score": 0.9143,
+     "partial": 1.0
+    },
+    {
+     "test": 24,
+     "minutes": 87.43,
+     "cost": 33.0451,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 1.0159,
+     "partial": 1.0
+    },
+    {
+     "test": 25,
+     "minutes": 87.65,
+     "cost": 33.1914,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 1.0159,
+     "partial": 1.0
+    },
+    {
+     "test": 26,
+     "minutes": 87.65,
+     "cost": 33.1914,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 1.0159,
+     "partial": 1.0
+    },
+    {
+     "test": 27,
+     "minutes": 87.65,
+     "cost": 33.1914,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 1.0159,
+     "partial": 1.0
+    },
+    {
+     "test": 28,
+     "minutes": 87.66,
+     "cost": 33.1914,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 1.0159,
+     "partial": 1.0
+    },
+    {
+     "test": 29,
+     "minutes": 90.96,
+     "cost": 34.2426,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 1.0159,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 189,
+    "dims": [
+     7,
+     9,
+     3
+    ],
+    "score": 1.0159,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 1.0159
+  },
+  {
+   "name": "w1-opus-a",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "231 at about minute 80; 182, 168, 154 after the continues (depth 3 to 2); continue cap reached."
+   ],
+   "minutes_active": 89.61,
+   "excluded_windows": [],
+   "agent_minutes": 92.2,
+   "model_calls": 53,
+   "tokens": {
+    "in": 114,
+    "w5": 1450773,
+    "w1h": 0,
+    "read": 18673608,
+    "out": 517072
+   },
+   "cost": 21.33,
+   "test_calls": 7,
+   "sim_calls": 0,
+   "lab_worlds": 16,
+   "lab_ticks": 5770,
+   "best_dev_volume": 154,
+   "best_partial": 1.0,
+   "first_valid_minutes": 66.99,
+   "first_valid_cost": 15.3214,
+   "reference": 192,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 66.99,
+     "cost": 15.3214,
+     "valid": true,
+     "volume": 336,
+     "best": 336,
+     "score": 0.5714,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 68.69,
+     "cost": 15.8305,
+     "valid": true,
+     "volume": 294,
+     "best": 294,
+     "score": 0.6531,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 70.16,
+     "cost": 16.2522,
+     "valid": true,
+     "volume": 252,
+     "best": 252,
+     "score": 0.7619,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 73.74,
+     "cost": 16.998,
+     "valid": true,
+     "volume": 231,
+     "best": 231,
+     "score": 0.8312,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 85.35,
+     "cost": 19.5038,
+     "valid": true,
+     "volume": 182,
+     "best": 182,
+     "score": 1.0549,
+     "partial": 1.0
+    },
+    {
+     "test": 6,
+     "minutes": 86.56,
+     "cost": 19.8124,
+     "valid": true,
+     "volume": 168,
+     "best": 168,
+     "score": 1.1429,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 87.5,
+     "cost": 20.1785,
+     "valid": true,
+     "volume": 154,
+     "best": 154,
+     "score": 1.2468,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 154,
+    "dims": [
+     11,
+     7,
+     2
+    ],
+    "score": 1.2468,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 1.2468
+  },
+  {
+   "name": "w1-opus-b",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "360 at about minute 80; improved to 312 after the first continue; continue cap reached."
+   ],
+   "minutes_active": 86.1,
+   "excluded_windows": [],
+   "agent_minutes": 88.7,
+   "model_calls": 51,
+   "tokens": {
+    "in": 108,
+    "w5": 1434303,
+    "w1h": 0,
+    "read": 21874768,
+    "out": 530304
+   },
+   "cost": 22.15,
+   "test_calls": 7,
+   "sim_calls": 3,
+   "lab_worlds": 26,
+   "lab_ticks": 7524,
+   "best_dev_volume": 312,
+   "best_partial": 1.0,
+   "first_valid_minutes": 67.26,
+   "first_valid_cost": 16.0332,
+   "reference": 192,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 67.26,
+     "cost": 16.0332,
+     "valid": true,
+     "volume": 594,
+     "best": 594,
+     "score": 0.3232,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 71.03,
+     "cost": 16.9787,
+     "valid": true,
+     "volume": 528,
+     "best": 528,
+     "score": 0.3636,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 73.1,
+     "cost": 17.791,
+     "valid": true,
+     "volume": 504,
+     "best": 504,
+     "score": 0.381,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 73.28,
+     "cost": 17.9118,
+     "valid": true,
+     "volume": 456,
+     "best": 456,
+     "score": 0.4211,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 74.79,
+     "cost": 18.4503,
+     "valid": true,
+     "volume": 408,
+     "best": 408,
+     "score": 0.4706,
+     "partial": 1.0
+    },
+    {
+     "test": 6,
+     "minutes": 75.62,
+     "cost": 18.7687,
+     "valid": true,
+     "volume": 360,
+     "best": 360,
+     "score": 0.5333,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 81.21,
+     "cost": 20.253,
+     "valid": true,
+     "volume": 312,
+     "best": 312,
+     "score": 0.6154,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 312,
+    "dims": [
+     13,
+     8,
+     3
+    ],
+    "score": 0.6154,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.6154
+  },
+  {
+   "name": "w1-sonnet-a",
+   "model_alias": "sonnet",
+   "model_ids": [
+    "claude-sonnet-5-5"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "Valid 420 submitted at about minute 74; tried one compression (about 350) in the lab after the continues, which failed; continue cap reached."
+   ],
+   "minutes_active": 75.53,
+   "excluded_windows": [],
+   "agent_minutes": 75.9,
+   "model_calls": 71,
+   "tokens": {
+    "in": 150,
+    "w5": 1113263,
+    "w1h": 0,
+    "read": 32967386,
+    "out": 549055
+   },
+   "cost": 11.57,
+   "test_calls": 5,
+   "sim_calls": 2,
+   "lab_worlds": 35,
+   "lab_ticks": 3227,
+   "best_dev_volume": 420,
+   "best_partial": 1.0,
+   "first_valid_minutes": 58.75,
+   "first_valid_cost": 8.0323,
+   "reference": 192,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 58.75,
+     "cost": 8.0323,
+     "valid": true,
+     "volume": 880,
+     "best": 880,
+     "score": 0.2182,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 60.73,
+     "cost": 8.3729,
+     "valid": true,
+     "volume": 720,
+     "best": 720,
+     "score": 0.2667,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 66.86,
+     "cost": 9.5133,
+     "valid": true,
+     "volume": 560,
+     "best": 560,
+     "score": 0.3429,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 69.78,
+     "cost": 10.0409,
+     "valid": true,
+     "volume": 490,
+     "best": 490,
+     "score": 0.3918,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 70.27,
+     "cost": 10.2641,
+     "valid": true,
+     "volume": 420,
+     "best": 420,
+     "score": 0.4571,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 420,
+    "dims": [
+     7,
+     10,
+     6
+    ],
+    "score": 0.4571,
+    "translations": {
+     "passed": 8,
+     "of": 11,
+     "failed": [
+      [
+       "shift",
+       [
+        37,
+        12,
+        -41
+       ]
+      ],
+      [
+       "shift",
+       [
+        -64,
+        8,
+        100
+       ]
+      ],
+      [
+       "turned",
+       [
+        7,
+        3,
+        5
+       ]
+      ]
+     ],
+     "failed_offsets": [
+      [
+       37,
+       12,
+       -41
+      ],
+      [
+       -64,
+       8,
+       100
+      ],
+      [
+       7,
+       3,
+       5
+      ]
+     ]
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.4571
+  },
+  {
+   "name": "w1-sonnet-b",
+   "model_alias": "sonnet",
+   "model_ids": [
+    "claude-sonnet-5-5"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "504 at about minute 85; 486 then 405 after the first continue; continue cap reached."
+   ],
+   "minutes_active": 93.49,
+   "excluded_windows": [],
+   "agent_minutes": 103.7,
+   "model_calls": 113,
+   "tokens": {
+    "in": 230,
+    "w5": 512308,
+    "w1h": 0,
+    "read": 41043878,
+    "out": 366948
+   },
+   "cost": 9.06,
+   "test_calls": 8,
+   "sim_calls": 5,
+   "lab_worlds": 27,
+   "lab_ticks": 5317,
+   "best_dev_volume": 405,
+   "best_partial": 1.0,
+   "first_valid_minutes": 37.65,
+   "first_valid_cost": 4.7745,
+   "reference": 192,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 36.92,
+     "cost": 4.5074,
+     "valid": false,
+     "volume": 882,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1296
+    },
+    {
+     "test": 2,
+     "minutes": 37.65,
+     "cost": 4.7745,
+     "valid": true,
+     "volume": 784,
+     "best": 784,
+     "score": 0.2449,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 44.24,
+     "cost": 5.3194,
+     "valid": false,
+     "volume": 672,
+     "best": 784,
+     "score": 0.2449,
+     "partial": 0.1296
+    },
+    {
+     "test": 4,
+     "minutes": 46.55,
+     "cost": 5.7041,
+     "valid": true,
+     "volume": 588,
+     "best": 588,
+     "score": 0.3265,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 53.5,
+     "cost": 6.2344,
+     "valid": false,
+     "volume": 560,
+     "best": 588,
+     "score": 0.3265,
+     "partial": 0.2778
+    },
+    {
+     "test": 6,
+     "minutes": 58.54,
+     "cost": 6.5171,
+     "valid": true,
+     "volume": 504,
+     "best": 504,
+     "score": 0.381,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 87.51,
+     "cost": 8.3671,
+     "valid": true,
+     "volume": 486,
+     "best": 486,
+     "score": 0.3951,
+     "partial": 1.0
+    },
+    {
+     "test": 8,
+     "minutes": 89.36,
+     "cost": 8.4694,
+     "valid": true,
+     "volume": 405,
+     "best": 405,
+     "score": 0.4741,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 405,
+    "dims": [
+     9,
+     9,
+     5
+    ],
+    "score": 0.4741,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.4741
+  },
+  {
+   "name": "w1-haiku-a",
+   "model_alias": "haiku",
+   "model_ids": [
+    "claude-haiku-5-5"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 4,
+   "notes": [
+    "Stopped four times (about minutes 17, 27, 29 and 31) with no tested design; the continue cap of 3 was reached."
+   ],
+   "minutes_active": 5.99,
+   "excluded_windows": [],
+   "agent_minutes": 29.5,
+   "model_calls": 30,
+   "tokens": {
+    "in": 66,
+    "w5": 311377,
+    "w1h": 0,
+    "read": 6729804,
+    "out": 196135
+   },
+   "cost": 0.83,
+   "test_calls": 0,
+   "sim_calls": 2,
+   "lab_worlds": 0,
+   "lab_ticks": 0,
+   "best_dev_volume": null,
+   "best_partial": 0.0,
+   "first_valid_minutes": null,
+   "first_valid_cost": null,
+   "reference": 192,
+   "curve": [],
+   "final": {
+    "valid": false,
+    "volume": null,
+    "dims": null,
+    "score": 0.0,
+    "translations": null,
+    "final_failures": null,
+    "candidate_source": null
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w1-haiku-b",
+   "model_alias": "haiku",
+   "model_ids": [
+    "claude-haiku-5-5"
+   ],
+   "n": 3,
+   "minutes_limit": null,
+   "rounds": 3,
+   "notes": [
+    "Stopped by the harness at about minute 26: after two continue messages it made no tool calls for over 20 minutes and kept waking on a background job of its own. No design was tested or submitted."
+   ],
+   "minutes_active": 6.58,
+   "excluded_windows": [],
+   "agent_minutes": 25.8,
+   "model_calls": 91,
+   "tokens": {
+    "in": 194,
+    "w5": 344536,
+    "w1h": 0,
+    "read": 20659465,
+    "out": 182043
+   },
+   "cost": 1.51,
+   "test_calls": 0,
+   "sim_calls": 0,
+   "lab_worlds": 1,
+   "lab_ticks": 46,
+   "best_dev_volume": null,
+   "best_partial": 0.0,
+   "first_valid_minutes": null,
+   "first_valid_cost": null,
+   "reference": 192,
+   "curve": [],
+   "final": {
+    "valid": false,
+    "volume": null,
+    "dims": null,
+    "score": 0.0,
+    "translations": null,
+    "final_failures": null,
+    "candidate_source": null
+   },
+   "score": 0.0
+  }
+ ]
+}

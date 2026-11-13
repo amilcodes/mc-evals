@@ -1,0 +1,8 @@
+lab=Lab(d); lab.rest()
+def row(): return ''.join('.' if lab.block(x,1,0)=='air' else ('#' if lab.block(x,1,0)=='stone' else lab.block(x,1,0)[0]) for x in range(-3,3))
+lab.flip(*LP); lab.step(4); print(row())
+pz(LB,2,2); print(row())
+lab.flip(*LP); lab.step(8); print(row(), lab.block(-2,1,0), lab.block(-1,1,0))
+lab.step(4); print(row())
+pz(LA,2,8); print(row(), lab.block(-1,0,0), lab.block(-1,-1,0))
+pz(LB,2,6); print(row())

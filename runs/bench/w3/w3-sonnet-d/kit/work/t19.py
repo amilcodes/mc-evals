@@ -1,0 +1,5 @@
+exec(open('work/build9.py').read())
+d=make9()
+lab=Lab(d,walls=True)
+print(lab.view(z=3).split('legend')[0])
+print(lab.view(z=2).split('legend')[0])

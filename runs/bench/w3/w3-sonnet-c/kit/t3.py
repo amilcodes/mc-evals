@@ -1,0 +1,10 @@
+lab = Lab(d); lab.rest()
+# close: P on, wait 4, B pulse 2, wait to P off at 8
+lab.flip(*LP); lab.step(4); lab.flip(*LB); lab.step(2); lab.flip(*LB); lab.step(2); lab.flip(*LP); lab.step(6)
+show()
+lab.step(6)
+lab.flip(*LA); lab.step(2); lab.flip(*LA); lab.step(6)
+show()
+lab.flip(*LB); lab.step(2); lab.flip(*LB); lab.step(6)
+show()
+print(lab.doorway())

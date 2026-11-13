@@ -1,0 +1,7 @@
+exec(open('work/core.py').read())
+lab=Lab(d,walls=True)
+print(lab.lost)
+run([('L',singles),'Q','F','Q'],lab)
+print(lab.view(z=0))
+run([('L',singles),'Q','F','Q',('L',['R']),'Q',('L',['R']),'Q'],lab)
+print(lab.view(z=0))

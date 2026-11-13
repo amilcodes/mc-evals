@@ -1,0 +1,1834 @@
+{
+ "wave": "w2",
+ "task": "4x4 and 2x2 seamless scratch",
+ "n": 3,
+ "track": "seamless",
+ "minutes": null,
+ "prices": {
+  "claude-fable-5-2": {
+   "in": 8.0,
+   "w5": 10.0,
+   "w1h": 16.0,
+   "read": 0.2,
+   "out": 40.0
+  },
+  "claude-opus-5-5": {
+   "in": 4.0,
+   "w5": 5.0,
+   "w1h": 8.0,
+   "read": 0.2,
+   "out": 20.0
+  },
+  "claude-sonnet-5-5": {
+   "in": 2.0,
+   "w5": 2.5,
+   "w1h": 4.0,
+   "read": 0.1,
+   "out": 10.0
+  },
+  "claude-haiku-5-5": {
+   "in": 0.1,
+   "w5": 0.125,
+   "w1h": 0.2,
+   "read": 0.01,
+   "out": 0.5
+  }
+ },
+ "runs": [
+  {
+   "name": "w2-4x4-fable-a",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 4,
+   "minutes_limit": 150,
+   "rounds": 4,
+   "notes": [
+    "440 at about minute 42 (before the sleep); 324, 288, 264 after the wake; continue cap reached."
+   ],
+   "minutes_active": 97.75,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 458.3,
+   "model_calls": 37,
+   "tokens": {
+    "in": 78,
+    "w5": 2394548,
+    "w1h": 0,
+    "read": 11861637,
+    "out": 502514
+   },
+   "cost": 46.42,
+   "test_calls": 5,
+   "sim_calls": 1,
+   "lab_worlds": 15,
+   "lab_ticks": 3762,
+   "best_dev_volume": 264,
+   "best_partial": 1.0,
+   "first_valid_minutes": 41.53,
+   "first_valid_cost": 15.6801,
+   "reference": 132,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 41.53,
+     "cost": 15.6801,
+     "valid": true,
+     "volume": 440,
+     "best": 440,
+     "score": 0.3,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 71.78,
+     "cost": 32.0792,
+     "valid": true,
+     "volume": 324,
+     "best": 324,
+     "score": 0.4074,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 76.94,
+     "cost": 33.8268,
+     "valid": true,
+     "volume": 288,
+     "best": 288,
+     "score": 0.4583,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 82.85,
+     "cost": 40.075,
+     "valid": true,
+     "volume": 264,
+     "best": 264,
+     "score": 0.5,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 97.75,
+     "cost": 44.604,
+     "valid": true,
+     "volume": 264,
+     "best": 264,
+     "score": 0.5,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 264,
+    "dims": [
+     11,
+     8,
+     3
+    ],
+    "score": 0.5,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.5
+  },
+  {
+   "name": "w2-4x4-fable-b",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 4,
+   "minutes_limit": 150,
+   "rounds": 4,
+   "notes": [
+    "Was refused with 'time is up' at 09:21 because the sleep was counted; told of the fault and resumed with about 90 minutes left (not counted as a continue).",
+    "650, 600, 500 then 400 after the time correction and first continue; continue cap reached."
+   ],
+   "minutes_active": 81.79,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 444.5,
+   "model_calls": 53,
+   "tokens": {
+    "in": 112,
+    "w5": 1465267,
+    "w1h": 0,
+    "read": 19089064,
+    "out": 441268
+   },
+   "cost": 36.12,
+   "test_calls": 11,
+   "sim_calls": 21,
+   "lab_worlds": 14,
+   "lab_ticks": 2568,
+   "best_dev_volume": 400,
+   "best_partial": 1.0,
+   "first_valid_minutes": 59.87,
+   "first_valid_cost": 26.2333,
+   "reference": 132,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 47.73,
+     "cost": 18.9436,
+     "valid": false,
+     "volume": 650,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.125
+    },
+    {
+     "test": 2,
+     "minutes": 55.73,
+     "cost": 21.6358,
+     "valid": false,
+     "volume": 650,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.3229
+    },
+    {
+     "test": 3,
+     "minutes": 59.87,
+     "cost": 26.2333,
+     "valid": true,
+     "volume": 650,
+     "best": 650,
+     "score": 0.2031,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 60.39,
+     "cost": 26.5272,
+     "valid": true,
+     "volume": 600,
+     "best": 600,
+     "score": 0.22,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 61.74,
+     "cost": 26.9286,
+     "valid": false,
+     "volume": 500,
+     "best": 600,
+     "score": 0.22,
+     "partial": 0.0833
+    },
+    {
+     "test": 6,
+     "minutes": 62.54,
+     "cost": 27.3373,
+     "valid": false,
+     "volume": 500,
+     "best": 600,
+     "score": 0.22,
+     "partial": 0.2292
+    },
+    {
+     "test": 7,
+     "minutes": 63.11,
+     "cost": 27.5666,
+     "valid": true,
+     "volume": 500,
+     "best": 500,
+     "score": 0.264,
+     "partial": 1.0
+    },
+    {
+     "test": 8,
+     "minutes": 70.02,
+     "cost": 29.4874,
+     "valid": true,
+     "volume": 500,
+     "best": 500,
+     "score": 0.264,
+     "partial": 1.0
+    },
+    {
+     "test": 9,
+     "minutes": 73.31,
+     "cost": 30.8586,
+     "valid": false,
+     "volume": 400,
+     "best": 500,
+     "score": 0.264,
+     "partial": 0.125
+    },
+    {
+     "test": 10,
+     "minutes": 77.52,
+     "cost": 32.5021,
+     "valid": true,
+     "volume": 400,
+     "best": 400,
+     "score": 0.33,
+     "partial": 1.0
+    },
+    {
+     "test": 11,
+     "minutes": 81.18,
+     "cost": 33.5026,
+     "valid": true,
+     "volume": 400,
+     "best": 400,
+     "score": 0.33,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 400,
+    "dims": [
+     10,
+     10,
+     4
+    ],
+    "score": 0.33,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.33
+  },
+  {
+   "name": "w2-4x4-opus-a",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 4,
+   "minutes_limit": 150,
+   "rounds": 4,
+   "notes": [
+    "No tool call for about an hour before the sleep; first valid door 11232, then 15 tested shrinks to 2574 (4320 at the first continue)."
+   ],
+   "minutes_active": 133.53,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 489.5,
+   "model_calls": 131,
+   "tokens": {
+    "in": 270,
+    "w5": 1049842,
+    "w1h": 0,
+    "read": 51411232,
+    "out": 682524
+   },
+   "cost": 29.18,
+   "test_calls": 19,
+   "sim_calls": 36,
+   "lab_worlds": 9,
+   "lab_ticks": 3465,
+   "best_dev_volume": 2574,
+   "best_partial": 1.0,
+   "first_valid_minutes": 98.15,
+   "first_valid_cost": 15.0799,
+   "reference": 132,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 98.15,
+     "cost": 15.0799,
+     "valid": true,
+     "volume": 11232,
+     "best": 11232,
+     "score": 0.0118,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 99.99,
+     "cost": 15.5185,
+     "valid": true,
+     "volume": 9900,
+     "best": 9900,
+     "score": 0.0133,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 104.27,
+     "cost": 16.7782,
+     "valid": true,
+     "volume": 7452,
+     "best": 7452,
+     "score": 0.0177,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 105.91,
+     "cost": 17.5709,
+     "valid": true,
+     "volume": 7128,
+     "best": 7128,
+     "score": 0.0185,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 107.19,
+     "cost": 17.9813,
+     "valid": true,
+     "volume": 6426,
+     "best": 6426,
+     "score": 0.0205,
+     "partial": 1.0
+    },
+    {
+     "test": 6,
+     "minutes": 108.26,
+     "cost": 18.4381,
+     "valid": true,
+     "volume": 6120,
+     "best": 6120,
+     "score": 0.0216,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 110.09,
+     "cost": 19.0159,
+     "valid": false,
+     "volume": 5814,
+     "best": 6120,
+     "score": 0.0216,
+     "partial": 0.1146
+    },
+    {
+     "test": 8,
+     "minutes": 110.6,
+     "cost": 19.25,
+     "valid": false,
+     "volume": 5814,
+     "best": 6120,
+     "score": 0.0216,
+     "partial": 0.2917
+    },
+    {
+     "test": 9,
+     "minutes": 111.02,
+     "cost": 19.4732,
+     "valid": true,
+     "volume": 5814,
+     "best": 5814,
+     "score": 0.0227,
+     "partial": 1.0
+    },
+    {
+     "test": 10,
+     "minutes": 112.8,
+     "cost": 20.1225,
+     "valid": true,
+     "volume": 5508,
+     "best": 5508,
+     "score": 0.024,
+     "partial": 1.0
+    },
+    {
+     "test": 11,
+     "minutes": 115.7,
+     "cost": 21.0647,
+     "valid": true,
+     "volume": 4860,
+     "best": 4860,
+     "score": 0.0272,
+     "partial": 1.0
+    },
+    {
+     "test": 12,
+     "minutes": 116.4,
+     "cost": 21.5057,
+     "valid": true,
+     "volume": 4320,
+     "best": 4320,
+     "score": 0.0306,
+     "partial": 1.0
+    },
+    {
+     "test": 13,
+     "minutes": 120.19,
+     "cost": 22.7216,
+     "valid": true,
+     "volume": 4050,
+     "best": 4050,
+     "score": 0.0326,
+     "partial": 1.0
+    },
+    {
+     "test": 14,
+     "minutes": 121.73,
+     "cost": 23.598,
+     "valid": true,
+     "volume": 3780,
+     "best": 3780,
+     "score": 0.0349,
+     "partial": 1.0
+    },
+    {
+     "test": 15,
+     "minutes": 124.55,
+     "cost": 24.9652,
+     "valid": true,
+     "volume": 3528,
+     "best": 3528,
+     "score": 0.0374,
+     "partial": 1.0
+    },
+    {
+     "test": 16,
+     "minutes": 125.83,
+     "cost": 25.7372,
+     "valid": true,
+     "volume": 3024,
+     "best": 3024,
+     "score": 0.0437,
+     "partial": 1.0
+    },
+    {
+     "test": 17,
+     "minutes": 129.3,
+     "cost": 27.3276,
+     "valid": true,
+     "volume": 2808,
+     "best": 2808,
+     "score": 0.047,
+     "partial": 1.0
+    },
+    {
+     "test": 18,
+     "minutes": 131.89,
+     "cost": 28.4006,
+     "valid": true,
+     "volume": 2574,
+     "best": 2574,
+     "score": 0.0513,
+     "partial": 1.0
+    },
+    {
+     "test": 19,
+     "minutes": 133.53,
+     "cost": 29.0281,
+     "valid": true,
+     "volume": 2574,
+     "best": 2574,
+     "score": 0.0513,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 2574,
+    "dims": [
+     22,
+     9,
+     13
+    ],
+    "score": 0.0513,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0513
+  },
+  {
+   "name": "w2-4x4-opus-b",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 4,
+   "minutes_limit": 150,
+   "rounds": 4,
+   "notes": [
+    "First valid door 30362 about 25 minutes before its limit; scripted layout searches cut it to 5236; continue cap reached."
+   ],
+   "minutes_active": 135.05,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 494.0,
+   "model_calls": 140,
+   "tokens": {
+    "in": 286,
+    "w5": 1906774,
+    "w1h": 0,
+    "read": 77668137,
+    "out": 708529
+   },
+   "cost": 39.24,
+   "test_calls": 82,
+   "sim_calls": 20,
+   "lab_worlds": 22,
+   "lab_ticks": 1980,
+   "best_dev_volume": 5236,
+   "best_partial": 1.0,
+   "first_valid_minutes": 114.03,
+   "first_valid_cost": 26.6703,
+   "reference": 132,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 95.77,
+     "cost": 19.3953,
+     "valid": false,
+     "volume": 12784,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0
+    },
+    {
+     "test": 2,
+     "minutes": 104.0,
+     "cost": 21.7587,
+     "valid": false,
+     "volume": 15181,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0417
+    },
+    {
+     "test": 3,
+     "minutes": 104.64,
+     "cost": 22.1687,
+     "valid": false,
+     "volume": 15181,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0417
+    },
+    {
+     "test": 4,
+     "minutes": 114.03,
+     "cost": 26.6703,
+     "valid": true,
+     "volume": 30362,
+     "best": 30362,
+     "score": 0.0043,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 114.67,
+     "cost": 27.1224,
+     "valid": true,
+     "volume": 21573,
+     "best": 21573,
+     "score": 0.0061,
+     "partial": 1.0
+    },
+    {
+     "test": 6,
+     "minutes": 115.3,
+     "cost": 27.4378,
+     "valid": true,
+     "volume": 19176,
+     "best": 19176,
+     "score": 0.0069,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 115.93,
+     "cost": 27.8978,
+     "valid": false,
+     "volume": 13838,
+     "best": 19176,
+     "score": 0.0069,
+     "partial": 0.1458
+    },
+    {
+     "test": 8,
+     "minutes": 116.12,
+     "cost": 28.0413,
+     "valid": false,
+     "volume": 15096,
+     "best": 19176,
+     "score": 0.0069,
+     "partial": 0.2917
+    },
+    {
+     "test": 9,
+     "minutes": 116.13,
+     "cost": 28.0413,
+     "valid": false,
+     "volume": 17578,
+     "best": 19176,
+     "score": 0.0069,
+     "partial": 0.1458
+    },
+    {
+     "test": 10,
+     "minutes": 116.36,
+     "cost": 28.1925,
+     "valid": true,
+     "volume": 18360,
+     "best": 18360,
+     "score": 0.0072,
+     "partial": 1.0
+    },
+    {
+     "test": 11,
+     "minutes": 116.37,
+     "cost": 28.1925,
+     "valid": true,
+     "volume": 17544,
+     "best": 17544,
+     "score": 0.0075,
+     "partial": 1.0
+    },
+    {
+     "test": 12,
+     "minutes": 116.38,
+     "cost": 28.1925,
+     "valid": false,
+     "volume": 16728,
+     "best": 17544,
+     "score": 0.0075,
+     "partial": 0.125
+    },
+    {
+     "test": 13,
+     "minutes": 116.4,
+     "cost": 28.1925,
+     "valid": false,
+     "volume": 15912,
+     "best": 17544,
+     "score": 0.0075,
+     "partial": 0.1458
+    },
+    {
+     "test": 14,
+     "minutes": 116.95,
+     "cost": 28.5089,
+     "valid": true,
+     "volume": 16422,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 1.0
+    },
+    {
+     "test": 15,
+     "minutes": 116.96,
+     "cost": 28.5089,
+     "valid": true,
+     "volume": 16422,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 1.0
+    },
+    {
+     "test": 16,
+     "minutes": 116.97,
+     "cost": 28.5089,
+     "valid": true,
+     "volume": 17136,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 1.0
+    },
+    {
+     "test": 17,
+     "minutes": 116.98,
+     "cost": 28.5089,
+     "valid": false,
+     "volume": 15640,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 0.125
+    },
+    {
+     "test": 18,
+     "minutes": 117.0,
+     "cost": 28.5089,
+     "valid": false,
+     "volume": 15640,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 0.125
+    },
+    {
+     "test": 19,
+     "minutes": 117.01,
+     "cost": 28.5089,
+     "valid": false,
+     "volume": 16320,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 0.125
+    },
+    {
+     "test": 20,
+     "minutes": 117.12,
+     "cost": 28.6544,
+     "valid": false,
+     "volume": 15640,
+     "best": 16422,
+     "score": 0.008,
+     "partial": 0.125
+    },
+    {
+     "test": 21,
+     "minutes": 117.34,
+     "cost": 28.8064,
+     "valid": true,
+     "volume": 15640,
+     "best": 15640,
+     "score": 0.0084,
+     "partial": 1.0
+    },
+    {
+     "test": 22,
+     "minutes": 117.35,
+     "cost": 28.8064,
+     "valid": false,
+     "volume": 14858,
+     "best": 15640,
+     "score": 0.0084,
+     "partial": 0.1458
+    },
+    {
+     "test": 23,
+     "minutes": 117.37,
+     "cost": 28.8064,
+     "valid": false,
+     "volume": 14076,
+     "best": 15640,
+     "score": 0.0084,
+     "partial": 0.2917
+    },
+    {
+     "test": 24,
+     "minutes": 117.48,
+     "cost": 28.9452,
+     "valid": false,
+     "volume": 14858,
+     "best": 15640,
+     "score": 0.0084,
+     "partial": 0.1458
+    },
+    {
+     "test": 25,
+     "minutes": 117.86,
+     "cost": 29.1129,
+     "valid": true,
+     "volume": 14960,
+     "best": 14960,
+     "score": 0.0088,
+     "partial": 1.0
+    },
+    {
+     "test": 26,
+     "minutes": 118.9,
+     "cost": 29.7831,
+     "valid": true,
+     "volume": 13200,
+     "best": 13200,
+     "score": 0.01,
+     "partial": 1.0
+    },
+    {
+     "test": 27,
+     "minutes": 118.91,
+     "cost": 29.7831,
+     "valid": true,
+     "volume": 12320,
+     "best": 12320,
+     "score": 0.0107,
+     "partial": 1.0
+    },
+    {
+     "test": 28,
+     "minutes": 119.16,
+     "cost": 29.9456,
+     "valid": true,
+     "volume": 12320,
+     "best": 12320,
+     "score": 0.0107,
+     "partial": 1.0
+    },
+    {
+     "test": 29,
+     "minutes": 119.47,
+     "cost": 30.1166,
+     "valid": true,
+     "volume": 10560,
+     "best": 10560,
+     "score": 0.0125,
+     "partial": 1.0
+    },
+    {
+     "test": 30,
+     "minutes": 119.47,
+     "cost": 30.1166,
+     "valid": true,
+     "volume": 11440,
+     "best": 10560,
+     "score": 0.0125,
+     "partial": 1.0
+    },
+    {
+     "test": 31,
+     "minutes": 120.01,
+     "cost": 30.4449,
+     "valid": true,
+     "volume": 9680,
+     "best": 9680,
+     "score": 0.0136,
+     "partial": 1.0
+    },
+    {
+     "test": 32,
+     "minutes": 120.85,
+     "cost": 30.9462,
+     "valid": true,
+     "volume": 9240,
+     "best": 9240,
+     "score": 0.0143,
+     "partial": 1.0
+    },
+    {
+     "test": 33,
+     "minutes": 120.86,
+     "cost": 30.9462,
+     "valid": true,
+     "volume": 9240,
+     "best": 9240,
+     "score": 0.0143,
+     "partial": 1.0
+    },
+    {
+     "test": 34,
+     "minutes": 120.87,
+     "cost": 30.9462,
+     "valid": true,
+     "volume": 9680,
+     "best": 9240,
+     "score": 0.0143,
+     "partial": 1.0
+    },
+    {
+     "test": 35,
+     "minutes": 120.88,
+     "cost": 30.9462,
+     "valid": true,
+     "volume": 9240,
+     "best": 9240,
+     "score": 0.0143,
+     "partial": 1.0
+    },
+    {
+     "test": 36,
+     "minutes": 120.89,
+     "cost": 30.9462,
+     "valid": true,
+     "volume": 9240,
+     "best": 9240,
+     "score": 0.0143,
+     "partial": 1.0
+    },
+    {
+     "test": 37,
+     "minutes": 121.07,
+     "cost": 31.1107,
+     "valid": true,
+     "volume": 8800,
+     "best": 8800,
+     "score": 0.015,
+     "partial": 1.0
+    },
+    {
+     "test": 38,
+     "minutes": 121.08,
+     "cost": 31.1107,
+     "valid": true,
+     "volume": 8800,
+     "best": 8800,
+     "score": 0.015,
+     "partial": 1.0
+    },
+    {
+     "test": 39,
+     "minutes": 121.71,
+     "cost": 31.5771,
+     "valid": true,
+     "volume": 7040,
+     "best": 7040,
+     "score": 0.0187,
+     "partial": 1.0
+    },
+    {
+     "test": 40,
+     "minutes": 122.37,
+     "cost": 32.0384,
+     "valid": true,
+     "volume": 6600,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 1.0
+    },
+    {
+     "test": 41,
+     "minutes": 123.34,
+     "cost": 32.5654,
+     "valid": true,
+     "volume": 6800,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 1.0
+    },
+    {
+     "test": 42,
+     "minutes": 123.6,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1562
+    },
+    {
+     "test": 43,
+     "minutes": 123.6,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1562
+    },
+    {
+     "test": 44,
+     "minutes": 123.61,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 45,
+     "minutes": 123.62,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 46,
+     "minutes": 123.62,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 47,
+     "minutes": 123.63,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 48,
+     "minutes": 123.64,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 49,
+     "minutes": 123.65,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6930,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 50,
+     "minutes": 123.66,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6600,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 51,
+     "minutes": 123.67,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6600,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 52,
+     "minutes": 123.68,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6600,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 53,
+     "minutes": 123.68,
+     "cost": 32.7351,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 54,
+     "minutes": 124.75,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 55,
+     "minutes": 124.76,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 56,
+     "minutes": 124.76,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 57,
+     "minutes": 124.77,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 58,
+     "minutes": 124.78,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 5940,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 59,
+     "minutes": 124.78,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 60,
+     "minutes": 124.79,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 61,
+     "minutes": 124.8,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 62,
+     "minutes": 124.8,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 63,
+     "minutes": 124.81,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 64,
+     "minutes": 124.82,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 65,
+     "minutes": 124.82,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 66,
+     "minutes": 124.83,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 67,
+     "minutes": 124.84,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 68,
+     "minutes": 124.84,
+     "cost": 33.1442,
+     "valid": false,
+     "volume": 6270,
+     "best": 6600,
+     "score": 0.02,
+     "partial": 0.1458
+    },
+    {
+     "test": 69,
+     "minutes": 125.28,
+     "cost": 33.4944,
+     "valid": true,
+     "volume": 5940,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 1.0
+    },
+    {
+     "test": 70,
+     "minutes": 125.56,
+     "cost": 33.8001,
+     "valid": true,
+     "volume": 6732,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 1.0
+    },
+    {
+     "test": 71,
+     "minutes": 125.87,
+     "cost": 33.9697,
+     "valid": true,
+     "volume": 5940,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 1.0
+    },
+    {
+     "test": 72,
+     "minutes": 126.95,
+     "cost": 34.6471,
+     "valid": true,
+     "volume": 5940,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 1.0
+    },
+    {
+     "test": 73,
+     "minutes": 129.1,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 74,
+     "minutes": 129.1,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 75,
+     "minutes": 129.1,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 76,
+     "minutes": 129.1,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 77,
+     "minutes": 129.11,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 78,
+     "minutes": 129.11,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 79,
+     "minutes": 129.11,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 80,
+     "minutes": 129.11,
+     "cost": 35.6505,
+     "valid": false,
+     "volume": 5544,
+     "best": 5940,
+     "score": 0.0222,
+     "partial": 0.0
+    },
+    {
+     "test": 81,
+     "minutes": 129.87,
+     "cost": 36.3203,
+     "valid": true,
+     "volume": 5544,
+     "best": 5544,
+     "score": 0.0238,
+     "partial": 1.0
+    },
+    {
+     "test": 82,
+     "minutes": 134.94,
+     "cost": 37.893,
+     "valid": true,
+     "volume": 5236,
+     "best": 5236,
+     "score": 0.0252,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 5236,
+    "dims": [
+     34,
+     11,
+     14
+    ],
+    "score": 0.0252,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0252
+  },
+  {
+   "name": "w2-4x4-sonnet-a",
+   "model_alias": "sonnet",
+   "model_ids": [
+    "claude-sonnet-5-5"
+   ],
+   "n": 4,
+   "minutes_limit": 150,
+   "rounds": 4,
+   "notes": [
+    "No door; stopped four times by about minute 55 of 150, after lab experiments and analysis only."
+   ],
+   "minutes_active": 59.42,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 52.9,
+   "model_calls": 20,
+   "tokens": {
+    "in": 44,
+    "w5": 1288495,
+    "w1h": 0,
+    "read": 4596490,
+    "out": 380179
+   },
+   "cost": 7.48,
+   "test_calls": 5,
+   "sim_calls": 0,
+   "lab_worlds": 11,
+   "lab_ticks": 231,
+   "best_dev_volume": null,
+   "best_partial": 0.0104,
+   "first_valid_minutes": null,
+   "first_valid_cost": null,
+   "reference": 132,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 8.94,
+     "cost": 0.7553,
+     "valid": false,
+     "volume": 35,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0104
+    },
+    {
+     "test": 2,
+     "minutes": 26.12,
+     "cost": 3.0717,
+     "valid": false,
+     "volume": 60,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0
+    },
+    {
+     "test": 3,
+     "minutes": 26.12,
+     "cost": 3.0717,
+     "valid": false,
+     "volume": 60,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0
+    },
+    {
+     "test": 4,
+     "minutes": 26.12,
+     "cost": 3.0717,
+     "valid": false,
+     "volume": 60,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0
+    },
+    {
+     "test": 5,
+     "minutes": 26.2,
+     "cost": 3.1031,
+     "valid": false,
+     "volume": 60,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0
+    }
+   ],
+   "final": {
+    "valid": false,
+    "volume": null,
+    "dims": null,
+    "score": 0.0,
+    "translations": null,
+    "final_failures": null,
+    "candidate_source": null
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w2-2x2-haiku-a",
+   "model_alias": "haiku",
+   "model_ids": [
+    "claude-haiku-5-5"
+   ],
+   "n": 2,
+   "minutes_limit": 60,
+   "rounds": 4,
+   "notes": [],
+   "minutes_active": 59.42,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 10.5,
+   "model_calls": 16,
+   "tokens": {
+    "in": 36,
+    "w5": 204343,
+    "w1h": 0,
+    "read": 2249744,
+    "out": 125215
+   },
+   "cost": 0.41,
+   "test_calls": 1,
+   "sim_calls": 1,
+   "lab_worlds": 7,
+   "lab_ticks": 35,
+   "best_dev_volume": 30,
+   "best_partial": 1.0,
+   "first_valid_minutes": 5.97,
+   "first_valid_cost": 0.1773,
+   "reference": 30,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 5.97,
+     "cost": 0.1773,
+     "valid": true,
+     "volume": 30,
+     "best": 30,
+     "score": 1.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 30,
+    "dims": [
+     6,
+     5,
+     1
+    ],
+    "score": 1.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 1.0
+  },
+  {
+   "name": "w2-2x2-haiku-b",
+   "model_alias": "haiku",
+   "model_ids": [
+    "claude-haiku-5-5"
+   ],
+   "n": 2,
+   "minutes_limit": 60,
+   "rounds": 2,
+   "notes": [
+    "Agent reported creating and deleting an empty /tmp/unused file and an empty $TMPDIR folder outside its kit (rule breach, no effect on the grader)."
+   ],
+   "minutes_active": 59.43,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 13.3,
+   "model_calls": 19,
+   "tokens": {
+    "in": 38,
+    "w5": 258321,
+    "w1h": 0,
+    "read": 2867379,
+    "out": 141569
+   },
+   "cost": 0.46,
+   "test_calls": 2,
+   "sim_calls": 3,
+   "lab_worlds": 4,
+   "lab_ticks": 63,
+   "best_dev_volume": 60,
+   "best_partial": 1.0,
+   "first_valid_minutes": 9.93,
+   "first_valid_cost": 0.2761,
+   "reference": 30,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 9.27,
+     "cost": 0.2231,
+     "valid": false,
+     "volume": 60,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.125
+    },
+    {
+     "test": 2,
+     "minutes": 9.93,
+     "cost": 0.2761,
+     "valid": true,
+     "volume": 60,
+     "best": 60,
+     "score": 0.5,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 60,
+    "dims": [
+     6,
+     5,
+     2
+    ],
+    "score": 0.5,
+    "translations": {
+     "passed": 6,
+     "of": 11,
+     "failed": [
+      [
+       "shift",
+       [
+        37,
+        12,
+        -41
+       ]
+      ],
+      [
+       "shift",
+       [
+        -64,
+        8,
+        100
+       ]
+      ],
+      [
+       "turned",
+       [
+        0,
+        0,
+        0
+       ]
+      ],
+      [
+       "turned",
+       [
+        7,
+        3,
+        5
+       ]
+      ],
+      [
+       "turned",
+       [
+        16,
+        0,
+        16
+       ]
+      ]
+     ],
+     "failed_offsets": [
+      [
+       37,
+       12,
+       -41
+      ],
+      [
+       -64,
+       8,
+       100
+      ],
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       7,
+       3,
+       5
+      ],
+      [
+       16,
+       0,
+       16
+      ]
+     ]
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.5
+  },
+  {
+   "name": "w2-2x2-sonnet-a",
+   "model_alias": "sonnet",
+   "model_ids": [
+    "claude-sonnet-5-5"
+   ],
+   "n": 2,
+   "minutes_limit": 60,
+   "rounds": 4,
+   "notes": [],
+   "minutes_active": 58.79,
+   "excluded_windows": [
+    [
+     1794558325.0,
+     1794579665.0
+    ]
+   ],
+   "agent_minutes": 11.1,
+   "model_calls": 11,
+   "tokens": {
+    "in": 26,
+    "w5": 114095,
+    "w1h": 0,
+    "read": 1164627,
+    "out": 76226
+   },
+   "cost": 1.16,
+   "test_calls": 1,
+   "sim_calls": 2,
+   "lab_worlds": 0,
+   "lab_ticks": 0,
+   "best_dev_volume": 30,
+   "best_partial": 1.0,
+   "first_valid_minutes": 3.19,
+   "first_valid_cost": 0.4158,
+   "reference": 30,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 3.19,
+     "cost": 0.4158,
+     "valid": true,
+     "volume": 30,
+     "best": 30,
+     "score": 1.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 30,
+    "dims": [
+     6,
+     5,
+     1
+    ],
+    "score": 1.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 1.0
+  }
+ ]
+}

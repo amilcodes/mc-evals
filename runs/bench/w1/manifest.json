@@ -1,0 +1,257 @@
+{
+ "wave": "w1",
+ "launched_unix": 1794548650,
+ "minutes": 120,
+ "task": "3x3 seamless scratch",
+ "notes": [
+  "w1-haiku-b's clock was started about a minute before its agent by a harness status check"
+ ],
+ "runs": [
+  {
+   "name": "w1-fable-a",
+   "model": "fable",
+   "port": 8901,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-fable-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-fable-a/kit",
+   "agent": "adaec43c69d89f166",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/adaec43c69d89f166.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794554094,
+     "minutes_used": 90.8,
+     "best": 112
+    },
+    {
+     "unix": 1794554420,
+     "minutes_used": 96.2,
+     "best": 112
+    },
+    {
+     "unix": 1794554809,
+     "minutes_used": 102.7,
+     "best": 80
+    }
+   ],
+   "notes": [
+    "112 at about minute 91; 80 then 70 (single layer, lever off-plane at z = 1) after the continues; continue cap reached."
+   ]
+  },
+  {
+   "name": "w1-fable-b",
+   "model": "fable",
+   "port": 8902,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-fable-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-fable-b/kit",
+   "agent": "abd1ebd833aa1eea2",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/abd1ebd833aa1eea2.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794553136,
+     "minutes_used": 74.8,
+     "best": 252
+    },
+    {
+     "unix": 1794554048,
+     "minutes_used": 90.0,
+     "best": 189
+    },
+    {
+     "unix": 1794554148,
+     "minutes_used": 91.7,
+     "best": 189
+    }
+   ],
+   "notes": [
+    "252 at about minute 75; 210 then 189 after the first continue; continue cap reached."
+   ]
+  },
+  {
+   "name": "w1-opus-a",
+   "model": "opus",
+   "port": 8903,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-opus-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-opus-a/kit",
+   "agent": "a902367f899d63ebd",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a902367f899d63ebd.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794553415,
+     "minutes_used": 79.5,
+     "best": 231
+    },
+    {
+     "unix": 1794553610,
+     "minutes_used": 82.8,
+     "best": 231
+    },
+    {
+     "unix": 1794554054,
+     "minutes_used": 90.2,
+     "best": 154
+    }
+   ],
+   "notes": [
+    "231 at about minute 80; 182, 168, 154 after the continues (depth 3 to 2); continue cap reached."
+   ]
+  },
+  {
+   "name": "w1-opus-b",
+   "model": "opus",
+   "port": 8904,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-opus-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-opus-b/kit",
+   "agent": "a35f751ba6c9168cc",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a35f751ba6c9168cc.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794553425,
+     "minutes_used": 79.7,
+     "best": 360
+    },
+    {
+     "unix": 1794553702,
+     "minutes_used": 84.3,
+     "best": 312
+    },
+    {
+     "unix": 1794553839,
+     "minutes_used": 86.6,
+     "best": 312
+    }
+   ],
+   "notes": [
+    "360 at about minute 80; improved to 312 after the first continue; continue cap reached."
+   ]
+  },
+  {
+   "name": "w1-sonnet-a",
+   "model": "sonnet",
+   "port": 8905,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-sonnet-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-sonnet-a/kit",
+   "agent": "af6380a7fc0c2a2b7",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/af6380a7fc0c2a2b7.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794553079,
+     "minutes_used": 73.8,
+     "best": 420
+    },
+    {
+     "unix": 1794553111,
+     "minutes_used": 74.4,
+     "best": 420
+    },
+    {
+     "unix": 1794553141,
+     "minutes_used": 74.9,
+     "best": 420
+    }
+   ],
+   "notes": [
+    "Valid 420 submitted at about minute 74; tried one compression (about 350) in the lab after the continues, which failed; continue cap reached."
+   ]
+  },
+  {
+   "name": "w1-sonnet-b",
+   "model": "sonnet",
+   "port": 8906,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-sonnet-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-sonnet-b/kit",
+   "agent": "af7eefc8e4542a109",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/af7eefc8e4542a109.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794553765,
+     "minutes_used": 85.4,
+     "best": 504
+    },
+    {
+     "unix": 1794554271,
+     "minutes_used": 93.8,
+     "best": 405
+    },
+    {
+     "unix": 1794554634,
+     "minutes_used": 99.8,
+     "best": 405
+    }
+   ],
+   "notes": [
+    "504 at about minute 85; 486 then 405 after the first continue; continue cap reached."
+   ]
+  },
+  {
+   "name": "w1-haiku-a",
+   "model": "haiku",
+   "port": 8907,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-haiku-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-haiku-a/kit",
+   "agent": "ad3785664c09a3f26",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/ad3785664c09a3f26.output",
+   "rounds": 4,
+   "status": "finished: stopped after the third continue message",
+   "reprompts": [
+    {
+     "unix": 1794549673,
+     "minutes_used": 17.1,
+     "best": null
+    },
+    {
+     "unix": 1794550272,
+     "minutes_used": 27.1,
+     "best": null
+    },
+    {
+     "unix": 1794550405,
+     "minutes_used": 29.3,
+     "best": null
+    }
+   ],
+   "notes": [
+    "Stopped four times (about minutes 17, 27, 29 and 31) with no tested design; the continue cap of 3 was reached."
+   ]
+  },
+  {
+   "name": "w1-haiku-b",
+   "model": "haiku",
+   "port": 8908,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-haiku-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w1/w1-haiku-b/kit",
+   "agent": "aa187ad1fb25bc899",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/aa187ad1fb25bc899.output",
+   "rounds": 3,
+   "status": "finished: stopped by harness",
+   "reprompts": [
+    {
+     "unix": 1794549858,
+     "minutes_used": 21.0,
+     "best": null
+    },
+    {
+     "unix": 1794549955,
+     "minutes_used": 22.6,
+     "best": null
+    }
+   ],
+   "notes": [
+    "Stopped by the harness at about minute 26: after two continue messages it made no tool calls for over 20 minutes and kept waking on a background job of its own. No design was tested or submitted."
+   ]
+  }
+ ],
+ "n": 3,
+ "track": "seamless",
+ "loop_rule": "An agent that stops before its time is up gets the same neutral continue message (reprompt.py), at most 3 times per run."
+}

@@ -1,0 +1,9 @@
+{"t": 0.0, "unix": 1794555581.87, "kind": "start", "n": 3, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 120}
+{"t": 0.0, "unix": 1794579843.12, "kind": "resume", "seconds_since_last_entry": 24261.2, "used": {"test": 0, "sim": 0, "lab": 0}, "best": null, "excluded": [[1794558325.0, 1794579665.0]], "minutes_used": null}
+{"t": 45.23, "unix": 1794579888.35, "kind": "first_call"}
+{"t": 634.57, "unix": 1794580477.69, "kind": "lab", "op": "new", "lab": 1, "walls": false, "blocks": [{"pos": [-2, 1, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [-1, 1, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [3, 1, 0], "id": "stone"}]}
+{"t": 642.95, "unix": 1794580486.07, "kind": "lab", "op": "new", "lab": 2, "walls": false, "blocks": [{"pos": [-4, 1, 0], "id": "stone"}, {"pos": [-3, 1, 0], "id": "lever", "props": {"face": "wall", "facing": "east"}}, {"pos": [-2, 1, 0], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [3, 1, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794580486.09, "kind": "lab", "op": "flip", "lab": 2, "pos": [-3, 1, 0]}
+{"t": 23, "unix": 1794580486.11, "kind": "lab", "op": "rest", "lab": 2, "ticks": 23}
+{"t": 23, "unix": 1794580486.14, "kind": "lab", "op": "flip", "lab": 2, "pos": [-3, 1, 0]}
+{"t": 46, "unix": 1794580486.15, "kind": "lab", "op": "rest", "lab": 2, "ticks": 23}

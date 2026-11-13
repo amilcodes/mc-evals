@@ -1,0 +1,13 @@
+import sys, heapq
+from bfs3 import *
+import astar
+pc = lambda m: bin(m).count('1')
+def h_open(s): return pc(s[0] & Dm) + (0 if s[1]==0 else 1)
+extras = [(-1,0),(3,0),(0,-1)]
+start = (Dm | mask(extras), 0, 0)
+goal = lambda s: s[0] == Fm and s[1]==0 and s[2]==0
+cap = int(sys.argv[1])
+path, n = astar.search(start, goal, h_open, cap)
+print("found" if path else "none", None if path is None else len(path), n, flush=True)
+if path:
+    print([(a[0], PIST[a[1]][0]) for a in path])

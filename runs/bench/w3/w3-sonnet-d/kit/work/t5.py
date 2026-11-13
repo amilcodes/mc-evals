@@ -1,0 +1,7 @@
+exec(open('work/build.py').read())
+d=make()
+lab=Lab(d,walls=True)
+print(lab.lost)
+print(lab.view(z=2))
+lab.flip(-2,1,6); lab.rest()
+print(lab.doorway()); print(lab.view(z=0).split('legend')[0])

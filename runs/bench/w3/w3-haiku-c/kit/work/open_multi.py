@@ -1,0 +1,17 @@
+import sys, itertools
+from bfs4 import *
+import astar
+pc = lambda m: bin(m).count('1')
+def h_open(s): return pc(s[0] & Dm) + (0 if s[1]==0 else 1)
+goal = lambda s: s[0] == Fm and s[1]==0 and s[2]==0
+corners = [(-1,-1),(3,-1),(-1,3),(3,3)]
+cap = int(sys.argv[1])
+options = {
+ 'corners3': corners[:3],
+ 'corner_pos_mix': [(-1,-1),(3,3),(3,-1)],
+}
+for name, ex in options.items():
+    start = (Dm | mask(ex), 0, 0)
+    # goal: F full, but total stones 12 means extras must become F; corners are not in F so need 12 stones in F: keep 9+3 total
+    path, n = astar.search(start, lambda s: s[0] == Fm and s[1]==0 and s[2]==0, h_open, cap)
+    print(name, "found" if path else "none", None if path is None else len(path), n, flush=True)
