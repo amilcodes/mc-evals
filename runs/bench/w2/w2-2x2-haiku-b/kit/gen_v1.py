@@ -1,0 +1,13 @@
+from pdbuild import Design
+d = Design("open")
+d.set(0,-1,0,"stone"); d.set(1,-1,0,"stone"); d.set(0,2,0,"stone"); d.set(1,2,0,"stone")
+d.set(-1,0,0,"stone"); d.set(-1,1,0,"stone"); d.set(2,0,0,"stone"); d.set(2,1,0,"stone")
+d.set(-2,0,0,"sticky_piston",facing="east"); d.set(-2,1,0,"sticky_piston",facing="east")
+d.set(3,0,0,"sticky_piston",facing="west"); d.set(3,1,0,"sticky_piston",facing="west")
+d.set(-2,0,1,"stone"); d.set(-2,1,1,"redstone_wire"); d.set(-2,2,1,"stone")
+d.set(-2,3,1,"lever",face="floor",facing="north")
+d.set(-1,2,1,"stone"); d.set(-1,3,1,"redstone_wire"); d.set(0,3,1,"redstone_wire"); d.set(1,3,1,"redstone_wire"); d.set(2,3,1,"redstone_wire"); d.set(2,2,1,"stone")
+d.set(3,3,1,"redstone_wire"); d.set(3,2,1,"stone"); d.set(3,1,1,"redstone_wire"); d.set(3,0,1,"stone")
+d.set(-2,2,0,"redstone_wire"); d.set(3,2,0,"redstone_wire")
+d.save("v1.json")
+print(d.bbox())

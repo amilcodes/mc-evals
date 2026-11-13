@@ -1,0 +1,10 @@
+from build8 import make
+d=make()
+lab=Lab(d,walls=True)
+print(lab.lost)
+lab.rest()
+print(lab.doorway())
+LEV=(-3,-3,3)
+lab.flip(*LEV); lab.rest(); print("closed?", lab.doorway())
+lab.flip(*LEV); lab.rest(); print("open?", lab.doorway())
+print(lab.view(z=0).split("legend")[0])

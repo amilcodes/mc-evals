@@ -1,0 +1,7 @@
+{"t": 0.0, "unix": 1794548597.11, "kind": "start", "n": 3, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 120}
+{"t": 0.33, "unix": 1794548597.44, "kind": "first_call"}
+{"t": 389.85, "unix": 1794548986.96, "kind": "lab", "op": "new", "lab": 1, "walls": false, "blocks": [{"pos": [0, 0, 5], "id": "stone"}, {"pos": [1, 0, 5], "id": "stone"}, {"pos": [2, 0, 5], "id": "stone"}, {"pos": [3, 0, 5], "id": "stone"}, {"pos": [4, -2, 5], "id": "stone"}, {"pos": [4, -1, 5], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [4, 0, 5], "id": "sticky_piston", "props": {"facing": "west"}}]}
+{"t": 0, "unix": 1794548987.02, "kind": "lab", "op": "flip", "lab": 1, "pos": [4, -1, 5]}
+{"t": 23, "unix": 1794548987.05, "kind": "lab", "op": "rest", "lab": 1, "ticks": 23}
+{"t": 23, "unix": 1794548992.12, "kind": "lab", "op": "flip", "lab": 1, "pos": [4, -1, 5]}
+{"t": 46, "unix": 1794548992.14, "kind": "lab", "op": "rest", "lab": 1, "ticks": 23}

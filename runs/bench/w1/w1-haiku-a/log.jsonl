@@ -1,0 +1,4 @@
+{"t": 0.0, "unix": 1794548597.11, "kind": "start", "n": 3, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 120}
+{"t": 46.84, "unix": 1794548643.95, "kind": "first_call"}
+{"t": 406.39, "unix": 1794549003.49, "kind": "trace", "digest": "b4f0ec9be0d6", "flips": 2}
+{"t": 406.51, "unix": 1794549003.62, "kind": "view", "digest": "b4f0ec9be0d6", "flips": 0}

@@ -1,0 +1,5 @@
+import importlib, build; importlib.reload(build)
+d = build.build()
+d.save("door.json")
+r = test(d)
+print(r.text[:3000])
