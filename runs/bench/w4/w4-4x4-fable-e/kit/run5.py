@@ -1,0 +1,6 @@
+exec(open("build5.py").read())
+d=full()
+print(len(d.blocks), d.bbox())
+for x in check(d): print(x)
+d.save("door5.json")
+r=test(d); print(str(r)[:3500])

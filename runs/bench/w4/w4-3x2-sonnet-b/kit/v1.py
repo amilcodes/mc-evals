@@ -1,0 +1,13 @@
+d = Design("open")
+for x in range(3):
+    d.set(x,2,0,"stone"); d.set(x,3,0,"sticky_piston",facing="down")
+    d.set(x,-1,0,"stone"); d.set(x,-2,0,"sticky_piston",facing="up")
+    d.set(x,4,0,"redstone_wire")
+d.set(0,3,1,"lever",face="floor",facing="north")
+d.save("v1.json")
+lab = Lab(d, walls=True)
+print(lab.lost)
+lab.flip(0,3,1)
+lab.rest()
+print(lab.view(z=0))
+print(lab.doorway())

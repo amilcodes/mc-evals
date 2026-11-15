@@ -1,0 +1,136 @@
+[
+ {
+  "name": "w5-3x3p-fable-a",
+  "model": "fable",
+  "port": 8961,
+  "n": 3,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-fable-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-fable-a/kit",
+  "physics": {
+   "repeater_unit": 3,
+   "observer_delay": 3
+  }
+ },
+ {
+  "name": "w5-3x3p-fable-b",
+  "model": "fable",
+  "port": 8962,
+  "n": 3,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-fable-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-fable-b/kit",
+  "physics": {
+   "repeater_unit": 3,
+   "observer_delay": 3
+  }
+ },
+ {
+  "name": "w5-3x3p-fable-c",
+  "model": "fable",
+  "port": 8963,
+  "n": 3,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-fable-c/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-fable-c/kit",
+  "physics": {
+   "repeater_unit": 3,
+   "observer_delay": 3
+  }
+ },
+ {
+  "name": "w5-3x3p-opus-a",
+  "model": "opus",
+  "port": 8964,
+  "n": 3,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-opus-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-opus-a/kit",
+  "physics": {
+   "repeater_unit": 3,
+   "observer_delay": 3
+  }
+ },
+ {
+  "name": "w5-3x3p-opus-b",
+  "model": "opus",
+  "port": 8965,
+  "n": 3,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-opus-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-opus-b/kit",
+  "physics": {
+   "repeater_unit": 3,
+   "observer_delay": 3
+  }
+ },
+ {
+  "name": "w5-3x3p-opus-c",
+  "model": "opus",
+  "port": 8966,
+  "n": 3,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-opus-c/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w5/w5-3x3p-opus-c/kit",
+  "physics": {
+   "repeater_unit": 3,
+   "observer_delay": 3
+  }
+ },
+ {
+  "name": "w6-5x5-fable-a",
+  "model": "fable",
+  "port": 8971,
+  "n": 5,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 180,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-a/kit"
+ },
+ {
+  "name": "w6-5x5-fable-b",
+  "model": "fable",
+  "port": 8972,
+  "n": 5,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 180,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-b/kit"
+ },
+ {
+  "name": "w6-5x5-opus-a",
+  "model": "opus",
+  "port": 8973,
+  "n": 5,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 180,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-a/kit"
+ },
+ {
+  "name": "w6-5x5-opus-b",
+  "model": "opus",
+  "port": 8974,
+  "n": 5,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 180,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-b/kit"
+ }
+]

@@ -1,0 +1,12 @@
+w4-4x4-fable-e claude-fable-5-2     final  1008 score  0.131 best-dev  1008 first-valid  32.98 min tests  13 sims   5 lab  3405 calls   47 $  51.92 partial 1.0
+w4-4x4-fable-f claude-fable-5-2     final   420 score 0.3143 best-dev   420 first-valid  60.08 min tests   4 sims   7 lab  1882 calls   33 $  49.68 partial 1.0
+w4-4x4-opus-e claude-opus-5-5      final   240 score   0.55 best-dev   240 first-valid  34.68 min tests   6 sims   5 lab   848 calls   33 $  12.51 partial 1.0
+w4-4x4-opus-f claude-opus-5-5      final  1430 score 0.0923 best-dev  1430 first-valid  53.29 min tests  12 sims   2 lab 14605 calls   72 $   30.1 partial 1.0
+w4-4x4-sonnet-e claude-sonnet-5-5    final  None score    0.0 best-dev  None first-valid   None min tests   0 sims   0 lab  9449 calls   73 $   7.91 partial 0.0
+w4-3x2-fable-a claude-fable-5-2     final    42 score    0.0 best-dev    42 first-valid   9.47 min tests   2 sims   2 lab   110 calls   14 $  24.14 partial 1.0
+w4-3x2-fable-b claude-fable-5-2     final    42 score    0.0 best-dev    42 first-valid   6.91 min tests   5 sims   5 lab  1445 calls   16 $  12.35 partial 1.0
+w4-3x2-opus-a claude-opus-5-5      final    42 score    0.0 best-dev    42 first-valid   18.2 min tests   3 sims   4 lab   595 calls   18 $   8.32 partial 1.0
+w4-3x2-opus-b claude-opus-5-5      final    42 score    0.0 best-dev    42 first-valid  12.75 min tests   1 sims   2 lab    15 calls   13 $   4.22 partial 1.0
+w4-3x2-sonnet-a claude-sonnet-5-5    final    49 score    0.0 best-dev    49 first-valid  16.18 min tests   5 sims   4 lab   233 calls   24 $   5.13 partial 1.0
+w4-3x2-sonnet-b claude-sonnet-5-5    final    54 score    0.0 best-dev    54 first-valid  25.07 min tests   3 sims   1 lab   152 calls   18 $   4.61 partial 1.0
+w4-3x2-haiku-a claude-haiku-5-5     final    60 score    0.0 best-dev    60 first-valid   18.0 min tests   3 sims   0 lab    90 calls   20 $   0.76 partial 1.0

@@ -1,0 +1,6 @@
+exec(open("build2.py").read())
+d=full()
+print(len(d.blocks), d.bbox())
+for x in check(d): print(x)
+d.save("door2.json")
+r=test(d); print(r)

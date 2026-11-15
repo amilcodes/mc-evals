@@ -1,0 +1,747 @@
+{
+ "wave": "w5",
+ "task": "3x3 seamless under changed physics (repeater step 3 ticks, observer delay 3 ticks)",
+ "n": 3,
+ "track": "seamless",
+ "minutes": 120,
+ "prices": {
+  "claude-fable-5-2": {
+   "in": 8.0,
+   "w5": 10.0,
+   "w1h": 16.0,
+   "read": 0.2,
+   "out": 40.0
+  },
+  "claude-opus-5-5": {
+   "in": 4.0,
+   "w5": 5.0,
+   "w1h": 8.0,
+   "read": 0.2,
+   "out": 20.0
+  },
+  "claude-sonnet-5-5": {
+   "in": 2.0,
+   "w5": 2.5,
+   "w1h": 4.0,
+   "read": 0.1,
+   "out": 10.0
+  },
+  "claude-haiku-5-5": {
+   "in": 0.1,
+   "w5": 0.125,
+   "w1h": 0.2,
+   "read": 0.01,
+   "out": 0.5
+  }
+ },
+ "runs": [
+  {
+   "name": "w5-3x3p-fable-a",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 3,
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "kit": 1,
+   "minutes_limit": 120,
+   "rounds": 2,
+   "notes": [],
+   "minutes_active": 67.72,
+   "excluded_windows": [],
+   "agent_minutes": 78.2,
+   "model_calls": 24,
+   "tokens": {
+    "in": 48,
+    "w5": 1862290,
+    "w1h": 0,
+    "read": 6086328,
+    "out": 428224
+   },
+   "cost": 36.97,
+   "test_calls": 5,
+   "sim_calls": 13,
+   "lab_worlds": 1,
+   "lab_ticks": 235,
+   "best_dev_volume": 72,
+   "best_partial": 1.0,
+   "first_valid_minutes": 27.77,
+   "first_valid_cost": 7.9101,
+   "reference": null,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 27.77,
+     "cost": 7.9101,
+     "valid": true,
+     "volume": 224,
+     "best": 224,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 48.53,
+     "cost": 20.3101,
+     "valid": true,
+     "volume": 168,
+     "best": 168,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 51.27,
+     "cost": 21.3538,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 61.67,
+     "cost": 27.9581,
+     "valid": true,
+     "volume": 90,
+     "best": 90,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 64.78,
+     "cost": 29.0377,
+     "valid": true,
+     "volume": 72,
+     "best": 72,
+     "score": 0.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 72,
+    "dims": [
+     8,
+     9,
+     1
+    ],
+    "score": 0.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w5-3x3p-fable-b",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 3,
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "kit": 1,
+   "minutes_limit": 120,
+   "rounds": 1,
+   "notes": [],
+   "minutes_active": 75.3,
+   "excluded_windows": [],
+   "agent_minutes": 75.3,
+   "model_calls": 20,
+   "tokens": {
+    "in": 40,
+    "w5": 1960442,
+    "w1h": 0,
+    "read": 4063005,
+    "out": 416213
+   },
+   "cost": 37.07,
+   "test_calls": 7,
+   "sim_calls": 9,
+   "lab_worlds": 1,
+   "lab_ticks": 86,
+   "best_dev_volume": 72,
+   "best_partial": 1.0,
+   "first_valid_minutes": 25.15,
+   "first_valid_cost": 7.7238,
+   "reference": null,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 25.15,
+     "cost": 7.7238,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 36.6,
+     "cost": 10.5485,
+     "valid": false,
+     "volume": 168,
+     "best": 189,
+     "score": 0.0,
+     "partial": 0.1296
+    },
+    {
+     "test": 3,
+     "minutes": 36.79,
+     "cost": 13.0636,
+     "valid": true,
+     "volume": 168,
+     "best": 168,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 54.42,
+     "cost": 20.1259,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 61.18,
+     "cost": 25.1862,
+     "valid": false,
+     "volume": 81,
+     "best": 112,
+     "score": 0.0,
+     "partial": 0.3148
+    },
+    {
+     "test": 6,
+     "minutes": 71.58,
+     "cost": 35.533,
+     "valid": true,
+     "volume": 81,
+     "best": 81,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 73.01,
+     "cost": 36.3147,
+     "valid": true,
+     "volume": 72,
+     "best": 72,
+     "score": 0.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 72,
+    "dims": [
+     9,
+     8,
+     1
+    ],
+    "score": 0.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w5-3x3p-fable-c",
+   "model_alias": "fable",
+   "model_ids": [
+    "claude-fable-5-2"
+   ],
+   "n": 3,
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "kit": 1,
+   "minutes_limit": 120,
+   "rounds": 2,
+   "notes": [],
+   "minutes_active": 74.48,
+   "excluded_windows": [],
+   "agent_minutes": 77.5,
+   "model_calls": 27,
+   "tokens": {
+    "in": 54,
+    "w5": 2085760,
+    "w1h": 0,
+    "read": 6512697,
+    "out": 437829
+   },
+   "cost": 39.67,
+   "test_calls": 8,
+   "sim_calls": 21,
+   "lab_worlds": 1,
+   "lab_ticks": 10,
+   "best_dev_volume": 128,
+   "best_partial": 1.0,
+   "first_valid_minutes": 38.37,
+   "first_valid_cost": 17.1246,
+   "reference": null,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 38.37,
+     "cost": 17.1246,
+     "valid": true,
+     "volume": 270,
+     "best": 270,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 2,
+     "minutes": 45.16,
+     "cost": 21.8694,
+     "valid": true,
+     "volume": 180,
+     "best": 180,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 47.56,
+     "cost": 22.4828,
+     "valid": true,
+     "volume": 162,
+     "best": 162,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 50.08,
+     "cost": 23.3561,
+     "valid": false,
+     "volume": 144,
+     "best": 162,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 5,
+     "minutes": 50.21,
+     "cost": 23.6128,
+     "valid": false,
+     "volume": 144,
+     "best": 162,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 6,
+     "minutes": 50.21,
+     "cost": 23.6128,
+     "valid": true,
+     "volume": 144,
+     "best": 144,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 67.05,
+     "cost": 31.6971,
+     "valid": true,
+     "volume": 128,
+     "best": 128,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 8,
+     "minutes": 73.09,
+     "cost": 33.555,
+     "valid": true,
+     "volume": 128,
+     "best": 128,
+     "score": 0.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 128,
+    "dims": [
+     8,
+     8,
+     2
+    ],
+    "score": 0.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w5-3x3p-opus-a",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 3,
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "kit": 1,
+   "minutes_limit": 120,
+   "rounds": 4,
+   "notes": [],
+   "minutes_active": 44.63,
+   "excluded_windows": [],
+   "agent_minutes": 49.8,
+   "model_calls": 21,
+   "tokens": {
+    "in": 48,
+    "w5": 745761,
+    "w1h": 0,
+    "read": 4479884,
+    "out": 299898
+   },
+   "cost": 10.62,
+   "test_calls": 4,
+   "sim_calls": 2,
+   "lab_worlds": 1,
+   "lab_ticks": 30,
+   "best_dev_volume": 112,
+   "best_partial": 1.0,
+   "first_valid_minutes": 39.64,
+   "first_valid_cost": 7.0593,
+   "reference": null,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 31.62,
+     "cost": 4.8527,
+     "valid": false,
+     "volume": 168,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.0556
+    },
+    {
+     "test": 2,
+     "minutes": 39.64,
+     "cost": 7.0593,
+     "valid": true,
+     "volume": 168,
+     "best": 168,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 42.41,
+     "cost": 8.8932,
+     "valid": false,
+     "volume": 128,
+     "best": 168,
+     "score": 0.0,
+     "partial": 0.0741
+    },
+    {
+     "test": 4,
+     "minutes": 42.86,
+     "cost": 9.1064,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 0.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 112,
+    "dims": [
+     7,
+     8,
+     2
+    ],
+    "score": 0.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w5-3x3p-opus-b",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 3,
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "kit": 1,
+   "minutes_limit": 120,
+   "rounds": 4,
+   "notes": [],
+   "minutes_active": 60.24,
+   "excluded_windows": [],
+   "agent_minutes": 64.1,
+   "model_calls": 40,
+   "tokens": {
+    "in": 88,
+    "w5": 1094527,
+    "w1h": 0,
+    "read": 12087703,
+    "out": 384167
+   },
+   "cost": 15.57,
+   "test_calls": 7,
+   "sim_calls": 3,
+   "lab_worlds": 10,
+   "lab_ticks": 3510,
+   "best_dev_volume": 112,
+   "best_partial": 1.0,
+   "first_valid_minutes": 33.94,
+   "first_valid_cost": 7.2735,
+   "reference": null,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 33.06,
+     "cost": 6.996,
+     "valid": false,
+     "volume": 210,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 2,
+     "minutes": 33.49,
+     "cost": 7.1509,
+     "valid": false,
+     "volume": 210,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.1481
+    },
+    {
+     "test": 3,
+     "minutes": 33.94,
+     "cost": 7.2735,
+     "valid": true,
+     "volume": 210,
+     "best": 210,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 37.73,
+     "cost": 7.8784,
+     "valid": true,
+     "volume": 189,
+     "best": 189,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 39.68,
+     "cost": 8.3734,
+     "valid": false,
+     "volume": 126,
+     "best": 189,
+     "score": 0.0,
+     "partial": 0.1111
+    },
+    {
+     "test": 6,
+     "minutes": 40.2,
+     "cost": 8.7065,
+     "valid": true,
+     "volume": 126,
+     "best": 126,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 7,
+     "minutes": 60.06,
+     "cost": 13.7664,
+     "valid": true,
+     "volume": 112,
+     "best": 112,
+     "score": 0.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 112,
+    "dims": [
+     7,
+     8,
+     2
+    ],
+    "score": 0.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0
+  },
+  {
+   "name": "w5-3x3p-opus-c",
+   "model_alias": "opus",
+   "model_ids": [
+    "claude-opus-5-5"
+   ],
+   "n": 3,
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "kit": 1,
+   "minutes_limit": 120,
+   "rounds": 4,
+   "notes": [],
+   "minutes_active": 58.74,
+   "excluded_windows": [],
+   "agent_minutes": 66.7,
+   "model_calls": 39,
+   "tokens": {
+    "in": 84,
+    "w5": 633750,
+    "w1h": 0,
+    "read": 12130443,
+    "out": 407185
+   },
+   "cost": 13.74,
+   "test_calls": 5,
+   "sim_calls": 22,
+   "lab_worlds": 2,
+   "lab_ticks": 703,
+   "best_dev_volume": 216,
+   "best_partial": 1.0,
+   "first_valid_minutes": 40.25,
+   "first_valid_cost": 7.9841,
+   "reference": null,
+   "curve": [
+    {
+     "test": 1,
+     "minutes": 30.78,
+     "cost": 5.8126,
+     "valid": false,
+     "volume": 300,
+     "best": null,
+     "score": 0.0,
+     "partial": 0.2963
+    },
+    {
+     "test": 2,
+     "minutes": 40.25,
+     "cost": 7.9841,
+     "valid": true,
+     "volume": 300,
+     "best": 300,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 3,
+     "minutes": 50.03,
+     "cost": 10.0296,
+     "valid": true,
+     "volume": 270,
+     "best": 270,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 4,
+     "minutes": 51.12,
+     "cost": 10.4408,
+     "valid": true,
+     "volume": 240,
+     "best": 240,
+     "score": 0.0,
+     "partial": 1.0
+    },
+    {
+     "test": 5,
+     "minutes": 55.37,
+     "cost": 11.2871,
+     "valid": true,
+     "volume": 216,
+     "best": 216,
+     "score": 0.0,
+     "partial": 1.0
+    }
+   ],
+   "final": {
+    "valid": true,
+    "volume": 216,
+    "dims": [
+     8,
+     9,
+     3
+    ],
+    "score": 0.0,
+    "translations": {
+     "passed": 11,
+     "of": 11,
+     "failed": [],
+     "failed_offsets": []
+    },
+    "final_failures": [],
+    "candidate_source": "last submit"
+   },
+   "score": 0.0
+  }
+ ]
+}

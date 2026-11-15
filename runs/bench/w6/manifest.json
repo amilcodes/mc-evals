@@ -1,0 +1,124 @@
+{
+ "wave": "w6",
+ "task": "5x5 seamless, first attempt (frozen v1 kit)",
+ "track": "seamless",
+ "loop_rule": "An agent that stops before its time is up gets the same neutral continue message (reprompt.py), at most 3 times per run.",
+ "n": 5,
+ "minutes": 180,
+ "notes": [
+  "Reference 504 is an unverified community claim.",
+  "Launch prompt identical to waves 1-4.",
+  "2026-11-15: the user ended all Fable runs for the day; Fable runs still in progress were stopped and are scored on what they had submitted or tested."
+ ],
+ "runs": [
+  {
+   "name": "w6-5x5-fable-a",
+   "model": "fable",
+   "port": 8971,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-a/kit",
+   "n": 5,
+   "minutes": 180,
+   "status": "finished: stopped by the harness at 80 of 180 min (user ended Fable runs for the day)",
+   "agent": "a61d42e29b642048e",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a61d42e29b642048e.output",
+   "launched_unix": 1794776940,
+   "rounds": 2,
+   "reprompts": [
+    {
+     "unix": 1794780822,
+     "minutes_used": 64.7,
+     "best": null
+    }
+   ]
+  },
+  {
+   "name": "w6-5x5-fable-b",
+   "model": "fable",
+   "port": 8972,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-fable-b/kit",
+   "n": 5,
+   "minutes": 180,
+   "status": "finished: stopped by the harness at 80 of 180 min (user ended Fable runs for the day)",
+   "agent": "a62ebd07513861117",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a62ebd07513861117.output",
+   "launched_unix": 1794776940,
+   "rounds": 3,
+   "reprompts": [
+    {
+     "unix": 1794780969,
+     "minutes_used": 67.1,
+     "best": null
+    },
+    {
+     "unix": 1794781410,
+     "minutes_used": 74.5,
+     "best": null
+    }
+   ]
+  },
+  {
+   "name": "w6-5x5-opus-a",
+   "model": "opus",
+   "port": 8973,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-a/kit",
+   "n": 5,
+   "minutes": 180,
+   "status": "finished: stopped after the third continue message; no door, never called test",
+   "agent": "ab183641f7c42416f",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/ab183641f7c42416f.output",
+   "launched_unix": 1794776941,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794780738,
+     "minutes_used": 63.3,
+     "best": null
+    },
+    {
+     "unix": 1794780954,
+     "minutes_used": 66.9,
+     "best": null
+    },
+    {
+     "unix": 1794781011,
+     "minutes_used": 67.8,
+     "best": null
+    }
+   ]
+  },
+  {
+   "name": "w6-5x5-opus-b",
+   "model": "opus",
+   "port": 8974,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w6/w6-5x5-opus-b/kit",
+   "n": 5,
+   "minutes": 180,
+   "status": "finished: stopped after the third continue message; no door, never called test; two lane modules worked in the lab",
+   "agent": "ac44e2c3ed119ff25",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/ac44e2c3ed119ff25.output",
+   "launched_unix": 1794776941,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794780938,
+     "minutes_used": 66.6,
+     "best": null
+    },
+    {
+     "unix": 1794781429,
+     "minutes_used": 74.8,
+     "best": null
+    },
+    {
+     "unix": 1794781473,
+     "minutes_used": 75.5,
+     "best": null
+    }
+   ]
+  }
+ ]
+}

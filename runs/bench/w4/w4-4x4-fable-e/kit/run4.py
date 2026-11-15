@@ -1,0 +1,6 @@
+exec(open("build4.py").read())
+d=full()
+print(len(d.blocks), d.bbox())
+for x in check(d): print(x)
+d.save("door4.json")
+r=test(d); print(str(r)[:3000])

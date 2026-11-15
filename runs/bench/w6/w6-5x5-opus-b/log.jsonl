@@ -1,0 +1,461 @@
+{"t": 0.0, "unix": 1794776878.28, "kind": "start", "n": 5, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 180}
+{"t": 63.35, "unix": 1794776941.63, "kind": "first_call"}
+{"t": 2072.42, "unix": 1794778950.71, "kind": "trace", "digest": "b4f0ec9be0d6", "flips": 2}
+{"t": 2094.26, "unix": 1794778972.54, "kind": "lab", "op": "new", "lab": 1, "walls": true, "blocks": [{"pos": [0, 4, 0], "id": "stone"}, {"pos": [0, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 6, 2], "id": "stone"}, {"pos": [0, 6, 3], "id": "stone"}, {"pos": [0, 7, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 7, 2], "id": "redstone_wire"}, {"pos": [0, 7, 3], "id": "lever", "props": {"face": "floor", "facing": "north"}}]}
+{"t": 0, "unix": 1794778972.57, "kind": "lab", "op": "flip", "lab": 1, "pos": [0, 7, 3]}
+{"t": 8, "unix": 1794778972.6, "kind": "lab", "op": "step", "lab": 1, "ticks": 8}
+{"t": 2817.53, "unix": 1794779695.82, "kind": "lab", "op": "new", "lab": 2, "walls": false, "blocks": [{"pos": [0, 9, 5], "id": "stone"}, {"pos": [0, 10, 5], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 9, 5], "id": "stone"}, {"pos": [1, 10, 5], "id": "redstone_wire"}, {"pos": [2, 10, 5], "id": "observer", "props": {"facing": "west"}}, {"pos": [3, 10, 5], "id": "sticky_piston", "props": {"facing": "east"}}, {"pos": [4, 10, 5], "id": "stone"}]}
+{"t": 0, "unix": 1794779695.84, "kind": "lab", "op": "flip", "lab": 2, "pos": [0, 10, 5]}
+{"t": 2, "unix": 1794779695.87, "kind": "lab", "op": "step", "lab": 2, "ticks": 2}
+{"t": 2, "unix": 1794779695.88, "kind": "lab", "op": "flip", "lab": 2, "pos": [0, 10, 5]}
+{"t": 14, "unix": 1794779695.9, "kind": "lab", "op": "step", "lab": 2, "ticks": 12}
+{"t": 4291.1, "unix": 1794781169.39, "kind": "lab", "op": "new", "lab": 3, "walls": true, "blocks": [{"pos": [-1, 5, 4], "id": "stone"}, {"pos": [-1, 6, -1], "id": "stone"}, {"pos": [-1, 6, 3], "id": "stone"}, {"pos": [-1, 6, 4], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 7, -3], "id": "stone"}, {"pos": [-1, 7, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 7, 3], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 8, -3], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 8, 2], "id": "stone"}, {"pos": [-1, 9, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [0, 3, 0], "id": "stone"}, {"pos": [0, 4, 0], "id": "stone"}, {"pos": [0, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [0, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [0, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 6, 4], "id": "redstone_wire"}, {"pos": [0, 7, -3], "id": "stone"}, {"pos": [0, 7, -1], "id": "redstone_wire"}, {"pos": [0, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 7, 3], "id": "redstone_wire"}, {"pos": [0, 8, -3], "id": "redstone_wire"}, {"pos": [0, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 8, 2], "id": "stone"}, {"pos": [0, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 9, 2], "id": "redstone_wire"}, {"pos": [1, 3, 0], "id": "stone"}, {"pos": [1, 4, 0], "id": "stone"}, {"pos": [1, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [1, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [1, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [1, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 6, 4], "id": "redstone_wire"}, {"pos": [1, 7, -3], "id": "stone"}, {"pos": [1, 7, -1], "id": "redstone_wire"}, {"pos": [1, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 7, 3], "id": "redstone_wire"}, {"pos": [1, 8, -3], "id": "redstone_wire"}, {"pos": [1, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [1, 8, 2], "id": "stone"}, {"pos": [1, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [1, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 9, 2], "id": "redstone_wire"}, {"pos": [2, 3, 0], "id": "stone"}, {"pos": [2, 4, 0], "id": "stone"}, {"pos": [2, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [2, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 6, 4], "id": "redstone_wire"}, {"pos": [2, 7, -3], "id": "stone"}, {"pos": [2, 7, -1], "id": "redstone_wire"}, {"pos": [2, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 7, 3], "id": "redstone_wire"}, {"pos": [2, 8, -3], "id": "redstone_wire"}, {"pos": [2, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 8, 2], "id": "stone"}, {"pos": [2, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 9, 2], "id": "redstone_wire"}, {"pos": [3, 3, 0], "id": "stone"}, {"pos": [3, 4, 0], "id": "stone"}, {"pos": [3, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [3, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [3, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [3, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 6, 4], "id": "redstone_wire"}, {"pos": [3, 7, -3], "id": "stone"}, {"pos": [3, 7, -1], "id": "redstone_wire"}, {"pos": [3, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 7, 3], "id": "redstone_wire"}, {"pos": [3, 8, -3], "id": "redstone_wire"}, {"pos": [3, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [3, 8, 2], "id": "stone"}, {"pos": [3, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [3, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 9, 2], "id": "redstone_wire"}, {"pos": [4, 3, 0], "id": "stone"}, {"pos": [4, 4, 0], "id": "stone"}, {"pos": [4, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [4, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [4, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [4, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 6, 4], "id": "redstone_wire"}, {"pos": [4, 7, -3], "id": "stone"}, {"pos": [4, 7, -1], "id": "redstone_wire"}, {"pos": [4, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 7, 3], "id": "redstone_wire"}, {"pos": [4, 8, -3], "id": "redstone_wire"}, {"pos": [4, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [4, 8, 2], "id": "stone"}, {"pos": [4, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [4, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 9, 2], "id": "redstone_wire"}]}
+{"t": 0, "unix": 1794781169.65, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 2, "unix": 1794781169.67, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 2, "unix": 1794781169.7, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 10, "unix": 1794781169.72, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 10, "unix": 1794781170.06, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 8, -3]}
+{"t": 12, "unix": 1794781170.09, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 12, "unix": 1794781170.14, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 8, -3]}
+{"t": 20, "unix": 1794781170.18, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 20, "unix": 1794781170.63, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 22, "unix": 1794781170.66, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 22, "unix": 1794781170.7, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 30, "unix": 1794781170.75, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 30, "unix": 1794781171.14, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 6, 4]}
+{"t": 32, "unix": 1794781171.17, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 32, "unix": 1794781171.22, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 6, 4]}
+{"t": 40, "unix": 1794781171.27, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 40, "unix": 1794781171.65, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 8, -3]}
+{"t": 42, "unix": 1794781171.69, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 42, "unix": 1794781171.72, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 8, -3]}
+{"t": 50, "unix": 1794781171.77, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 50, "unix": 1794781172.21, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 9, 2]}
+{"t": 52, "unix": 1794781172.27, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 52, "unix": 1794781172.34, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 9, 2]}
+{"t": 60, "unix": 1794781172.47, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 60, "unix": 1794781173.04, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 62, "unix": 1794781173.09, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 62, "unix": 1794781173.15, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 70, "unix": 1794781173.21, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 70, "unix": 1794781173.72, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, -1]}
+{"t": 72, "unix": 1794781173.79, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 72, "unix": 1794781173.86, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, -1]}
+{"t": 80, "unix": 1794781173.94, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 80, "unix": 1794781174.58, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 82, "unix": 1794781174.65, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 82, "unix": 1794781174.7, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 90, "unix": 1794781174.76, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 90, "unix": 1794781175.36, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 9, 2]}
+{"t": 92, "unix": 1794781175.42, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 92, "unix": 1794781175.47, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 9, 2]}
+{"t": 100, "unix": 1794781175.53, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 100, "unix": 1794781176.11, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 102, "unix": 1794781176.17, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 102, "unix": 1794781176.23, "kind": "lab", "op": "flip", "lab": 3, "pos": [-1, 7, 3]}
+{"t": 110, "unix": 1794781176.3, "kind": "lab", "op": "step", "lab": 3, "ticks": 8}
+{"t": 4310.64, "unix": 1794781188.92, "kind": "lab", "op": "new", "lab": 4, "walls": true, "blocks": [{"pos": [-1, 5, 4], "id": "stone"}, {"pos": [-1, 6, -1], "id": "stone"}, {"pos": [-1, 6, 3], "id": "stone"}, {"pos": [-1, 6, 4], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 7, -3], "id": "stone"}, {"pos": [-1, 7, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 7, 3], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 7, 4], "id": "stone"}, {"pos": [-1, 8, -3], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, 8, 2], "id": "stone"}, {"pos": [-1, 9, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [0, 3, 0], "id": "stone"}, {"pos": [0, 4, 0], "id": "stone"}, {"pos": [0, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [0, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [0, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 6, 4], "id": "redstone_wire"}, {"pos": [0, 7, -3], "id": "stone"}, {"pos": [0, 7, -1], "id": "redstone_wire"}, {"pos": [0, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 7, 3], "id": "redstone_wire"}, {"pos": [0, 7, 4], "id": "stone"}, {"pos": [0, 8, -3], "id": "redstone_wire"}, {"pos": [0, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 8, 2], "id": "stone"}, {"pos": [0, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [0, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, 9, 2], "id": "redstone_wire"}, {"pos": [1, 3, 0], "id": "stone"}, {"pos": [1, 4, 0], "id": "stone"}, {"pos": [1, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [1, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [1, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [1, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 6, 4], "id": "redstone_wire"}, {"pos": [1, 7, -3], "id": "stone"}, {"pos": [1, 7, -1], "id": "redstone_wire"}, {"pos": [1, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 7, 3], "id": "redstone_wire"}, {"pos": [1, 7, 4], "id": "stone"}, {"pos": [1, 8, -3], "id": "redstone_wire"}, {"pos": [1, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [1, 8, 2], "id": "stone"}, {"pos": [1, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [1, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, 9, 2], "id": "redstone_wire"}, {"pos": [2, 3, 0], "id": "stone"}, {"pos": [2, 4, 0], "id": "stone"}, {"pos": [2, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [2, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 6, 4], "id": "redstone_wire"}, {"pos": [2, 7, -3], "id": "stone"}, {"pos": [2, 7, -1], "id": "redstone_wire"}, {"pos": [2, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 7, 3], "id": "redstone_wire"}, {"pos": [2, 7, 4], "id": "stone"}, {"pos": [2, 8, -3], "id": "redstone_wire"}, {"pos": [2, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 8, 2], "id": "stone"}, {"pos": [2, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, 9, 2], "id": "redstone_wire"}, {"pos": [3, 3, 0], "id": "stone"}, {"pos": [3, 4, 0], "id": "stone"}, {"pos": [3, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [3, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [3, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [3, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 6, 4], "id": "redstone_wire"}, {"pos": [3, 7, -3], "id": "stone"}, {"pos": [3, 7, -1], "id": "redstone_wire"}, {"pos": [3, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 7, 3], "id": "redstone_wire"}, {"pos": [3, 7, 4], "id": "stone"}, {"pos": [3, 8, -3], "id": "redstone_wire"}, {"pos": [3, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [3, 8, 2], "id": "stone"}, {"pos": [3, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [3, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, 9, 2], "id": "redstone_wire"}, {"pos": [4, 3, 0], "id": "stone"}, {"pos": [4, 4, 0], "id": "stone"}, {"pos": [4, 6, -1], "id": "observer", "props": {"facing": "up"}}, {"pos": [4, 6, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [4, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [4, 6, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 6, 4], "id": "redstone_wire"}, {"pos": [4, 7, -3], "id": "stone"}, {"pos": [4, 7, -1], "id": "redstone_wire"}, {"pos": [4, 7, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 7, 2], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 7, 3], "id": "redstone_wire"}, {"pos": [4, 7, 4], "id": "stone"}, {"pos": [4, 8, -3], "id": "redstone_wire"}, {"pos": [4, 8, -2], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, 8, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [4, 8, 2], "id": "stone"}, {"pos": [4, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [4, 9, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, 9, 2], "id": "redstone_wire"}]}
+{"t": 0, "unix": 1794781189.13, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 2, "unix": 1794781189.14, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 2, "unix": 1794781189.16, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 10, "unix": 1794781189.18, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 10, "unix": 1794781189.42, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 12, "unix": 1794781189.45, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 12, "unix": 1794781189.47, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 20, "unix": 1794781189.5, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 20, "unix": 1794781189.77, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 22, "unix": 1794781189.79, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 22, "unix": 1794781189.82, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 30, "unix": 1794781189.85, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 30, "unix": 1794781190.11, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 6, 4]}
+{"t": 32, "unix": 1794781190.16, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 32, "unix": 1794781190.29, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 6, 4]}
+{"t": 40, "unix": 1794781190.39, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 40, "unix": 1794781190.72, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 42, "unix": 1794781190.76, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 42, "unix": 1794781190.8, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 50, "unix": 1794781190.84, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 50, "unix": 1794781191.26, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 52, "unix": 1794781191.3, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 52, "unix": 1794781191.33, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 60, "unix": 1794781191.37, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 60, "unix": 1794781191.83, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 62, "unix": 1794781191.87, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 62, "unix": 1794781191.92, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 70, "unix": 1794781191.97, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 70, "unix": 1794781192.43, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, -1]}
+{"t": 72, "unix": 1794781192.48, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 72, "unix": 1794781192.52, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, -1]}
+{"t": 80, "unix": 1794781192.57, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 80, "unix": 1794781193.04, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 82, "unix": 1794781193.12, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 82, "unix": 1794781193.17, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 90, "unix": 1794781193.23, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 90, "unix": 1794781193.75, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 92, "unix": 1794781193.81, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 92, "unix": 1794781193.87, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 100, "unix": 1794781193.94, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 100, "unix": 1794781194.56, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 102, "unix": 1794781194.62, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 102, "unix": 1794781194.69, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 110, "unix": 1794781194.76, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 110, "unix": 1794781195.37, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 112, "unix": 1794781195.44, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 112, "unix": 1794781195.52, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 120, "unix": 1794781195.69, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 120, "unix": 1794781196.53, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 122, "unix": 1794781196.6, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 122, "unix": 1794781196.67, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 130, "unix": 1794781196.75, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 130, "unix": 1794781197.53, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 132, "unix": 1794781197.61, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 132, "unix": 1794781197.69, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 140, "unix": 1794781197.77, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 140, "unix": 1794781198.52, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, -1]}
+{"t": 142, "unix": 1794781198.61, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 142, "unix": 1794781198.69, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, -1]}
+{"t": 150, "unix": 1794781198.78, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 150, "unix": 1794781199.76, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 152, "unix": 1794781199.87, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 152, "unix": 1794781199.98, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 160, "unix": 1794781200.14, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 160, "unix": 1794781201.04, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 162, "unix": 1794781201.13, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 162, "unix": 1794781201.23, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 9, 2]}
+{"t": 170, "unix": 1794781201.32, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 170, "unix": 1794781202.23, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 172, "unix": 1794781202.32, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 172, "unix": 1794781202.43, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 180, "unix": 1794781202.53, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 180, "unix": 1794781203.66, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 6, 4]}
+{"t": 182, "unix": 1794781203.77, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 182, "unix": 1794781203.88, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 6, 4]}
+{"t": 190, "unix": 1794781203.99, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 190, "unix": 1794781205.07, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 192, "unix": 1794781205.18, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 192, "unix": 1794781205.29, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 200, "unix": 1794781205.4, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 200, "unix": 1794781206.42, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 202, "unix": 1794781206.53, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 202, "unix": 1794781206.65, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 8, -3]}
+{"t": 210, "unix": 1794781206.77, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 210, "unix": 1794781207.9, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 212, "unix": 1794781208.02, "kind": "lab", "op": "step", "lab": 4, "ticks": 2}
+{"t": 212, "unix": 1794781208.14, "kind": "lab", "op": "flip", "lab": 4, "pos": [-1, 7, 3]}
+{"t": 220, "unix": 1794781208.27, "kind": "lab", "op": "step", "lab": 4, "ticks": 8}
+{"t": 4368.05, "unix": 1794781246.33, "kind": "lab", "op": "new", "lab": 5, "walls": true, "blocks": [{"pos": [-1, -6, 2], "id": "stone"}, {"pos": [-1, -5, -2], "id": "stone"}, {"pos": [-1, -5, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -1], "id": "stone"}, {"pos": [-1, -4, 2], "id": "stone"}, {"pos": [-1, -3, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 4], "id": "stone"}, {"pos": [-1, -2, 4], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [0, -6, 2], "id": "stone"}, {"pos": [0, -5, -2], "id": "stone"}, {"pos": [0, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -5, 2], "id": "redstone_wire"}, {"pos": [0, -4, -2], "id": "redstone_wire"}, {"pos": [0, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -4, 2], "id": "stone"}, {"pos": [0, -3, -1], "id": "redstone_wire"}, {"pos": [0, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -3, 2], "id": "redstone_wire"}, {"pos": [0, -3, 4], "id": "stone"}, {"pos": [0, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [0, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [0, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -2, 4], "id": "redstone_wire"}, {"pos": [0, 0, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [1, -6, 2], "id": "stone"}, {"pos": [1, -5, -2], "id": "stone"}, {"pos": [1, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -5, 2], "id": "redstone_wire"}, {"pos": [1, -4, -2], "id": "redstone_wire"}, {"pos": [1, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -4, 2], "id": "stone"}, {"pos": [1, -3, -1], "id": "redstone_wire"}, {"pos": [1, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -3, 2], "id": "redstone_wire"}, {"pos": [1, -3, 4], "id": "stone"}, {"pos": [1, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [1, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -2, 4], "id": "redstone_wire"}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [2, -6, 2], "id": "stone"}, {"pos": [2, -5, -2], "id": "stone"}, {"pos": [2, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -5, 2], "id": "redstone_wire"}, {"pos": [2, -4, -2], "id": "redstone_wire"}, {"pos": [2, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -4, 2], "id": "stone"}, {"pos": [2, -3, -1], "id": "redstone_wire"}, {"pos": [2, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -3, 2], "id": "redstone_wire"}, {"pos": [2, -3, 4], "id": "stone"}, {"pos": [2, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [2, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -2, 4], "id": "redstone_wire"}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [3, -6, 2], "id": "stone"}, {"pos": [3, -5, -2], "id": "stone"}, {"pos": [3, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -5, 2], "id": "redstone_wire"}, {"pos": [3, -4, -2], "id": "redstone_wire"}, {"pos": [3, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -4, 2], "id": "stone"}, {"pos": [3, -3, -1], "id": "redstone_wire"}, {"pos": [3, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -3, 2], "id": "redstone_wire"}, {"pos": [3, -3, 4], "id": "stone"}, {"pos": [3, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [3, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [3, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -2, 4], "id": "redstone_wire"}, {"pos": [3, 0, 0], "id": "stone"}, {"pos": [3, 1, 0], "id": "stone"}, {"pos": [4, -6, 2], "id": "stone"}, {"pos": [4, -5, -2], "id": "stone"}, {"pos": [4, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -5, 2], "id": "redstone_wire"}, {"pos": [4, -4, -2], "id": "redstone_wire"}, {"pos": [4, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -4, 2], "id": "stone"}, {"pos": [4, -3, -1], "id": "redstone_wire"}, {"pos": [4, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -3, 2], "id": "redstone_wire"}, {"pos": [4, -3, 4], "id": "stone"}, {"pos": [4, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [4, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [4, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -2, 4], "id": "redstone_wire"}, {"pos": [4, 0, 0], "id": "stone"}, {"pos": [4, 1, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794781246.47, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 2, "unix": 1794781246.48, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 2, "unix": 1794781246.49, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 10, "unix": 1794781246.51, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 10, "unix": 1794781246.69, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 12, "unix": 1794781246.71, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 12, "unix": 1794781246.73, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 20, "unix": 1794781246.75, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 20, "unix": 1794781246.99, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 22, "unix": 1794781247.03, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 22, "unix": 1794781247.05, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 30, "unix": 1794781247.08, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 30, "unix": 1794781247.47, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -2, 4]}
+{"t": 32, "unix": 1794781247.51, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 32, "unix": 1794781247.54, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -2, 4]}
+{"t": 40, "unix": 1794781247.57, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 40, "unix": 1794781247.89, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 42, "unix": 1794781247.92, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 42, "unix": 1794781247.96, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 50, "unix": 1794781248.0, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 50, "unix": 1794781248.49, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 52, "unix": 1794781248.53, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 52, "unix": 1794781248.57, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 60, "unix": 1794781248.61, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 60, "unix": 1794781249.08, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 62, "unix": 1794781249.13, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 62, "unix": 1794781249.18, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 70, "unix": 1794781249.23, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 70, "unix": 1794781249.76, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, -1]}
+{"t": 72, "unix": 1794781249.81, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 72, "unix": 1794781249.87, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, -1]}
+{"t": 80, "unix": 1794781249.92, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 80, "unix": 1794781250.45, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 82, "unix": 1794781250.51, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 82, "unix": 1794781250.57, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 90, "unix": 1794781250.62, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 90, "unix": 1794781251.31, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 92, "unix": 1794781251.46, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 92, "unix": 1794781251.65, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 100, "unix": 1794781251.96, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 100, "unix": 1794781252.93, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 102, "unix": 1794781253.02, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 102, "unix": 1794781253.11, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 110, "unix": 1794781253.19, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 110, "unix": 1794781254.26, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 112, "unix": 1794781254.35, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 112, "unix": 1794781254.43, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 120, "unix": 1794781254.58, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 120, "unix": 1794781255.38, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 122, "unix": 1794781255.47, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 122, "unix": 1794781255.58, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 130, "unix": 1794781255.66, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 130, "unix": 1794781256.46, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 132, "unix": 1794781256.54, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 132, "unix": 1794781256.63, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 140, "unix": 1794781256.71, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 140, "unix": 1794781257.75, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, -1]}
+{"t": 142, "unix": 1794781257.85, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 142, "unix": 1794781257.95, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, -1]}
+{"t": 150, "unix": 1794781258.08, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 150, "unix": 1794781259.08, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 152, "unix": 1794781259.21, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 152, "unix": 1794781259.32, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 160, "unix": 1794781259.43, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 160, "unix": 1794781260.48, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 162, "unix": 1794781260.58, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 162, "unix": 1794781260.69, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -5, 2]}
+{"t": 170, "unix": 1794781260.81, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 170, "unix": 1794781262.03, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 172, "unix": 1794781262.18, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 172, "unix": 1794781262.3, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 180, "unix": 1794781262.42, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 180, "unix": 1794781263.46, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -2, 4]}
+{"t": 182, "unix": 1794781263.58, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 182, "unix": 1794781263.7, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -2, 4]}
+{"t": 190, "unix": 1794781263.81, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 190, "unix": 1794781264.84, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 192, "unix": 1794781264.94, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 192, "unix": 1794781265.06, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 200, "unix": 1794781265.17, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 200, "unix": 1794781266.37, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 202, "unix": 1794781266.5, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 202, "unix": 1794781266.62, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -4, -2]}
+{"t": 210, "unix": 1794781266.74, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 210, "unix": 1794781267.88, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 212, "unix": 1794781268.0, "kind": "lab", "op": "step", "lab": 5, "ticks": 2}
+{"t": 212, "unix": 1794781268.12, "kind": "lab", "op": "flip", "lab": 5, "pos": [-1, -3, 2]}
+{"t": 220, "unix": 1794781268.24, "kind": "lab", "op": "step", "lab": 5, "ticks": 8}
+{"t": 4404.03, "unix": 1794781282.32, "kind": "lab", "op": "new", "lab": 6, "walls": true, "blocks": [{"pos": [-1, -6, 2], "id": "stone"}, {"pos": [-1, -5, -2], "id": "stone"}, {"pos": [-1, -5, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -1], "id": "stone"}, {"pos": [-1, -4, 2], "id": "stone"}, {"pos": [-1, -3, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 4], "id": "stone"}, {"pos": [-1, -2, 4], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [0, -6, 2], "id": "stone"}, {"pos": [0, -5, -2], "id": "stone"}, {"pos": [0, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -5, 2], "id": "redstone_wire"}, {"pos": [0, -4, -2], "id": "redstone_wire"}, {"pos": [0, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -4, 2], "id": "stone"}, {"pos": [0, -3, -1], "id": "redstone_wire"}, {"pos": [0, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -3, 2], "id": "redstone_wire"}, {"pos": [0, -3, 4], "id": "stone"}, {"pos": [0, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [0, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [0, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -2, 4], "id": "redstone_wire"}, {"pos": [0, 0, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [1, -6, 2], "id": "stone"}, {"pos": [1, -5, -2], "id": "stone"}, {"pos": [1, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -5, 2], "id": "redstone_wire"}, {"pos": [1, -4, -2], "id": "redstone_wire"}, {"pos": [1, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -4, 2], "id": "stone"}, {"pos": [1, -3, -1], "id": "redstone_wire"}, {"pos": [1, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -3, 2], "id": "redstone_wire"}, {"pos": [1, -3, 4], "id": "stone"}, {"pos": [1, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [1, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -2, 4], "id": "redstone_wire"}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [2, -6, 2], "id": "stone"}, {"pos": [2, -5, -2], "id": "stone"}, {"pos": [2, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -5, 2], "id": "redstone_wire"}, {"pos": [2, -4, -2], "id": "redstone_wire"}, {"pos": [2, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -4, 2], "id": "stone"}, {"pos": [2, -3, -1], "id": "redstone_wire"}, {"pos": [2, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -3, 2], "id": "redstone_wire"}, {"pos": [2, -3, 4], "id": "stone"}, {"pos": [2, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [2, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -2, 4], "id": "redstone_wire"}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [3, -6, 2], "id": "stone"}, {"pos": [3, -5, -2], "id": "stone"}, {"pos": [3, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -5, 2], "id": "redstone_wire"}, {"pos": [3, -4, -2], "id": "redstone_wire"}, {"pos": [3, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -4, 2], "id": "stone"}, {"pos": [3, -3, -1], "id": "redstone_wire"}, {"pos": [3, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -3, 2], "id": "redstone_wire"}, {"pos": [3, -3, 4], "id": "stone"}, {"pos": [3, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [3, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [3, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -2, 4], "id": "redstone_wire"}, {"pos": [3, 0, 0], "id": "stone"}, {"pos": [3, 1, 0], "id": "stone"}, {"pos": [4, -6, 2], "id": "stone"}, {"pos": [4, -5, -2], "id": "stone"}, {"pos": [4, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -5, 2], "id": "redstone_wire"}, {"pos": [4, -4, -2], "id": "redstone_wire"}, {"pos": [4, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -4, 2], "id": "stone"}, {"pos": [4, -3, -1], "id": "redstone_wire"}, {"pos": [4, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -3, 2], "id": "redstone_wire"}, {"pos": [4, -3, 4], "id": "stone"}, {"pos": [4, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [4, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [4, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -2, 4], "id": "redstone_wire"}, {"pos": [4, 0, 0], "id": "stone"}, {"pos": [4, 1, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794781282.48, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 2, "unix": 1794781282.49, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 2, "unix": 1794781282.51, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 10, "unix": 1794781282.53, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 10, "unix": 1794781282.74, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 12, "unix": 1794781282.75, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 12, "unix": 1794781282.77, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 20, "unix": 1794781282.8, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 20, "unix": 1794781283.12, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 22, "unix": 1794781283.14, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 22, "unix": 1794781283.19, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 30, "unix": 1794781283.23, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 30, "unix": 1794781283.59, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -2, 4]}
+{"t": 32, "unix": 1794781283.63, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 32, "unix": 1794781283.66, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -2, 4]}
+{"t": 40, "unix": 1794781283.71, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 40, "unix": 1794781284.23, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 42, "unix": 1794781284.28, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 42, "unix": 1794781284.33, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 50, "unix": 1794781284.38, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 50, "unix": 1794781285.08, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 52, "unix": 1794781285.16, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 52, "unix": 1794781285.27, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 60, "unix": 1794781285.32, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 60, "unix": 1794781286.01, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 62, "unix": 1794781286.16, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 62, "unix": 1794781286.23, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 70, "unix": 1794781286.31, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 70, "unix": 1794781286.83, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 72, "unix": 1794781286.88, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 72, "unix": 1794781286.92, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 80, "unix": 1794781286.98, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 80, "unix": 1794781287.47, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 82, "unix": 1794781287.52, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 82, "unix": 1794781287.58, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 90, "unix": 1794781287.64, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 90, "unix": 1794781288.17, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 92, "unix": 1794781288.23, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 92, "unix": 1794781288.29, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 100, "unix": 1794781288.35, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 100, "unix": 1794781288.98, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 102, "unix": 1794781289.05, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 102, "unix": 1794781289.12, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 110, "unix": 1794781289.2, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 110, "unix": 1794781290.2, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 112, "unix": 1794781290.29, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 112, "unix": 1794781290.36, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 120, "unix": 1794781290.44, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 120, "unix": 1794781291.98, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 122, "unix": 1794781292.11, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 122, "unix": 1794781292.31, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 130, "unix": 1794781292.43, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 130, "unix": 1794781293.57, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 132, "unix": 1794781293.67, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 132, "unix": 1794781293.76, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 140, "unix": 1794781293.92, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 140, "unix": 1794781294.77, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 142, "unix": 1794781294.87, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 142, "unix": 1794781294.96, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 150, "unix": 1794781295.11, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 150, "unix": 1794781295.98, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 152, "unix": 1794781296.09, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 152, "unix": 1794781296.19, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 160, "unix": 1794781296.28, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 160, "unix": 1794781297.18, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 162, "unix": 1794781297.28, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 162, "unix": 1794781297.37, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -5, 2]}
+{"t": 170, "unix": 1794781297.47, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 170, "unix": 1794781298.37, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 172, "unix": 1794781298.5, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 172, "unix": 1794781298.6, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 180, "unix": 1794781298.7, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 180, "unix": 1794781299.65, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -2, 4]}
+{"t": 182, "unix": 1794781299.75, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 182, "unix": 1794781299.86, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -2, 4]}
+{"t": 190, "unix": 1794781299.96, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 190, "unix": 1794781300.94, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 192, "unix": 1794781301.05, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 192, "unix": 1794781301.16, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, 2]}
+{"t": 200, "unix": 1794781301.27, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 200, "unix": 1794781302.36, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 202, "unix": 1794781302.48, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 202, "unix": 1794781302.62, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -4, -2]}
+{"t": 210, "unix": 1794781302.8, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 210, "unix": 1794781304.24, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 212, "unix": 1794781304.37, "kind": "lab", "op": "step", "lab": 6, "ticks": 2}
+{"t": 212, "unix": 1794781304.49, "kind": "lab", "op": "flip", "lab": 6, "pos": [-1, -3, -1]}
+{"t": 220, "unix": 1794781304.61, "kind": "lab", "op": "step", "lab": 6, "ticks": 8}
+{"t": 4437.64, "unix": 1794781315.92, "kind": "lab", "op": "new", "lab": 7, "walls": true, "blocks": [{"pos": [-1, -6, 2], "id": "stone"}, {"pos": [-1, -5, -2], "id": "stone"}, {"pos": [-1, -5, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -1], "id": "stone"}, {"pos": [-1, -4, 2], "id": "stone"}, {"pos": [-1, -3, -2], "id": "stone"}, {"pos": [-1, -3, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 4], "id": "stone"}, {"pos": [-1, -2, 4], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [0, -6, 2], "id": "stone"}, {"pos": [0, -5, -2], "id": "stone"}, {"pos": [0, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -5, 2], "id": "redstone_wire"}, {"pos": [0, -4, -2], "id": "redstone_wire"}, {"pos": [0, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -4, 2], "id": "stone"}, {"pos": [0, -3, -2], "id": "stone"}, {"pos": [0, -3, -1], "id": "redstone_wire"}, {"pos": [0, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -3, 2], "id": "redstone_wire"}, {"pos": [0, -3, 4], "id": "stone"}, {"pos": [0, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [0, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [0, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -2, 4], "id": "redstone_wire"}, {"pos": [0, 0, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [1, -6, 2], "id": "stone"}, {"pos": [1, -5, -2], "id": "stone"}, {"pos": [1, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -5, 2], "id": "redstone_wire"}, {"pos": [1, -4, -2], "id": "redstone_wire"}, {"pos": [1, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -4, 2], "id": "stone"}, {"pos": [1, -3, -2], "id": "stone"}, {"pos": [1, -3, -1], "id": "redstone_wire"}, {"pos": [1, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -3, 2], "id": "redstone_wire"}, {"pos": [1, -3, 4], "id": "stone"}, {"pos": [1, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [1, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -2, 4], "id": "redstone_wire"}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [2, -6, 2], "id": "stone"}, {"pos": [2, -5, -2], "id": "stone"}, {"pos": [2, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -5, 2], "id": "redstone_wire"}, {"pos": [2, -4, -2], "id": "redstone_wire"}, {"pos": [2, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -4, 2], "id": "stone"}, {"pos": [2, -3, -2], "id": "stone"}, {"pos": [2, -3, -1], "id": "redstone_wire"}, {"pos": [2, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -3, 2], "id": "redstone_wire"}, {"pos": [2, -3, 4], "id": "stone"}, {"pos": [2, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [2, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -2, 4], "id": "redstone_wire"}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [3, -6, 2], "id": "stone"}, {"pos": [3, -5, -2], "id": "stone"}, {"pos": [3, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -5, 2], "id": "redstone_wire"}, {"pos": [3, -4, -2], "id": "redstone_wire"}, {"pos": [3, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -4, 2], "id": "stone"}, {"pos": [3, -3, -2], "id": "stone"}, {"pos": [3, -3, -1], "id": "redstone_wire"}, {"pos": [3, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -3, 2], "id": "redstone_wire"}, {"pos": [3, -3, 4], "id": "stone"}, {"pos": [3, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [3, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [3, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -2, 4], "id": "redstone_wire"}, {"pos": [3, 0, 0], "id": "stone"}, {"pos": [3, 1, 0], "id": "stone"}, {"pos": [4, -6, 2], "id": "stone"}, {"pos": [4, -5, -2], "id": "stone"}, {"pos": [4, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -5, 2], "id": "redstone_wire"}, {"pos": [4, -4, -2], "id": "redstone_wire"}, {"pos": [4, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -4, 2], "id": "stone"}, {"pos": [4, -3, -2], "id": "stone"}, {"pos": [4, -3, -1], "id": "redstone_wire"}, {"pos": [4, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -3, 2], "id": "redstone_wire"}, {"pos": [4, -3, 4], "id": "stone"}, {"pos": [4, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [4, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [4, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -2, 4], "id": "redstone_wire"}, {"pos": [4, 0, 0], "id": "stone"}, {"pos": [4, 1, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794781316.12, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 2, "unix": 1794781316.14, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 2, "unix": 1794781316.16, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 10, "unix": 1794781316.18, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 10, "unix": 1794781316.38, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 12, "unix": 1794781316.41, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 12, "unix": 1794781316.43, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 20, "unix": 1794781316.46, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 20, "unix": 1794781316.68, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 22, "unix": 1794781316.7, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 22, "unix": 1794781316.73, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 30, "unix": 1794781316.75, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 30, "unix": 1794781317.02, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -2, 4]}
+{"t": 32, "unix": 1794781317.06, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 32, "unix": 1794781317.08, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -2, 4]}
+{"t": 40, "unix": 1794781317.12, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 40, "unix": 1794781317.43, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 42, "unix": 1794781317.46, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 42, "unix": 1794781317.49, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 50, "unix": 1794781317.53, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 50, "unix": 1794781317.87, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 52, "unix": 1794781317.91, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 52, "unix": 1794781317.95, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 60, "unix": 1794781317.99, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 60, "unix": 1794781318.39, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 62, "unix": 1794781318.43, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 62, "unix": 1794781318.47, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 70, "unix": 1794781318.52, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 70, "unix": 1794781318.98, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 72, "unix": 1794781319.04, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 72, "unix": 1794781319.09, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 80, "unix": 1794781319.14, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 80, "unix": 1794781319.79, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 82, "unix": 1794781319.84, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 82, "unix": 1794781319.89, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 90, "unix": 1794781319.95, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 90, "unix": 1794781320.52, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 92, "unix": 1794781320.58, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 92, "unix": 1794781320.64, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 100, "unix": 1794781320.7, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 100, "unix": 1794781321.32, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 102, "unix": 1794781321.4, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 102, "unix": 1794781321.47, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 110, "unix": 1794781321.55, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 110, "unix": 1794781322.45, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 112, "unix": 1794781322.53, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 112, "unix": 1794781322.61, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 120, "unix": 1794781322.7, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 120, "unix": 1794781323.55, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 122, "unix": 1794781323.63, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 122, "unix": 1794781323.71, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 130, "unix": 1794781323.8, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 130, "unix": 1794781324.61, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 132, "unix": 1794781324.69, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 132, "unix": 1794781324.77, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 140, "unix": 1794781324.86, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 140, "unix": 1794781325.65, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 142, "unix": 1794781325.74, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 142, "unix": 1794781325.83, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 150, "unix": 1794781325.92, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 150, "unix": 1794781326.76, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 152, "unix": 1794781326.85, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 152, "unix": 1794781326.95, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 160, "unix": 1794781327.05, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 160, "unix": 1794781328.02, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 162, "unix": 1794781328.13, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 162, "unix": 1794781328.23, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -5, 2]}
+{"t": 170, "unix": 1794781328.33, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 170, "unix": 1794781329.49, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 172, "unix": 1794781329.61, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 172, "unix": 1794781329.74, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 180, "unix": 1794781329.85, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 180, "unix": 1794781331.02, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -2, 4]}
+{"t": 182, "unix": 1794781331.19, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 182, "unix": 1794781331.33, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -2, 4]}
+{"t": 190, "unix": 1794781331.46, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 190, "unix": 1794781332.63, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 192, "unix": 1794781332.76, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 192, "unix": 1794781332.89, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, 2]}
+{"t": 200, "unix": 1794781333.04, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 200, "unix": 1794781334.64, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 202, "unix": 1794781334.76, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 202, "unix": 1794781334.9, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -4, -2]}
+{"t": 210, "unix": 1794781335.05, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 210, "unix": 1794781336.41, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 212, "unix": 1794781336.55, "kind": "lab", "op": "step", "lab": 7, "ticks": 2}
+{"t": 212, "unix": 1794781336.68, "kind": "lab", "op": "flip", "lab": 7, "pos": [-1, -3, -1]}
+{"t": 220, "unix": 1794781336.83, "kind": "lab", "op": "step", "lab": 7, "ticks": 8}
+{"t": 4481.11, "unix": 1794781359.39, "kind": "lab", "op": "new", "lab": 8, "walls": true, "blocks": [{"pos": [-1, -6, 2], "id": "stone"}, {"pos": [-1, -5, -2], "id": "stone"}, {"pos": [-1, -5, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -4, -1], "id": "stone"}, {"pos": [-1, -4, 2], "id": "stone"}, {"pos": [-1, -3, -2], "id": "stone"}, {"pos": [-1, -3, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 2], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [-1, -3, 4], "id": "stone"}, {"pos": [-1, -2, 4], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [0, -6, 2], "id": "stone"}, {"pos": [0, -5, -2], "id": "stone"}, {"pos": [0, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -5, 2], "id": "redstone_wire"}, {"pos": [0, -4, -2], "id": "redstone_wire"}, {"pos": [0, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [0, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -4, 2], "id": "stone"}, {"pos": [0, -3, -2], "id": "stone"}, {"pos": [0, -3, -1], "id": "redstone_wire"}, {"pos": [0, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -3, 2], "id": "redstone_wire"}, {"pos": [0, -3, 4], "id": "stone"}, {"pos": [0, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [0, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [0, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [0, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [0, -2, 4], "id": "redstone_wire"}, {"pos": [0, 0, 0], "id": "stone"}, {"pos": [0, 1, 0], "id": "stone"}, {"pos": [1, -6, 2], "id": "stone"}, {"pos": [1, -5, -2], "id": "stone"}, {"pos": [1, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -5, 2], "id": "redstone_wire"}, {"pos": [1, -4, -2], "id": "redstone_wire"}, {"pos": [1, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [1, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -4, 2], "id": "stone"}, {"pos": [1, -3, -2], "id": "stone"}, {"pos": [1, -3, -1], "id": "redstone_wire"}, {"pos": [1, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -3, 2], "id": "redstone_wire"}, {"pos": [1, -3, 4], "id": "stone"}, {"pos": [1, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [1, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [1, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [1, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [1, -2, 4], "id": "redstone_wire"}, {"pos": [1, 0, 0], "id": "stone"}, {"pos": [1, 1, 0], "id": "stone"}, {"pos": [2, -6, 2], "id": "stone"}, {"pos": [2, -5, -2], "id": "stone"}, {"pos": [2, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -5, 2], "id": "redstone_wire"}, {"pos": [2, -4, -2], "id": "redstone_wire"}, {"pos": [2, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [2, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -4, 2], "id": "stone"}, {"pos": [2, -3, -2], "id": "stone"}, {"pos": [2, -3, -1], "id": "redstone_wire"}, {"pos": [2, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -3, 2], "id": "redstone_wire"}, {"pos": [2, -3, 4], "id": "stone"}, {"pos": [2, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [2, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [2, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [2, -2, 4], "id": "redstone_wire"}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [3, -6, 2], "id": "stone"}, {"pos": [3, -5, -2], "id": "stone"}, {"pos": [3, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -5, 2], "id": "redstone_wire"}, {"pos": [3, -4, -2], "id": "redstone_wire"}, {"pos": [3, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [3, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -4, 2], "id": "stone"}, {"pos": [3, -3, -2], "id": "stone"}, {"pos": [3, -3, -1], "id": "redstone_wire"}, {"pos": [3, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -3, 2], "id": "redstone_wire"}, {"pos": [3, -3, 4], "id": "stone"}, {"pos": [3, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [3, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [3, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [3, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [3, -2, 4], "id": "redstone_wire"}, {"pos": [3, 0, 0], "id": "stone"}, {"pos": [3, 1, 0], "id": "stone"}, {"pos": [4, -6, 2], "id": "stone"}, {"pos": [4, -5, -2], "id": "stone"}, {"pos": [4, -5, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -5, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -5, 2], "id": "redstone_wire"}, {"pos": [4, -4, -2], "id": "redstone_wire"}, {"pos": [4, -4, -1], "id": "observer", "props": {"facing": "north"}}, {"pos": [4, -4, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -4, 2], "id": "stone"}, {"pos": [4, -3, -2], "id": "stone"}, {"pos": [4, -3, -1], "id": "redstone_wire"}, {"pos": [4, -3, 1], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -3, 2], "id": "redstone_wire"}, {"pos": [4, -3, 4], "id": "stone"}, {"pos": [4, -2, -1], "id": "observer", "props": {"facing": "down"}}, {"pos": [4, -2, 0], "id": "sticky_piston", "props": {"facing": "up"}}, {"pos": [4, -2, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [4, -2, 3], "id": "observer", "props": {"facing": "south"}}, {"pos": [4, -2, 4], "id": "redstone_wire"}, {"pos": [4, 0, 0], "id": "stone"}, {"pos": [4, 1, 0], "id": "stone"}]}
+{"t": 0, "unix": 1794781359.41, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 2, "unix": 1794781359.43, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 2, "unix": 1794781359.45, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 10, "unix": 1794781359.48, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 10, "unix": 1794781359.5, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -4, -2]}
+{"t": 12, "unix": 1794781359.52, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 12, "unix": 1794781359.54, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -4, -2]}
+{"t": 20, "unix": 1794781359.57, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 20, "unix": 1794781359.59, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, 2]}
+{"t": 22, "unix": 1794781359.62, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 22, "unix": 1794781359.64, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, 2]}
+{"t": 30, "unix": 1794781359.67, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 30, "unix": 1794781359.7, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -2, 4]}
+{"t": 32, "unix": 1794781359.74, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 32, "unix": 1794781359.8, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -2, 4]}
+{"t": 40, "unix": 1794781359.85, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 40, "unix": 1794781359.88, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -4, -2]}
+{"t": 42, "unix": 1794781359.92, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 42, "unix": 1794781359.96, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -4, -2]}
+{"t": 50, "unix": 1794781360.0, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 50, "unix": 1794781360.07, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -5, 2]}
+{"t": 52, "unix": 1794781360.12, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 52, "unix": 1794781360.16, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -5, 2]}
+{"t": 60, "unix": 1794781360.22, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 60, "unix": 1794781360.28, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, 2]}
+{"t": 62, "unix": 1794781360.33, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 62, "unix": 1794781360.38, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, 2]}
+{"t": 70, "unix": 1794781360.43, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 70, "unix": 1794781360.49, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 72, "unix": 1794781360.54, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 72, "unix": 1794781360.6, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 80, "unix": 1794781360.65, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 80, "unix": 1794781360.72, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, 2]}
+{"t": 82, "unix": 1794781360.78, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 82, "unix": 1794781360.86, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, 2]}
+{"t": 90, "unix": 1794781360.95, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 90, "unix": 1794781361.01, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -5, 2]}
+{"t": 92, "unix": 1794781361.08, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 92, "unix": 1794781361.15, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -5, 2]}
+{"t": 100, "unix": 1794781361.22, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 100, "unix": 1794781361.29, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 102, "unix": 1794781361.38, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 102, "unix": 1794781361.45, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 110, "unix": 1794781361.52, "kind": "lab", "op": "step", "lab": 8, "ticks": 8}
+{"t": 110, "unix": 1794781361.6, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 112, "unix": 1794781361.68, "kind": "lab", "op": "step", "lab": 8, "ticks": 2}
+{"t": 112, "unix": 1794781361.76, "kind": "lab", "op": "flip", "lab": 8, "pos": [-1, -3, -1]}
+{"t": 118, "unix": 1794781361.85, "kind": "lab", "op": "step", "lab": 8, "ticks": 6}

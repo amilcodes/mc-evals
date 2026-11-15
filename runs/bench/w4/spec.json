@@ -1,0 +1,155 @@
+[
+ {
+  "name": "w4-4x4-fable-e",
+  "model": "fable",
+  "port": 8941,
+  "n": 4,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 150,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-fable-e/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-fable-e/kit"
+ },
+ {
+  "name": "w4-4x4-fable-f",
+  "model": "fable",
+  "port": 8942,
+  "n": 4,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 150,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-fable-f/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-fable-f/kit"
+ },
+ {
+  "name": "w4-4x4-opus-e",
+  "model": "opus",
+  "port": 8943,
+  "n": 4,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 150,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-opus-e/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-opus-e/kit"
+ },
+ {
+  "name": "w4-4x4-opus-f",
+  "model": "opus",
+  "port": 8944,
+  "n": 4,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 150,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-opus-f/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-opus-f/kit"
+ },
+ {
+  "name": "w4-4x4-sonnet-e",
+  "model": "sonnet",
+  "port": 8945,
+  "n": 4,
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 150,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-sonnet-e/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-4x4-sonnet-e/kit"
+ },
+ {
+  "name": "w4-3x2-fable-a",
+  "model": "fable",
+  "port": 8946,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-fable-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-fable-a/kit"
+ },
+ {
+  "name": "w4-3x2-fable-b",
+  "model": "fable",
+  "port": 8947,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-fable-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-fable-b/kit"
+ },
+ {
+  "name": "w4-3x2-opus-a",
+  "model": "opus",
+  "port": 8948,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-opus-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-opus-a/kit"
+ },
+ {
+  "name": "w4-3x2-opus-b",
+  "model": "opus",
+  "port": 8949,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-opus-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-opus-b/kit"
+ },
+ {
+  "name": "w4-3x2-sonnet-a",
+  "model": "sonnet",
+  "port": 8950,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-sonnet-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-sonnet-a/kit"
+ },
+ {
+  "name": "w4-3x2-sonnet-b",
+  "model": "sonnet",
+  "port": 8951,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-sonnet-b/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-sonnet-b/kit"
+ },
+ {
+  "name": "w4-3x2-haiku-a",
+  "model": "haiku",
+  "port": 8952,
+  "n": [
+   3,
+   2
+  ],
+  "track": "seamless",
+  "variant": "scratch",
+  "minutes": 120,
+  "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-haiku-a/log.jsonl",
+  "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w4/w4-3x2-haiku-a/kit"
+ }
+]

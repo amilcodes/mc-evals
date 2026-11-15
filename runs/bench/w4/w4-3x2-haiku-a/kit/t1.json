@@ -1,0 +1,6 @@
+{"initial_state": "open", "blocks": [
+ {"pos": [0,-1,0], "id": "stone"},
+ {"pos": [0,-2,0], "id": "sticky_piston", "props": {"facing": "up"}},
+ {"pos": [-2,-2,0], "id": "stone"},
+ {"pos": [-1,-2,0], "id": "lever", "props": {"face": "wall", "facing": "east"}}
+]}

@@ -1,0 +1,82 @@
+{"t": 0.0, "unix": 1794776878.28, "kind": "start", "n": 5, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 180}
+{"t": 63.94, "unix": 1794776942.22, "kind": "first_call"}
+{"t": 2393.28, "unix": 1794779271.56, "kind": "trace", "digest": "b4f0ec9be0d6", "flips": 2}
+{"t": 3771.46, "unix": 1794780649.73, "kind": "lab", "op": "new", "lab": 1, "walls": true, "blocks": [{"pos": [1, 6, -1], "id": "stone"}, {"pos": [1, 7, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 8, -1], "id": "stone"}, {"pos": [1, 9, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 9, 1], "id": "stone"}, {"pos": [1, 10, -1], "id": "stone"}, {"pos": [1, 10, 1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 11, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 11, 1], "id": "stone"}, {"pos": [1, 12, -1], "id": "stone"}, {"pos": [1, 12, 1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 13, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [2, 2, 0], "id": "stone"}, {"pos": [2, 3, 0], "id": "stone"}, {"pos": [2, 4, 0], "id": "stone"}, {"pos": [2, 6, -1], "id": "redstone_wire"}, {"pos": [2, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, 6, 3], "id": "stone"}, {"pos": [2, 7, -1], "id": "stone"}, {"pos": [2, 7, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 7, 3], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [2, 8, -1], "id": "redstone_wire"}, {"pos": [2, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 8, 1], "id": "stone"}, {"pos": [2, 9, -1], "id": "stone"}, {"pos": [2, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 9, 1], "id": "redstone_wire"}, {"pos": [2, 10, -1], "id": "redstone_wire"}, {"pos": [2, 10, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 10, 1], "id": "stone"}, {"pos": [2, 11, -1], "id": "stone"}, {"pos": [2, 11, 1], "id": "redstone_wire"}, {"pos": [2, 12, -1], "id": "redstone_wire"}]}
+{"t": 0, "unix": 1794780650.04, "kind": "lab", "op": "flip", "lab": 1, "pos": [1, 10, 1]}
+{"t": 6, "unix": 1794780650.08, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 6, "unix": 1794780650.34, "kind": "lab", "op": "flip", "lab": 1, "pos": [1, 9, -1]}
+{"t": 12, "unix": 1794780650.36, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 12, "unix": 1794780650.8, "kind": "lab", "op": "flip", "lab": 1, "pos": [1, 9, -1]}
+{"t": 18, "unix": 1794780650.82, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 18, "unix": 1794780651.35, "kind": "lab", "op": "flip", "lab": 1, "pos": [1, 10, 1]}
+{"t": 24, "unix": 1794780651.37, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 24, "unix": 1794780651.78, "kind": "lab", "op": "flip", "lab": 1, "pos": [1, 9, -1]}
+{"t": 30, "unix": 1794780651.8, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 30, "unix": 1794780652.18, "kind": "lab", "op": "flip", "lab": 1, "pos": [1, 9, -1]}
+{"t": 36, "unix": 1794780652.2, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 36, "unix": 1794780652.63, "kind": "lab", "op": "flip", "lab": 1, "pos": [2, 7, 3]}
+{"t": 42, "unix": 1794780652.65, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 42, "unix": 1794780653.13, "kind": "lab", "op": "flip", "lab": 1, "pos": [2, 7, 3]}
+{"t": 48, "unix": 1794780653.16, "kind": "lab", "op": "step", "lab": 1, "ticks": 6}
+{"t": 4398.02, "unix": 1794781276.29, "kind": "lab", "op": "new", "lab": 2, "walls": true, "blocks": [{"pos": [2, 6, 0], "id": "slime_block"}, {"pos": [2, 7, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 8, 0], "id": "stone"}, {"pos": [2, 9, 0], "id": "lever", "props": {"face": "floor", "facing": "north"}}]}
+{"t": 0, "unix": 1794781276.31, "kind": "lab", "op": "flip", "lab": 2, "pos": [2, 9, 0]}
+{"t": 6, "unix": 1794781276.33, "kind": "lab", "op": "step", "lab": 2, "ticks": 6}
+{"t": 6, "unix": 1794781276.42, "kind": "lab", "op": "flip", "lab": 2, "pos": [2, 9, 0]}
+{"t": 12, "unix": 1794781276.43, "kind": "lab", "op": "step", "lab": 2, "ticks": 6}
+{"t": 4811.79, "unix": 1794781690.07, "kind": "lab", "op": "new", "lab": 3, "walls": true, "blocks": [{"pos": [1, 6, -1], "id": "stone"}, {"pos": [1, 7, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 8, -1], "id": "stone"}, {"pos": [1, 9, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 9, 1], "id": "stone"}, {"pos": [1, 10, -1], "id": "stone"}, {"pos": [1, 10, 1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 11, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 11, 1], "id": "stone"}, {"pos": [1, 12, -1], "id": "stone"}, {"pos": [1, 12, 1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [1, 13, -1], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [2, 0, 0], "id": "stone"}, {"pos": [2, 1, 0], "id": "stone"}, {"pos": [2, 2, 0], "id": "stone"}, {"pos": [2, 3, 0], "id": "stone"}, {"pos": [2, 4, 0], "id": "stone"}, {"pos": [2, 6, -1], "id": "redstone_wire"}, {"pos": [2, 6, 2], "id": "sticky_piston", "props": {"facing": "north"}}, {"pos": [2, 6, 3], "id": "stone"}, {"pos": [2, 7, -1], "id": "stone"}, {"pos": [2, 7, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 7, 3], "id": "lever", "props": {"face": "floor", "facing": "north"}}, {"pos": [2, 8, -1], "id": "redstone_wire"}, {"pos": [2, 8, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 8, 1], "id": "stone"}, {"pos": [2, 9, -1], "id": "stone"}, {"pos": [2, 9, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 9, 1], "id": "redstone_wire"}, {"pos": [2, 10, -1], "id": "redstone_wire"}, {"pos": [2, 10, 0], "id": "sticky_piston", "props": {"facing": "down"}}, {"pos": [2, 10, 1], "id": "stone"}, {"pos": [2, 11, -1], "id": "stone"}, {"pos": [2, 11, 1], "id": "redstone_wire"}, {"pos": [2, 12, -1], "id": "redstone_wire"}]}
+{"t": 0, "unix": 1794781690.54, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 10, 1]}
+{"t": 4, "unix": 1794781690.56, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 4, "unix": 1794781690.96, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 6, "unix": 1794781691.0, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 6, "unix": 1794781691.41, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 8, "unix": 1794781691.43, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 8, "unix": 1794781691.46, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 12, "unix": 1794781691.48, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 12, "unix": 1794781691.87, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, 7, 3]}
+{"t": 16, "unix": 1794781691.89, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 16, "unix": 1794781692.47, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 18, "unix": 1794781692.49, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 18, "unix": 1794781692.51, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 20, "unix": 1794781692.54, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 20, "unix": 1794781692.56, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 24, "unix": 1794781692.6, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 24, "unix": 1794781693.51, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 10, 1]}
+{"t": 30, "unix": 1794781693.54, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 30, "unix": 1794781694.24, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 34, "unix": 1794781694.3, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 34, "unix": 1794781694.91, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 40, "unix": 1794781694.95, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 40, "unix": 1794781695.63, "kind": "lab", "op": "flip", "lab": 3, "pos": [2, 7, 3]}
+{"t": 46, "unix": 1794781695.67, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 46, "unix": 1794781696.43, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 11, -1]}
+{"t": 52, "unix": 1794781696.5, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 52, "unix": 1794781697.39, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 58, "unix": 1794781697.44, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 58, "unix": 1794781698.34, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 64, "unix": 1794781698.4, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 64, "unix": 1794781699.26, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 70, "unix": 1794781699.31, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 70, "unix": 1794781700.35, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 76, "unix": 1794781700.44, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 76, "unix": 1794781701.41, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 11, -1]}
+{"t": 82, "unix": 1794781701.47, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 82, "unix": 1794781702.49, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 84, "unix": 1794781702.55, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 84, "unix": 1794781702.61, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 86, "unix": 1794781702.66, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 86, "unix": 1794781702.72, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 90, "unix": 1794781702.78, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 90, "unix": 1794781703.94, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 92, "unix": 1794781704.05, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 92, "unix": 1794781704.13, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 94, "unix": 1794781704.2, "kind": "lab", "op": "step", "lab": 3, "ticks": 2}
+{"t": 94, "unix": 1794781704.28, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 7, -1]}
+{"t": 98, "unix": 1794781704.36, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 98, "unix": 1794781705.51, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 10, 1]}
+{"t": 104, "unix": 1794781705.62, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 104, "unix": 1794781707.42, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 10, 1]}
+{"t": 110, "unix": 1794781707.52, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}
+{"t": 110, "unix": 1794781709.77, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 114, "unix": 1794781711.5, "kind": "lab", "op": "step", "lab": 3, "ticks": 4}
+{"t": 114, "unix": 1794781713.04, "kind": "lab", "op": "flip", "lab": 3, "pos": [1, 9, -1]}
+{"t": 120, "unix": 1794781713.13, "kind": "lab", "op": "step", "lab": 3, "ticks": 6}

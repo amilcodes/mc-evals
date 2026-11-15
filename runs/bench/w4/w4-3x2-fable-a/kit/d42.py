@@ -1,0 +1,22 @@
+from pdbuild import Design
+d = Design("open")
+for x in (-1,3):
+    for y in (0,1): d.set(x,y,0,"stone")
+for x in range(3):
+    d.set(x,2,0,"stone"); d.set(x,-1,0,"stone")
+    d.set(x,3,0,"sticky_piston",facing="down")
+    d.set(x,-2,0,"sticky_piston",facing="up")
+d.set(1,4,0,"lever",face="floor",facing="north")
+d.set(-1,3,0,"observer",facing="east")
+d.set(-2,3,0,"note_block")
+for y in (2,1,0,-1): d.set(-2,y,0,"observer",facing="up")
+d.set(-2,-2,0,"stone")
+cross=dict(north="side",south="side",east="side",west="side")
+d.set(-1,-2,0,"redstone_wire",**cross)
+d.set(-1,-3,0,"note_block")
+d.set(0,-3,0,"observer",facing="west")
+d.set(1,-3,0,"note_block")
+d.set(2,-3,0,"observer",facing="west")
+d.set(3,-3,0,"stone")
+d.set(3,-2,0,"redstone_wire",**cross)
+d.save("d42.json")
