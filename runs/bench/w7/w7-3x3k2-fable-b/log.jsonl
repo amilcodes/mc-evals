@@ -1,0 +1,2 @@
+{"t": 0.0, "unix": 1794777574.56, "kind": "start", "n": 3, "track": "seamless", "variant": "scratch", "rules": "0.3", "budget": {"test": 150, "sim": 400, "lab": 50000}, "time_cap": 200, "minutes": 120, "kit": 2}
+{"t": 2373.7, "unix": 1794779948.26, "kind": "first_call"}

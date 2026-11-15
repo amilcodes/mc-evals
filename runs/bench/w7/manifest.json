@@ -1,0 +1,202 @@
+{
+ "wave": "w7",
+ "task": "kit 2 (film, structured test data, 13 added facts) on 4x4 and 3x3 seamless",
+ "track": "seamless",
+ "loop_rule": "An agent that stops before its time is up gets the same neutral continue message (reprompt.py), at most 3 times per run.",
+ "notes": [
+  "Paired against kit 1: 4x4 in waves 2 and 4, 3x3 in waves 1 and 3. Same launch prompt, limits and continue rule; only the kit differs.",
+  "Kit 2 changes three things at once (film tool, structured test data, added facts), so a difference cannot be assigned to one of them.",
+  "2026-11-15 evening: user asked to reduce concurrent runs, Fable especially. The two 3x3 kit-2 Fable runs were stopped at 17 and 1 minutes with no test calls; the two 3x3 kit-2 Opus runs were never launched.",
+  "2026-11-15: the user ended all Fable runs for the day; Fable runs still in progress were stopped and are scored on what they had submitted or tested."
+ ],
+ "runs": [
+  {
+   "name": "w7-4x4k2-fable-a",
+   "model": "fable",
+   "port": 8981,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-fable-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-fable-a/kit",
+   "n": 4,
+   "minutes": 150,
+   "kit_version": 2,
+   "status": "finished: stopped by the harness at 68 of 150 min (user ended Fable runs for the day)",
+   "agent": "a56ae40067e2e771a",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a56ae40067e2e771a.output",
+   "launched_unix": 1794777648
+  },
+  {
+   "name": "w7-4x4k2-fable-b",
+   "model": "fable",
+   "port": 8982,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-fable-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-fable-b/kit",
+   "n": 4,
+   "minutes": 150,
+   "kit_version": 2,
+   "status": "finished: stopped by the harness at 68 of 150 min (user ended Fable runs for the day)",
+   "agent": "ac145a42543099e9a",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/ac145a42543099e9a.output",
+   "launched_unix": 1794777648
+  },
+  {
+   "name": "w7-4x4k2-fable-c",
+   "model": "fable",
+   "port": 8983,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-fable-c/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-fable-c/kit",
+   "n": 4,
+   "minutes": 150,
+   "kit_version": 2,
+   "status": "finished: stopped by the harness at 68 of 150 min (user ended Fable runs for the day)",
+   "agent": "a7876dff921df0c25",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a7876dff921df0c25.output",
+   "launched_unix": 1794777648
+  },
+  {
+   "name": "w7-4x4k2-opus-a",
+   "model": "opus",
+   "port": 8984,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-opus-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-opus-a/kit",
+   "n": 4,
+   "minutes": 150,
+   "kit_version": 2,
+   "status": "finished: stopped after the third continue message",
+   "agent": "acd8866737977d46c",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/acd8866737977d46c.output",
+   "launched_unix": 1794777648,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794784126,
+     "minutes_used": 108.0,
+     "best": 702
+    },
+    {
+     "unix": 1794784807,
+     "minutes_used": 119.4,
+     "best": 702
+    },
+    {
+     "unix": 1794784831,
+     "minutes_used": 119.8,
+     "best": 702
+    }
+   ]
+  },
+  {
+   "name": "w7-4x4k2-opus-b",
+   "model": "opus",
+   "port": 8985,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-opus-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-opus-b/kit",
+   "n": 4,
+   "minutes": 150,
+   "kit_version": 2,
+   "status": "finished: stopped after the third continue message",
+   "agent": "a1a9d6c941700c5ed",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a1a9d6c941700c5ed.output",
+   "launched_unix": 1794778779,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794784233,
+     "minutes_used": 90.8,
+     "best": 600
+    },
+    {
+     "unix": 1794784380,
+     "minutes_used": 93.3,
+     "best": 600
+    },
+    {
+     "unix": 1794784466,
+     "minutes_used": 94.7,
+     "best": 600
+    }
+   ]
+  },
+  {
+   "name": "w7-4x4k2-opus-c",
+   "model": "opus",
+   "port": 8986,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-opus-c/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-4x4k2-opus-c/kit",
+   "n": 4,
+   "minutes": 150,
+   "kit_version": 2,
+   "status": "finished: stopped after the third continue message",
+   "agent": "a363060eb50f21dfc",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a363060eb50f21dfc.output",
+   "launched_unix": 1794778962,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794785432,
+     "minutes_used": 107.8,
+     "best": 396
+    },
+    {
+     "unix": 1794785496,
+     "minutes_used": 108.9,
+     "best": 396
+    },
+    {
+     "unix": 1794785563,
+     "minutes_used": 110.0,
+     "best": 396
+    }
+   ]
+  },
+  {
+   "name": "w7-3x3k2-fable-a",
+   "model": "fable",
+   "port": 8987,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-fable-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-fable-a/kit",
+   "n": 3,
+   "minutes": 120,
+   "kit_version": 2,
+   "status": "cancelled: stopped early to cut concurrent load (user request); not a result, exclude from analysis",
+   "agent": "aa89a3ba4aa230c0d",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/aa89a3ba4aa230c0d.output",
+   "launched_unix": 1794779018
+  },
+  {
+   "name": "w7-3x3k2-fable-b",
+   "model": "fable",
+   "port": 8988,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-fable-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-fable-b/kit",
+   "n": 3,
+   "minutes": 120,
+   "kit_version": 2,
+   "status": "cancelled: stopped early to cut concurrent load (user request); not a result, exclude from analysis",
+   "agent": "a59ee0cdbd25aceec",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a59ee0cdbd25aceec.output",
+   "launched_unix": 1794779944
+  },
+  {
+   "name": "w7-3x3k2-opus-a",
+   "model": "opus",
+   "port": 8989,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-opus-a/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-opus-a/kit",
+   "n": 3,
+   "minutes": 120,
+   "kit_version": 2,
+   "status": "held: not launched (user asked to cut concurrent runs)"
+  },
+  {
+   "name": "w7-3x3k2-opus-b",
+   "model": "opus",
+   "port": 8990,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-opus-b/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w7/w7-3x3k2-opus-b/kit",
+   "n": 3,
+   "minutes": 120,
+   "kit_version": 2,
+   "status": "held: not launched (user asked to cut concurrent runs)"
+  }
+ ]
+}
