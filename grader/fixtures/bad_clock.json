@@ -1,0 +1,131 @@
+{
+ "initial_state": "open",
+ "blocks": [
+  {
+   "pos": [
+    -3,
+    -1,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -3,
+    0,
+    0
+   ],
+   "id": "lever",
+   "props": {
+    "face": "floor",
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -2,
+    0,
+    0
+   ],
+   "id": "sticky_piston",
+   "props": {
+    "facing": "east"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -8,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -9,
+    0,
+    0
+   ],
+   "id": "redstone_wall_torch",
+   "props": {
+    "facing": "west"
+   }
+  },
+  {
+   "pos": [
+    -9,
+    -1,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -9,
+    -1,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -8,
+    -1,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -8,
+    -1,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    -9,
+    0,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    -9,
+    0,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    -8,
+    0,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    -8,
+    0,
+    1
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "south",
+    "delay": "4"
+   }
+  }
+ ]
+}
