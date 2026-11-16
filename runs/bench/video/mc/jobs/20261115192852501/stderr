@@ -1,0 +1,11 @@
+2026-11-15 19:28:52.979 ffmpeg[50821:1536165] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+objc[50821]: class `NSKVONotifying_AVCaptureScreenInput' not linked into application
+objc[50821]: class `NSKVONotifying_AVCaptureScreenInput' not linked into application
+objc[50821]: class `NSKVONotifying_AVCaptureScreenInput' not linked into application
+[in#0 @ 0x142104330] Selected pixel format (yuv420p) is not supported by the input device.
+[in#0 @ 0x142104330] Supported pixel formats:
+[in#0 @ 0x142104330]   uyvy422
+[in#0 @ 0x142104330]   yuyv422
+[in#0 @ 0x142104330]   nv12
+[in#0 @ 0x142104330]   0rgb
+[in#0 @ 0x142104330]   bgr0

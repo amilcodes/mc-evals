@@ -1,0 +1,11 @@
+2026-11-15 19:28:09.131 ffmpeg[50640:1532461] WARNING: Add NSCameraUseContinuityCameraDeviceType to your Info.plist to use AVCaptureDeviceTypeContinuityCamera.
+[AVFoundation indev @ 0x14ae04290] AVFoundation video devices:
+[AVFoundation indev @ 0x14ae04290] [0] MacBook Pro Camera
+[AVFoundation indev @ 0x14ae04290] [1] MacBook Pro Desk View Camera
+[AVFoundation indev @ 0x14ae04290] [2] Capture screen 0
+[AVFoundation indev @ 0x14ae04290] AVFoundation audio devices:
+[AVFoundation indev @ 0x14ae04290] [0] ZoomAudioDevice
+[AVFoundation indev @ 0x14ae04290] [1] MacBook Pro Microphone
+[in#0 @ 0x14ae04680] Error opening input: Input/output error
+Error opening input file .
+Error opening input files: Input/output error
