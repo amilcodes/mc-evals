@@ -1,0 +1,887 @@
+{
+ "\"vanilla\"": {
+  "boot_s": 5.44,
+  "w1-fable-a": {
+   "dev": {
+    "valid": true,
+    "volume": 70,
+    "open_ticks": 34,
+    "close_ticks": 22,
+    "reset_ticks": 36,
+    "sim_seconds": 0.496
+   },
+   "dev_wall_s": [
+    0.836,
+    0.339,
+    0.4,
+    0.498
+   ],
+   "final": {
+    "valid": true,
+    "volume": 70,
+    "open_ticks": 34,
+    "close_ticks": 22,
+    "reset_ticks": 36,
+    "sim_seconds": 0.359
+   },
+   "final_wall_s": 0.361,
+   "dev_ticks": 684,
+   "final_ticks": 1783,
+   "translations": 11,
+   "translations_wall_s": 3.15
+  },
+  "w8-3x3-chg-b-opus": {
+   "dev": {
+    "valid": false,
+    "volume": 80,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.11,
+    "fail": [
+     "did_not_close: cycle 1: the door did not close within 200 ticks (doorway at end: ###/#.#/###; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "dev_wall_s": [
+    0.1,
+    0.096,
+    0.107,
+    0.11
+   ],
+   "final": {
+    "valid": false,
+    "volume": 80,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.294,
+    "fail": [
+     "did_not_close: cycle 1: the door did not close within 200 ticks (doorway at end: ###/#.#/###; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "final_wall_s": 0.295,
+   "dev_ticks": 640,
+   "final_ticks": 1659
+  },
+  "w3-opus-d": {
+   "dev": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 46,
+    "close_ticks": 46,
+    "reset_ticks": 48,
+    "sim_seconds": 0.1
+   },
+   "dev_wall_s": [
+    0.093,
+    0.11,
+    0.197,
+    0.101
+   ],
+   "final": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 46,
+    "close_ticks": 46,
+    "reset_ticks": 48,
+    "sim_seconds": 0.465
+   },
+   "final_wall_s": 0.468,
+   "dev_ticks": 768,
+   "final_ticks": 2007
+  },
+  "w4-4x4-opus-e": {
+   "dev": {
+    "valid": true,
+    "volume": 240,
+    "open_ticks": 52,
+    "close_ticks": 40,
+    "reset_ticks": 54,
+    "sim_seconds": 0.136
+   },
+   "dev_wall_s": [
+    0.161,
+    0.156,
+    0.14,
+    0.138
+   ],
+   "final": {
+    "valid": true,
+    "volume": 240,
+    "open_ticks": 52,
+    "close_ticks": 40,
+    "reset_ticks": 54,
+    "sim_seconds": 0.476
+   },
+   "final_wall_s": 0.48,
+   "dev_ticks": 792,
+   "final_ticks": 2071,
+   "translations": 11,
+   "translations_wall_s": 3.93
+  },
+  "w2-4x4-fable-a": {
+   "dev": {
+    "valid": true,
+    "volume": 264,
+    "open_ticks": 90,
+    "close_ticks": 66,
+    "reset_ticks": 92,
+    "sim_seconds": 0.158
+   },
+   "dev_wall_s": [
+    0.141,
+    0.174,
+    0.194,
+    0.161
+   ],
+   "final": {
+    "valid": true,
+    "volume": 264,
+    "open_ticks": 90,
+    "close_ticks": 66,
+    "reset_ticks": 92,
+    "sim_seconds": 0.493
+   },
+   "final_wall_s": 0.496,
+   "dev_ticks": 960,
+   "final_ticks": 2519
+  },
+  "w2-4x4-opus-b": {
+   "dev": {
+    "valid": true,
+    "volume": 5236,
+    "open_ticks": 86,
+    "close_ticks": 63,
+    "reset_ticks": 88,
+    "sim_seconds": 0.481
+   },
+   "dev_wall_s": [
+    0.497,
+    0.528,
+    0.454,
+    0.486
+   ],
+   "final": {
+    "valid": true,
+    "volume": 5236,
+    "open_ticks": 86,
+    "close_ticks": 63,
+    "reset_ticks": 88,
+    "sim_seconds": 1.148
+   },
+   "final_wall_s": 1.157,
+   "dev_ticks": 978,
+   "final_ticks": 2567
+  },
+  "sweep_w1-fable-a": {
+   "orig": [
+    "4",
+    "4"
+   ],
+   "results": [
+    [
+     [
+      1,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      1,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      1,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      3,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      4,
+      2
+     ],
+     true,
+     30,
+     18,
+     null
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     true,
+     32,
+     20,
+     null
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     true,
+     34,
+     22,
+     null
+    ]
+   ],
+   "wall_s": 1.46,
+   "per_eval_s": 0.091
+  },
+  "sweep_w8-3x3-chg-b-opus": {
+   "orig": [
+    "3"
+   ],
+   "results": [
+    [
+     [
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ]
+   ],
+   "wall_s": 0.51,
+   "per_eval_s": 0.127
+  },
+  "section_wall_s": 28.1
+ },
+ "{\"repeater_unit\": 3, \"observer_delay\": 3}": {
+  "boot_s": 8.67,
+  "w1-fable-a": {
+   "dev": {
+    "valid": false,
+    "volume": 70,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.182,
+    "fail": [
+     "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.../.#.; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "dev_wall_s": [
+    1.31,
+    0.334,
+    0.152,
+    0.182
+   ],
+   "final": {
+    "valid": false,
+    "volume": 70,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.325,
+    "fail": [
+     "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.../.#.; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "final_wall_s": 0.325,
+   "dev_ticks": 762,
+   "final_ticks": 1991
+  },
+  "w8-3x3-chg-b-opus": {
+   "dev": {
+    "valid": true,
+    "volume": 70,
+    "open_ticks": 38,
+    "close_ticks": 26,
+    "reset_ticks": 40,
+    "sim_seconds": 0.104
+   },
+   "dev_wall_s": [
+    0.124,
+    0.08,
+    0.088,
+    0.105
+   ],
+   "final": {
+    "valid": true,
+    "volume": 70,
+    "open_ticks": 38,
+    "close_ticks": 26,
+    "reset_ticks": 40,
+    "sim_seconds": 0.243
+   },
+   "final_wall_s": 0.245,
+   "dev_ticks": 714,
+   "final_ticks": 1863
+  },
+  "w3-opus-d": {
+   "dev": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 68,
+    "close_ticks": 68,
+    "reset_ticks": 70,
+    "sim_seconds": 0.249
+   },
+   "dev_wall_s": [
+    0.105,
+    0.099,
+    0.092,
+    0.25
+   ],
+   "final": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 68,
+    "close_ticks": 68,
+    "reset_ticks": 70,
+    "sim_seconds": 1.209
+   },
+   "final_wall_s": 1.213,
+   "dev_ticks": 900,
+   "final_ticks": 2359
+  },
+  "sweep_w1-fable-a": {
+   "orig": [
+    "4",
+    "4"
+   ],
+   "results": [
+    [
+     [
+      1,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      1,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      1,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      3,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      4,
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ]
+   ],
+   "wall_s": 1.34,
+   "per_eval_s": 0.083
+  },
+  "sweep_w8-3x3-chg-b-opus": {
+   "orig": [
+    "3"
+   ],
+   "results": [
+    [
+     [
+      1
+     ],
+     false,
+     null,
+     null,
+     "did_not_close"
+    ],
+    [
+     [
+      2
+     ],
+     false,
+     null,
+     null,
+     "did_not_open"
+    ],
+    [
+     [
+      3
+     ],
+     true,
+     38,
+     26,
+     null
+    ],
+    [
+     [
+      4
+     ],
+     true,
+     44,
+     29,
+     null
+    ]
+   ],
+   "wall_s": 0.31,
+   "per_eval_s": 0.078
+  },
+  "section_wall_s": 16.41
+ },
+ "{\"repeater_unit\": 3}": {
+  "boot_s": 5.0,
+  "w1-fable-a": {
+   "dev": {
+    "valid": true,
+    "volume": 70,
+    "open_ticks": 46,
+    "close_ticks": 30,
+    "reset_ticks": 48,
+    "sim_seconds": 0.118
+   },
+   "dev_wall_s": [
+    0.817,
+    0.203,
+    0.187,
+    0.119
+   ],
+   "final": {
+    "valid": true,
+    "volume": 70,
+    "open_ticks": 46,
+    "close_ticks": 30,
+    "reset_ticks": 48,
+    "sim_seconds": 0.27
+   },
+   "final_wall_s": 0.272,
+   "dev_ticks": 756,
+   "final_ticks": 1975
+  },
+  "w8-3x3-chg-b-opus": {
+   "dev": {
+    "valid": false,
+    "volume": 80,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.091,
+    "fail": [
+     "did_not_close: cycle 1: the door did not close within 200 ticks (doorway at end: ###/#.#/###; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "dev_wall_s": [
+    0.087,
+    0.09,
+    0.124,
+    0.091
+   ],
+   "final": {
+    "valid": false,
+    "volume": 80,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.229,
+    "fail": [
+     "did_not_close: cycle 1: the door did not close within 200 ticks (doorway at end: ###/#.#/###; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "final_wall_s": 0.23,
+   "dev_ticks": 672,
+   "final_ticks": 1751
+  },
+  "w3-opus-d": {
+   "dev": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 46,
+    "close_ticks": 46,
+    "reset_ticks": 48,
+    "sim_seconds": 0.105
+   },
+   "dev_wall_s": [
+    0.086,
+    0.085,
+    0.111,
+    0.106
+   ],
+   "final": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 46,
+    "close_ticks": 46,
+    "reset_ticks": 48,
+    "sim_seconds": 0.247
+   },
+   "final_wall_s": 0.249,
+   "dev_ticks": 768,
+   "final_ticks": 2007
+  },
+  "section_wall_s": 8.97
+ },
+ "{\"observer_delay\": 3}": {
+  "boot_s": 6.2,
+  "w1-fable-a": {
+   "dev": {
+    "valid": false,
+    "volume": 70,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.385,
+    "fail": [
+     "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.../.#.; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "dev_wall_s": [
+    1.617,
+    0.87,
+    0.148,
+    0.385
+   ],
+   "final": {
+    "valid": false,
+    "volume": 70,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.406,
+    "fail": [
+     "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.../.#.; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "final_wall_s": 0.406,
+   "dev_ticks": 690,
+   "final_ticks": 1799
+  },
+  "w8-3x3-chg-b-opus": {
+   "dev": {
+    "valid": false,
+    "volume": 80,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.088,
+    "fail": [
+     "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.#./...; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "dev_wall_s": [
+    0.177,
+    0.142,
+    0.099,
+    0.089
+   ],
+   "final": {
+    "valid": false,
+    "volume": 80,
+    "open_ticks": null,
+    "close_ticks": null,
+    "reset_ticks": null,
+    "sim_seconds": 0.225,
+    "fail": [
+     "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.#./...; # door block, . air, m moving, ? other)"
+    ]
+   },
+   "final_wall_s": 0.225,
+   "dev_ticks": 674,
+   "final_ticks": 1753
+  },
+  "w3-opus-d": {
+   "dev": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 68,
+    "close_ticks": 68,
+    "reset_ticks": 70,
+    "sim_seconds": 0.216
+   },
+   "dev_wall_s": [
+    0.106,
+    0.102,
+    0.101,
+    0.217
+   ],
+   "final": {
+    "valid": true,
+    "volume": 80,
+    "open_ticks": 68,
+    "close_ticks": 68,
+    "reset_ticks": 70,
+    "sim_seconds": 0.258
+   },
+   "final_wall_s": 0.26,
+   "dev_ticks": 900,
+   "final_ticks": 2359
+  },
+  "section_wall_s": 12.4
+ }
+}
