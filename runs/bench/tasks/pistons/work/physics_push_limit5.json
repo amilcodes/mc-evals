@@ -1,0 +1,56 @@
+{
+ "dpe": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "tpe": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "swapper": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "hatch": {
+  "pass": false,
+  "toggles_passed": 0,
+  "fail": "wrong_state",
+  "msg": "toggle 1: target cells are not in the 'on' state at rest"
+ },
+ "row_slide": {
+  "pass": false,
+  "toggles_passed": 0,
+  "fail": "wrong_state",
+  "msg": "toggle 1: target cells are not in the 'on' state at rest"
+ },
+ "row_push": {
+  "pass": false,
+  "toggles_passed": 0,
+  "fail": "wrong_state",
+  "msg": "toggle 1: target cells are not in the 'on' state at rest"
+ },
+ "elevator": {
+  "pass": false,
+  "toggles_passed": 0,
+  "fail": "wrong_state",
+  "msg": "toggle 1: target cells are not in the 'on' state at rest"
+ },
+ "fix:row_slide": {
+  "pass": false,
+  "toggles_passed": 0,
+  "fail": "wrong_state",
+  "msg": "toggle 1: target cells are not in the 'on' state at rest"
+ },
+ "fix:hatch": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ }
+}

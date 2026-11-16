@@ -1,0 +1,418 @@
+{
+ "name": "elevator",
+ "title": "slime platform lift",
+ "goal": "The three white concrete blocks at (0..2, 1, 0) rise one cell to (0..2, 2, 0) when the lever is switched on and come back down when it is switched off. The glazed terracotta posts around the platform must never move.",
+ "blocks": [
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    1,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    2,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    2,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    1,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    2,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    1,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    2,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    1
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "wall",
+    "facing": "south"
+   }
+  }
+ ],
+ "spec": {
+  "lever": [
+   1,
+   -2,
+   1
+  ],
+  "box": {
+   "min": [
+    -2,
+    -3,
+    -1
+   ],
+   "max": [
+    4,
+    3,
+    2
+   ]
+  },
+  "block_budget": 24,
+  "states": {
+   "off": [
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      1,
+      0
+     ],
+     "is": "white_concrete"
+    },
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      2,
+      0
+     ],
+     "is": "air"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      2,
+      0
+     ],
+     "is": "white_concrete"
+    },
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      1,
+      0
+     ],
+     "is": "slime_block"
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [],
+  "fixed": [
+   [
+    -1,
+    0,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    -1,
+    1,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    -1,
+    2,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    3,
+    0,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    3,
+    1,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    3,
+    2,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    0,
+    0,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    0,
+    1,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    0,
+    2,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    2,
+    0,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    2,
+    1,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    2,
+    2,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ]
+  ],
+  "conserve": {
+   "minecraft:white_concrete": 3
+  }
+ },
+ "verified": {
+  "physics": {},
+  "pass": true,
+  "timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   }
+  ],
+  "block_count": 21
+ }
+}

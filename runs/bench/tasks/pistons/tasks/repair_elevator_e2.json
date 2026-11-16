@@ -1,0 +1,652 @@
+{
+ "id": "repair_elevator_e2",
+ "family": "pistons",
+ "kind": "repair",
+ "machine": "elevator",
+ "physics": {},
+ "disclose_physics": true,
+ "difficulty": "easy",
+ "spec": {
+  "lever": [
+   1,
+   -2,
+   1
+  ],
+  "box": {
+   "min": [
+    -2,
+    -3,
+    -1
+   ],
+   "max": [
+    4,
+    3,
+    2
+   ]
+  },
+  "block_budget": 23,
+  "states": {
+   "off": [
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      1,
+      0
+     ],
+     "is": "white_concrete"
+    },
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      2,
+      0
+     ],
+     "is": "air"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      2,
+      0
+     ],
+     "is": "white_concrete"
+    },
+    {
+     "at": [
+      [
+       0,
+       2
+      ],
+      1,
+      0
+     ],
+     "is": "slime_block"
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [],
+  "fixed": [
+   [
+    -1,
+    0,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    -1,
+    1,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    -1,
+    2,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    3,
+    0,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    3,
+    1,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    3,
+    2,
+    0,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    0,
+    0,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    0,
+    1,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    0,
+    2,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    2,
+    0,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    2,
+    1,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ],
+   [
+    2,
+    2,
+    1,
+    "minecraft:white_glazed_terracotta"
+   ]
+  ],
+  "conserve": {
+   "minecraft:white_concrete": 3
+  }
+ },
+ "start_build": [
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    1,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    2,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    0,
+    1,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    2,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    1
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "wall",
+    "facing": "south"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up"
+   }
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:honey_block"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    2,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    2,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  }
+ ],
+ "reference_solution": [
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "minecraft:white_concrete"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    1,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    2,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    3,
+    2,
+    0
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    1,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    2,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    1,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    2,
+    2,
+    1
+   ],
+   "id": "minecraft:white_glazed_terracotta",
+   "props": {
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    1
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "wall",
+    "facing": "south"
+   }
+  }
+ ],
+ "provenance": {
+  "edits": [
+   "[1, 0, 0]: minecraft:slime_block -> minecraft:honey_block"
+  ],
+  "notes": "middle platform block is honey; the outer slime blocks do not follow"
+ },
+ "verification": {
+  "start": {
+   "pass": false,
+   "toggles_passed": 0,
+   "fail": "wrong_state",
+   "msg": "toggle 1: target cells are not in the 'on' state at rest"
+  },
+  "reference": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "reference_timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   }
+  ]
+ },
+ "prompt": "This slime platform lift is broken: it does not do what it should. Repair it.\n\nGoal: The three white concrete blocks at (0..2, 1, 0) rise one cell to (0..2, 2, 0) when the lever is switched on and come back down when it is switched off. The glazed terracotta posts around the platform must never move.\n\nSpec (checked in the game engine):\n- Lever at [1, -2, 1]; it starts off. The grader settles the build, then flips the lever 6 times (idle gaps [0, 3, 7, 1, 11, 2] ticks before each flip).\n- After each flip the build must come to rest within 60 ticks, then stay unchanged for 40 ticks.\n- Lever off (start and after every even flip): (0..2, 1, 0) is white_concrete; (0..2, 2, 0) is air.\n- Lever on (after every odd flip): (0..2, 2, 0) is white_concrete; (0..2, 1, 0) is slime_block.\n- The whole build must return to exactly the same resting state every two flips; no item drops; no block may leave the box.\n- At most 23 blocks (lever included), all inside the box [-2, -3, -1]..[4, 3, 2].\n- Exactly 3 white_concrete in the build, at all times.\n- 12 fixed cells must keep their block at every tick: [-1, 0, 0], [-1, 1, 0], [-1, 2, 0], [3, 0, 0], [3, 1, 0], [3, 2, 0], [0, 0, 1], [0, 1, 1], [0, 2, 1], [2, 0, 1], [2, 1, 1], [2, 2, 1].\n\nYou may change, add or remove any blocks except the lever. Allowed blocks: the benchmark allow-list. Submit the complete build as a list of blocks.",
+ "verified": true
+}

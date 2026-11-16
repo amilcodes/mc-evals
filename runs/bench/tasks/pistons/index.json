@@ -1,0 +1,400 @@
+[
+ {
+  "id": "hidden_dpe_ru1",
+  "kind": "hidden_rule",
+  "difficulty": "easy",
+  "machine": "dpe",
+  "physics": {
+   "repeater_unit": 1
+  },
+  "disclose_physics": false,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "hidden_hatch",
+  "kind": "hidden_rule",
+  "difficulty": "medium",
+  "machine": "hatch",
+  "physics": {
+   "push_limit": 5
+  },
+  "disclose_physics": false,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "hidden_row_slide",
+  "kind": "hidden_rule",
+  "difficulty": "hard",
+  "machine": "row_slide",
+  "physics": {
+   "push_limit": 9
+  },
+  "disclose_physics": false,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "hidden_tpe_od1",
+  "kind": "hidden_rule",
+  "difficulty": "easy",
+  "machine": "tpe",
+  "physics": {
+   "observer_delay": 1
+  },
+  "disclose_physics": false,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_dpe_ru1",
+  "kind": "port",
+  "difficulty": "easy",
+  "machine": "dpe",
+  "physics": {
+   "repeater_unit": 1
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_hatch_pl7",
+  "kind": "port",
+  "difficulty": "medium",
+  "machine": "hatch",
+  "physics": {
+   "push_limit": 7
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_row_push_ru1",
+  "kind": "port",
+  "difficulty": "easy",
+  "machine": "row_push",
+  "physics": {
+   "repeater_unit": 1
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_row_slide_pl11",
+  "kind": "port",
+  "difficulty": "hard",
+  "machine": "row_slide",
+  "physics": {
+   "push_limit": 11
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_swapper_ru1",
+  "kind": "port",
+  "difficulty": "easy",
+  "machine": "swapper",
+  "physics": {
+   "repeater_unit": 1
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_swapper_ru3",
+  "kind": "port",
+  "difficulty": "easy",
+  "machine": "swapper",
+  "physics": {
+   "repeater_unit": 3
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "not_periodic",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_tpe_od1",
+  "kind": "port",
+  "difficulty": "easy",
+  "machine": "tpe",
+  "physics": {
+   "observer_delay": 1
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "port_tpe_ru4",
+  "kind": "port",
+  "difficulty": "hard",
+  "machine": "tpe",
+  "physics": {
+   "repeater_unit": 4
+  },
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "too_slow",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_dpe_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "dpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_dpe_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "dpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_dpe_e3",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "dpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_dpe_h1",
+  "kind": "repair",
+  "difficulty": "hard",
+  "machine": "dpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": 0
+ },
+ {
+  "id": "repair_dpe_h2",
+  "kind": "repair",
+  "difficulty": "hard",
+  "machine": "dpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": 0
+ },
+ {
+  "id": "repair_elevator_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "elevator",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_elevator_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "elevator",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_elevator_h1",
+  "kind": "repair",
+  "difficulty": "hard",
+  "machine": "elevator",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": 0
+ },
+ {
+  "id": "repair_hatch_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "hatch",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_hatch_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "hatch",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_hatch_h1",
+  "kind": "repair",
+  "difficulty": "hard",
+  "machine": "hatch",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": 0
+ },
+ {
+  "id": "repair_row_push_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "row_push",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_row_push_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "row_push",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_row_slide_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "row_slide",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_row_slide_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "row_slide",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_row_slide_h1",
+  "kind": "repair",
+  "difficulty": "hard",
+  "machine": "row_slide",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": 0
+ },
+ {
+  "id": "repair_swapper_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "swapper",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_swapper_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "swapper",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_swapper_e3",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "swapper",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "not_periodic",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_swapper_h1",
+  "kind": "repair",
+  "difficulty": "hard",
+  "machine": "swapper",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": 0
+ },
+ {
+  "id": "repair_tpe_e1",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "tpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ },
+ {
+  "id": "repair_tpe_e2",
+  "kind": "repair",
+  "difficulty": "easy",
+  "machine": "tpe",
+  "physics": {},
+  "disclose_physics": true,
+  "verified": true,
+  "start_fail": "wrong_state",
+  "single_edit_fixes": null
+ }
+]

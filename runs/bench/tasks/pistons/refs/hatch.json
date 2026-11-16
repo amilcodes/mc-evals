@@ -1,0 +1,423 @@
+{
+ "name": "hatch",
+ "title": "2x2 flush floor hatch",
+ "goal": "A 2x2 hatch (0..1, 0, 0..1) in the smooth-stone floor: closed (four stone blocks, flush with the floor) while the lever is off, open (all four cells empty) while it is on. The smooth-stone floor ring must never move.",
+ "blocks": [
+  {
+   "pos": [
+    -1,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    1
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    1
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    -3,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up",
+    "extended": "true"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    0
+   ],
+   "id": "minecraft:piston_head",
+   "props": {
+    "facing": "up",
+    "type": "sticky"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -3,
+    0
+   ],
+   "id": "minecraft:obsidian"
+  },
+  {
+   "pos": [
+    1,
+    -4,
+    0
+   ],
+   "id": "minecraft:redstone_torch"
+  },
+  {
+   "pos": [
+    1,
+    -5,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -5,
+    0
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "wall",
+    "facing": "east"
+   }
+  }
+ ],
+ "spec": {
+  "lever": [
+   2,
+   -5,
+   0
+  ],
+  "box": {
+   "min": [
+    -2,
+    -6,
+    -2
+   ],
+   "max": [
+    3,
+    1,
+    3
+   ]
+  },
+  "block_budget": 29,
+  "states": {
+   "off": [
+    {
+     "at": [
+      [
+       0,
+       1
+      ],
+      0,
+      [
+       0,
+       1
+      ]
+     ],
+     "is": "stone"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      [
+       0,
+       1
+      ],
+      0,
+      [
+       0,
+       1
+      ]
+     ],
+     "is": "air"
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ]
+  ],
+  "fixed": [
+   [
+    -1,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    -1,
+    0,
+    0,
+    "minecraft:smooth_stone"
+   ],
+   [
+    -1,
+    0,
+    1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    -1,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ],
+   [
+    0,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    0,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ],
+   [
+    1,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    1,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    0,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ]
+  ]
+ },
+ "verified": {
+  "physics": {},
+  "pass": true,
+  "timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 2,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 4,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 2,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 4,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 2,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 4,
+    "last_change_tick": 4
+   }
+  ],
+  "block_count": 26
+ }
+}

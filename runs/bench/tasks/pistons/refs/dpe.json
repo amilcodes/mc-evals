@@ -1,0 +1,487 @@
+{
+ "name": "dpe",
+ "title": "double piston extender",
+ "goal": "Pushes the lime concrete block 2 cells east, from (2,0,0) to (4,0,0), when the lever is switched on, and brings it fully back to (2,0,0) when the lever is switched off.",
+ "blocks": [
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "east"
+   }
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "east"
+   }
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:lime_concrete"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    -1,
+    -1,
+    4
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "floor",
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    4
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    4
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    4
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    3
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    2
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    1
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    3
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    2
+   ],
+   "id": "minecraft:observer",
+   "props": {
+    "facing": "south"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    1
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    3
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    2
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    1
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    -2,
+    4
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    4
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    4
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -2,
+    4
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    2
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -2,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -2,
+    2
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    1
+   ],
+   "id": "minecraft:stone"
+  }
+ ],
+ "spec": {
+  "lever": [
+   -1,
+   -1,
+   4
+  ],
+  "box": {
+   "min": [
+    -2,
+    -3,
+    -1
+   ],
+   "max": [
+    6,
+    2,
+    5
+   ]
+  },
+  "block_budget": 34,
+  "states": {
+   "off": [
+    {
+     "at": [
+      2,
+      0,
+      0
+     ],
+     "is": "lime_concrete"
+    },
+    {
+     "at": [
+      [
+       3,
+       4
+      ],
+      0,
+      0
+     ],
+     "is": "air"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      4,
+      0,
+      0
+     ],
+     "is": "lime_concrete"
+    },
+    {
+     "at": [
+      2,
+      0,
+      0
+     ],
+     "is": [
+      "sticky_piston",
+      "piston"
+     ]
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [
+   [
+    3,
+    1,
+    0
+   ],
+   [
+    3,
+    -1,
+    0
+   ],
+   [
+    3,
+    0,
+    1
+   ],
+   [
+    3,
+    0,
+    -1
+   ],
+   [
+    4,
+    1,
+    0
+   ],
+   [
+    4,
+    -1,
+    0
+   ],
+   [
+    4,
+    0,
+    1
+   ],
+   [
+    4,
+    0,
+    -1
+   ],
+   [
+    5,
+    1,
+    0
+   ],
+   [
+    5,
+    -1,
+    0
+   ],
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    5,
+    0,
+    -1
+   ],
+   [
+    5,
+    0,
+    0
+   ]
+  ],
+  "fixed": [],
+  "conserve": {
+   "minecraft:lime_concrete": 1
+  }
+ },
+ "verified": {
+  "physics": {},
+  "pass": true,
+  "timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 17,
+    "last_change_tick": 26
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 28,
+    "last_change_tick": 28
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 17,
+    "last_change_tick": 26
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 28,
+    "last_change_tick": 28
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 17,
+    "last_change_tick": 26
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 28,
+    "last_change_tick": 28
+   }
+  ],
+  "block_count": 31
+ }
+}

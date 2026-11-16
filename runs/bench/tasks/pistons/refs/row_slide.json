@@ -1,0 +1,261 @@
+{
+ "name": "row_slide",
+ "title": "6-block row slide",
+ "goal": "A row of 6 orange concrete blocks at (0..5, 1, 0) slides one cell south to (0..5, 1, 1) when the lever is switched on and back when it is switched off.",
+ "blocks": [
+  {
+   "pos": [
+    0,
+    1,
+    0
+   ],
+   "id": "minecraft:orange_concrete"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "minecraft:orange_concrete"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "minecraft:orange_concrete"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "minecraft:orange_concrete"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    0
+   ],
+   "id": "minecraft:orange_concrete"
+  },
+  {
+   "pos": [
+    5,
+    1,
+    0
+   ],
+   "id": "minecraft:orange_concrete"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    5,
+    0,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    -1
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "south"
+   }
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    -2
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    -2
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "floor",
+    "facing": "north"
+   }
+  }
+ ],
+ "spec": {
+  "lever": [
+   2,
+   0,
+   -2
+  ],
+  "box": {
+   "min": [
+    -1,
+    -2,
+    -3
+   ],
+   "max": [
+    6,
+    2,
+    3
+   ]
+  },
+  "block_budget": 18,
+  "states": {
+   "off": [
+    {
+     "at": [
+      [
+       0,
+       5
+      ],
+      1,
+      0
+     ],
+     "is": "orange_concrete"
+    },
+    {
+     "at": [
+      [
+       0,
+       5
+      ],
+      1,
+      1
+     ],
+     "is": "air"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      [
+       0,
+       5
+      ],
+      1,
+      1
+     ],
+     "is": "orange_concrete"
+    },
+    {
+     "at": [
+      [
+       0,
+       5
+      ],
+      1,
+      0
+     ],
+     "is": "air"
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [],
+  "fixed": [],
+  "conserve": {
+   "minecraft:orange_concrete": 6
+  }
+ },
+ "verified": {
+  "physics": {},
+  "pass": true,
+  "timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 3,
+    "last_change_tick": 3
+   }
+  ],
+  "block_count": 15
+ }
+}

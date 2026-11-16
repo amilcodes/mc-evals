@@ -1,0 +1,56 @@
+{
+ "dpe": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "tpe": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "swapper": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "hatch": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "row_slide": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "row_push": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "elevator": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "fix:row_slide": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "fix:hatch": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ }
+}

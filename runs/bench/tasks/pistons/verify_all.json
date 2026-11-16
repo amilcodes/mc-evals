@@ -1,0 +1,347 @@
+{
+ "tasks": 34,
+ "all_ok": true,
+ "refs": {
+  "dpe": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "tpe": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "swapper": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "hatch": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "row_slide": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "row_push": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "elevator": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  }
+ },
+ "selftest_ok": true,
+ "rows": [
+  {
+   "id": "hidden_tpe_od1",
+   "physics": {
+    "observer_delay": 1
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_tpe_od1",
+   "physics": {
+    "observer_delay": 1
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_row_slide_pl11",
+   "physics": {
+    "push_limit": 11
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "hidden_hatch",
+   "physics": {
+    "push_limit": 5
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_hatch_pl7",
+   "physics": {
+    "push_limit": 7
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "hidden_row_slide",
+   "physics": {
+    "push_limit": 9
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "hidden_dpe_ru1",
+   "physics": {
+    "repeater_unit": 1
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_dpe_ru1",
+   "physics": {
+    "repeater_unit": 1
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_row_push_ru1",
+   "physics": {
+    "repeater_unit": 1
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_swapper_ru1",
+   "physics": {
+    "repeater_unit": 1
+   },
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_swapper_ru3",
+   "physics": {
+    "repeater_unit": 3
+   },
+   "start_fails": true,
+   "start_fail": "not_periodic",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "port_tpe_ru4",
+   "physics": {
+    "repeater_unit": 4
+   },
+   "start_fails": true,
+   "start_fail": "too_slow",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_dpe_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_dpe_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_dpe_e3",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_dpe_h1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_dpe_h2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_elevator_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_elevator_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_elevator_h1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_hatch_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_hatch_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_hatch_h1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_row_push_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_row_push_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_row_slide_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_row_slide_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_row_slide_h1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_swapper_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_swapper_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_swapper_e3",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "not_periodic",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_swapper_h1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_tpe_e1",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  },
+  {
+   "id": "repair_tpe_e2",
+   "physics": {},
+   "start_fails": true,
+   "start_fail": "wrong_state",
+   "reference_passes": true,
+   "ok": true
+  }
+ ]
+}

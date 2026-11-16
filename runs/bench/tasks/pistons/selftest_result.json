@@ -1,0 +1,108 @@
+[
+ {
+  "case": "reference:dpe",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "reference:tpe",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "reference:swapper",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "reference:hatch",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "reference:row_slide",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "reference:row_push",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "reference:elevator",
+  "pass": true,
+  "expected": "pass",
+  "ok": true
+ },
+ {
+  "case": "static_extended",
+  "pass": false,
+  "expected": "wrong_start",
+  "codes": [
+   "wrong_start"
+  ],
+  "ok": true
+ },
+ {
+  "case": "never_retracts",
+  "pass": false,
+  "expected": "wrong_state",
+  "codes": [
+   "wrong_state"
+  ],
+  "ok": true
+ },
+ {
+  "case": "from_below",
+  "pass": false,
+  "expected": "conserve",
+  "codes": [
+   "conserve",
+   "keep_clear"
+  ],
+  "ok": true
+ },
+ {
+  "case": "one_shot",
+  "pass": false,
+  "expected": "not_periodic",
+  "codes": [
+   "not_periodic"
+  ],
+  "ok": true
+ },
+ {
+  "case": "outside_box",
+  "pass": false,
+  "expected": "outside_box",
+  "codes": [
+   "outside_box"
+  ],
+  "ok": true
+ },
+ {
+  "case": "over_budget",
+  "pass": false,
+  "expected": "over_budget",
+  "codes": [
+   "over_budget"
+  ],
+  "ok": true
+ },
+ {
+  "case": "broken_support",
+  "pass": false,
+  "expected": "fail",
+  "codes": [
+   "wrong_state"
+  ],
+  "ok": true
+ }
+]

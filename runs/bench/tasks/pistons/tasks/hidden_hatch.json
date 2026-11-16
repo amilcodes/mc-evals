@@ -1,0 +1,690 @@
+{
+ "id": "hidden_hatch",
+ "family": "pistons",
+ "kind": "hidden_rule",
+ "machine": "hatch",
+ "physics": {
+  "push_limit": 5
+ },
+ "disclose_physics": false,
+ "difficulty": "medium",
+ "spec": {
+  "lever": [
+   2,
+   -5,
+   0
+  ],
+  "box": {
+   "min": [
+    -2,
+    -6,
+    -2
+   ],
+   "max": [
+    3,
+    1,
+    3
+   ]
+  },
+  "block_budget": 30,
+  "states": {
+   "off": [
+    {
+     "at": [
+      [
+       0,
+       1
+      ],
+      0,
+      [
+       0,
+       1
+      ]
+     ],
+     "is": "stone"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      [
+       0,
+       1
+      ],
+      0,
+      [
+       0,
+       1
+      ]
+     ],
+     "is": "air"
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [
+   [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ]
+  ],
+  "fixed": [
+   [
+    -1,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    -1,
+    0,
+    0,
+    "minecraft:smooth_stone"
+   ],
+   [
+    -1,
+    0,
+    1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    -1,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ],
+   [
+    0,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    0,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ],
+   [
+    1,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    1,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    -1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    0,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    1,
+    "minecraft:smooth_stone"
+   ],
+   [
+    2,
+    0,
+    2,
+    "minecraft:smooth_stone"
+   ]
+  ]
+ },
+ "start_build": [
+  {
+   "pos": [
+    -1,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    1
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    1
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    -3,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up",
+    "extended": "true"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    0
+   ],
+   "id": "minecraft:piston_head",
+   "props": {
+    "facing": "up",
+    "type": "sticky"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -3,
+    0
+   ],
+   "id": "minecraft:obsidian"
+  },
+  {
+   "pos": [
+    1,
+    -4,
+    0
+   ],
+   "id": "minecraft:redstone_torch"
+  },
+  {
+   "pos": [
+    1,
+    -5,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -5,
+    0
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "wall",
+    "facing": "east"
+   }
+  }
+ ],
+ "reference_solution": [
+  {
+   "pos": [
+    -1,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    0
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    -1,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    -3,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up",
+    "extended": "true"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    0
+   ],
+   "id": "minecraft:piston_head",
+   "props": {
+    "facing": "up",
+    "type": "sticky"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    1
+   ],
+   "id": "minecraft:honey_block"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    1,
+    -5,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -4,
+    0
+   ],
+   "id": "minecraft:redstone_torch"
+  },
+  {
+   "pos": [
+    1,
+    -3,
+    0
+   ],
+   "id": "minecraft:obsidian"
+  },
+  {
+   "pos": [
+    1,
+    -3,
+    1
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up",
+    "extended": "true"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    1
+   ],
+   "id": "minecraft:piston_head",
+   "props": {
+    "facing": "up",
+    "type": "sticky"
+   }
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    0
+   ],
+   "id": "minecraft:slime_block"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    1
+   ],
+   "id": "minecraft:honey_block"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    -5,
+    0
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "wall",
+    "facing": "east"
+   }
+  },
+  {
+   "pos": [
+    2,
+    0,
+    -1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:smooth_stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    2
+   ],
+   "id": "minecraft:smooth_stone"
+  }
+ ],
+ "provenance": {
+  "edits": [],
+  "notes": "push_limit 5 (reference fix changes 4 cells)"
+ },
+ "verification": {
+  "start": {
+   "pass": false,
+   "toggles_passed": 0,
+   "fail": "wrong_state",
+   "msg": "toggle 1: target cells are not in the 'on' state at rest"
+  },
+  "reference": {
+   "pass": true,
+   "toggles_passed": 6,
+   "fail": null,
+   "msg": null
+  },
+  "reference_timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 2,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 4,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 2,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 4,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 2,
+    "last_change_tick": 4
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 4,
+    "last_change_tick": 4
+   }
+  ]
+ },
+ "prompt": "This 2x2 flush floor hatch works in vanilla Minecraft Java 26.3, but it fails on this server, which has one changed game mechanic that is not disclosed. Work out what is different and adapt the build so it works here.\n\nGoal: A 2x2 hatch (0..1, 0, 0..1) in the smooth-stone floor: closed (four stone blocks, flush with the floor) while the lever is off, open (all four cells empty) while it is on. The smooth-stone floor ring must never move.\n\nSpec (checked in the game engine):\n- Lever at [2, -5, 0]; it starts off. The grader settles the build, then flips the lever 6 times (idle gaps [0, 3, 7, 1, 11, 2] ticks before each flip).\n- After each flip the build must come to rest within 60 ticks, then stay unchanged for 40 ticks.\n- Lever off (start and after every even flip): (0..1, 0, 0..1) is stone.\n- Lever on (after every odd flip): (0..1, 0, 0..1) is air.\n- The whole build must return to exactly the same resting state every two flips; no item drops; no block may leave the box.\n- At most 30 blocks (lever included), all inside the box [-2, -6, -2]..[3, 1, 3].\n- These cells must stay empty at every tick: [[[0, 1], [1, 2], [0, 1]]].\n- 12 fixed cells must keep their block at every tick: [-1, 0, -1], [-1, 0, 0], [-1, 0, 1], [-1, 0, 2], [0, 0, -1], [0, 0, 2], [1, 0, -1], [1, 0, 2], [2, 0, -1], [2, 0, 0], [2, 0, 1], [2, 0, 2].\n\nYou may change, add or remove any blocks except the lever. Allowed blocks: the benchmark allow-list. Submit the complete build as a list of blocks.",
+ "verified": true
+}

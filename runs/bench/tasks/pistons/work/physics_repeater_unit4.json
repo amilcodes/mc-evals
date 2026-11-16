@@ -1,0 +1,56 @@
+{
+ "dpe": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "tpe": {
+  "pass": false,
+  "toggles_passed": 0,
+  "fail": "too_slow",
+  "msg": "toggle 1: the build was still changing after 80 ticks"
+ },
+ "swapper": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "hatch": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "row_slide": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "row_push": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "elevator": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "fix:row_slide": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ },
+ "fix:hatch": {
+  "pass": true,
+  "toggles_passed": 6,
+  "fail": null,
+  "msg": null
+ }
+}

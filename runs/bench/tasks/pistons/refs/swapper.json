@@ -1,0 +1,386 @@
+{
+ "name": "swapper",
+ "title": "block swapper",
+ "goal": "The slot (0,0,0) holds the red concrete block while the lever is off and the blue concrete block while it is on; the two blocks swap every time the lever is flipped.",
+ "blocks": [
+  {
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "id": "minecraft:red_concrete"
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    0
+   ],
+   "id": "minecraft:blue_concrete"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "up"
+   }
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "minecraft:sticky_piston",
+   "props": {
+    "facing": "west",
+    "extended": "true"
+   }
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "minecraft:piston_head",
+   "props": {
+    "facing": "west",
+    "type": "sticky"
+   }
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "minecraft:redstone_torch"
+  },
+  {
+   "pos": [
+    -1,
+    -1,
+    3
+   ],
+   "id": "minecraft:lever",
+   "props": {
+    "face": "floor",
+    "facing": "north"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -1,
+    3
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    -1,
+    3
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    3
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    -1,
+    3
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    4,
+    -1,
+    3
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    -1,
+    2
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    4,
+    -1,
+    2
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    4,
+    -1,
+    1
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    -1,
+    1
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "east",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    2
+   ],
+   "id": "minecraft:redstone_wire"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    1
+   ],
+   "id": "minecraft:repeater",
+   "props": {
+    "facing": "south",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    -1,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    1,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    3,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    4,
+    -2,
+    3
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    4,
+    -2,
+    2
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    4,
+    -2,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    3,
+    -2,
+    1
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    2,
+    -2,
+    2
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -3,
+    2
+   ],
+   "id": "minecraft:stone"
+  },
+  {
+   "pos": [
+    0,
+    -3,
+    1
+   ],
+   "id": "minecraft:stone"
+  }
+ ],
+ "spec": {
+  "lever": [
+   -1,
+   -1,
+   3
+  ],
+  "box": {
+   "min": [
+    -2,
+    -4,
+    -1
+   ],
+   "max": [
+    5,
+    1,
+    4
+   ]
+  },
+  "block_budget": 34,
+  "states": {
+   "off": [
+    {
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "is": "red_concrete"
+    }
+   ],
+   "on": [
+    {
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "is": "blue_concrete"
+    }
+   ]
+  },
+  "schedule": [
+   0,
+   3,
+   7,
+   1,
+   11,
+   2
+  ],
+  "time_cap": 60,
+  "keep_clear": [],
+  "fixed": [],
+  "conserve": {
+   "minecraft:red_concrete": 1,
+   "minecraft:blue_concrete": 1
+  }
+ },
+ "verified": {
+  "physics": {},
+  "pass": true,
+  "timings": [
+   {
+    "toggle": 1,
+    "to": "on",
+    "reach_tick": 10,
+    "last_change_tick": 12
+   },
+   {
+    "toggle": 2,
+    "to": "off",
+    "reach_tick": 16,
+    "last_change_tick": 16
+   },
+   {
+    "toggle": 3,
+    "to": "on",
+    "reach_tick": 10,
+    "last_change_tick": 12
+   },
+   {
+    "toggle": 4,
+    "to": "off",
+    "reach_tick": 16,
+    "last_change_tick": 16
+   },
+   {
+    "toggle": 5,
+    "to": "on",
+    "reach_tick": 10,
+    "last_change_tick": 12
+   },
+   {
+    "toggle": 6,
+    "to": "off",
+    "reach_tick": 16,
+    "last_change_tick": 16
+   }
+  ],
+  "block_count": 31
+ }
+}
