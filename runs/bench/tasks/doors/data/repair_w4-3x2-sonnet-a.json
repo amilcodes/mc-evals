@@ -1,0 +1,49 @@
+{
+ "run": "w4-3x2-sonnet-a",
+ "single": {
+  "[[3, 0, 0], [\"glass\", {}]]": true,
+  "[[1, -1, 0], [\"slime_block\", {}]]": true
+ },
+ "attempts": [
+  {
+   "k": 2,
+   "edits": [
+    {
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "glass",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      1,
+      -1,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "slime_block",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 2352,
+   "graded": 2352,
+   "full": true,
+   "seconds": 79,
+   "accepted": "repair-3x2-w4-3x2-sonnet-a-k2"
+  }
+ ]
+}

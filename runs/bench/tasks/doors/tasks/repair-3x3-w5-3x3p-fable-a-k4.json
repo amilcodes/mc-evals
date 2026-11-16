@@ -1,0 +1,1435 @@
+{
+ "id": "repair-3x3-w5-3x3p-fable-a-k4",
+ "family": "piston_doors",
+ "kind": "repair",
+ "n": 3,
+ "size": "3x3",
+ "track": "seamless",
+ "physics": {
+  "observer_delay": 3,
+  "repeater_unit": 3
+ },
+ "physics_told": true,
+ "told": "This 3x3 seamless piston door used to pass the grader. 4 of its blocks were then changed (each one a plausible build mistake: wrong facing, wrong repeater delay, wrong block type, or a missing block), and now it fails. Repair it. Grading physics: Minecraft 26.3 with changed physics {\"observer_delay\": 3, \"repeater_unit\": 3}. Your fix may change at most 6 cells of the given design, the box may not grow beyond volume 72, and the initial state must stay 'closed'.",
+ "start": {
+  "initial_state": "closed",
+  "blocks": [
+   {
+    "pos": [
+     -3,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     4,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     0,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     0,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     0,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     0,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     0,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     3,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     3,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     3,
+     0
+    ],
+    "id": "obsidian"
+   },
+   {
+    "pos": [
+     0,
+     3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     3,
+     0
+    ],
+    "id": "piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     4,
+     3,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     4,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     4,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     4,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     0,
+     4,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     1,
+     4,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     3,
+     4,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     4,
+     4,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     5,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     5,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     5,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     5,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     3,
+     5,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     4,
+     5,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     5,
+     5,
+     0
+    ],
+    "id": "lever",
+    "props": {
+     "face": "wall",
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     0,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     1,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     2,
+     6,
+     0
+    ],
+    "id": "piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     3,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     4,
+     6,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "down"
+    }
+   }
+  ]
+ },
+ "constraints": {
+  "max_volume": 72,
+  "max_blocks": null,
+  "allowed_blocks": null,
+  "edit_budget": 6,
+  "initial_state": "closed"
+ },
+ "reference": {
+  "source": "w5-3x3p-fable-a",
+  "kind": "original door",
+  "design": {
+   "initial_state": "closed",
+   "blocks": [
+    {
+     "pos": [
+      -3,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      -1,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      0,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      1,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      3,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      5,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -3,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      -1,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      0,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      1,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      2,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      3,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      5,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -1,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -1,
+      -1,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      -1,
+      3,
+      0
+     ],
+     "id": "obsidian"
+    },
+    {
+     "pos": [
+      -1,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      -1,
+      5,
+      0
+     ],
+     "id": "repeater",
+     "props": {
+      "facing": "west",
+      "delay": "4"
+     }
+    },
+    {
+     "pos": [
+      -1,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      0,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      0,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      3,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      0,
+      5,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      1,
+      -2,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      1,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      4,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      1,
+      5,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      1,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      2,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      2,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      2,
+      6,
+      0
+     ],
+     "id": "piston",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      3,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      3,
+      3,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      3,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      3,
+      5,
+      0
+     ],
+     "id": "repeater",
+     "props": {
+      "facing": "east",
+      "delay": "2"
+     }
+    },
+    {
+     "pos": [
+      3,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      4,
+      -2,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      4,
+      -1,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      4,
+      0,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      4,
+      1,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      4,
+      2,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      4,
+      3,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      4,
+      4,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      4,
+      5,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      4,
+      6,
+      0
+     ],
+     "id": "observer",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      5,
+      5,
+      0
+     ],
+     "id": "lever",
+     "props": {
+      "face": "wall",
+      "facing": "east"
+     }
+    }
+   ]
+  },
+  "volume": 72,
+  "open_ticks": 77,
+  "close_ticks": 77,
+  "edits_from_start": 4
+ },
+ "provenance": {
+  "seed_run": "w5-3x3p-fable-a",
+  "seed_model": "Fable 5.2",
+  "perturbation": [
+   {
+    "pos": [
+     -1,
+     5,
+     0
+    ],
+    "from": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "4"
+     }
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ]
+   },
+   {
+    "pos": [
+     3,
+     3,
+     0
+    ],
+    "from": [
+     "sticky_piston",
+     {
+      "facing": "west"
+     }
+    ],
+    "to": [
+     "piston",
+     {
+      "facing": "west"
+     }
+    ]
+   },
+   {
+    "pos": [
+     -3,
+     2,
+     0
+    ],
+    "from": [
+     "observer",
+     {
+      "facing": "up"
+     }
+    ],
+    "to": [
+     "air",
+     {}
+    ]
+   },
+   {
+    "pos": [
+     2,
+     4,
+     0
+    ],
+    "from": [
+     "observer",
+     {
+      "facing": "east"
+     }
+    ],
+    "to": [
+     "air",
+     {}
+    ]
+   }
+  ],
+  "generator": "gen_repair.py",
+  "rng_seed": 0,
+  "attempt": 0
+ },
+ "difficulty": {
+  "edits_made": 4,
+  "single_edit_fix": false,
+  "neighbourhood_size": 3528,
+  "neighbours_graded": 3528,
+  "brute_force": "full",
+  "start_fail": "did_not_open",
+  "start_final_partial": 0.0347,
+  "reference_volume": 72,
+  "reference_open_ticks": 77,
+  "reference_close_ticks": 77
+ },
+ "verified": {
+  "date": "2026-11-16",
+  "mode": "final",
+  "physics": "observer_delay=3,repeater_unit=3",
+  "start_passes": false,
+  "start_grade": {
+   "valid": false,
+   "volume": 72,
+   "open_ticks": null,
+   "close_ticks": null,
+   "flips_passed": 0,
+   "partial": 0.0347,
+   "block_count": 59,
+   "fail": "did_not_open",
+   "mode": "final"
+  },
+  "reference_passes": true,
+  "reference_grade": {
+   "valid": true,
+   "volume": 72,
+   "open_ticks": 77,
+   "close_ticks": 77,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 61,
+   "fail": null,
+   "mode": "final"
+  },
+  "hack_probes_refused": {
+   "bigger_box": true,
+   "no_door": true,
+   "wrong_size": true,
+   "over_budget": true
+  },
+  "ok": true,
+  "start_fail": "did_not_open: cycle 1: the door did not open within 200 ticks (doorway at end: .../.#./###; # door block, . air, m moving, ? other)"
+ }
+}

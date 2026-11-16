@@ -1,0 +1,41 @@
+{
+ "task": "port-3x3-w8-3x3-chg-b-opus-vanilla",
+ "candidates": [
+  "w1-fable-a",
+  "w3-opus-d",
+  "w5-3x3p-opus-b",
+  "w3-fable-c",
+  "w1-opus-a",
+  "w1-fable-b",
+  "w3-opus-c",
+  "w5-3x3p-opus-c",
+  "w3-fable-d",
+  "w8-3x3-std-c-opus",
+  "w1-opus-b",
+  "w8-3x3-std-a-opus",
+  "w1-sonnet-b",
+  "w1-sonnet-a",
+  "w8-3x3-std-b-opus",
+  "w3-sonnet-d"
+ ],
+ "ref_checks": [
+  [
+   "w1-fable-a",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 71,
+  "pairs_graded": 1500,
+  "pairs_total": 2291,
+  "found": null,
+  "seconds": 103
+ },
+ "brute_force": {
+  "total": 3360,
+  "graded": 3360,
+  "full": true,
+  "fixes": [],
+  "seconds": 258
+ }
+}

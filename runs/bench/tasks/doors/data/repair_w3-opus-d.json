@@ -1,0 +1,73 @@
+{
+ "run": "w3-opus-d",
+ "single": {
+  "[[0, -3, 0], [\"observer\", {\"facing\": \"down\"}]]": true,
+  "[[4, 6, 0], [\"observer\", {\"facing\": \"down\"}]]": true,
+  "[[-1, 0, 0], [\"obsidian\", {}]]": true
+ },
+ "attempts": [
+  {
+   "k": 3,
+   "edits": [
+    {
+     "pos": [
+      0,
+      -3,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "west"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "down"
+      }
+     ]
+    },
+    {
+     "pos": [
+      4,
+      6,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "west"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "down"
+      }
+     ]
+    },
+    {
+     "pos": [
+      -1,
+      0,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "obsidian",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 3976,
+   "graded": 3976,
+   "full": true,
+   "seconds": 152,
+   "accepted": "repair-3x3-w3-opus-d-k3"
+  }
+ ]
+}

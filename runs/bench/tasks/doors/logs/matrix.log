@@ -1,0 +1,9 @@
+vanilla: 38/45 pass dev, 38s
+observer_delay=3,repeater_unit=3: 32/45 pass dev, 28s
+repeater_unit=3: 32/45 pass dev, 28s
+repeater_unit=1: 12/45 pass dev, 19s
+observer_delay=3: 31/45 pass dev, 26s
+observer_delay=1: 21/45 pass dev, 34s
+observer_pulse=3: 9/45 pass dev, 23s
+observer_pulse=1: 25/45 pass dev, 34s
+push_limit=8: 38/45 pass dev, 24s

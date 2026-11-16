@@ -1,0 +1,53 @@
+{
+ "run": "w8-3x3-chg-b-opus",
+ "single": {
+  "[[3, 0, 0], [\"glass\", {}]]": true,
+  "[[1, -2, 0], [\"sticky_piston\", {\"facing\": \"south\"}]]": true
+ },
+ "attempts": [
+  {
+   "k": 2,
+   "edits": [
+    {
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "glass",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      1,
+      -2,
+      0
+     ],
+     "from": [
+      "sticky_piston",
+      {
+       "facing": "up"
+      }
+     ],
+     "to": [
+      "sticky_piston",
+      {
+       "facing": "south"
+      }
+     ]
+    }
+   ],
+   "neighbours_total": 3360,
+   "graded": 3360,
+   "full": true,
+   "seconds": 154,
+   "accepted": "repair-3x3-w8-3x3-chg-b-opus-k2"
+  }
+ ]
+}

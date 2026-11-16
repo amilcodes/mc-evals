@@ -1,0 +1,120 @@
+{
+ "run": "w4-4x4-opus-e",
+ "single": {
+  "[[-3, -1, 1], [\"stone\", {}]]": false,
+  "[[6, 1, 1], [\"glass\", {}]]": false,
+  "[[6, 1, 1], [\"slime_block\", {}]]": false,
+  "[[-2, 1, 0], [\"sticky_piston\", {\"facing\": \"up\"}]]": true,
+  "[[-2, 0, 2], [\"observer\", {\"facing\": \"east\"}]]": true,
+  "[[-2, 2, 1], [\"stone\", {}]]": true,
+  "[[3, 5, 1], [\"air\", {}]]": true,
+  "[[-3, -2, 1], [\"air\", {}]]": true
+ },
+ "attempts": [
+  {
+   "k": 2,
+   "edits": [
+    {
+     "pos": [
+      -2,
+      1,
+      0
+     ],
+     "from": [
+      "sticky_piston",
+      {
+       "facing": "east"
+      }
+     ],
+     "to": [
+      "sticky_piston",
+      {
+       "facing": "up"
+      }
+     ]
+    },
+    {
+     "pos": [
+      -2,
+      0,
+      2
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "up"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "east"
+      }
+     ]
+    }
+   ],
+   "neighbours_total": 8960,
+   "graded": 1816,
+   "full": false,
+   "seconds": 123,
+   "accepted": "repair-4x4-w4-4x4-opus-e-k2"
+  },
+  {
+   "k": 3,
+   "edits": [
+    {
+     "pos": [
+      -2,
+      2,
+      1
+     ],
+     "from": [
+      "redstone_wire",
+      {}
+     ],
+     "to": [
+      "stone",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      3,
+      5,
+      1
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "south"
+      }
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      -3,
+      -2,
+      1
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 8960,
+   "graded": 2096,
+   "full": false,
+   "seconds": 117,
+   "accepted": "repair-4x4-w4-4x4-opus-e-k3"
+  }
+ ]
+}

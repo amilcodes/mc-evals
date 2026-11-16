@@ -1,0 +1,70 @@
+{
+ "run": "w4-3x2-fable-b",
+ "single": {
+  "[[0, -1, 0], [\"glass\", {}]]": true,
+  "[[-2, 2, 0], [\"slime_block\", {}]]": false,
+  "[[-1, 2, 0], [\"air\", {}]]": true,
+  "[[1, -2, 0], [\"sticky_piston\", {\"facing\": \"west\"}]]": true
+ },
+ "attempts": [
+  {
+   "k": 3,
+   "edits": [
+    {
+     "pos": [
+      0,
+      -1,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "glass",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      -1,
+      2,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      1,
+      -2,
+      0
+     ],
+     "from": [
+      "sticky_piston",
+      {
+       "facing": "up"
+      }
+     ],
+     "to": [
+      "sticky_piston",
+      {
+       "facing": "west"
+      }
+     ]
+    }
+   ],
+   "neighbours_total": 2016,
+   "graded": 2016,
+   "full": true,
+   "seconds": 63,
+   "accepted": "repair-3x2-w4-3x2-fable-b-k3"
+  }
+ ]
+}

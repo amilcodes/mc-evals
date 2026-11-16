@@ -1,0 +1,39 @@
+{
+ "task": "hidden-3x3-w1-fable-a-observer_delay3",
+ "candidates": [
+  "w5-3x3p-fable-b",
+  "w3-opus-d",
+  "w8-3x3-chg-c-opus",
+  "w3-fable-c",
+  "w1-opus-a",
+  "w5-3x3p-opus-c",
+  "w3-fable-d",
+  "w8-3x3-std-c-opus",
+  "w1-opus-b",
+  "w8-3x3-std-a-opus",
+  "w1-sonnet-b",
+  "w1-sonnet-a",
+  "w8-3x3-std-b-opus",
+  "w3-sonnet-d"
+ ],
+ "ref_checks": [
+  [
+   "w5-3x3p-fable-b",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 32,
+  "pairs_graded": 418,
+  "pairs_total": 418,
+  "found": null,
+  "seconds": 15
+ },
+ "brute_force": {
+  "total": 3416,
+  "graded": 3416,
+  "full": true,
+  "fixes": [],
+  "seconds": 140
+ }
+}

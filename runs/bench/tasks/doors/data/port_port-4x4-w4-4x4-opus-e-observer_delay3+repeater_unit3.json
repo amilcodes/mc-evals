@@ -1,0 +1,31 @@
+{
+ "task": "port-4x4-w4-4x4-opus-e-observer_delay3+repeater_unit3",
+ "candidates": [
+  "w7-4x4k2-opus-c",
+  "w2-4x4-fable-b",
+  "w4-4x4-fable-f",
+  "w7-4x4k2-opus-b",
+  "w7-4x4k2-opus-a",
+  "w7-4x4k2-fable-c"
+ ],
+ "ref_checks": [
+  [
+   "w7-4x4k2-opus-c",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 356,
+  "pairs_graded": 1500,
+  "pairs_total": 62066,
+  "found": null,
+  "seconds": 172
+ },
+ "brute_force": {
+  "total": 8960,
+  "graded": 4896,
+  "full": false,
+  "fixes": [],
+  "seconds": 405
+ }
+}

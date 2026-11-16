@@ -70,7 +70,7 @@ A design is plain JSON: an initial state, plus a list of blocks with positions r
 | `grader/` | `pdgrader` (rules, validation, grading, agent kits, run server) and `kernel/` (the Java harness that steps the server, plus the physics-patching agent) |
 | `runs/bench/w1` … `w9` | One folder per agent run: server log, final design and grade |
 | `runs/bench/search_pilot/` | Single-edit census and speed search |
-| `runs/bench/tasks/` | Repair and physics-port task sets for doors, logic circuits and piston machines (in progress) |
+| `runs/bench/tasks/` | 95 verified repair and physics-port tasks: doors, logic circuits and piston machines |
 | `runs/bench/video/` | Renderer, door films and the real-client recording setup |
 | `reports/`, `research_notes/` | Write-ups and the notes behind them |
 

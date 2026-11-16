@@ -1,0 +1,95 @@
+{
+ "run": "w5-3x3p-fable-a",
+ "single": {
+  "[[-1, 5, 0], [\"repeater\", {\"delay\": \"1\", \"facing\": \"west\"}]]": true,
+  "[[3, 3, 0], [\"piston\", {\"facing\": \"west\"}]]": true,
+  "[[-3, 2, 0], [\"air\", {}]]": true,
+  "[[2, 4, 0], [\"air\", {}]]": true
+ },
+ "attempts": [
+  {
+   "k": 4,
+   "edits": [
+    {
+     "pos": [
+      -1,
+      5,
+      0
+     ],
+     "from": [
+      "repeater",
+      {
+       "facing": "west",
+       "delay": "4"
+      }
+     ],
+     "to": [
+      "repeater",
+      {
+       "facing": "west",
+       "delay": "1"
+      }
+     ]
+    },
+    {
+     "pos": [
+      3,
+      3,
+      0
+     ],
+     "from": [
+      "sticky_piston",
+      {
+       "facing": "west"
+      }
+     ],
+     "to": [
+      "piston",
+      {
+       "facing": "west"
+      }
+     ]
+    },
+    {
+     "pos": [
+      -3,
+      2,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "up"
+      }
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      2,
+      4,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "east"
+      }
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 3528,
+   "graded": 3528,
+   "full": true,
+   "seconds": 149,
+   "accepted": "repair-3x3-w5-3x3p-fable-a-k4"
+  }
+ ]
+}

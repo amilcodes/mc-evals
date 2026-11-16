@@ -1,0 +1,484 @@
+{
+ "id": "repair-2x2-w2-2x2-haiku-a-k2",
+ "family": "piston_doors",
+ "kind": "repair",
+ "n": 2,
+ "size": "2x2",
+ "track": "seamless",
+ "physics": {},
+ "physics_told": true,
+ "told": "This 2x2 seamless piston door used to pass the grader. 2 of its blocks were then changed (each one a plausible build mistake: wrong facing, wrong repeater delay, wrong block type, or a missing block), and now it fails. Repair it. Grading physics: vanilla Minecraft 26.3. Your fix may change at most 4 cells of the given design, the box may not grow beyond volume 30, and the initial state must stay 'open'.",
+ "start": {
+  "initial_state": "open",
+  "blocks": [
+   {
+    "pos": [
+     0,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -2,
+     0,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     2,
+     0
+    ],
+    "id": "lever",
+    "props": {
+     "face": "wall",
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     2,
+     0
+    ],
+    "id": "glass"
+   },
+   {
+    "pos": [
+     0,
+     3,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     3,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     3,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     3,
+     0
+    ],
+    "id": "redstone_wire"
+   }
+  ]
+ },
+ "constraints": {
+  "max_volume": 30,
+  "max_blocks": null,
+  "allowed_blocks": null,
+  "edit_budget": 4,
+  "initial_state": "open"
+ },
+ "reference": {
+  "source": "w2-2x2-haiku-a",
+  "kind": "original door",
+  "design": {
+   "initial_state": "open",
+   "blocks": [
+    {
+     "pos": [
+      -2,
+      0,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      1,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "east"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      2,
+      0
+     ],
+     "id": "lever",
+     "props": {
+      "face": "wall",
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      -1,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      3,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      0,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      3,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      1,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      3,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      2,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      3,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      3,
+      1,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "west"
+     }
+    },
+    {
+     "pos": [
+      3,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      3,
+      3,
+      0
+     ],
+     "id": "redstone_wire"
+    }
+   ]
+  },
+  "volume": 30,
+  "open_ticks": 1,
+  "close_ticks": 3,
+  "edits_from_start": 2
+ },
+ "provenance": {
+  "seed_run": "w2-2x2-haiku-a",
+  "seed_model": "Haiku 5.5",
+  "perturbation": [
+   {
+    "pos": [
+     -1,
+     3,
+     0
+    ],
+    "from": [
+     "redstone_wire",
+     {}
+    ],
+    "to": [
+     "air",
+     {}
+    ]
+   },
+   {
+    "pos": [
+     3,
+     2,
+     0
+    ],
+    "from": [
+     "stone",
+     {}
+    ],
+    "to": [
+     "glass",
+     {}
+    ]
+   }
+  ],
+  "generator": "gen_repair.py",
+  "rng_seed": 0,
+  "attempt": 0
+ },
+ "difficulty": {
+  "edits_made": 2,
+  "single_edit_fix": false,
+  "neighbourhood_size": 1400,
+  "neighbours_graded": 1400,
+  "brute_force": "full",
+  "start_fail": "did_not_close",
+  "start_final_partial": 0.0312,
+  "reference_volume": 30,
+  "reference_open_ticks": 1,
+  "reference_close_ticks": 3
+ },
+ "verified": {
+  "date": "2026-11-16",
+  "mode": "final",
+  "physics": "vanilla",
+  "start_passes": false,
+  "start_grade": {
+   "valid": false,
+   "volume": 30,
+   "open_ticks": null,
+   "close_ticks": null,
+   "flips_passed": 0,
+   "partial": 0.0312,
+   "block_count": 19,
+   "fail": "did_not_close",
+   "mode": "final"
+  },
+  "reference_passes": true,
+  "reference_grade": {
+   "valid": true,
+   "volume": 30,
+   "open_ticks": 1,
+   "close_ticks": 3,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 20,
+   "fail": null,
+   "mode": "final"
+  },
+  "hack_probes_refused": {
+   "bigger_box": true,
+   "no_door": true,
+   "wrong_size": true,
+   "over_budget": true
+  },
+  "ok": true,
+  "start_fail": "did_not_close: cycle 1: the door did not close within 200 ticks (doorway at end: #./#.; # door block, . air, m moving, ? other)"
+ }
+}

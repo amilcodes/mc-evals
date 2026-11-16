@@ -1,0 +1,73 @@
+{
+ "run": "w4-3x2-haiku-a",
+ "single": {
+  "[[1, -3, 0], [\"observer\", {\"facing\": \"east\"}]]": true,
+  "[[-1, 1, 0], [\"air\", {}]]": true,
+  "[[1, 3, 0], [\"sticky_piston\", {\"facing\": \"up\"}]]": true
+ },
+ "attempts": [
+  {
+   "k": 3,
+   "edits": [
+    {
+     "pos": [
+      1,
+      -3,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "down"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "east"
+      }
+     ]
+    },
+    {
+     "pos": [
+      -1,
+      1,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      1,
+      3,
+      0
+     ],
+     "from": [
+      "sticky_piston",
+      {
+       "facing": "down"
+      }
+     ],
+     "to": [
+      "sticky_piston",
+      {
+       "facing": "up"
+      }
+     ]
+    }
+   ],
+   "neighbours_total": 3024,
+   "graded": 3024,
+   "full": true,
+   "seconds": 114,
+   "accepted": "repair-3x2-w4-3x2-haiku-a-k3"
+  }
+ ]
+}

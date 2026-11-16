@@ -1,0 +1,73 @@
+{
+ "run": "w2-4x4-fable-a",
+ "single": {
+  "[[1, 5, -1], [\"air\", {}]]": true,
+  "[[-4, -2, 1], [\"observer\", {\"facing\": \"south\"}]]": true,
+  "[[-3, 1, -1], [\"observer\", {\"facing\": \"east\"}]]": true
+ },
+ "attempts": [
+  {
+   "k": 3,
+   "edits": [
+    {
+     "pos": [
+      1,
+      5,
+      -1
+     ],
+     "from": [
+      "redstone_wire",
+      {}
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      -4,
+      -2,
+      1
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "east"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "south"
+      }
+     ]
+    },
+    {
+     "pos": [
+      -3,
+      1,
+      -1
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "down"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "east"
+      }
+     ]
+    }
+   ],
+   "neighbours_total": 10304,
+   "graded": 1984,
+   "full": false,
+   "seconds": 96,
+   "accepted": "repair-4x4-w2-4x4-fable-a-k3"
+  }
+ ]
+}

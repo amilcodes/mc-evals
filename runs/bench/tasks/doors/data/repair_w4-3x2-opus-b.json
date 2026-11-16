@@ -1,0 +1,87 @@
+{
+ "run": "w4-3x2-opus-b",
+ "single": {
+  "[[-1, 0, 0], [\"slime_block\", {}]]": true,
+  "[[-2, -1, 0], [\"observer\", {\"facing\": \"east\"}]]": true,
+  "[[-1, -2, 0], [\"air\", {}]]": true,
+  "[[-2, 3, 0], [\"air\", {}]]": true
+ },
+ "attempts": [
+  {
+   "k": 4,
+   "edits": [
+    {
+     "pos": [
+      -1,
+      0,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "slime_block",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      -2,
+      -1,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "up"
+      }
+     ],
+     "to": [
+      "observer",
+      {
+       "facing": "east"
+      }
+     ]
+    },
+    {
+     "pos": [
+      -1,
+      -2,
+      0
+     ],
+     "from": [
+      "observer",
+      {
+       "facing": "up"
+      }
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      -2,
+      3,
+      0
+     ],
+     "from": [
+      "note_block",
+      {}
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 2016,
+   "graded": 2016,
+   "full": true,
+   "seconds": 63,
+   "accepted": "repair-3x2-w4-3x2-opus-b-k4"
+  }
+ ]
+}

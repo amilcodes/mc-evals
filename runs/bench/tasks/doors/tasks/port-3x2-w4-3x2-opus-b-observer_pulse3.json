@@ -1,0 +1,714 @@
+{
+ "id": "port-3x2-w4-3x2-opus-b-observer_pulse3",
+ "family": "piston_doors",
+ "kind": "port",
+ "n": [
+  3,
+  2
+ ],
+ "size": "3x2",
+ "track": "seamless",
+ "physics": {
+  "observer_pulse": 3
+ },
+ "physics_told": true,
+ "told": "This 3x2 seamless piston door passes the grader under vanilla Minecraft 26.3. It will now be graded under Minecraft 26.3 with these physics changes: {\"observer_pulse\": 3} (vanilla: repeater_unit 2, push_limit 12, observer_delay 2, observer_pulse 2), and it fails there. Port it: produce a door that passes under the new physics, in a box of volume at most 54. You may change as much as you like.",
+ "start": {
+  "initial_state": "open",
+  "blocks": [
+   {
+    "pos": [
+     -2,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     0,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     3,
+     0
+    ],
+    "id": "note_block"
+   },
+   {
+    "pos": [
+     -1,
+     -3,
+     0
+    ],
+    "id": "note_block"
+   },
+   {
+    "pos": [
+     -1,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     3,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     3,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     0
+    ],
+    "id": "note_block"
+   },
+   {
+    "pos": [
+     1,
+     -2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     3,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     1,
+     4,
+     0
+    ],
+    "id": "lever",
+    "props": {
+     "face": "floor",
+     "facing": "north"
+    }
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     2,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     3,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     3,
+     -3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     0
+    ],
+    "id": "redstone_wire",
+    "props": {
+     "north": "side",
+     "south": "side",
+     "east": "side",
+     "west": "side"
+    }
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "constraints": {
+  "max_volume": 54,
+  "max_blocks": null,
+  "allowed_blocks": null,
+  "edit_budget": null,
+  "initial_state": null
+ },
+ "reference": {
+  "source": "w4-3x2-sonnet-b",
+  "kind": "another agent's door",
+  "design": {
+   "initial_state": "open",
+   "blocks": [
+    {
+     "pos": [
+      -2,
+      -2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -2,
+      -1,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      -2,
+      0,
+      0
+     ],
+     "id": "lever",
+     "props": {
+      "face": "ceiling",
+      "facing": "north"
+     }
+    },
+    {
+     "pos": [
+      -2,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -2,
+      2,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      -1,
+      -3,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      -2,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      -1,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      -1,
+      3,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      0,
+      -4,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      -3,
+      0
+     ],
+     "id": "repeater",
+     "props": {
+      "facing": "west",
+      "delay": "1"
+     }
+    },
+    {
+     "pos": [
+      0,
+      -2,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      0,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      0,
+      3,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      0,
+      4,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      1,
+      -3,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      -2,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      1,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      1,
+      3,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      1,
+      4,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      2,
+      -4,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      -3,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      2,
+      -2,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "up"
+     }
+    },
+    {
+     "pos": [
+      2,
+      -1,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      2,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      2,
+      3,
+      0
+     ],
+     "id": "sticky_piston",
+     "props": {
+      "facing": "down"
+     }
+    },
+    {
+     "pos": [
+      2,
+      4,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      3,
+      -3,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      3,
+      -2,
+      0
+     ],
+     "id": "redstone_wire"
+    },
+    {
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "id": "stone"
+    },
+    {
+     "pos": [
+      3,
+      1,
+      0
+     ],
+     "id": "stone"
+    }
+   ]
+  },
+  "volume": 54,
+  "open_ticks": 2,
+  "close_ticks": 4,
+  "edits_from_start": 19
+ },
+ "provenance": {
+  "start_run": "w4-3x2-opus-b",
+  "start_model": "Opus 5.5",
+  "start_home_physics": {},
+  "generator": "gen_port.py"
+ },
+ "difficulty": {
+  "single_edit_fix": false,
+  "single_edit_fixes_found": 0,
+  "neighbourhood_size": 2016,
+  "neighbours_graded": 2016,
+  "brute_force": "full",
+  "same_volume_port_known": false,
+  "same_volume_port": null,
+  "retime_search": {
+   "timing_edits": 61,
+   "pairs_graded": 1500,
+   "pairs_total": 1636,
+   "found": null,
+   "seconds": 71
+  },
+  "start_fail": "did_not_close",
+  "start_final_partial": 0.0312,
+  "start_volume": 42,
+  "reference_volume": 54,
+  "reference_open_ticks": 2,
+  "reference_close_ticks": 4
+ },
+ "verified": {
+  "date": "2026-11-16",
+  "mode": "final",
+  "physics": "observer_pulse=3",
+  "start_passes": false,
+  "start_grade": {
+   "valid": false,
+   "volume": 42,
+   "open_ticks": null,
+   "close_ticks": null,
+   "flips_passed": 0,
+   "partial": 0.0312,
+   "block_count": 30,
+   "fail": "did_not_close",
+   "mode": "final"
+  },
+  "reference_passes": true,
+  "reference_grade": {
+   "valid": true,
+   "volume": 54,
+   "open_ticks": 2,
+   "close_ticks": 4,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 34,
+   "fail": null,
+   "mode": "final"
+  },
+  "hack_probes_refused": {
+   "bigger_box": true,
+   "no_door": true,
+   "wrong_size": true
+  },
+  "ok": true,
+  "start_fail": "did_not_close: cycle 1: the door did not close within 200 ticks (doorway at end: ###/...; # door block, . air, m moving, ? other)"
+ }
+}

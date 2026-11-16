@@ -1,0 +1,41 @@
+{
+ "task": "port-3x3-w1-fable-a-observer_delay3+repeater_unit3",
+ "candidates": [
+  "w8-3x3-chg-b-opus",
+  "w5-3x3p-fable-a",
+  "w5-3x3p-fable-b",
+  "w3-opus-d",
+  "w5-3x3p-opus-a",
+  "w5-3x3p-opus-b",
+  "w8-3x3-chg-c-opus",
+  "w5-3x3p-fable-c",
+  "w3-fable-c",
+  "w3-opus-c",
+  "w5-3x3p-opus-c",
+  "w3-fable-d",
+  "w8-3x3-chg-a-opus",
+  "w8-3x3-std-c-opus",
+  "w8-3x3-std-a-opus",
+  "w8-3x3-std-b-opus"
+ ],
+ "ref_checks": [
+  [
+   "w8-3x3-chg-b-opus",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 32,
+  "pairs_graded": 418,
+  "pairs_total": 418,
+  "found": null,
+  "seconds": 30
+ },
+ "brute_force": {
+  "total": 3416,
+  "graded": 3416,
+  "full": true,
+  "fixes": [],
+  "seconds": 354
+ }
+}

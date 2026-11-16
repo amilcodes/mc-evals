@@ -1,0 +1,26 @@
+{
+ "task": "port-3x2-w4-3x2-opus-b-observer_pulse3",
+ "candidates": [
+  "w4-3x2-sonnet-b"
+ ],
+ "ref_checks": [
+  [
+   "w4-3x2-sonnet-b",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 61,
+  "pairs_graded": 1500,
+  "pairs_total": 1636,
+  "found": null,
+  "seconds": 71
+ },
+ "brute_force": {
+  "total": 2016,
+  "graded": 2016,
+  "full": true,
+  "fixes": [],
+  "seconds": 123
+ }
+}

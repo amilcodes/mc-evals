@@ -1,0 +1,63 @@
++ CHG='{"repeater_unit": 3, "observer_delay": 3}'
++ python3 gen_port.py w1-fable-a '{"repeater_unit": 3, "observer_delay": 3}' --retime-search
+    1000/3416 graded, 0 fixes, 82s
+    2000/3416 graded, 0 fixes, 209s
+    3000/3416 graded, 0 fixes, 331s
+port-3x3-w1-fable-a-observer_delay3+repeater_unit3: ref w8-3x3-chg-b-opus vol 70; single-edit fixes 0 of 3416 graded (full)
++ python3 gen_port.py w8-3x3-chg-b-opus '{}' --retime-search
+    1000/3360 graded, 0 fixes, 101s
+    2000/3360 graded, 0 fixes, 178s
+    3000/3360 graded, 0 fixes, 239s
+port-3x3-w8-3x3-chg-b-opus-vanilla: ref w1-fable-a vol 70; single-edit fixes 0 of 3360 graded (full)
++ python3 gen_port.py w5-3x3p-fable-a '{}' --retime-search
+    1000/3528 graded, 0 fixes, 76s
+    2000/3528 graded, 0 fixes, 176s
+    3000/3528 graded, 0 fixes, 257s
+port-3x3-w5-3x3p-fable-a-vanilla: ref w1-fable-a vol 70; single-edit fixes 0 of 3528 graded (full)
++ python3 gen_port.py w8-3x3-chg-c-opus '{}' --retime-search
+    1000/3720 graded, 3 fixes, 81s
+    2000/3720 graded, 3 fixes, 146s
+    3000/3720 graded, 3 fixes, 204s
+port-3x3-w8-3x3-chg-c-opus-vanilla: ref w1-fable-a vol 70; single-edit fixes 3 of 3720 graded (partial)
++ python3 gen_port.py w4-3x2-fable-a '{"observer_pulse": 3}' --retime-search
+    1000/2016 graded, 0 fixes, 69s
+    2000/2016 graded, 0 fixes, 127s
+port-3x2-w4-3x2-fable-a-observer_pulse3: ref w4-3x2-sonnet-b vol 54; single-edit fixes 0 of 2016 graded (full)
++ python3 gen_port.py w4-3x2-opus-b '{"observer_pulse": 3}' --retime-search
+    1000/2016 graded, 0 fixes, 61s
+    2000/2016 graded, 0 fixes, 122s
+port-3x2-w4-3x2-opus-b-observer_pulse3: ref w4-3x2-sonnet-b vol 54; single-edit fixes 0 of 2016 graded (full)
++ python3 gen_port.py w3-opus-d '{"observer_pulse": 1}' --retime-search
+    1000/3976 graded, 0 fixes, 79s
+    2000/3976 graded, 0 fixes, 156s
+    3000/3976 graded, 0 fixes, 240s
+port-3x3-w3-opus-d-observer_pulse1: ref w5-3x3p-opus-a vol 112; single-edit fixes 0 of 3976 graded (full)
++ python3 gen_port.py w4-4x4-opus-e '{"repeater_unit": 3, "observer_delay": 3}' --retime-search
+    1000/4896 graded, 0 fixes, 73s
+    2000/4896 graded, 0 fixes, 144s
+    3000/4896 graded, 0 fixes, 215s
+    4000/4896 graded, 0 fixes, 287s
+port-4x4-w4-4x4-opus-e-observer_delay3+repeater_unit3: ref w7-4x4k2-opus-c vol 396; single-edit fixes 0 of 4896 graded (partial)
++ python3 gen_port.py w2-4x4-fable-a '{"repeater_unit": 3, "observer_delay": 3}' --retime-search
+    1000/7416 graded, 0 fixes, 115s
+    2000/7416 graded, 0 fixes, 207s
+    3000/7416 graded, 0 fixes, 259s
+    4000/7416 graded, 0 fixes, 319s
+    5000/7416 graded, 0 fixes, 382s
+    6000/7416 graded, 0 fixes, 443s
+    7000/7416 graded, 0 fixes, 516s
+port-4x4-w2-4x4-fable-a-observer_delay3+repeater_unit3: ref w7-4x4k2-opus-c vol 396; single-edit fixes 0 of 7416 graded (partial)
++ python3 gen_port.py w4-3x2-opus-a '{"observer_pulse": 3}' --hidden --retime-search
+    1000/1960 graded, 0 fixes, 35s
+hidden-3x2-w4-3x2-opus-a-observer_pulse3: ref w4-3x2-sonnet-b vol 54; single-edit fixes 0 of 1960 graded (full)
++ python3 gen_port.py w1-fable-a '{"observer_delay": 3}' --hidden --retime-search
+    1000/3416 graded, 0 fixes, 51s
+    2000/3416 graded, 0 fixes, 87s
+    3000/3416 graded, 0 fixes, 126s
+hidden-3x3-w1-fable-a-observer_delay3: ref w5-3x3p-fable-b vol 72; single-edit fixes 0 of 3416 graded (full)
++ python3 gen_port.py w4-4x4-opus-e '{"repeater_unit": 3}' --hidden --retime-search
+    1000/4896 graded, 0 fixes, 57s
+    2000/4896 graded, 0 fixes, 121s
+    3000/4896 graded, 0 fixes, 230s
+    4000/4896 graded, 0 fixes, 290s
+hidden-4x4-w4-4x4-opus-e-repeater_unit3: ref w2-4x4-fable-a vol 264; single-edit fixes 0 of 4896 graded (partial)

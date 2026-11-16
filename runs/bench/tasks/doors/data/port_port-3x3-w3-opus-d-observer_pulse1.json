@@ -1,0 +1,34 @@
+{
+ "task": "port-3x3-w3-opus-d-observer_pulse1",
+ "candidates": [
+  "w5-3x3p-opus-a",
+  "w5-3x3p-opus-b",
+  "w8-3x3-chg-c-opus",
+  "w1-opus-a",
+  "w3-opus-c",
+  "w8-3x3-std-c-opus",
+  "w1-opus-b",
+  "w8-3x3-std-a-opus",
+  "w8-3x3-std-b-opus"
+ ],
+ "ref_checks": [
+  [
+   "w5-3x3p-opus-a",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 260,
+  "pairs_graded": 1500,
+  "pairs_total": 32810,
+  "found": null,
+  "seconds": 131
+ },
+ "brute_force": {
+  "total": 3976,
+  "graded": 3976,
+  "full": true,
+  "fixes": [],
+  "seconds": 341
+ }
+}

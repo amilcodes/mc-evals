@@ -1,0 +1,107 @@
+{
+ "run": "w2-2x2-haiku-a",
+ "single": {
+  "[[-1, 3, 0], [\"air\", {}]]": true,
+  "[[3, 2, 0], [\"glass\", {}]]": true,
+  "[[-1, 3, 0], [\"stone\", {}]]": true,
+  "[[-1, 0, 0], [\"glass\", {}]]": true,
+  "[[2, 0, 0], [\"glass\", {}]]": true
+ },
+ "attempts": [
+  {
+   "k": 2,
+   "edits": [
+    {
+     "pos": [
+      -1,
+      3,
+      0
+     ],
+     "from": [
+      "redstone_wire",
+      {}
+     ],
+     "to": [
+      "air",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      3,
+      2,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "glass",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 1400,
+   "graded": 1400,
+   "full": true,
+   "seconds": 41,
+   "accepted": "repair-2x2-w2-2x2-haiku-a-k2"
+  },
+  {
+   "k": 3,
+   "edits": [
+    {
+     "pos": [
+      -1,
+      3,
+      0
+     ],
+     "from": [
+      "redstone_wire",
+      {}
+     ],
+     "to": [
+      "stone",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      -1,
+      0,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "glass",
+      {}
+     ]
+    },
+    {
+     "pos": [
+      2,
+      0,
+      0
+     ],
+     "from": [
+      "stone",
+      {}
+     ],
+     "to": [
+      "glass",
+      {}
+     ]
+    }
+   ],
+   "neighbours_total": 1400,
+   "graded": 1400,
+   "full": true,
+   "seconds": 48,
+   "accepted": "repair-2x2-w2-2x2-haiku-a-k3"
+  }
+ ]
+}

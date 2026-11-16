@@ -1,0 +1,157 @@
+{
+ "task": "port-3x3-w8-3x3-chg-c-opus-vanilla",
+ "candidates": [
+  "w1-fable-a",
+  "w3-opus-d",
+  "w5-3x3p-opus-b",
+  "w3-fable-c",
+  "w1-opus-a",
+  "w1-fable-b",
+  "w3-opus-c",
+  "w5-3x3p-opus-c",
+  "w3-fable-d",
+  "w8-3x3-std-c-opus",
+  "w1-opus-b",
+  "w8-3x3-std-a-opus",
+  "w1-sonnet-b",
+  "w1-sonnet-a",
+  "w8-3x3-std-b-opus",
+  "w3-sonnet-d"
+ ],
+ "ref_checks": [
+  [
+   "w1-fable-a",
+   "final_ok"
+  ]
+ ],
+ "retime_search": {
+  "timing_edits": 314,
+  "pairs_graded": 0,
+  "pairs_total": 48085,
+  "found": [
+   {
+    "pos": [
+     0,
+     4,
+     0
+    ],
+    "from": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "2"
+     }
+    ]
+   }
+  ],
+  "seconds": 7
+ },
+ "brute_force": {
+  "total": 4592,
+  "graded": 3720,
+  "full": false,
+  "fixes": [
+   {
+    "pos": [
+     0,
+     4,
+     0
+    ],
+    "from": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "2"
+     }
+    ],
+    "final": {
+     "valid": true,
+     "volume": 112,
+     "open_ticks": 62,
+     "close_ticks": 52,
+     "flips_passed": 16,
+     "partial": 1.0,
+     "block_count": 70,
+     "fail": null
+    }
+   },
+   {
+    "pos": [
+     0,
+     4,
+     0
+    ],
+    "from": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "3"
+     }
+    ],
+    "final": {
+     "valid": true,
+     "volume": 112,
+     "open_ticks": 66,
+     "close_ticks": 52,
+     "flips_passed": 16,
+     "partial": 1.0,
+     "block_count": 70,
+     "fail": null
+    }
+   },
+   {
+    "pos": [
+     0,
+     4,
+     0
+    ],
+    "from": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "4"
+     }
+    ],
+    "final": {
+     "valid": true,
+     "volume": 112,
+     "open_ticks": 70,
+     "close_ticks": 52,
+     "flips_passed": 16,
+     "partial": 1.0,
+     "block_count": 70,
+     "fail": null
+    }
+   }
+  ],
+  "seconds": 262
+ }
+}

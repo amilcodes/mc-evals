@@ -1,0 +1,86 @@
++ python3 gen_repair.py w2-2x2-haiku-a 2,3
+w2-2x2-haiku-a 2x2 vanilla: seed ok {'valid': True, 'volume': 30, 'open_ticks': 1, 'close_ticks': 3, 'flips_passed': 16, 'partial': 1.0, 'block_count': 20, 'fail': None}
+    1000/1400 graded, 0 fixes, 28s
+  repair-2x2-w2-2x2-haiku-a-k2: accepted after 1400 neighbours graded (full), 41s
+    1000/1400 graded, 0 fixes, 34s
+  repair-2x2-w2-2x2-haiku-a-k3: accepted after 1400 neighbours graded (full), 48s
++ python3 gen_repair.py w2-2x2-sonnet-a 2,4
+w2-2x2-sonnet-a 2x2 vanilla: seed ok {'valid': True, 'volume': 30, 'open_ticks': 1, 'close_ticks': 3, 'flips_passed': 16, 'partial': 1.0, 'block_count': 22, 'fail': None}
+    1000/1456 graded, 0 fixes, 33s
+  repair-2x2-w2-2x2-sonnet-a-k2: accepted after 1456 neighbours graded (full), 54s
+    1000/1456 graded, 0 fixes, 38s
+  repair-2x2-w2-2x2-sonnet-a-k4: accepted after 1456 neighbours graded (full), 57s
++ python3 gen_repair.py w2-2x2-haiku-b 3
+w2-2x2-haiku-b 2x2 vanilla: seed ok {'valid': True, 'volume': 60, 'open_ticks': 1, 'close_ticks': 3, 'flips_passed': 16, 'partial': 1.0, 'block_count': 29, 'fail': None}
+    1000/2408 graded, 0 fixes, 39s
+    2000/2408 graded, 0 fixes, 71s
+  repair-2x2-w2-2x2-haiku-b-k3: accepted after 2408 neighbours graded (full), 87s
++ python3 gen_repair.py w4-3x2-fable-a 2
+w4-3x2-fable-a 3x2 vanilla: seed ok {'valid': True, 'volume': 42, 'open_ticks': 17, 'close_ticks': 17, 'flips_passed': 16, 'partial': 1.0, 'block_count': 30, 'fail': None}
+    1000/2016 graded, 0 fixes, 32s
+    2000/2016 graded, 0 fixes, 66s
+  repair-3x2-w4-3x2-fable-a-k2: accepted after 2016 neighbours graded (full), 67s
++ python3 gen_repair.py w4-3x2-fable-b 3
+w4-3x2-fable-b 3x2 vanilla: seed ok {'valid': True, 'volume': 42, 'open_ticks': 7, 'close_ticks': 7, 'flips_passed': 16, 'partial': 1.0, 'block_count': 29, 'fail': None}
+    1000/2016 graded, 0 fixes, 29s
+    2000/2016 graded, 0 fixes, 62s
+  repair-3x2-w4-3x2-fable-b-k3: accepted after 2016 neighbours graded (full), 63s
++ python3 gen_repair.py w4-3x2-opus-a 3
+w4-3x2-opus-a 3x2 vanilla: seed ok {'valid': True, 'volume': 42, 'open_ticks': 9, 'close_ticks': 9, 'flips_passed': 16, 'partial': 1.0, 'block_count': 27, 'fail': None}
+    1000/1960 graded, 0 fixes, 32s
+  repair-3x2-w4-3x2-opus-a-k3: accepted after 1960 neighbours graded (full), 65s
++ python3 gen_repair.py w4-3x2-opus-b 4
+w4-3x2-opus-b 3x2 vanilla: seed ok {'valid': True, 'volume': 42, 'open_ticks': 21, 'close_ticks': 21, 'flips_passed': 16, 'partial': 1.0, 'block_count': 30, 'fail': None}
+    1000/2016 graded, 0 fixes, 30s
+    2000/2016 graded, 0 fixes, 62s
+  repair-3x2-w4-3x2-opus-b-k4: accepted after 2016 neighbours graded (full), 63s
++ python3 gen_repair.py w4-3x2-sonnet-a 2
+w4-3x2-sonnet-a 3x2 vanilla: seed ok {'valid': True, 'volume': 49, 'open_ticks': 23, 'close_ticks': 23, 'flips_passed': 16, 'partial': 1.0, 'block_count': 39, 'fail': None}
+    1000/2352 graded, 0 fixes, 32s
+    2000/2352 graded, 0 fixes, 65s
+  repair-3x2-w4-3x2-sonnet-a-k2: accepted after 2352 neighbours graded (full), 79s
++ python3 gen_repair.py w4-3x2-haiku-a 3
+w4-3x2-haiku-a 3x2 vanilla: seed ok {'valid': True, 'volume': 60, 'open_ticks': 32, 'close_ticks': 32, 'flips_passed': 16, 'partial': 1.0, 'block_count': 40, 'fail': None}
+    1000/3024 graded, 0 fixes, 36s
+    2000/3024 graded, 0 fixes, 71s
+    3000/3024 graded, 0 fixes, 113s
+  repair-3x2-w4-3x2-haiku-a-k3: accepted after 3024 neighbours graded (full), 114s
++ python3 gen_repair.py w1-fable-a 2,3
+w1-fable-a 3x3 vanilla: seed ok {'valid': True, 'volume': 70, 'open_ticks': 34, 'close_ticks': 22, 'flips_passed': 16, 'partial': 1.0, 'block_count': 47, 'fail': None}
+    1000/3416 graded, 0 fixes, 34s
+    2000/3416 graded, 0 fixes, 70s
+    3000/3416 graded, 0 fixes, 105s
+  repair-3x3-w1-fable-a-k2: accepted after 3416 neighbours graded (full), 120s
+    1000/3416 graded, 0 fixes, 34s
+    2000/3416 graded, 0 fixes, 66s
+    3000/3416 graded, 0 fixes, 99s
+  repair-3x3-w1-fable-a-k3: accepted after 3416 neighbours graded (full), 114s
++ python3 gen_repair.py w3-opus-d 3
+w3-opus-d 3x3 vanilla: seed ok {'valid': True, 'volume': 80, 'open_ticks': 46, 'close_ticks': 46, 'flips_passed': 16, 'partial': 1.0, 'block_count': 66, 'fail': None}
+    1000/3976 graded, 0 fixes, 37s
+    2000/3976 graded, 0 fixes, 80s
+    3000/3976 graded, 0 fixes, 116s
+  repair-3x3-w3-opus-d-k3: accepted after 3976 neighbours graded (full), 152s
++ python3 gen_repair.py w8-3x3-chg-b-opus 2
+w8-3x3-chg-b-opus 3x3 observer_delay=3,repeater_unit=3: seed ok {'valid': True, 'volume': 70, 'open_ticks': 38, 'close_ticks': 26, 'flips_passed': 16, 'partial': 1.0, 'block_count': 48, 'fail': None}
+    1000/3360 graded, 0 fixes, 38s
+    2000/3360 graded, 0 fixes, 83s
+    3000/3360 graded, 0 fixes, 133s
+  repair-3x3-w8-3x3-chg-b-opus-k2: accepted after 3360 neighbours graded (full), 154s
++ python3 gen_repair.py w5-3x3p-fable-a 4
+w5-3x3p-fable-a 3x3 observer_delay=3,repeater_unit=3: seed ok {'valid': True, 'volume': 72, 'open_ticks': 77, 'close_ticks': 77, 'flips_passed': 16, 'partial': 1.0, 'block_count': 61, 'fail': None}
+    1000/3528 graded, 0 fixes, 49s
+    2000/3528 graded, 0 fixes, 89s
+    3000/3528 graded, 0 fixes, 125s
+  repair-3x3-w5-3x3p-fable-a-k4: accepted after 3528 neighbours graded (full), 149s
++ python3 gen_repair.py w4-4x4-opus-e 2,3
+w4-4x4-opus-e 4x4 vanilla: seed ok {'valid': True, 'volume': 240, 'open_ticks': 52, 'close_ticks': 40, 'flips_passed': 16, 'partial': 1.0, 'block_count': 118, 'fail': None}
+    1000/1816 graded, 0 fixes, 74s
+  repair-4x4-w4-4x4-opus-e-k2: accepted after 1816 neighbours graded (partial), 123s
+    1000/2096 graded, 0 fixes, 57s
+    2000/2096 graded, 0 fixes, 112s
+  repair-4x4-w4-4x4-opus-e-k3: accepted after 2096 neighbours graded (partial), 117s
++ python3 gen_repair.py w2-4x4-fable-a 3
+w2-4x4-fable-a 4x4 vanilla: seed ok {'valid': True, 'volume': 264, 'open_ticks': 90, 'close_ticks': 66, 'flips_passed': 16, 'partial': 1.0, 'block_count': 164, 'fail': None}
+    1000/1984 graded, 0 fixes, 49s
+  repair-4x4-w2-4x4-fable-a-k3: accepted after 1984 neighbours graded (partial), 96s
