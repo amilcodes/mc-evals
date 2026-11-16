@@ -36,7 +36,7 @@ def _init(physics):
     import pdgrader.kernel as K
     SCRATCH.mkdir(parents=True, exist_ok=True)
     K.tempfile = types.SimpleNamespace(mkdtemp=lambda prefix="", dir=None: _tf.mkdtemp(prefix=prefix, dir=str(SCRATCH)))
-    _K = K.Kernel(heap="1200M", physics=physics or None)
+    _K = K.Kernel(heap="800M", physics=physics or None)
     mp.util.Finalize(_K, _K.close, exitpriority=10)
 
 
@@ -201,16 +201,27 @@ def main():
             if r not in good:
                 print(f"  {r}: baseline not valid under dev grade ({base[r].get('fail')}), skipped", flush=True)
         t0 = time.monotonic()
-        state = run_group(good, physics, workers)
-        with open(out_path, "a") as f:
-            for r, d in doors.items():
-                s = state.get(r)
-                rec = {"run": r, "task": d["task"], "model": d["model"], "physics": physics, "base": base[r]}
-                if s:
-                    rec |= {"edits_graded": s["graded"], "best_dev": s["cur"], "applied": s["applied"], "confirm": s.get("confirm")}
-                    if s["applied"]:
-                        json.dump(s["design"], open(HERE / "speed_designs" / f"{r}.json", "w"), indent=1)
+        # one door at a time (smallest first), saved as soon as it finishes, so a stop loses little
+        order = sorted(doors, key=lambda r: len(doors[r]["design"]["blocks"]))
+        for r in order:
+            d = doors[r]
+            while True:  # disk guard: macOS swap shares this volume
+                free = os.statvfs("/private/tmp")
+                if free.f_bavail * free.f_frsize > 400e6:
+                    break
+                print(f"  waiting for disk space ({free.f_bavail * free.f_frsize / 1e6:.0f} MB free)", flush=True)
+                time.sleep(60)
+            s = run_group({r: good[r]}, physics, workers).get(r) if r in good else None
+            rec = {"run": r, "task": d["task"], "model": d["model"], "physics": physics, "base": base[r]}
+            if s:
+                rec |= {"edits_graded": s["graded"], "best_dev": s["cur"], "applied": s["applied"], "confirm": s.get("confirm")}
+                if s["applied"]:
+                    json.dump(s["design"], open(HERE / "speed_designs" / f"{r}.json", "w"), indent=1)
+            with open(out_path, "a") as f:
                 f.write(json.dumps(rec) + "\n")
+            b, c = base[r], (s or {}).get("cur") or {}
+            print(f"  {r}: {b.get('open_ticks')}/{b.get('close_ticks')} -> {c.get('open_ticks')}/{c.get('close_ticks')} "
+                  f"({len((s or {}).get('applied') or [])} edits) {time.monotonic() - t0:.0f}s", flush=True)
         print(f"  group done in {time.monotonic() - t0:.0f}s", flush=True)
     print("ALL DONE", flush=True)
 
