@@ -1,0 +1,6 @@
+w9-3x3-std-a-opus claude-opus-5-5      final   140 score 1.3714 best-dev   140 first-valid  25.52 min tests   6 sims   4 lab  2762 calls   42 $   7.54 partial 1.0
+w9-3x3-chg-a-opus claude-opus-5-5      final   384 score    0.0 best-dev   384 first-valid  26.34 min tests  21 sims  10 lab   222 calls   43 $   8.96 partial 1.0
+w9-3x3-std-b-opus claude-opus-5-5      final   729 score 0.2634 best-dev   729 first-valid  23.11 min tests  14 sims   4 lab  1192 calls   48 $   8.12 partial 1.0
+w9-3x3-chg-b-opus claude-opus-5-5      final  1950 score    0.0 best-dev  1950 first-valid  30.23 min tests  11 sims   4 lab  1142 calls   39 $   7.29 partial 1.0
+w9-3x3-std-c-opus claude-opus-5-5      final   495 score 0.3879 best-dev   495 first-valid   20.7 min tests  14 sims  26 lab   436 calls   41 $    7.7 partial 1.0
+w9-3x3-chg-c-opus claude-opus-5-5      final   126 score    0.0 best-dev   126 first-valid  22.94 min tests   4 sims   5 lab    30 calls   19 $   7.91 partial 1.0

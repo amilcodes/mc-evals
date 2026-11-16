@@ -1,0 +1,5 @@
+exec(open("door4.py").read())
+for p in [(-3,-2,1),(-2,-3,1),(-2,-2,1),(-1,-3,1),(-1,-2,1),(-1,-3,0),(-1,-2,0),(0,-3,0),(0,-2,0)]: d.remove(*p)
+S(-3,-2,1); S(-2,-2,1); S(-2,-1,1,W); S(-2,-2,0); S(-2,-1,0,W)
+S(-1,-2,0,"observer",facing="up"); S(-1,-1,0,"repeater",facing="west",delay=1); S(0,-2,0,"observer",facing="west")
+d.save("door5.json")

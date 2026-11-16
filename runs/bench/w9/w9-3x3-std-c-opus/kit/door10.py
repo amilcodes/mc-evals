@@ -1,0 +1,5 @@
+exec(open("door9.py").read())
+D.remove(-5,3,0)
+S(-5,1,0)
+R(-5,2,0,"west",1)
+D.save("door10.json")

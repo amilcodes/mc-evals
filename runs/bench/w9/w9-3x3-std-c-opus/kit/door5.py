@@ -1,0 +1,6 @@
+exec(open("door4.py").read())
+for x in (-6,-5,-4,-3,-2): D.remove(x,3,-8); D.remove(x,2,-8)
+D.remove(-4,3,-7); D.remove(-4,2,-7)
+W(-4,3,-7); S(-4,2,-7)
+for x in (-5,-3): W(x,3,-7); S(x,2,-7)
+D.save("door5.json")

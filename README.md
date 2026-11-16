@@ -28,7 +28,7 @@ The agent can test parts in a lab world and step the simulation tick by tick. It
 
 ## Results
 
-58 finished agent runs across 4 models and 7 task setups. 48 of them ended with a valid door.
+64 finished agent runs across 4 models and 7 task setups. 54 of them ended with a valid door.
 
 <p align="center"><img src="docs/media/volumes.svg" width="880" alt="Final door volume per run, by task and model"></p>
 
@@ -40,8 +40,8 @@ The agent can test parts in a lab world and step the simulation tick by tick. It
 | 3×3, changed physics | 70 | Opus 5.5 |
 | 4×4 seamless | 240 | Opus 5.5 |
 
-- **Spread within a model is larger than spread between models.** Opus's 3×3 doors range from 80 to 520 across 7 runs. Which run you look at matters more than which model.
-- **Changed physics did not hurt.** Opus's median 3×3 is 112 under changed timings against 264 under standard rules (6 and 7 runs, one-sided permutation p = 0.05). Opus isn't leaning on memorized community designs that the change would break.
+- **Spread within a model is larger than spread between models.** Opus's 3×3 doors range from 80 to 729 across 10 runs. Which run you look at matters more than which model.
+- **Changed physics did not hurt.** Opus's median 3×3 is 126 under changed timings (9 runs) against 288 under standard rules (10 runs). An earlier gap (p = 0.05 over waves 1–8) did not replicate in a 50-minute wave 9 (pooled p = 0.23), so the claim is "no worse", not "better". Either way, Opus isn't leaning on memorized community designs that the change would break. [Wave 9 write-up](runs/bench/w9/RESULTS.md).
 - **Every block is load-bearing.** We graded all 12,376 one-block changes to the Fable 70 and the Opus 240. Removing any single block breaks the door, and no single change makes either door smaller. Shrinking them takes moves that change several blocks at once.
 - **Search makes doors faster.** A greedy search over repeater, observer and comparator swaps found faster versions of 7 of the first 19 doors it checked, at the same volume. All 7 pass every robustness check. The Fable 70 goes from 34/22 ticks (open/close) to **28/16**.
 

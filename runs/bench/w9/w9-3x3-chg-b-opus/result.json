@@ -1,0 +1,2279 @@
+{
+ "n": 3,
+ "track": "seamless",
+ "physics": {
+  "observer_delay": 3,
+  "repeater_unit": 3
+ },
+ "kit": 1,
+ "variant": "scratch",
+ "rules": "0.3",
+ "seconds": 2334.85,
+ "minutes_limit": 50,
+ "seconds_active": 2296.71,
+ "seconds_to_first_valid": 1813.53,
+ "reference": null,
+ "reference_verified": null,
+ "test_calls": 11,
+ "rejected_before_simulation": 0,
+ "sim_calls": 4,
+ "lab_worlds": 5,
+ "server_restarts": 0,
+ "lab_ticks": 1142,
+ "valid_tests": 8,
+ "first_valid_at_test": 2,
+ "best_dev_volume": 1950,
+ "best_partial": 1.0,
+ "progress": [
+  [
+   2,
+   3971
+  ],
+  [
+   3,
+   3564
+  ],
+  [
+   4,
+   3366
+  ],
+  [
+   5,
+   3179
+  ],
+  [
+   6,
+   2805
+  ],
+  [
+   9,
+   2640
+  ],
+  [
+   10,
+   2250
+  ],
+  [
+   11,
+   1950
+  ]
+ ],
+ "candidate_source": "last submit",
+ "translations": {
+  "passed": 11,
+  "of": 11,
+  "failed": [],
+  "failed_offsets": []
+ },
+ "valid": true,
+ "volume": 1950,
+ "dims": [
+  15,
+  10,
+  13
+ ],
+ "block_count": 251,
+ "final_partial": 1.0,
+ "open_ticks": 75,
+ "close_ticks": 38,
+ "final_failures": [],
+ "score": null,
+ "candidate": {
+  "initial_state": "open",
+  "blocks": [
+   {
+    "pos": [
+     -3,
+     -3,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -3,
+     3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -3,
+     5
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     3
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "south",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     5
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     -1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     1,
+     -1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     2,
+     -1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     2,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -3,
+     2,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -3,
+     3,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -2,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -2,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -2,
+     -1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     0,
+     -1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -2,
+     0,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     1,
+     -1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -2,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     -2,
+     3,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -2,
+     4,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -1,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     -2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -1,
+     -1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     -1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     4,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     4,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     -1,
+     5,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     -1,
+     5,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     -4,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     -4,
+     -3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     -4,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     -4,
+     -1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     -4,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     -3
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "north",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     -2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     -1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     0,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     4,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     0,
+     4,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -4,
+     -5
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -4,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -4,
+     -3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -4,
+     -1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     -5
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     -3
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     -2
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "north"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     -1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "north",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     -2,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     1,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     1,
+     4,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     5,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -4,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     3
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "down"
+    }
+   },
+   {
+    "pos": [
+     2,
+     4,
+     1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     2,
+     5,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     -3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     -1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "up"
+    }
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     3,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -1,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -1,
+     -3
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -1,
+     -2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     -1,
+     -1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "north",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     3,
+     -1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     3,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     -2,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     -2,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     -2,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     -2,
+     4
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     4,
+     -2,
+     6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     4,
+     -1,
+     -4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     4,
+     -1,
+     -2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     4,
+     0,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     4,
+     2,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     3,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     5,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     5,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     -2,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     -2,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     -2,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     5,
+     -2,
+     4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     5,
+     -2,
+     6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     5,
+     -1,
+     -4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     5,
+     -1,
+     -2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     5,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     5,
+     1,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     2,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     6,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     6,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     -2,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     -2,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     -2,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     6,
+     -2,
+     4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     6,
+     -2,
+     6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     6,
+     -1,
+     -4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     6,
+     -1,
+     -2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     6,
+     -1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     0,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     6,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     6,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     7,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     7,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -2,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -2,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -2,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     7,
+     -2,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     7,
+     -2,
+     4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     7,
+     -2,
+     6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     7,
+     -1,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     7,
+     -1,
+     -2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     7,
+     -1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     8,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     -6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -3,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     8,
+     -2,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     8,
+     -2,
+     -2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     8,
+     -2,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     8,
+     -2,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     8,
+     -2,
+     4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     8,
+     -2,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -4,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     -2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     9,
+     -3,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -4,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     -6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     -4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     -2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     4
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     10,
+     -3,
+     6
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     -6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     -5
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     -4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     -3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     -2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     -1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     3
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     4
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     5
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -4,
+     6
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     -6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     -5
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     -4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     -3
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     -2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     -1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     3
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     4
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     5
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     11,
+     -3,
+     6
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     12,
+     -4,
+     0
+    ],
+    "id": "lever",
+    "props": {
+     "face": "wall",
+     "facing": "east"
+    }
+   }
+  ]
+ }
+}

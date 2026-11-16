@@ -1,0 +1,12 @@
+exec(open("door5.py").read())
+for z in (-1,0,1,2): D.remove(-7,1,z); D.remove(-7,0,z)
+D.remove(-7,2,-2); D.remove(-7,1,-2)
+W(-6,1,-1)  # replaces OA1; support (-6,0,-1)
+S(-6,0,-1)
+D.set(-6,2,-1,"observer",facing="up")
+W(-6,3,-1)
+W(-6,3,0); S(-6,2,0)
+W(-6,2,1); S(-6,1,1)
+W(-6,1,2)  # support (-6,0,2) exists
+R(-5,1,2,"west",4)
+D.save("door6.json")

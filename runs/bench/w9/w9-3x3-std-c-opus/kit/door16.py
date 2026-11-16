@@ -1,0 +1,5 @@
+exec(open("door15.py").read())
+# experiment: move torch to LB east face, freeing (-4,3,-1)
+D.remove(-4,3,-1)
+D.set(-3,3,-2,"redstone_wall_torch",facing="east")
+D.save("door16.json")
