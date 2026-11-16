@@ -1,0 +1,54 @@
+{
+ "observer": {
+  "final": {
+   "valid": true,
+   "volume": 70,
+   "open_ticks": 28,
+   "close_ticks": 16,
+   "reset_ticks": 30,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 47,
+   "fail": null
+  },
+  "translations": 11,
+  "translations_of": null,
+  "rot180": {
+   "valid": true,
+   "volume": 70,
+   "open_ticks": 28,
+   "close_ticks": 16,
+   "reset_ticks": 30,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 47,
+   "fail": null
+  }
+ },
+ "delay2": {
+  "final": {
+   "valid": true,
+   "volume": 70,
+   "open_ticks": 30,
+   "close_ticks": 18,
+   "reset_ticks": 32,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 47,
+   "fail": null
+  },
+  "translations": 11,
+  "translations_of": null,
+  "rot180": {
+   "valid": true,
+   "volume": 70,
+   "open_ticks": 30,
+   "close_ticks": 18,
+   "reset_ticks": 32,
+   "flips_passed": 16,
+   "partial": 1.0,
+   "block_count": 47,
+   "fail": null
+  }
+ }
+}

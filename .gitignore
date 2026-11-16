@@ -1,0 +1,20 @@
+# third-party binaries and game files (not ours to redistribute; fetched by scripts)
+toolchain/
+grader/runtime/
+grader/kernel/build/
+phase0/dl/
+phase0/run/
+runs/bench/video/mc/client/
+runs/bench/video/mc/client-files/
+runs/bench/video/mc/server/
+runs/bench/video/mc/WindowRecorder
+# raw captures and rendered frames (the finished videos are kept)
+runs/bench/video/mc/take*_raw.mp4
+runs/bench/video/frames/
+runs/bench/video/frames1x/
+runs/bench/video/mc/*.log
+# local junk
+__pycache__/
+*.pyc
+.DS_Store
+*.class

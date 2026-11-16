@@ -1,0 +1,19 @@
+w1-fable-a: 3416 neighbours, 3416 to grade, 4 workers
+200/3416 graded, 113 valid, 47s, eta 750s
+400/3416 graded, 117 valid, 62s, eta 466s
+600/3416 graded, 259 valid, 91s, eta 428s
+800/3416 graded, 337 valid, 119s, eta 389s
+1000/3416 graded, 351 valid, 132s, eta 319s
+1200/3416 graded, 478 valid, 158s, eta 292s
+1400/3416 graded, 509 valid, 174s, eta 250s
+1600/3416 graded, 552 valid, 189s, eta 215s
+1800/3416 graded, 563 valid, 203s, eta 182s
+2000/3416 graded, 582 valid, 217s, eta 153s
+2200/3416 graded, 588 valid, 231s, eta 128s
+2400/3416 graded, 633 valid, 250s, eta 106s
+2600/3416 graded, 646 valid, 266s, eta 84s
+2800/3416 graded, 663 valid, 290s, eta 64s
+3000/3416 graded, 701 valid, 314s, eta 44s
+3200/3416 graded, 716 valid, 326s, eta 22s
+3400/3416 graded, 799 valid, 340s, eta 2s
+done: 3416 graded, 815 pass dev, 344s
