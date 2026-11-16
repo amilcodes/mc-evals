@@ -1,0 +1,43 @@
+[logic_port_obs_chain_observerdelay1] start pass=False hand-fix pass=True
+   sweep: 4368 neighbours, 0 pass, 109.0s
+   wrote logic_port_obs_chain_observerdelay1 (hard)
+[logic_hidden_rule_tff_observerdelay1] start pass=False hand-fix pass=True
+   sweep: 9912 neighbours, 6 pass, 293.9s
+   wrote logic_hidden_rule_tff_observerdelay1 (easy)
+[logic_port_obs_chain_observerdelay3] start pass=False hand-fix pass=True
+   sweep: 4368 neighbours, 15 pass, 71.9s
+   wrote logic_port_obs_chain_observerdelay3 (easy)
+[logic_port_tff_observerdelay3] start pass=False hand-fix pass=True
+   sweep: 9912 neighbours, 1 pass, 330.9s
+   wrote logic_port_tff_observerdelay3 (easy)
+[logic_hidden_rule_obs_chain_observerpulse1] start pass=False hand-fix pass=True
+   sweep: 4368 neighbours, 0 pass, 110.9s
+   wrote logic_hidden_rule_obs_chain_observerpulse1 (hard)
+[disk] 205 MB free < 300 MB, waiting 60 s (1/10)
+[logic_port_delay16_repeaterunit1] start pass=False hand-fix pass=True
+   sweep: 5376 neighbours, 0 pass, 77.1s
+   wrote logic_port_delay16_repeaterunit1 (hard)
+[logic_port_clock20_repeaterunit1] start pass=False hand-fix pass=True
+   sweep: 7392 neighbours, 1 pass, 139.9s
+   wrote logic_port_clock20_repeaterunit1 (easy)
+[logic_port_rise_mono_repeaterunit1] start pass=False hand-fix pass=True
+   sweep: 5208 neighbours, 1 pass, 73.9s
+   wrote logic_port_rise_mono_repeaterunit1 (easy)
+[logic_hidden_rule_delay12_repeaterunit1] start pass=False hand-fix pass=True
+   sweep: 3864 neighbours, 0 pass, 55.9s
+   wrote logic_hidden_rule_delay12_repeaterunit1 (hard)
+[logic_hidden_rule_extender_repeaterunit1] start pass=False hand-fix pass=True
+   sweep: 6552 neighbours, 0 pass, 115.9s
+   wrote logic_hidden_rule_extender_repeaterunit1 (hard)
+[logic_port_delay12_repeaterunit3] start pass=False hand-fix pass=True
+   sweep: 3864 neighbours, 7 pass, 55.8s
+   wrote logic_port_delay12_repeaterunit3 (easy)
+[logic_port_delay16_repeaterunit3] start pass=False hand-fix pass=True
+   sweep: 5376 neighbours, 0 pass, 75.5s
+   wrote logic_port_delay16_repeaterunit3 (hard)
+[logic_port_clock20_repeaterunit3] start pass=False hand-fix pass=True
+   sweep: 7392 neighbours, 0 pass, 126.4s
+   wrote logic_port_clock20_repeaterunit3 (hard)
+[logic_port_extender_repeaterunit3] start pass=False hand-fix pass=True
+   sweep: 6552 neighbours, 7 pass, 117.5s
+   wrote logic_port_extender_repeaterunit3 (easy)

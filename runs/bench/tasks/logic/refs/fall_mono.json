@@ -1,0 +1,214 @@
+{
+ "name": "fall_mono",
+ "title": "Falling-edge monostable",
+ "notes": "On each lever-off, Q gives one short pulse; lever-on does nothing.",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "3"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "comparator",
+   "props": {
+    "facing": "west",
+    "mode": "subtract"
+   }
+  },
+  {
+   "pos": [
+    1,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    1
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    1
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 12,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   4,
+   1,
+   1
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 47,
+   "lever": "A"
+  },
+  {
+   "t": 88,
+   "lever": "A"
+  },
+  {
+   "t": 117,
+   "lever": "A"
+  },
+  {
+   "t": 162,
+   "lever": "A"
+  },
+  {
+   "t": 195,
+   "lever": "A"
+  }
+ ],
+ "end": 235,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     51,
+     true
+    ],
+    [
+     55,
+     false
+    ],
+    [
+     121,
+     true
+    ],
+    [
+     125,
+     false
+    ],
+    [
+     199,
+     true
+    ],
+    [
+     203,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

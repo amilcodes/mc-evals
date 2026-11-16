@@ -1,0 +1,510 @@
+{
+ "id": "logic_port_extender_repeaterunit3",
+ "family": "logic",
+ "kind": "port",
+ "difficulty": "easy",
+ "circuit": "extender",
+ "title": "Pulse extender (+12 game ticks on the falling edge)",
+ "brief": "Circuit: Pulse extender (+12 game ticks on the falling edge). Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [4, 1, 0]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build meets the spec in vanilla 26.3, but here the physics is changed: repeater_unit = 3 (game ticks per repeater delay step (vanilla 2, so delays 1-4 are 2/4/6/8 gt)). The spec is fixed in game ticks. Modify the build so that Q matches the spec under the changed physics. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {
+  "repeater_unit": 3
+ },
+ "physics_disclosed": true,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    5,
+    2,
+    3
+   ]
+  },
+  "max_blocks": 22
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 47,
+    "lever": "A"
+   },
+   {
+    "t": 88,
+    "lever": "A"
+   },
+   {
+    "t": 117,
+    "lever": "A"
+   },
+   {
+    "t": 162,
+    "lever": "A"
+   },
+   {
+    "t": 195,
+    "lever": "A"
+   }
+  ],
+  "end": 235,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      10,
+      true
+     ],
+     [
+      59,
+      false
+     ],
+     [
+      88,
+      true
+     ],
+     [
+      129,
+      false
+     ],
+     [
+      162,
+      true
+     ],
+     [
+      207,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     1
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     2
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     4,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   }
+  ]
+ },
+ "provenance": {
+  "reference_fix": [
+   {
+    "pos": [
+     2,
+     1,
+     2
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "2"
+     }
+    ]
+   }
+  ],
+  "vanilla_reference": true
+ },
+ "hardness": {
+  "note": "7 single edits meet the spec",
+  "example_single_fix": {
+   "pos": [
+    2,
+    1,
+    2
+   ],
+   "to": [
+    "repeater",
+    {
+     "facing": "west",
+     "delay": "2"
+    }
+   ]
+  },
+  "single_edit_neighbours": 6552
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_timing",
+    "message": "output Q edge #1: got off at t=65, spec wants off at t=59 (tolerance 0, latency shift [0, 0])"
+   },
+   "Q": [
+    false,
+    [
+     [
+      10,
+      true
+     ],
+     [
+      65,
+      false
+     ],
+     [
+      88,
+      true
+     ],
+     [
+      135,
+      false
+     ],
+     [
+      162,
+      true
+     ],
+     [
+      213,
+      false
+     ]
+    ]
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

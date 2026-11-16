@@ -1,0 +1,286 @@
+{
+ "name": "clock20",
+ "title": "Lever-enabled clock (period 20 game ticks)",
+ "notes": "While the lever is on, Q blinks 10 gt on / 10 gt off; while it is off, Q stays off.",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wall_torch",
+   "props": {
+    "facing": "east",
+    "lit": "true"
+   }
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    0
+   ],
+   "id": "redstone_wall_torch",
+   "props": {
+    "facing": "east",
+    "lit": "false"
+   }
+  },
+  {
+   "pos": [
+    4,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    1
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "south",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    1
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 13,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   5,
+   1,
+   2
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 73,
+   "lever": "A"
+  },
+  {
+   "t": 104,
+   "lever": "A"
+  },
+  {
+   "t": 151,
+   "lever": "A"
+  },
+  {
+   "t": 180,
+   "lever": "A"
+  },
+  {
+   "t": 261,
+   "lever": "A"
+  }
+ ],
+ "end": 301,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     14,
+     true
+    ],
+    [
+     24,
+     false
+    ],
+    [
+     34,
+     true
+    ],
+    [
+     44,
+     false
+    ],
+    [
+     54,
+     true
+    ],
+    [
+     64,
+     false
+    ],
+    [
+     74,
+     true
+    ],
+    [
+     77,
+     false
+    ],
+    [
+     108,
+     true
+    ],
+    [
+     118,
+     false
+    ],
+    [
+     128,
+     true
+    ],
+    [
+     138,
+     false
+    ],
+    [
+     148,
+     true
+    ],
+    [
+     155,
+     false
+    ],
+    [
+     184,
+     true
+    ],
+    [
+     194,
+     false
+    ],
+    [
+     204,
+     true
+    ],
+    [
+     214,
+     false
+    ],
+    [
+     224,
+     true
+    ],
+    [
+     234,
+     false
+    ],
+    [
+     244,
+     true
+    ],
+    [
+     254,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

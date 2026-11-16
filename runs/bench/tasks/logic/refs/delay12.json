@@ -1,0 +1,162 @@
+{
+ "name": "delay12",
+ "title": "Repeater delay line (12 game ticks)",
+ "notes": "Q follows the lever 12 game ticks later on both edges (repeaters 4+2 = 8+4 gt).",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 6,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   4,
+   1,
+   0
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 41,
+   "lever": "A"
+  },
+  {
+   "t": 78,
+   "lever": "A"
+  },
+  {
+   "t": 101,
+   "lever": "A"
+  },
+  {
+   "t": 144,
+   "lever": "A"
+  },
+  {
+   "t": 173,
+   "lever": "A"
+  }
+ ],
+ "end": 213,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     22,
+     true
+    ],
+    [
+     53,
+     false
+    ],
+    [
+     90,
+     true
+    ],
+    [
+     113,
+     false
+    ],
+    [
+     156,
+     true
+    ],
+    [
+     185,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

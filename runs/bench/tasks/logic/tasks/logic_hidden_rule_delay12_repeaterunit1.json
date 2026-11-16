@@ -1,0 +1,324 @@
+{
+ "id": "logic_hidden_rule_delay12_repeaterunit1",
+ "family": "logic",
+ "kind": "hidden_rule",
+ "difficulty": "hard",
+ "circuit": "delay12",
+ "title": "Repeater delay line (12 game ticks)",
+ "brief": "Circuit: Repeater delay line (12 game ticks). Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [4, 1, 0]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build meets the spec in vanilla 26.3, but this world's physics differs from vanilla in one undisclosed respect, and here Q misses the spec. The spec is fixed in game ticks. Modify the build so that Q matches the spec in this world. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {
+  "repeater_unit": 1
+ },
+ "physics_disclosed": false,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    5,
+    2,
+    1
+   ]
+  },
+  "max_blocks": 10
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 41,
+    "lever": "A"
+   },
+   {
+    "t": 78,
+    "lever": "A"
+   },
+   {
+    "t": 101,
+    "lever": "A"
+   },
+   {
+    "t": 144,
+    "lever": "A"
+   },
+   {
+    "t": 173,
+    "lever": "A"
+   }
+  ],
+  "end": 213,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      22,
+      true
+     ],
+     [
+      53,
+      false
+     ],
+     [
+      90,
+      true
+     ],
+     [
+      113,
+      false
+     ],
+     [
+      156,
+      true
+     ],
+     [
+      185,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "4"
+    }
+   }
+  ]
+ },
+ "provenance": {
+  "reference_fix": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "4"
+     }
+    ]
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "4"
+     }
+    ]
+   }
+  ],
+  "vanilla_reference": true
+ },
+ "hardness": {
+  "note": "no single edit in the neighbourhood meets the spec under this physics",
+  "single_edit_neighbours": 3864,
+  "passing": 0,
+  "reference_fix_edits": 2
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_timing",
+    "message": "output Q edge #0: got on at t=16, spec wants on at t=22 (tolerance 0, latency shift [0, 0])"
+   },
+   "Q": [
+    false,
+    [
+     [
+      16,
+      true
+     ],
+     [
+      47,
+      false
+     ],
+     [
+      84,
+      true
+     ],
+     [
+      107,
+      false
+     ],
+     [
+      150,
+      true
+     ],
+     [
+      179,
+      false
+     ]
+    ]
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

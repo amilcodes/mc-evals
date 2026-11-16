@@ -1,0 +1,30 @@
+[delay16] 60 single faults, 31 break the spec
+[delay16] sweep 1: 5376 neighbours, 0 pass, 156.2s
+[delay16] medium: 3 faults, undo-one fixes
+  wrote logic_repair_delay16_easy
+  wrote logic_repair_delay16_hard
+  wrote logic_repair_delay16_medium
+[extender] 75 single faults, 47 break the spec
+[extender] sweep 1: 6552 neighbours, 0 pass, 168.7s
+  wrote logic_repair_extender_easy
+  wrote logic_repair_extender_hard
+[rise_mono] 48 single faults, 30 break the spec
+[rise_mono] sweep 1: 5208 neighbours, 0 pass, 122.8s
+  wrote logic_repair_rise_mono_easy
+  wrote logic_repair_rise_mono_hard
+[fall_mono] 50 single faults, 31 break the spec
+[fall_mono] sweep 1: 5208 neighbours, 0 pass, 135.3s
+  wrote logic_repair_fall_mono_easy
+  wrote logic_repair_fall_mono_hard
+[obs_chain] 42 single faults, 21 break the spec
+[obs_chain] sweep 1: 4368 neighbours, 0 pass, 116.6s
+  wrote logic_repair_obs_chain_easy
+  wrote logic_repair_obs_chain_hard
+[clock20] 58 single faults, 31 break the spec
+[clock20] sweep 1: 7392 neighbours, 0 pass, 234.0s
+  wrote logic_repair_clock20_easy
+  wrote logic_repair_clock20_hard
+[tff] 124 single faults, 69 break the spec
+[tff] sweep 1: 9912 neighbours, 0 pass, 390.5s
+  wrote logic_repair_tff_easy
+  wrote logic_repair_tff_hard

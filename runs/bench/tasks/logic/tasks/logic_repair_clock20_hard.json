@@ -1,0 +1,487 @@
+{
+ "id": "logic_repair_clock20_hard",
+ "family": "logic",
+ "kind": "repair",
+ "difficulty": "hard",
+ "circuit": "clock20",
+ "title": "Lever-enabled clock (period 20 game ticks)",
+ "brief": "Circuit: Lever-enabled clock (period 20 game ticks). Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [5, 1, 0]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build is broken: Q does not follow the spec. Repair it (vanilla 26.3 physics) so that Q matches the spec exactly. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {},
+ "physics_disclosed": true,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    6,
+    2,
+    3
+   ]
+  },
+  "max_blocks": 17
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 73,
+    "lever": "A"
+   },
+   {
+    "t": 104,
+    "lever": "A"
+   },
+   {
+    "t": 151,
+    "lever": "A"
+   },
+   {
+    "t": 180,
+    "lever": "A"
+   },
+   {
+    "t": 261,
+    "lever": "A"
+   }
+  ],
+  "end": 301,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      14,
+      true
+     ],
+     [
+      24,
+      false
+     ],
+     [
+      34,
+      true
+     ],
+     [
+      44,
+      false
+     ],
+     [
+      54,
+      true
+     ],
+     [
+      64,
+      false
+     ],
+     [
+      74,
+      true
+     ],
+     [
+      77,
+      false
+     ],
+     [
+      108,
+      true
+     ],
+     [
+      118,
+      false
+     ],
+     [
+      128,
+      true
+     ],
+     [
+      138,
+      false
+     ],
+     [
+      148,
+      true
+     ],
+     [
+      155,
+      false
+     ],
+     [
+      184,
+      true
+     ],
+     [
+      194,
+      false
+     ],
+     [
+      204,
+      true
+     ],
+     [
+      214,
+      false
+     ],
+     [
+      224,
+      true
+     ],
+     [
+      234,
+      false
+     ],
+     [
+      244,
+      true
+     ],
+     [
+      254,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wall_torch",
+    "props": {
+     "facing": "east",
+     "lit": "true"
+    }
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     -1
+    ],
+    "id": "redstone_block"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "south",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     2,
+     2
+    ],
+    "id": "redstone_block"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "redstone_wall_torch",
+    "props": {
+     "facing": "east",
+     "lit": "false"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wall_torch",
+    "props": {
+     "facing": "east",
+     "lit": "true"
+    }
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "redstone_wall_torch",
+    "props": {
+     "facing": "east",
+     "lit": "false"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "south",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     1
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "provenance": {
+  "faults": [
+   {
+    "pos": [
+     3,
+     2,
+     2
+    ],
+    "to": [
+     "redstone_block",
+     {}
+    ],
+    "kind": "stray"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     -1
+    ],
+    "to": [
+     "redstone_block",
+     {}
+    ],
+    "kind": "stray"
+   }
+  ]
+ },
+ "hardness": {
+  "note": "no single edit in the neighbourhood restores the spec",
+  "single_edit_neighbours": 7392,
+  "passing": 0
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_edge_count",
+    "message": "output Q has 0 edges, spec has 22"
+   },
+   "Q": [
+    false,
+    []
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "name": "rise_mono",
+ "title": "Rising-edge monostable (pulse limiter)",
+ "notes": "On each lever-on, Q gives one short pulse (comparator 2 gt, side repeater 4 gt); lever-off does nothing.",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "comparator",
+   "props": {
+    "facing": "west",
+    "mode": "compare"
+   }
+  },
+  {
+   "pos": [
+    1,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    1
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    1
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 12,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   4,
+   1,
+   1
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 47,
+   "lever": "A"
+  },
+  {
+   "t": 88,
+   "lever": "A"
+  },
+  {
+   "t": 117,
+   "lever": "A"
+  },
+  {
+   "t": 162,
+   "lever": "A"
+  },
+  {
+   "t": 195,
+   "lever": "A"
+  }
+ ],
+ "end": 235,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     12,
+     true
+    ],
+    [
+     16,
+     false
+    ],
+    [
+     90,
+     true
+    ],
+    [
+     94,
+     false
+    ],
+    [
+     164,
+     true
+    ],
+    [
+     168,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

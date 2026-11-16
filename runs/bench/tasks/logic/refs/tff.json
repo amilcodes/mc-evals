@@ -1,0 +1,335 @@
+{
+ "name": "tff",
+ "title": "T flip-flop (sticky piston block-drop)",
+ "notes": "Each lever-on toggles Q; lever-off does nothing.",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     8,
+     1,
+     1
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "3"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    0
+   ],
+   "id": "observer",
+   "props": {
+    "facing": "west"
+   }
+  },
+  {
+   "pos": [
+    5,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    0,
+    1,
+    1
+   ],
+   "id": "redstone_wall_torch",
+   "props": {
+    "facing": "south"
+   }
+  },
+  {
+   "pos": [
+    0,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    5,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    5,
+    1,
+    1
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "south",
+    "delay": "1"
+   }
+  },
+  {
+   "pos": [
+    6,
+    1,
+    0
+   ],
+   "id": "sticky_piston",
+   "props": {
+    "facing": "east"
+   }
+  },
+  {
+   "pos": [
+    7,
+    1,
+    0
+   ],
+   "id": "redstone_block"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    5,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    5,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    0,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    5,
+    0,
+    2
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 26,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   8,
+   1,
+   2
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 40,
+   "lever": "A"
+  },
+  {
+   "t": 74,
+   "lever": "A"
+  },
+  {
+   "t": 100,
+   "lever": "A"
+  },
+  {
+   "t": 138,
+   "lever": "A"
+  },
+  {
+   "t": 168,
+   "lever": "A"
+  },
+  {
+   "t": 210,
+   "lever": "A"
+  },
+  {
+   "t": 238,
+   "lever": "A"
+  }
+ ],
+ "end": 278,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     22,
+     true
+    ],
+    [
+     86,
+     false
+    ],
+    [
+     150,
+     true
+    ],
+    [
+     222,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

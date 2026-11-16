@@ -1,0 +1,405 @@
+{
+ "id": "logic_repair_fall_mono_easy",
+ "family": "logic",
+ "kind": "repair",
+ "difficulty": "easy",
+ "circuit": "fall_mono",
+ "title": "Falling-edge monostable",
+ "brief": "Circuit: Falling-edge monostable. Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [4, 1, 0]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build is broken: Q does not follow the spec. Repair it (vanilla 26.3 physics) so that Q matches the spec exactly. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {},
+ "physics_disclosed": true,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    5,
+    2,
+    2
+   ]
+  },
+  "max_blocks": 16
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 47,
+    "lever": "A"
+   },
+   {
+    "t": 88,
+    "lever": "A"
+   },
+   {
+    "t": 117,
+    "lever": "A"
+   },
+   {
+    "t": 162,
+    "lever": "A"
+   },
+   {
+    "t": 195,
+    "lever": "A"
+   }
+  ],
+  "end": 235,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      51,
+      true
+     ],
+     [
+      55,
+      false
+     ],
+     [
+      121,
+      true
+     ],
+     [
+      125,
+      false
+     ],
+     [
+      199,
+      true
+     ],
+     [
+      203,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     2,
+     1,
+     1
+    ],
+    "id": "comparator",
+    "props": {
+     "facing": "west",
+     "mode": "compare"
+    }
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "comparator",
+    "props": {
+     "facing": "west",
+     "mode": "subtract"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "comparator",
+    "props": {
+     "facing": "west",
+     "mode": "subtract"
+    }
+   },
+   {
+    "pos": [
+     1,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     1
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     1
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "provenance": {
+  "faults": [
+   {
+    "pos": [
+     2,
+     1,
+     1
+    ],
+    "to": [
+     "comparator",
+     {
+      "facing": "west",
+      "mode": "compare"
+     }
+    ],
+    "kind": "swapped"
+   }
+  ]
+ },
+ "hardness": {
+  "note": "one fault; undoing it restores the spec"
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_timing",
+    "message": "output Q edge #0: got on at t=18, spec wants on at t=51 (tolerance 0, latency shift [0, 0])"
+   },
+   "Q": [
+    false,
+    [
+     [
+      18,
+      true
+     ],
+     [
+      55,
+      false
+     ],
+     [
+      96,
+      true
+     ],
+     [
+      125,
+      false
+     ],
+     [
+      170,
+      true
+     ],
+     [
+      203,
+      false
+     ]
+    ]
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

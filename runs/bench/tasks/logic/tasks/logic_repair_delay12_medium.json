@@ -1,0 +1,325 @@
+{
+ "id": "logic_repair_delay12_medium",
+ "family": "logic",
+ "kind": "repair",
+ "difficulty": "medium",
+ "circuit": "delay12",
+ "title": "Repeater delay line (12 game ticks)",
+ "brief": "Circuit: Repeater delay line (12 game ticks). Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [4, 1, 0]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build is broken: Q does not follow the spec. Repair it (vanilla 26.3 physics) so that Q matches the spec exactly. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {},
+ "physics_disclosed": true,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    5,
+    2,
+    1
+   ]
+  },
+  "max_blocks": 10
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 41,
+    "lever": "A"
+   },
+   {
+    "t": 78,
+    "lever": "A"
+   },
+   {
+    "t": 101,
+    "lever": "A"
+   },
+   {
+    "t": 144,
+    "lever": "A"
+   },
+   {
+    "t": 173,
+    "lever": "A"
+   }
+  ],
+  "end": 213,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      22,
+      true
+     ],
+     [
+      53,
+      false
+     ],
+     [
+      90,
+      true
+     ],
+     [
+      113,
+      false
+     ],
+     [
+      156,
+      true
+     ],
+     [
+      185,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "2"
+    }
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "4"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "2"
+    }
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "provenance": {
+  "faults": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ],
+    "kind": "swapped"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "east",
+      "delay": "2"
+     }
+    ],
+    "kind": "reversed"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "west",
+      "delay": "1"
+     }
+    ],
+    "kind": "delay"
+   }
+  ]
+ },
+ "hardness": {
+  "note": "3 faults; 1 single edits restore the spec",
+  "example_single_fix": {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "to": [
+    "repeater",
+    {
+     "facing": "west",
+     "delay": "4"
+    }
+   ]
+  },
+  "single_edit_neighbours": 3864
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_edge_count",
+    "message": "output Q has 0 edges, spec has 6"
+   },
+   "Q": [
+    false,
+    []
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

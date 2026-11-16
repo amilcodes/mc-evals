@@ -1,0 +1,214 @@
+{
+ "name": "delay16",
+ "title": "Repeater delay line (16 game ticks)",
+ "notes": "Q follows the lever 16 game ticks later on both edges (repeaters 3+3+2 = 6+6+4 gt).",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     7,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "3"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "3"
+   }
+  },
+  {
+   "pos": [
+    5,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    6,
+    1,
+    0
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    5,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    6,
+    0,
+    0
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 12,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   7,
+   1,
+   0
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 47,
+   "lever": "A"
+  },
+  {
+   "t": 88,
+   "lever": "A"
+  },
+  {
+   "t": 117,
+   "lever": "A"
+  },
+  {
+   "t": 162,
+   "lever": "A"
+  },
+  {
+   "t": 195,
+   "lever": "A"
+  }
+ ],
+ "end": 235,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     26,
+     true
+    ],
+    [
+     63,
+     false
+    ],
+    [
+     104,
+     true
+    ],
+    [
+     133,
+     false
+    ],
+    [
+     178,
+     true
+    ],
+    [
+     211,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

@@ -1,0 +1,179 @@
+{
+ "name": "obs_chain",
+ "title": "Observer chain (dual-edge detector, 3 stages)",
+ "notes": "Each lever flip (either way) makes one short Q pulse after three observer delays.",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "observer",
+   "props": {
+    "facing": "west"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "observer",
+   "props": {
+    "facing": "west"
+   }
+  },
+  {
+   "pos": [
+    4,
+    1,
+    0
+   ],
+   "id": "observer",
+   "props": {
+    "facing": "west"
+   }
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 5,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   5,
+   1,
+   0
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 47,
+   "lever": "A"
+  },
+  {
+   "t": 88,
+   "lever": "A"
+  },
+  {
+   "t": 117,
+   "lever": "A"
+  },
+  {
+   "t": 162,
+   "lever": "A"
+  },
+  {
+   "t": 195,
+   "lever": "A"
+  }
+ ],
+ "end": 235,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     16,
+     true
+    ],
+    [
+     18,
+     false
+    ],
+    [
+     53,
+     true
+    ],
+    [
+     55,
+     false
+    ],
+    [
+     94,
+     true
+    ],
+    [
+     96,
+     false
+    ],
+    [
+     123,
+     true
+    ],
+    [
+     125,
+     false
+    ],
+    [
+     168,
+     true
+    ],
+    [
+     170,
+     false
+    ],
+    [
+     201,
+     true
+    ],
+    [
+     203,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}

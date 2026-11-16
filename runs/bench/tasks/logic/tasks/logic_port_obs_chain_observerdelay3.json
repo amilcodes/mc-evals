@@ -1,0 +1,345 @@
+{
+ "id": "logic_port_obs_chain_observerdelay3",
+ "family": "logic",
+ "kind": "port",
+ "difficulty": "easy",
+ "circuit": "obs_chain",
+ "title": "Observer chain (dual-edge detector, 3 stages)",
+ "brief": "Circuit: Observer chain (dual-edge detector, 3 stages). Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [5, 1, 0]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build meets the spec in vanilla 26.3, but here the physics is changed: observer_delay = 3 (game ticks from a watched change to an observer's output (vanilla 2)). The spec is fixed in game ticks. Modify the build so that Q matches the spec under the changed physics. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {
+  "observer_delay": 3
+ },
+ "physics_disclosed": true,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    6,
+    2,
+    1
+   ]
+  },
+  "max_blocks": 9
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 47,
+    "lever": "A"
+   },
+   {
+    "t": 88,
+    "lever": "A"
+   },
+   {
+    "t": 117,
+    "lever": "A"
+   },
+   {
+    "t": 162,
+    "lever": "A"
+   },
+   {
+    "t": 195,
+    "lever": "A"
+   }
+  ],
+  "end": 235,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      16,
+      true
+     ],
+     [
+      18,
+      false
+     ],
+     [
+      53,
+      true
+     ],
+     [
+      55,
+      false
+     ],
+     [
+      94,
+      true
+     ],
+     [
+      96,
+      false
+     ],
+     [
+      123,
+      true
+     ],
+     [
+      125,
+      false
+     ],
+     [
+      168,
+      true
+     ],
+     [
+      170,
+      false
+     ],
+     [
+      201,
+      true
+     ],
+     [
+      203,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "provenance": {
+  "reference_fix": [
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "to": [
+     "stone",
+     {}
+    ]
+   }
+  ],
+  "vanilla_reference": true
+ },
+ "hardness": {
+  "note": "15 single edits meet the spec",
+  "example_single_fix": {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "to": [
+    "piston",
+    {
+     "facing": "up"
+    }
+   ]
+  },
+  "single_edit_neighbours": 4368
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_timing",
+    "message": "output Q edge #0: got on at t=19, spec wants on at t=16 (tolerance 0, latency shift [0, 0])"
+   },
+   "Q": [
+    false,
+    [
+     [
+      19,
+      true
+     ],
+     [
+      21,
+      false
+     ],
+     [
+      56,
+      true
+     ],
+     [
+      58,
+      false
+     ],
+     [
+      97,
+      true
+     ],
+     [
+      99,
+      false
+     ],
+     [
+      126,
+      true
+     ],
+     [
+      128,
+      false
+     ],
+     [
+      171,
+      true
+     ],
+     [
+      173,
+      false
+     ],
+     [
+      204,
+      true
+     ],
+     [
+      206,
+      false
+     ]
+    ]
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

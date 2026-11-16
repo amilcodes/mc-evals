@@ -1,0 +1,638 @@
+{
+ "id": "logic_repair_tff_hard",
+ "family": "logic",
+ "kind": "repair",
+ "difficulty": "hard",
+ "circuit": "tff",
+ "title": "T flip-flop (sticky piston block-drop)",
+ "brief": "Circuit: T flip-flop (sticky piston block-drop). Input: lever A at [-1, 1, 0] on the stone block [0, 1, 0]. Output: note block Q at [8, 1, 1]; Q is on while the note block is powered. The lever, its block and Q belong to the harness: do not move, replace or build on them. This build is broken: Q does not follow the spec. Repair it (vanilla 26.3 physics) so that Q matches the spec exactly. Your build is checked by toggling the lever on the spec's schedule and comparing Q's on/off edges, tick by tick, with the spec. Stay inside the bounding box and the block budget; allowed blocks are the benchmark allow-list. ",
+ "physics": {},
+ "physics_disclosed": true,
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     8,
+     1,
+     1
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "limits": {
+  "bbox": {
+   "min": [
+    -2,
+    0,
+    -1
+   ],
+   "max": [
+    9,
+    2,
+    3
+   ]
+  },
+  "max_blocks": 30
+ },
+ "spec": {
+  "inputs": [
+   {
+    "t": 10,
+    "lever": "A"
+   },
+   {
+    "t": 40,
+    "lever": "A"
+   },
+   {
+    "t": 74,
+    "lever": "A"
+   },
+   {
+    "t": 100,
+    "lever": "A"
+   },
+   {
+    "t": 138,
+    "lever": "A"
+   },
+   {
+    "t": 168,
+    "lever": "A"
+   },
+   {
+    "t": 210,
+    "lever": "A"
+   },
+   {
+    "t": 238,
+    "lever": "A"
+   }
+  ],
+  "end": 278,
+  "tol": 0,
+  "latency": [
+   0,
+   0
+  ],
+  "outputs": {
+   "Q": {
+    "initial": false,
+    "edges": [
+     [
+      22,
+      true
+     ],
+     [
+      86,
+      false
+     ],
+     [
+      150,
+      true
+     ],
+     [
+      222,
+      false
+     ]
+    ]
+   }
+  }
+ },
+ "start": {
+  "blocks": [
+   {
+    "pos": [
+     0,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     1,
+     1
+    ],
+    "id": "redstone_wall_torch",
+    "props": {
+     "facing": "south"
+    }
+   },
+   {
+    "pos": [
+     0,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     2,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "south"
+    }
+   },
+   {
+    "pos": [
+     4,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     5,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "east",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     5,
+     1,
+     1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "south",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     5,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     6,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     7,
+     1,
+     0
+    ],
+    "id": "redstone_block"
+   }
+  ]
+ },
+ "reference": {
+  "blocks": [
+   {
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "3"
+    }
+   },
+   {
+    "pos": [
+     3,
+     1,
+     0
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "id": "observer",
+    "props": {
+     "facing": "west"
+    }
+   },
+   {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "west",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     0,
+     1,
+     1
+    ],
+    "id": "redstone_wall_torch",
+    "props": {
+     "facing": "south"
+    }
+   },
+   {
+    "pos": [
+     0,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     1,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     2,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     3,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     4,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     5,
+     1,
+     2
+    ],
+    "id": "redstone_wire"
+   },
+   {
+    "pos": [
+     5,
+     1,
+     1
+    ],
+    "id": "repeater",
+    "props": {
+     "facing": "south",
+     "delay": "1"
+    }
+   },
+   {
+    "pos": [
+     6,
+     1,
+     0
+    ],
+    "id": "sticky_piston",
+    "props": {
+     "facing": "east"
+    }
+   },
+   {
+    "pos": [
+     7,
+     1,
+     0
+    ],
+    "id": "redstone_block"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     0,
+     0
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     0,
+     1
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     0,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     1,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     2,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     3,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     4,
+     0,
+     2
+    ],
+    "id": "stone"
+   },
+   {
+    "pos": [
+     5,
+     0,
+     2
+    ],
+    "id": "stone"
+   }
+  ]
+ },
+ "provenance": {
+  "faults": [
+   {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "to": [
+     "observer",
+     {
+      "facing": "south"
+     }
+    ],
+    "kind": "turned"
+   },
+   {
+    "pos": [
+     5,
+     1,
+     0
+    ],
+    "to": [
+     "repeater",
+     {
+      "facing": "east",
+      "delay": "1"
+     }
+    ],
+    "kind": "reversed"
+   }
+  ]
+ },
+ "hardness": {
+  "note": "no single edit in the neighbourhood restores the spec",
+  "single_edit_neighbours": 9912,
+  "passing": 0
+ },
+ "verified": {
+  "start": {
+   "pass": false,
+   "first_failure": {
+    "code": "wrong_edge_count",
+    "message": "output Q has 0 edges, spec has 4"
+   },
+   "Q": [
+    false,
+    []
+   ]
+  },
+  "reference": {
+   "pass": true
+  }
+ }
+}

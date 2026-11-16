@@ -1,0 +1,258 @@
+{
+ "name": "extender",
+ "title": "Pulse extender (+12 game ticks on the falling edge)",
+ "notes": "Q turns on with the lever and turns off 12 game ticks after it (slow path 8+4 gt).",
+ "harness": {
+  "inputs": {
+   "A": {
+    "lever": [
+     -1,
+     1,
+     0
+    ],
+    "support": [
+     0,
+     1,
+     0
+    ],
+    "facing": "west"
+   }
+  },
+  "outputs": {
+   "Q": {
+    "pos": [
+     4,
+     1,
+     0
+    ],
+    "block": "note_block"
+   }
+  }
+ },
+ "build": [
+  {
+   "pos": [
+    1,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    3,
+    1,
+    0
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    2,
+    1,
+    2
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "4"
+   }
+  },
+  {
+   "pos": [
+    3,
+    1,
+    2
+   ],
+   "id": "repeater",
+   "props": {
+    "facing": "west",
+    "delay": "2"
+   }
+  },
+  {
+   "pos": [
+    4,
+    1,
+    2
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    4,
+    1,
+    1
+   ],
+   "id": "redstone_wire"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    0
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    1
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    1,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    2,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    3,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    2
+   ],
+   "id": "stone"
+  },
+  {
+   "pos": [
+    4,
+    0,
+    1
+   ],
+   "id": "stone"
+  }
+ ],
+ "block_count": 18,
+ "bbox": {
+  "min": [
+   -1,
+   0,
+   0
+  ],
+  "max": [
+   4,
+   1,
+   2
+  ]
+ },
+ "inputs": [
+  {
+   "t": 10,
+   "lever": "A"
+  },
+  {
+   "t": 47,
+   "lever": "A"
+  },
+  {
+   "t": 88,
+   "lever": "A"
+  },
+  {
+   "t": 117,
+   "lever": "A"
+  },
+  {
+   "t": 162,
+   "lever": "A"
+  },
+  {
+   "t": 195,
+   "lever": "A"
+  }
+ ],
+ "end": 235,
+ "trace": {
+  "Q": {
+   "initial": false,
+   "edges": [
+    [
+     10,
+     true
+    ],
+    [
+     59,
+     false
+    ],
+    [
+     88,
+     true
+    ],
+    [
+     129,
+     false
+    ],
+    [
+     162,
+     true
+    ],
+    [
+     207,
+     false
+    ]
+   ]
+  }
+ },
+ "physics": {}
+}
