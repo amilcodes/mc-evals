@@ -1,0 +1,134 @@
+physics {}: 39 doors
+  round 1: 1 doors, 20 edits, 13s, 0 doors with a faster neighbour
+  w2-2x2-haiku-a: 1/3 -> 1/3 (0 edits) 13s
+  round 1: 1 doors, 24 edits, 12s, 0 doors with a faster neighbour
+  w2-2x2-sonnet-a: 1/3 -> 1/3 (0 edits) 26s
+  round 1: 1 doors, 45 edits, 27s, 0 doors with a faster neighbour
+  w4-3x2-opus-a: 9/9 -> 9/9 (0 edits) 52s
+  round 1: 1 doors, 36 edits, 13s, 0 doors with a faster neighbour
+  w2-2x2-haiku-b: 1/3 -> 1/3 (0 edits) 66s
+  round 1: 1 doors, 43 edits, 16s, 0 doors with a faster neighbour
+  w4-3x2-fable-b: 7/7 -> 7/7 (0 edits) 82s
+  round 1: 1 doors, 55 edits, 15s, 0 doors with a faster neighbour
+  w4-3x2-fable-a: 17/17 -> 17/17 (0 edits) 98s
+  round 1: 1 doors, 65 edits, 19s, 0 doors with a faster neighbour
+  w4-3x2-opus-b: 21/21 -> 21/21 (0 edits) 117s
+  round 1: 1 doors, 42 edits, 15s, 0 doors with a faster neighbour
+  w4-3x2-sonnet-b: 2/4 -> 2/4 (0 edits) 132s
+  round 1: 1 doors, 105 edits, 19s, 0 doors with a faster neighbour
+  w4-3x2-sonnet-a: 23/23 -> 23/23 (0 edits) 151s
+  round 1: 1 doors, 152 edits, 21s, 0 doors with a faster neighbour
+  w4-3x2-haiku-a: 32/32 -> 32/32 (0 edits) 172s
+  round 1: 1 doors, 68 edits, 29s, 1 doors with a faster neighbour
+  round 2: 1 doors, 71 edits, 6s, 0 doors with a faster neighbour
+  w1-fable-a: 34/22 -> 28/16 (1 edits) 217s
+  round 1: 1 doors, 270 edits, 49s, 0 doors with a faster neighbour
+  w3-opus-d: 46/46 -> 46/46 (0 edits) 266s
+  round 1: 1 doors, 139 edits, 21s, 1 doors with a faster neighbour
+  round 2: 1 doors, 137 edits, 8s, 0 doors with a faster neighbour
+  w3-fable-c: 40/16 -> 40/14 (1 edits) 299s
+  round 1: 1 doors, 132 edits, 20s, 1 doors with a faster neighbour
+  round 2: 1 doors, 132 edits, 8s, 0 doors with a faster neighbour
+  w1-fable-b: 34/13 -> 30/11 (2 edits) 333s
+  round 1: 1 doors, 265 edits, 35s, 1 doors with a faster neighbour
+  round 2: 1 doors, 261 edits, 24s, 0 doors with a faster neighbour
+  w1-opus-a: 32/28 -> 28/24 (1 edits) 400s
+  round 1: 1 doors, 488 edits, 66s, 1 doors with a faster neighbour
+  round 2: 1 doors, 484 edits, 88s, 1 doors with a faster neighbour
+  round 3: 1 doors, 484 edits, 74s, 0 doors with a faster neighbour
+  w3-opus-c: 48/46 -> 44/38 (3 edits) 638s
+  round 1: 1 doors, 165 edits, 41s, 1 doors with a faster neighbour
+  round 2: 1 doors, 165 edits, 12s, 0 doors with a faster neighbour
+  w3-fable-d: 46/36 -> 40/30 (1 edits) 696s
+  round 1: 1 doors, 424 edits, 54s, 0 doors with a faster neighbour
+  w4-4x4-opus-e: 52/40 -> 52/40 (0 edits) 751s
+  round 1: 1 doors, 229 edits, 37s, 1 doors with a faster neighbour
+  round 2: 1 doors, 227 edits, 25s, 1 doors with a faster neighbour
+  round 3: 1 doors, 225 edits, 20s, 0 doors with a faster neighbour
+  w8-3x3-std-c-opus: 52/46 -> 38/33 (5 edits) 844s
+Process SpawnPoolWorker-41:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-42:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 12 leaked semaphore objects to clean up at shutdown: {'/mp-ljb2njgp', '/mp-nqmrwzy6', '/mp-crvit3j3', '/mp-1rmam664', '/mp-def9c2ho', '/mp-1vqd6zas', '/mp-93mgpb9t', '/mp-u4t01dhf', '/mp-x0mud11u', '/mp-8315axz8', '/mp-428aekox', '/mp-yj_zktrc'}
+  warnings.warn(
