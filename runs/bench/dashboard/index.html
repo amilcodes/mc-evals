@@ -1,0 +1,690 @@
+<meta name="dash-one-writer">
+<style>
+  .pdb { display: flex; flex-direction: column; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .pdb-lede { font-size: var(--cds-font-size-heading); line-height: 1.45; max-width: 68ch; margin: 0; }
+  .pdb-lede b { font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; }
+  .pdb-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 68ch; margin: 0; }
+  .pdb h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); text-wrap: balance; }
+  .pdb-section > p { margin: 0 0 var(--cds-gap-md); color: var(--color-fg-muted); max-width: 70ch; }
+  .pdb-scroll { overflow-x: auto; }
+  .pdb table { border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-body); min-width: 100%; }
+  .pdb th, .pdb td { padding: var(--cds-pad-xs) var(--cds-pad-sm); text-align: right; white-space: nowrap; border-bottom: 1px solid var(--color-border-line); }
+  .pdb th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); letter-spacing: .02em; }
+  .pdb th:first-child, .pdb td:first-child, .pdb th.pdb-l, .pdb td.pdb-l { text-align: left; }
+  .pdb-sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: baseline; }
+  .pdb-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .pdb-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-md); margin-bottom: var(--cds-gap-sm); }
+  .pdb-controls label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .pdb-panels { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: var(--cds-gap-md); min-height: 330px; }
+  .pdb-refkey { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .pdb-refkey span { display: inline-flex; align-items: center; gap: 6px; }
+  .pdb-panel .pdb-refkey { margin-bottom: var(--cds-gap-sm); }
+  .pdb-empty { fill: var(--cds-text-secondary); font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); }
+  .pdb-strip { fill: var(--color-fg); fill-opacity: .03; }
+  .pdb-wide { display: block; min-height: 300px; max-width: 760px; }
+  .pdb-section > .pdb-legend { margin-bottom: var(--cds-gap-sm); }
+  .pdb-panel { position: relative; min-width: 0; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 12px 14px; }
+  .pdb-panel h3 { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 var(--cds-gap-sm); margin: 0 0 var(--cds-gap-sm); font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+  .pdb-panel h3 .pdb-sw { align-self: center; }
+  .pdb-h3-sub { font-size: var(--cds-font-size-caption); font-weight: 400; color: var(--color-fg-muted); }
+  .pdb-chart { display: block; overflow: visible; }
+  .pdb-axis-text, .pdb-end { fill: var(--cds-text-secondary); font-size: 11px; font-family: var(--font-anthropic-sans); font-variant-numeric: tabular-nums; }
+  .pdb-end { fill: var(--color-fg); paint-order: stroke; stroke: var(--color-panel); stroke-width: 3px; stroke-linejoin: round; }
+  .pdb-claim { stroke: var(--cds-chart-reference); stroke-dasharray: 1 3; stroke-linecap: round; }
+  .pdb-panel .pdb-note { margin: var(--cds-gap-xs) 0 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .pdb-axis text { fill: var(--cds-text-secondary); font-size: 11px; font-family: var(--font-anthropic-sans); font-variant-numeric: tabular-nums; }
+  .pdb-axis path, .pdb-axis line { stroke: var(--cds-chart-axis); }
+  .pdb-grid line { stroke: var(--cds-chart-grid); }
+  .pdb-grid path { display: none; }
+  .pdb-ref { stroke: var(--cds-chart-reference); stroke-dasharray: 4 3; }
+  .pdb-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); line-height: 1.4; white-space: nowrap; z-index: 2; }
+  .pdb-tip .pdb-muted { color: var(--cds-text-secondary); }
+  .pdb-failed { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .pdb details { color: var(--color-fg-muted); max-width: 72ch; }
+  .pdb details summary { cursor: pointer; color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .pdb details li { margin: var(--cds-gap-xs) 0; }
+  .pdb-ladder-scroll { overflow-x: auto; }
+  .pdb-col { fill: var(--color-fg); font-size: 12px; font-weight: var(--cds-font-weight-medium); font-family: var(--font-anthropic-sans); }
+  .pdb-colsub { fill: var(--cds-text-secondary); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .pdb-sep { stroke: var(--cds-chart-grid); }
+  .pdb-hit { fill: transparent; cursor: default; }
+  [data-dash-source-state=refreshing] { opacity: .5; }
+</style>
+
+<div class="pdb">
+  <div id="takeaway">
+    <p class="pdb-lede">On the 3×3 seamless door, the smallest working door so far is <b data-draw="lead-volume" data-source="lead" data-field="volume" data-row="0">—</b> blocks of bounding box, built by <b data-draw="lead-model" data-source="lead" data-field="model" data-row="0">—</b>. That is <b data-draw="lead-score" data-source="lead" data-field="score" data-row="0">—</b>× smaller than the best door the grader had seen before this benchmark. <span data-draw="lead-none" data-source="lead" data-field="no_door" data-row="0">—</span></p>
+    <p class="pdb-sub">Each run is one agent with a time limit (60 minutes for 2×2, 120 for 3×2 and 3×3, 150 for 4×4, 180 for 5×5), building a Minecraft Java 26.3 piston door that the grader runs in the real game engine. Smaller is better. An agent that stops early is told its best volume and asked to continue, up to three times.</p>
+    <p class="pdb-sub">Publication-style figures from the same runs: <a href="https://claude.ai/artifact/T7VJjtmVCmxn8Xun3hToaQ" target="_blank" rel="noopener">Piston Door Bench Figures</a>.</p>
+  </div>
+
+  <section class="pdb-section" id="ladder">
+    <h2>Every door, on every rung</h2>
+    <p>One dot per run, one column per task, hardest to the right. Lower is a smaller door, and the volume axis is logarithmic. Runs that never built a working door sit in the shaded band at the bottom. "Changed physics" is the 3×3 door in a world whose repeater and observer timings differ from standard Minecraft; "kit 2" is the 4×4 door with richer tools and facts. Hover a dot for the run.</p>
+    <div class="pdb-legend" aria-hidden="true">
+      <span><i class="pdb-sw" data-model="0"></i>Fable 5.2</span>
+      <span><i class="pdb-sw" data-model="1"></i>Opus 5.5</span>
+      <span><i class="pdb-sw" data-model="2"></i>Sonnet 5.5</span>
+      <span><i class="pdb-sw" data-model="3"></i>Haiku 5.5</span>
+    </div>
+    <div data-draw="ladder" data-source="runs" style="min-height: 460px"></div>
+  </section>
+
+  <section class="pdb-section" id="by-model">
+    <h2>Results by model and task</h2>
+    <p>Score is the task's reference volume divided by the final door's volume, so 1 matches the reference and higher is better. A run with no working door scores 0. Costs are what the same tokens would cost at API list prices.</p>
+    <div class="pdb-scroll">
+      <table data-source="byModel" data-row-key="task,model" aria-label="Results by model and task">
+        <thead><tr>
+          <th class="pdb-l" data-field="task">Task</th>
+          <th class="pdb-l" data-field="model">Model</th>
+          <th data-field="runs">Runs</th>
+          <th data-field="doors">Working doors</th>
+          <th data-field="best_volume">Best volume</th>
+          <th data-field="best_score">Best score</th>
+          <th data-field="mean_score">Mean score</th>
+          <th data-field="median_first_door_min">First door (median min)</th>
+          <th data-field="mean_cost">Mean cost ($)</th>
+          <th data-field="mean_tests">Mean tests</th>
+        </tr></thead>
+        <tbody data-draw="model-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="pdb-section" id="progress">
+    <h2>How each run shrank its door</h2>
+    <p>One chart per model, all on the same axes for the chosen door. Each line is one run's smallest working door so far: it starts at the run's first working door and steps down each time a test found a smaller one, and the number at its end is the run's final volume. Lower is better, and the volume axis is logarithmic. Hover a dot for the run and the test that found it.</p>
+    <div class="pdb-controls">
+      <label for="pdb-task">Door</label>
+      <select class="dash-select" id="pdb-task" aria-label="Door size">
+        <option value="3×3 seamless">3×3</option>
+        <option value="3×3 seamless (changed physics)">3×3, changed physics</option>
+        <option value="4×4 seamless">4×4</option>
+        <option value="4×4 seamless (kit 2)">4×4, kit 2</option>
+        <option value="3×2 seamless">3×2</option>
+        <option value="2×2 seamless">2×2</option>
+        <option value="5×5 seamless">5×5</option>
+      </select>
+      <label for="pdb-x">Against</label>
+      <select class="dash-select" id="pdb-x" aria-label="Horizontal axis">
+        <option value="minutes">Minutes</option>
+        <option value="cost">Cost so far</option>
+        <option value="test">Test calls</option>
+      </select>
+    </div>
+    <div class="pdb-panels" data-draw="model-panels" data-source="curve runs"></div>
+  </section>
+
+  <section class="pdb-section" id="cost">
+    <h2>Final door against the cost of the run</h2>
+    <p>One dot per run, for the door chosen above. Lower is a smaller door; further right cost more. Both axes are logarithmic, and each dot's colour is its model. Runs that never built a working door sit in the shaded band at the bottom as hollow circles, at what they cost.</p>
+    <div class="pdb-legend" aria-hidden="true">
+      <span><i class="pdb-sw" data-model="0"></i>Fable 5.2</span>
+      <span><i class="pdb-sw" data-model="1"></i>Opus 5.5</span>
+      <span><i class="pdb-sw" data-model="2"></i>Sonnet 5.5</span>
+      <span><i class="pdb-sw" data-model="3"></i>Haiku 5.5</span>
+    </div>
+    <div class="pdb-wide" data-draw="scatter" data-source="runs"></div>
+  </section>
+
+  <section class="pdb-section" id="runs">
+    <h2>Every run</h2>
+    <div class="pdb-scroll">
+      <table data-source="runs" data-row-key="run" aria-label="Every run">
+        <thead><tr>
+          <th class="pdb-l" data-field="run">Run</th>
+          <th class="pdb-l" data-field="task">Task</th>
+          <th class="pdb-l" data-field="model">Model</th>
+          <th class="pdb-l" data-field="status">Result</th>
+          <th data-field="volume">Volume</th>
+          <th data-field="dims">Size (w×h×d)</th>
+          <th data-field="score">Score</th>
+          <th data-field="placements">Placements passed</th>
+          <th data-field="first_door_min">First door (min)</th>
+          <th data-field="cost">Cost ($)</th>
+          <th data-field="tests">Tests</th>
+          <th data-field="lab_ticks">Lab ticks</th>
+          <th data-field="rounds">Rounds</th>
+        </tr></thead>
+        <tbody data-draw="run-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <details id="notes">
+    <summary>What the numbers mean, and what to keep in mind</summary>
+    <ul>
+      <li><b>Volume</b> is the width × height × depth of the smallest box holding every block the door used at any moment, moving parts and the doorway included. The lever's cell is not counted.</li>
+      <li><b>Reference volumes</b>: 2×2 seamless 30; 3×2 seamless 42 (reached by four separate Fable and Opus runs, none lower); 3×3 seamless 192 (the best door this grader had seen before the benchmark); 4×4 seamless 132 and 5×5 seamless 504 (community claims, not yet rebuilt in this grader). The changed-physics task has no reference yet, so its runs show volumes but no score.</li>
+      <li><b>Changed physics</b>: a repeater step takes 3 ticks instead of 2 and an observer reacts after 3 ticks instead of 2. The brief says so and states the changed facts. Fable's 70 door from the standard 3×3 task does not work in this world.</li>
+      <li><b>Kit 2</b> adds a per-tick recording of a run as data, structured test results, and thirteen facts earlier agents found missing. Everything else matches the 4×4 task.</li>
+      <li>On 15 November all Fable runs still in progress were stopped early to save usage: the three changed-physics runs at minute 80 of 120, the two 5×5 runs at 80 of 180, and the three kit-2 runs at 68 of 150. They are scored on what they had submitted.</li>
+      <li><b>Working door</b> means it passed the final test: eight open and close cycles at varied moments in a fresh simulator. <b>Placements passed</b> is how many of 11 shifted and half-turned copies of the same door still work; it does not change the score.</li>
+      <li><b>First door</b> is the time from the agent's first tool call to its first test that passed. <b>Rounds</b> counts the first attempt plus each "keep going" message.</li>
+      <li>Each cell is one to four runs, so differences between neighbouring models are not yet statistically settled. On 4×4 the spread within one model is wider than the gap between Fable and Opus.</li>
+      <li>Costs come from the token counts in each agent's transcript at Claude API list prices. They are not what was billed. Haiku 5.5's cache-read price is not in the price list used, so it is assumed to be a tenth of its input price.</li>
+      <li>Two runs were stopped by the harness: w1-haiku-b at about minute 26, after it stopped calling tools for over 20 minutes, and w3-sonnet-c when it passed its 120-minute limit.</li>
+      <li>The machine running the benchmark slept from 03:25 to 09:21 on 13 November with eight runs in progress. That window is left out of every run's minutes, and the runs carried on after it. w2-4x4-fable-b was wrongly refused for time at the wake, told what happened, and given its remaining time back.</li>
+      <li>Fable's 70-volume 3×3 door hangs its lever one block off the door's plane. The rules do not count the lever's cell, so this is allowed.</li>
+      <li>Two agents reached outside their working folder: one created and deleted an empty file in /tmp, one was blocked from writing there. Neither touched the grader.</li>
+      <li>The task brief was frozen for the whole benchmark. Facts the agents found missing are listed for the next version and not added.</li>
+    </ul>
+  </details>
+</div>
+
+<script>
+  window.pdbModels = ['Fable 5.2', 'Opus 5.5', 'Sonnet 5.5', 'Haiku 5.5'];
+  window.pdbColor = (m) => dash.colors[Math.max(0, window.pdbModels.indexOf(m)) % dash.colors.length];
+  window.pdbNum = (v, d) => (v === null || v === undefined || v === '' || Number.isNaN(+v)) ? null : +(+v).toFixed(d);
+
+  function median(xs) {
+    const v = xs.filter((x) => x !== null && x !== undefined).map(Number).sort((a, b) => a - b);
+    if (!v.length) return null;
+    const m = Math.floor(v.length / 2);
+    return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+  }
+  function mean(xs) {
+    const v = xs.filter((x) => x !== null && x !== undefined).map(Number);
+    return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+  }
+
+  dash.calc('byModel', {
+    title: 'Results by model and task',
+    description: 'Per task and model: runs, working doors, best and mean score, median minutes to the first working door, mean cost and mean test calls.',
+    inputs: ['runs'],
+    fn: (runs) => {
+      const groups = d3.groups(runs, (r) => r.task, (r) => r.model);
+      const out = [];
+      for (const [task, models] of groups) {
+        for (const [model, rs] of models) {
+          const doors = rs.filter((r) => r.status === 'door');
+          out.push({
+            task, model, runs: rs.length, doors: doors.length,
+            best_volume: doors.length ? d3.min(doors, (r) => +r.volume) : null,
+            best_score: rs.some((r) => r.score !== null) ? +d3.max(rs, (r) => +(r.score || 0)).toFixed(3) : null,
+            mean_score: rs.some((r) => r.score !== null) ? +mean(rs.map((r) => r.score === null ? null : +r.score)).toFixed(3) : null,
+            median_first_door_min: median(rs.map((r) => r.first_door_min)) === null ? null : +median(rs.map((r) => r.first_door_min)).toFixed(1),
+            mean_cost: +mean(rs.map((r) => r.cost)).toFixed(2),
+            mean_tests: +mean(rs.map((r) => r.tests)).toFixed(1),
+          });
+        }
+      }
+      const order = (m) => window.pdbModels.indexOf(m);
+      return out.sort((a, b) => d3.ascending(a.task, b.task) || order(a.model) - order(b.model));
+    },
+  });
+
+  dash.calc('lead', {
+    title: 'Headline: 3×3 seamless leader',
+    description: 'The smallest working 3×3 seamless door, who built it, its score against the 192 reference, and which models built no working door.',
+    inputs: ['runs'],
+    fn: (runs) => {
+      const rs = runs.filter((r) => r.task === '3×3 seamless');
+      const doors = rs.filter((r) => r.status === 'door');
+      if (!doors.length) return [];
+      const best = doors.reduce((a, b) => (+b.volume < +a.volume ? b : a));
+      const none = window.pdbModels.filter((m) => rs.some((r) => r.model === m) && !doors.some((r) => r.model === m));
+      return [{
+        model: best.model, volume: +best.volume, score: +(+best.score).toFixed(2),
+        no_door: none.length ? `${none.join(' and ')} built no working door.` : 'Every model built a working door.',
+      }];
+    },
+  });
+</script>
+
+<script>
+  // Legend swatches take the series colors; the select only triggers a redraw.
+  dash.onData(() => {
+    document.querySelectorAll('.pdb-sw[data-model]').forEach((el) => { el.style.background = dash.colors[+el.dataset.model % dash.colors.length]; });
+  });
+  document.querySelectorAll('#pdb-x').forEach((sel) => sel.addEventListener('change', () => dash.draw('model-panels')));
+  document.querySelectorAll('#pdb-task').forEach((sel) => sel.addEventListener('change', () => { dash.draw('model-panels'); dash.draw('scatter'); }));
+
+  function leadField(el, field, fmt) {
+    const d = dash.data('lead');
+    const row = d.status === 'ok' && d.data && d.data[0];
+    el.textContent = row ? fmt(row[field]) : '—';
+  }
+  dash.draw('lead-volume', (el) => leadField(el, 'volume', (v) => d3.format(',')(v)));
+  dash.draw('lead-model', (el) => leadField(el, 'model', (v) => v));
+  dash.draw('lead-score', (el) => leadField(el, 'score', (v) => d3.format('.2f')(v)));
+  dash.draw('lead-none', (el) => leadField(el, 'no_door', (v) => v));
+
+  const fmt = { int: d3.format(','), f1: d3.format('.1f'), f2: d3.format('.2f'), f3: d3.format('.3f') };
+  function cell(tr, value, cls) {
+    const td = tr.appendChild(document.createElement('td'));
+    if (cls) td.className = cls;
+    td.textContent = value === null || value === undefined || value === '' ? '–' : value;
+    return td;
+  }
+
+  dash.draw('model-rows', (tbody) => {
+    const d = dash.data('byModel');
+    tbody.replaceChildren();
+    if (d.status !== 'ok' || !Array.isArray(d.data)) return;
+    for (const r of d.data) {
+      const tr = tbody.appendChild(document.createElement('tr'));
+      tr.dataset.key = `${encodeURIComponent(r.task)},${encodeURIComponent(r.model)}`;
+      cell(tr, r.task, 'pdb-l');
+      const m = tr.appendChild(document.createElement('td'));
+      m.className = 'pdb-l';
+      const sw = m.appendChild(document.createElement('i'));
+      sw.className = 'pdb-sw';
+      sw.style.background = window.pdbColor(r.model);
+      m.appendChild(document.createTextNode(r.model));
+      cell(tr, r.runs);
+      cell(tr, r.doors);
+      cell(tr, r.best_volume === null ? null : fmt.int(r.best_volume));
+      cell(tr, r.best_score === null ? null : fmt.f2(r.best_score));
+      cell(tr, r.mean_score === null ? null : fmt.f2(r.mean_score));
+      cell(tr, r.median_first_door_min === null ? null : fmt.f1(r.median_first_door_min));
+      cell(tr, r.mean_cost === null ? null : fmt.f2(r.mean_cost));
+      cell(tr, r.mean_tests === null ? null : fmt.f1(r.mean_tests));
+    }
+  });
+
+  dash.draw('run-rows', (tbody) => {
+    const d = dash.data('runs');
+    tbody.replaceChildren();
+    if (d.status !== 'ok') return;
+    const order = (m) => window.pdbModels.indexOf(m);
+    const rows = [...d.data].sort((a, b) => d3.ascending(a.task, b.task) || order(a.model) - order(b.model) || d3.ascending(a.run, b.run));
+    for (const r of rows) {
+      const tr = tbody.appendChild(document.createElement('tr'));
+      tr.dataset.key = encodeURIComponent(r.run);
+      cell(tr, r.run, 'pdb-l');
+      cell(tr, r.task, 'pdb-l');
+      cell(tr, r.model, 'pdb-l');
+      cell(tr, r.status, 'pdb-l');
+      cell(tr, r.volume === null ? null : fmt.int(r.volume));
+      cell(tr, r.dims);
+      cell(tr, r.score === null ? null : fmt.f2(r.score));
+      cell(tr, r.placements);
+      cell(tr, r.first_door_min === null ? null : fmt.f1(r.first_door_min));
+      cell(tr, fmt.f2(r.cost));
+      cell(tr, r.tests);
+      cell(tr, fmt.int(r.lab_ticks));
+      cell(tr, r.rounds);
+    }
+  });
+
+  // ---- Charts. Every chart draws at its real pixel size (no viewBox stretching), so text is
+  // the same size everywhere. Door volume is on a log scale, lower is better, and every model's
+  // chart for one door size shares the same axes.
+
+  // Fixed reference volumes for each door size, chosen for this page.
+  const REFS = {
+    '2×2 seamless': [{ v: 30, label: 'reference door (30)', cls: 'pdb-ref' }],
+    '3×3 seamless': [{ v: 192, label: 'best door before this benchmark (192)', cls: 'pdb-ref' }, { v: 56, label: 'best community claim (56)', cls: 'pdb-claim' }],
+    '4×4 seamless': [{ v: 132, label: 'community claim, never rebuilt here (132)', cls: 'pdb-claim' }],
+    '4×4 seamless (kit 2)': [{ v: 132, label: 'community claim, never rebuilt here (132)', cls: 'pdb-claim' }],
+    '3×2 seamless': [{ v: 42, label: 'smallest door built here (42)', cls: 'pdb-ref' }],
+    '5×5 seamless': [{ v: 504, label: 'community claim, never rebuilt here (504)', cls: 'pdb-claim' }],
+  };
+  const X = {
+    minutes: { label: 'minutes since the first tool call', fmt: d3.format('d'), int: true },
+    cost: { label: 'API-equivalent cost so far', fmt: d3.format('$,.2~f'), int: false },
+    test: { label: 'test calls', fmt: d3.format('d'), int: true },
+  };
+  const LOG_TICKS = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000];
+  const COST_TICKS = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500];
+  const fmtInt = d3.format(',');
+  const fmtCost = d3.format('$,.2~f');
+  const PAD = 14;  // .pdb-panel horizontal padding
+
+  function pick(id, fallback) {
+    const el = document.querySelector(id);
+    return (el && el.value) || fallback;
+  }
+  function textWidth(svg, text) {
+    const t = svg.append('text').attr('class', 'pdb-axis-text').text(text);
+    const w = t.node().getComputedTextLength();
+    t.remove();
+    return w;
+  }
+  function failed(el, msg) {
+    const p = el.appendChild(document.createElement('p'));
+    p.className = 'pdb-failed';
+    p.textContent = msg;
+  }
+  function tooltip(panel) {
+    const tip = panel.appendChild(document.createElement('div'));
+    tip.className = 'pdb-tip';
+    tip.hidden = true;
+    return {
+      show(event, lines) {
+        tip.replaceChildren(...lines.map(([text, muted]) => { const d = document.createElement('div'); if (muted) d.className = 'pdb-muted'; d.textContent = text; return d; }));
+        tip.hidden = false;
+        const box = panel.getBoundingClientRect();
+        const px = event.clientX - box.left, py = event.clientY - box.top;
+        tip.style.left = `${Math.max(4, Math.min(px + 12, box.width - tip.offsetWidth - 4))}px`;
+        tip.style.top = `${Math.max(4, py - tip.offsetHeight - 10)}px`;
+      },
+      hide() { tip.hidden = true; },
+    };
+  }
+  // A key for the reference lines, drawn with the same line styles as the charts.
+  function refKey(container, refs) {
+    if (!refs.length) return;
+    const key = container.appendChild(document.createElement('div'));
+    key.className = 'pdb-refkey';
+    for (const r of refs) {
+      const item = key.appendChild(document.createElement('span'));
+      const s = d3.select(item).append('svg').attr('width', 24).attr('height', 8).attr('aria-hidden', 'true');
+      s.append('line').attr('class', r.cls).attr('x1', 1).attr('x2', 23).attr('y1', 4).attr('y2', 4);
+      item.appendChild(document.createTextNode(r.label));
+    }
+  }
+  // Shared log volume domain, snapped to the tick ladder so every chart has round ends.
+  function volumeDomain(vols) {
+    const lo = d3.max(LOG_TICKS.filter((t) => t <= d3.min(vols) * 0.9)) || 10;
+    const hi = d3.min(LOG_TICKS.filter((t) => t >= d3.max(vols) * 1.1)) || d3.max(vols) * 1.2;
+    return [lo, hi];
+  }
+
+  // One chart frame: log y (volume), linear or log x, measured margins, faint grid, reference
+  // lines (labelled by the key, not on the chart). opts.strip reserves a band under the plot
+  // labelled opts.stripLabel; opts.xTicks fixes the x tick values.
+  function frame(panel, width, height, x, y, xLabel, xFmt, refs, opts = {}) {
+    const strip = opts.strip || 0;
+    const svg = d3.select(panel).append('svg').attr('width', width).attr('height', height)
+      .attr('viewBox', `0 0 ${width} ${height}`).attr('class', 'pdb-chart');
+    const yTicks = LOG_TICKS.filter((t) => t >= y.domain()[0] && t <= y.domain()[1]);
+    const labels = yTicks.map(fmtInt).concat(opts.stripLabel ? [opts.stripLabel] : []);
+    const left = 8 + d3.max(labels.map((t) => textWidth(svg, t)).concat([0]));
+    const m = { top: 10, right: 40, bottom: 36, left };  // right: room for the end labels
+    const plotBottom = height - m.bottom - strip;
+    x.range([m.left, width - m.right]);
+    y.range([plotBottom, m.top]);
+    svg.append('g').attr('class', 'pdb-grid').attr('transform', `translate(${m.left},0)`)
+      .call(d3.axisLeft(y).tickValues(yTicks).tickSize(-(width - m.left - m.right)).tickFormat(''));
+    svg.append('g').attr('class', 'pdb-axis').attr('transform', `translate(${m.left},0)`)
+      .call(d3.axisLeft(y).tickValues(yTicks).tickFormat(fmtInt).tickSizeOuter(0));
+    if (strip) {
+      svg.append('rect').attr('class', 'pdb-strip').attr('x', m.left).attr('y', plotBottom + 6)
+        .attr('width', width - m.left - m.right).attr('height', strip - 6);
+      svg.append('text').attr('class', 'pdb-axis-text').attr('x', m.left - 6).attr('y', plotBottom + 3 + strip / 2 + 4)
+        .attr('text-anchor', 'end').text(opts.stripLabel || '');
+    }
+    const n = Math.max(2, Math.floor((width - m.left - m.right) / 64));
+    const xAxis = d3.axisBottom(x).tickFormat(xFmt).tickSizeOuter(0);
+    xAxis.tickValues(opts.xTicks ? opts.xTicks(n) : x.ticks(n));
+    svg.append('g').attr('class', 'pdb-axis').attr('transform', `translate(0,${height - m.bottom})`).call(xAxis);
+    svg.append('text').attr('class', 'pdb-axis-text').attr('x', (m.left + width - m.right) / 2).attr('y', height - 4)
+      .attr('text-anchor', 'middle').text(xLabel);
+    for (const r of refs) {
+      if (r.v < y.domain()[0] || r.v > y.domain()[1]) continue;
+      svg.append('line').attr('class', r.cls).attr('x1', m.left).attr('x2', width - m.right).attr('y1', y(r.v)).attr('y2', y(r.v));
+    }
+    return { svg, m, plotBottom };
+  }
+
+  // Spread end labels apart vertically so none overlap; keeps their order.
+  function spread(items, gap, lo, hi) {
+    items.sort((a, b) => a.y - b.y);
+    for (let i = 1; i < items.length; i++) items[i].y = Math.max(items[i].y, items[i - 1].y + gap);
+    const over = items.length ? items[items.length - 1].y - hi : 0;
+    if (over > 0) items.forEach((it) => { it.y -= over; });
+    for (let i = items.length - 2; i >= 0; i--) items[i].y = Math.min(items[i].y, items[i + 1].y - gap);
+    items.forEach((it) => { it.y = Math.max(it.y, lo); });
+    return items;
+  }
+
+  dash.draw('model-panels', (el) => {
+    el.replaceChildren();
+    const c = dash.data('curve'), r = dash.data('runs');
+    if (c.status === 'error' || r.status === 'error') return failed(el, 'Failed to load');
+    if (c.status !== 'ok' || r.status !== 'ok') { el.textContent = '—'; return; }
+    const task = pick('#pdb-task', '3×3 seamless');
+    const xKey = pick('#pdb-x', 'minutes');
+    const runs = r.data.filter((d) => d.task === task);
+    const pts = c.data.filter((p) => p.task === task && p.best !== null && p.best !== undefined);
+    const refs = REFS[task] || [];
+    refKey(el, refs);
+    // Shared axes for every model on this door size.
+    const [yLo, yHi] = volumeDomain(pts.map((p) => +p.best).concat(refs.map((rf) => rf.v)));
+    const xMax = xKey === 'minutes' ? d3.max(runs, (d) => +d.minutes_limit)
+      : xKey === 'cost' ? d3.max(runs, (d) => +d.cost) : d3.max(runs, (d) => +d.tests);
+    const xSpec = X[xKey];
+    for (const model of window.pdbModels) {
+      const mr = runs.filter((d) => d.model === model);
+      if (!mr.length) continue;
+      const panel = el.appendChild(document.createElement('div'));
+      panel.className = 'pdb-panel';
+      const h = panel.appendChild(document.createElement('h3'));
+      const sw = h.appendChild(document.createElement('i'));
+      sw.className = 'pdb-sw';
+      sw.style.background = window.pdbColor(model);
+      h.appendChild(document.createTextNode(model));
+      const doors = mr.filter((d) => d.status === 'door');
+      const sub = h.appendChild(document.createElement('span'));
+      sub.className = 'pdb-h3-sub';
+      sub.textContent = `${doors.length} of ${mr.length} ${mr.length === 1 ? 'run' : 'runs'} built a door`;
+      const width = Math.max(240, Math.floor(panel.clientWidth - 2 * PAD));
+      const height = 240;
+      const x = d3.scaleLinear().domain([0, xMax || 1]).nice();
+      const y = d3.scaleLog().domain([yLo, yHi]);
+      const xTicks = xSpec.int ? (k) => x.ticks(k).filter(Number.isInteger) : null;
+      const { svg, m, plotBottom } = frame(panel, width, height, x, y, xSpec.label, xSpec.fmt, refs, { xTicks });
+      svg.attr('role', 'img').attr('aria-label', `${model}, ${task}: best door volume against ${xSpec.label}, one line per run`);
+      const tip = tooltip(panel);
+      const color = window.pdbColor(model);
+      const ends = [];
+      for (const run of mr) {
+        const ps = pts.filter((p) => p.run === run.run).sort((a, b) => a.test - b.test);
+        if (!ps.length) continue;
+        const line = d3.line().curve(d3.curveStepAfter).x((p) => x(+p[xKey])).y((p) => y(+p.best));
+        svg.append('path').attr('d', line(ps)).attr('fill', 'none').style('stroke', color)
+          .attr('stroke-width', 1.75).attr('stroke-linejoin', 'round').attr('stroke-opacity', 0.85);
+        const better = ps.filter((p, i) => i === 0 || +p.best < +ps[i - 1].best);
+        const last = better[better.length - 1];
+        svg.append('g').selectAll('circle').data(better).join('circle')
+          .attr('cx', (p) => x(+p[xKey])).attr('cy', (p) => y(+p.best)).attr('r', (p) => (p === last ? 4.5 : 2.75))
+          .style('fill', color).style('stroke', 'var(--color-panel)').attr('stroke-width', 1.25)
+          .on('pointerenter pointermove', (event, p) => tip.show(event, [
+            [`${p.run}`],
+            [`volume ${fmtInt(p.best)}`],
+            [`test ${p.test} · ${d3.format('.0f')(p.minutes)} min · ${fmtCost(p.cost)}`, true],
+          ]))
+          .on('pointerleave', () => tip.hide());
+        const end = ps[ps.length - 1];
+        ends.push({ x: x(+end[xKey]), y: y(+end.best), text: fmtInt(end.best) });
+      }
+      for (const e of spread(ends, 13, m.top + 6, plotBottom - 2)) {
+        svg.append('text').attr('class', 'pdb-end').attr('x', Math.min(e.x + 7, width - m.right + 4)).attr('y', e.y + 4).text(e.text);
+      }
+      if (!doors.length) {
+        svg.append('text').attr('class', 'pdb-empty').attr('x', (m.left + width - m.right) / 2).attr('y', (m.top + plotBottom) / 2)
+          .attr('text-anchor', 'middle').text(`No working door in ${mr.length === 1 ? 'its one run' : `any of ${mr.length} runs`}`);
+      }
+      const none = mr.filter((d) => d.status !== 'door').map((d) => d.run);
+      if (none.length && doors.length) {
+        const note = panel.appendChild(document.createElement('p'));
+        note.className = 'pdb-note';
+        note.textContent = `No working door: ${none.join(', ')}.`;
+      }
+    }
+  });
+
+  dash.draw('scatter', (el) => {
+    el.replaceChildren();
+    const r = dash.data('runs');
+    if (r.status === 'error') return failed(el, 'Failed to load');
+    if (r.status !== 'ok') { el.textContent = '—'; return; }
+    const task = pick('#pdb-task', '3×3 seamless');
+    const runs = r.data.filter((d) => d.task === task);
+    const doors = runs.filter((d) => d.status === 'door');
+    const none = runs.filter((d) => d.status !== 'door');
+    const refs = REFS[task] || [];
+    const panel = el.appendChild(document.createElement('div'));
+    panel.className = 'pdb-panel';
+    const h = panel.appendChild(document.createElement('h3'));
+    h.textContent = task.replace(' seamless', ' door');
+    const sub = h.appendChild(document.createElement('span'));
+    sub.className = 'pdb-h3-sub';
+    sub.textContent = `${runs.length} runs, ${doors.length} with a working door`;
+    refKey(panel, refs);
+    const width = Math.max(260, Math.floor(panel.clientWidth - 2 * PAD));
+    const strip = none.length ? 30 : 0;
+    const height = 270 + strip;
+    const [yLo, yHi] = volumeDomain(doors.map((d) => +d.volume).concat(refs.map((rf) => rf.v)));
+    const costs = runs.map((d) => +d.cost);
+    const x = d3.scaleLog().domain([Math.max(0.05, d3.min(costs) / 1.5), d3.max(costs) * 1.5]);
+    const xTicks = () => COST_TICKS.filter((t) => t >= x.domain()[0] && t <= x.domain()[1]);
+    const y = d3.scaleLog().domain([yLo, yHi]);
+    const { svg, plotBottom } = frame(panel, width, height, x, y, 'API-equivalent cost of the run', fmtCost, refs,
+      { strip, stripLabel: strip ? 'no door' : '', xTicks });
+    svg.attr('role', 'img').attr('aria-label', `${task}: final door volume against the run's cost, one dot per run; runs with no working door in a band below`);
+    const tip = tooltip(panel);
+    const show = (event, d) => tip.show(event, [
+      [`${d.run} · ${d.model}`],
+      [d.status === 'door' ? `volume ${fmtInt(d.volume)} · score ${d3.format('.2f')(d.score)}` : 'no working door'],
+      [`${fmtCost(d.cost)} · ${d.tests} tests · ${d.rounds} rounds`, true],
+    ]);
+    svg.append('g').selectAll('circle').data(doors).join('circle')
+      .attr('cx', (d) => x(+d.cost)).attr('cy', (d) => y(+d.volume)).attr('r', 5.5)
+      .style('fill', (d) => window.pdbColor(d.model)).style('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+      .on('pointerenter pointermove', show).on('pointerleave', () => tip.hide());
+    svg.append('g').selectAll('circle').data(none).join('circle')
+      .attr('cx', (d) => x(+d.cost)).attr('cy', plotBottom + 3 + strip / 2).attr('r', 4.5)
+      .style('fill', 'var(--color-panel)').style('stroke', (d) => window.pdbColor(d.model)).attr('stroke-width', 2)
+      .on('pointerenter pointermove', show).on('pointerleave', () => tip.hide());
+  });
+
+  // Charts draw at their real pixel width, so redraw them when their column changes width.
+
+  const sized = new WeakMap(), queued = new Set();
+  const resize = new ResizeObserver((entries) => {
+    for (const e of entries) {
+      const w = Math.round(e.contentRect.width), was = sized.get(e.target);
+      sized.set(e.target, w);
+      if (was === undefined || Math.abs(was - w) <= 4) continue;
+      const name = e.target.dataset.draw;
+      if (queued.has(name)) continue;
+      queued.add(name);
+      requestAnimationFrame(() => { queued.delete(name); dash.draw(name); });
+    }
+  });
+  document.querySelectorAll('[data-draw="model-panels"], [data-draw="scatter"]').forEach((n) => resize.observe(n));
+  // The ladder: every run as one dot, one column per task in order of difficulty.
+  const RUNGS = [
+    { task: '2×2 seamless', name: '2×2', sub: '' },
+    { task: '3×2 seamless', name: '3×2', sub: 'new shape' },
+    { task: '3×3 seamless', name: '3×3', sub: '' },
+    { task: '3×3 seamless (changed physics)', name: '3×3', sub: 'changed physics' },
+    { task: '4×4 seamless', name: '4×4', sub: '' },
+    { task: '4×4 seamless (kit 2)', name: '4×4', sub: 'kit 2' },
+    { task: '5×5 seamless', name: '5×5', sub: '' },
+  ];
+
+  // Spread dots that would overlap: each takes the nearest free horizontal offset in its slot.
+  function dodge(items, r, maxOff) {
+    const placed = [];
+    for (const it of items.sort((a, b) => a.y - b.y)) {
+      const near = placed.filter((p) => Math.abs(p.y - it.y) < 2 * r + 1);
+      let off = 0;
+      for (const k of [0, 1, -1, 2, -2, 3, -3]) {
+        const o = Math.max(-maxOff, Math.min(maxOff, k * (2 * r + 1)));
+        if (!near.some((p) => Math.abs(p.off - o) < 2 * r + 1)) { off = o; break; }
+        off = o;
+      }
+      it.off = off;
+      placed.push(it);
+    }
+    return items;
+  }
+
+  dash.draw('ladder', (el) => {
+    el.replaceChildren();
+    const r = dash.data('runs');
+    if (r.status === 'error') return failed(el, 'Failed to load');
+    if (r.status !== 'ok') { el.textContent = '—'; return; }
+    const running = r.data.filter((d) => d.status === 'running');
+    const runs = r.data.filter((d) => d.status !== 'running');
+    const rungs = RUNGS.filter((g) => runs.some((d) => d.task === g.task));
+    const panel = el.appendChild(document.createElement('div'));
+    panel.className = 'pdb-panel';
+    refKey(panel, [{ cls: 'pdb-ref', label: 'smallest door this grader has verified for that size' },
+                   { cls: 'pdb-claim', label: 'best community claim, never rebuilt here' }]);
+    const scroll = panel.appendChild(document.createElement('div'));
+    scroll.className = 'pdb-ladder-scroll';
+    const width = Math.max(640, Math.floor(panel.clientWidth - 2 * PAD));
+    const strip = 34, height = 394 + strip;
+    const svg = d3.select(scroll).append('svg').attr('width', width).attr('height', height)
+      .attr('viewBox', `0 0 ${width} ${height}`).attr('class', 'pdb-chart').attr('role', 'img')
+      .attr('aria-label', 'Final door volume of every run, one column per task; runs with no working door in a band at the bottom');
+    const doors = runs.filter((d) => d.status === 'door');
+    const refVals = rungs.flatMap((g) => (REFS[g.task] || []).map((f) => f.v));
+    const [yLo, yHi] = volumeDomain(doors.map((d) => +d.volume).concat(refVals));
+    const yTicks = LOG_TICKS.filter((t) => t >= yLo && t <= yHi);
+    const left = 8 + d3.max(yTicks.map(fmtInt).concat(['no door']).map((t) => textWidth(svg, t)));
+    const m = { top: 8, right: 4, bottom: 56, left };
+    const plotBottom = height - m.bottom - strip;
+    const y = d3.scaleLog().domain([yLo, yHi]).range([plotBottom, m.top]);
+    const x = d3.scaleBand().domain(rungs.map((g) => g.task)).range([m.left, width - m.right]).paddingInner(0.14).paddingOuter(0.06);
+    svg.append('g').attr('class', 'pdb-grid').attr('transform', `translate(${m.left},0)`)
+      .call(d3.axisLeft(y).tickValues(yTicks).tickSize(-(width - m.left - m.right)).tickFormat(''));
+    svg.append('g').attr('class', 'pdb-axis').attr('transform', `translate(${m.left},0)`)
+      .call(d3.axisLeft(y).tickValues(yTicks).tickFormat(fmtInt).tickSizeOuter(0));
+    svg.append('rect').attr('class', 'pdb-strip').attr('x', m.left).attr('y', plotBottom + 6).attr('width', width - m.left - m.right).attr('height', strip - 6);
+    svg.append('text').attr('class', 'pdb-axis-text').attr('x', m.left - 6).attr('y', plotBottom + 3 + strip / 2 + 4).attr('text-anchor', 'end').text('no door');
+    // Faint separators between columns.
+    const step = x.step();
+    rungs.slice(1).forEach((g) => {
+      const sx = x(g.task) - (step - x.bandwidth()) / 2;
+      svg.append('line').attr('class', 'pdb-sep').attr('x1', sx).attr('x2', sx).attr('y1', m.top).attr('y2', plotBottom + strip);
+    });
+    const tip = tooltip(panel);
+    const models = window.pdbModels;
+    const slot = x.bandwidth() / models.length;
+    const R = 5;
+    for (const g of rungs) {
+      const x0 = x(g.task);
+      for (const f of REFS[g.task] || []) {
+        svg.append('line').attr('class', f.cls).attr('x1', x0 - 2).attr('x2', x0 + x.bandwidth() + 2).attr('y1', y(f.v)).attr('y2', y(f.v));
+      }
+      const rs = runs.filter((d) => d.task === g.task);
+      const n = rs.length, nd = rs.filter((d) => d.status === 'door').length;
+      svg.append('text').attr('class', 'pdb-col').attr('x', x0 + x.bandwidth() / 2).attr('y', height - m.bottom + 18).attr('text-anchor', 'middle').text(g.name);
+      svg.append('text').attr('class', 'pdb-colsub').attr('x', x0 + x.bandwidth() / 2).attr('y', height - m.bottom + 32).attr('text-anchor', 'middle')
+        .text(g.sub || '\u00a0');
+      svg.append('text').attr('class', 'pdb-colsub').attr('x', x0 + x.bandwidth() / 2).attr('y', height - m.bottom + 46).attr('text-anchor', 'middle')
+        .text(`${nd}/${n} doors`);
+      models.forEach((model, i) => {
+        const mine = rs.filter((d) => d.model === model);
+        if (!mine.length) return;
+        const cx = x0 + slot * (i + 0.5);
+        const color = window.pdbColor(model);
+        const maxOff = Math.max(0, slot - R);
+        const pts = dodge(mine.filter((d) => d.status === 'door').map((d) => ({ d, y: y(+d.volume) })), R, maxOff);
+        // Runs with no door: a centred row of small rings in the band, one per run.
+        const none = mine.filter((d) => d.status !== 'door');
+        const gap = Math.min(9, slot / Math.max(1, none.length));
+        none.forEach((d, j) => pts.push({ d, y: plotBottom + 3 + strip / 2, off: (j - (none.length - 1) / 2) * gap }));
+        const show = (event, d) => tip.show(event, [
+          [`${d.run} · ${d.model}`],
+          [d.status === 'door' ? `volume ${fmtInt(d.volume)}${d.dims ? ` (${d.dims})` : ''}${d.score ? ` · score ${d3.format('.2f')(d.score)}` : ''}` : 'no working door'],
+          [`${fmtCost(d.cost)} · ${d.tests} tests${d.first_door_min !== null && d.first_door_min !== undefined ? ` · first door at ${d3.format('.0f')(d.first_door_min)} min` : ''}`, true],
+        ]);
+        const gEl = svg.append('g');
+        gEl.selectAll('circle').data(pts).join('circle')
+          .attr('cx', (p) => cx + p.off).attr('cy', (p) => p.y).attr('r', (p) => (p.d.status === 'door' ? R : 3.5))
+          .style('fill', (p) => (p.d.status === 'door' ? color : 'var(--color-panel)'))
+          .style('stroke', (p) => (p.d.status === 'door' ? 'var(--color-panel)' : color))
+          .attr('stroke-width', (p) => (p.d.status === 'door' ? 1.5 : 2));
+        gEl.selectAll('rect').data(pts).join('rect').attr('class', 'pdb-hit')
+          .attr('x', (p) => cx + p.off - R - 3).attr('y', (p) => p.y - R - 3).attr('width', 2 * R + 6).attr('height', 2 * R + 6)
+          .on('pointerenter pointermove', (event, p) => show(event, p.d)).on('pointerleave', () => tip.hide());
+      });
+    }
+    const note = panel.appendChild(document.createElement('p'));
+    note.className = 'pdb-note';
+    note.textContent = running.length
+      ? `Not shown yet, still running: ${running.map((d) => d.run).join(', ')}.`
+      : 'Every run shown has finished and passed or failed the final test.';
+  });
+
+  document.querySelectorAll('[data-draw="ladder"]').forEach((n) => resize.observe(n));
+
+</script>

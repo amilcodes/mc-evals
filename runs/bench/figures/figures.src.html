@@ -1,0 +1,494 @@
+<title>Piston Door Bench Figures</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Layout: one reading column of numbered figures, each a claim title, a how-to-read line, the chart and a source line. */
+  :root {
+    --bg: #fcfcfb; --ink: #121211; --ink-2: #52514e; --ink-3: #85837d; --rule: #e7e5df; --grid: #eeece7; --axis: #cbc8c0;
+    --ref: #8d8a83; --chip: #f3f2ee;
+    --fable: #2a78d6; --opus: #eb6834; --sonnet: #1baf7a; --haiku: #eda100;
+    --sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #181817; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #8f8d86; --rule: #2e2d2a; --grid: #262624; --axis: #44423e;
+      --ref: #9a978f; --chip: #222220;
+      --fable: #3987e5; --opus: #d95926; --sonnet: #199e70; --haiku: #c98500; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #181817; --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #8f8d86; --rule: #2e2d2a; --grid: #262624; --axis: #44423e;
+    --ref: #9a978f; --chip: #222220;
+    --fable: #3987e5; --opus: #d95926; --sonnet: #199e70; --haiku: #c98500; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; }
+  .page { max-width: 980px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 56px; }
+  header { display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin: 0; }
+  h1 { font-size: clamp(28px, 4.2vw, 38px); line-height: 1.12; font-weight: 600; letter-spacing: -.015em; margin: 0; text-wrap: balance; }
+  .lede { color: var(--ink-2); margin: 0; max-width: 66ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 10px 0 0; padding: 0; list-style: none; }
+  .facts li { display: flex; flex-direction: column; }
+  .facts b { font-family: var(--mono); font-weight: 500; font-size: 22px; font-variant-numeric: tabular-nums; }
+  .facts span { color: var(--ink-3); font-size: 12px; }
+  figure { margin: 0; display: flex; flex-direction: column; gap: 6px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  .fignum { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin: 0; }
+  figure h2 { font-size: clamp(19px, 2.4vw, 23px); line-height: 1.25; font-weight: 600; letter-spacing: -.01em; margin: 0; text-wrap: balance; max-width: 40ch; }
+  .how { color: var(--ink-2); margin: 0 0 14px; max-width: 72ch; font-size: 14.5px; }
+  .chart { position: relative; min-width: 0; }
+  .facets { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 18px 28px; }
+  .facets.two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+  .facet h3 { font-size: 14px; font-weight: 600; margin: 0 0 2px; }
+  .facet .sub { font-size: 12.5px; color: var(--ink-3); margin: 0 0 6px; }
+  figcaption { font-size: 12.5px; color: var(--ink-3); margin-top: 12px; max-width: 80ch; }
+  figcaption b { color: var(--ink-2); font-weight: 500; }
+  svg { display: block; overflow: visible; }
+  svg text { font-family: var(--sans); fill: var(--ink-2); }
+  .tick text, .num { font-family: var(--mono); font-size: 11px; fill: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .grid line { stroke: var(--grid); }
+  .grid path, .tick line { display: none; }
+  .baseline { stroke: var(--axis); }
+  .axis-title { font-size: 11.5px; fill: var(--ink-3); }
+  .row-label { font-size: 13px; fill: var(--ink); font-weight: 500; }
+  .row-sub { font-size: 11.5px; fill: var(--ink-3); }
+  .ref { stroke: var(--ref); stroke-dasharray: 3 3; }
+  .ref-label { font-family: var(--mono); font-size: 10.5px; fill: var(--ink-3); }
+  .median { stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; }
+  .median-label { font-family: var(--mono); font-size: 11px; fill: var(--ink); font-weight: 500; }
+  .none { font-size: 12px; fill: var(--ink-3); font-style: italic; }
+  .halo { paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }
+  .dot { stroke: var(--bg); stroke-width: 1.5; }
+  .hit { fill: transparent; }
+  .tip { position: absolute; z-index: 5; pointer-events: none; background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 6px 9px; font-size: 12.5px; line-height: 1.4; box-shadow: 0 4px 16px rgba(0, 0, 0, .12); white-space: nowrap; }
+  .tip .m { color: var(--ink-3); font-family: var(--mono); font-size: 11.5px; }
+  .grid-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .grid-wrap { overflow-x: auto; }
+  .grid-table th { font-weight: 500; font-size: 12.5px; color: var(--ink-3); text-align: center; padding: 0 6px 10px; }
+  .grid-table th:first-child { text-align: left; }
+  .grid-table td { padding: 10px 6px; border-top: 1px solid var(--rule); text-align: center; vertical-align: middle; }
+  .grid-table td:first-child { text-align: left; white-space: nowrap; font-weight: 500; }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: 0; }
+  .pips { display: inline-flex; gap: 3px; justify-content: center; }
+  .pip { width: 11px; height: 11px; border-radius: 3px; border: 1.5px solid currentColor; box-sizing: border-box; }
+  .pip.on { background: currentColor; }
+  .rate { display: block; font-family: var(--mono); font-size: 12px; color: var(--ink-2); margin-top: 4px; }
+  .notrun { color: var(--ink-3); font-size: 12px; }
+  footer { font-size: 12.5px; color: var(--ink-3); border-top: 1px solid var(--rule); padding-top: 16px; display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
+  @media (max-width: 520px) { .page { padding-block: 24px 48px; gap: 44px; } }
+</style>
+
+<div class="page">
+  <header>
+    <p class="eyebrow">Piston Door Bench · results as of 15 Nov 2026</p>
+    <h1>Agents designing Minecraft piston doors, scored by how small the door is</h1>
+    <p class="lede">Each run gives one model a time limit and a door size. The agent builds a seamless piston door, tests it in the real game engine and tries to shrink it. The score is the volume of the door's bounding box: smaller is better, and a door that fails the test scores nothing.</p>
+    <ul class="facts" id="facts"></ul>
+  </header>
+
+  <figure id="f1">
+    <p class="fignum">Figure 1</p>
+    <h2>Each step up in door size stops another model</h2>
+    <p class="how">Share of runs that built a working door, by door size. Each square is one run: filled means it built a door that passed the final test, hollow means it did not.</p>
+    <div class="grid-wrap"><table class="grid-table" id="grid" aria-label="Runs that built a working door, by model and door size"></table></div>
+    <figcaption><b>Note:</b> standard physics and the original tools only; a dash means the model was not run at that size. Time limits: 60 minutes for 2×2, 120 for 3×2 and 3×3, 150 for 4×4, 180 for 5×5.</figcaption>
+  </figure>
+
+  <figure id="f2">
+    <p class="fignum">Figure 2</p>
+    <h2>Fable and Opus build the smallest doors, but on 4×4 one model's runs differ more than the models do</h2>
+    <p class="how">Final door volume of every run, on a log scale; further left is a smaller door. The tick marks each model's median run, and its value is under the model's name. The dashed line is the task's reference door.</p>
+    <div class="facets" id="f2c"></div>
+    <figcaption><b>References:</b> 3×2 is the smallest door built in this benchmark (42); 3×3 is the best door this grader had verified before the benchmark (192); 4×4 is a community claim never rebuilt here (132).</figcaption>
+  </figure>
+
+  <figure id="f3">
+    <p class="fignum">Figure 3</p>
+    <h2>Agents keep shrinking their doors for the whole run</h2>
+    <p class="how">Each line is one run's smallest working door so far, from its first working door to the end of the run, on a log scale. On 3×3, 41% of the shrinking (measured on the log scale) came after the first hour; on 4×4, 89% did.</p>
+    <div class="facets two" id="f3c"></div>
+    <figcaption><b>Note:</b> an agent that stops early is told its best volume and asked to continue, up to three times, so some late improvements came after such a prompt. Runs that never built a door have no line.</figcaption>
+  </figure>
+
+  <figure id="f4">
+    <p class="fignum">Figure 4</p>
+    <h2>Changing the game's timings did not make the top models worse</h2>
+    <p class="how">3×3 door volume per run in standard Minecraft and in a world where a repeater step and an observer's reaction both take 3 ticks instead of 2. The brief told the agents about the change. Hollow circles are standard runs, filled circles changed ones; the tick and the number under each label are the median. Fable's best standard door (70) does not work in the changed world.</p>
+    <div class="chart" id="f4c"></div>
+    <figcaption><b>Note:</b> Opus has 7 standard and 6 changed runs, including a matched set (wave 8) of 3 standard and 3 changed runs started at the same moment on the same harness: 264, 360, 520 standard against 70, 112, 264 changed. Pooled, Opus's median is 264 standard and 112 changed (one-sided permutation p = 0.05). Fable has 3 changed runs, stopped at minute 80 of 120 to save usage, so they had less time than its standard runs.</figcaption>
+  </figure>
+
+  <figure id="f5">
+    <p class="fignum">Figure 5</p>
+    <h2>Opus costs about 40% less per run than Fable</h2>
+    <p class="how">Each dot is one run: its API-equivalent cost against its final door volume, both on log scales. Lower left is a small door for little money. Runs with no working door sit in the band at the bottom, at what they cost.</p>
+    <div class="facets two" id="f5c"></div>
+    <figcaption><b>Note:</b> cost is what each run's tokens would cost at Claude API list prices, read from its transcript. Mean cost per run: Fable $41 on 3×3 and $46 on 4×4; Opus $23 and $28.</figcaption>
+  </figure>
+
+  <figure id="f6">
+    <p class="fignum">Figure 6</p>
+    <h2>Richer tools made Opus's 4×4 doors more consistent</h2>
+    <p class="how">4×4 door volume per run with the original tools and with kit 2, which adds a tick-by-tick recording of each run as data, structured test results and thirteen facts earlier agents found missing. Hollow circles are the original kit, filled circles kit 2; the tick and the number under each label are the median.</p>
+    <div class="chart" id="f6c"></div>
+    <figcaption><b>Note:</b> the Fable kit-2 runs were stopped at minute 68 of 150 to save usage, so they are not a fair comparison; the Opus kit-2 runs had the full time. Three or four runs per cell. Two of the three Opus kit-2 agents used the recording tool, one did not.</figcaption>
+  </figure>
+
+  <footer>
+    <span><b>Source:</b> Piston Door Bench, waves 1 to 8, 58 finished runs. Every door was re-tested in a fresh simulator, through eight open-and-close cycles at varied timing, before it counted.</span>
+    <span>Volume is width × height × depth of the smallest box holding every block the door uses at any moment, the doorway included and the lever's cell left out. Runs per cell are small (one to four), so neighbouring results are not statistically settled.</span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const DATA = __DATA__;
+const MODELS = ['Fable 5.2', 'Opus 5.5', 'Sonnet 5.5', 'Haiku 5.5'];
+const VAR = { 'Fable 5.2': '--fable', 'Opus 5.5': '--opus', 'Sonnet 5.5': '--sonnet', 'Haiku 5.5': '--haiku' };
+const color = (m) => `var(${VAR[m]})`;
+const short = (m) => m.split(' ')[0];
+const fmtInt = d3.format(',');
+const fmtCost = (v) => (v < 10 ? d3.format('$.2f')(v) : d3.format('$,.0f')(v));
+const runs = DATA.runs;
+const T = { k44: '4×4 seamless (kit 2)', s32: '3×2 seamless', s33: '3×3 seamless', p33: '3×3 seamless (changed physics)', s44: '4×4 seamless', s22: '2×2 seamless', s55: '5×5 seamless' };
+
+// ---- shared helpers
+function tooltip(host) {
+  const tip = host.appendChild(document.createElement('div'));
+  tip.className = 'tip'; tip.hidden = true;
+  return {
+    show(ev, lines) {
+      tip.replaceChildren(...lines.map(([t, m]) => { const d = document.createElement('div'); if (m) d.className = 'm'; d.textContent = t; return d; }));
+      tip.hidden = false;
+      const b = host.getBoundingClientRect();
+      const x = ev.clientX - b.left, y = ev.clientY - b.top;
+      tip.style.left = `${Math.max(0, Math.min(x + 14, b.width - tip.offsetWidth))}px`;
+      tip.style.top = `${Math.max(0, y - tip.offsetHeight - 12)}px`;
+    },
+    hide() { tip.hidden = true; },
+  };
+}
+function runLines(d) {
+  return [[`${short(d.model)} · ${d.run}`],
+    [d.status === 'door' ? `volume ${fmtInt(d.volume)}  (${d.dims})` : 'no working door'],
+    [`${fmtCost(d.cost)} · ${d.tests} tests${d.first_door_min != null ? ` · first door at ${Math.round(d.first_door_min)} min` : ''}`, true]];
+}
+const LOG = [10, 20, 30, 50, 100, 200, 300, 500, 1000, 2000, 3000, 5000, 10000];
+function logDomain(vals, pad = 1.25) {
+  const lo = d3.min(vals) / pad, hi = d3.max(vals) * pad;
+  return [lo, hi];
+}
+function logTicks(dom, max = 6) {
+  let t = LOG.filter((v) => v >= dom[0] && v <= dom[1]);
+  while (t.length > max) t = t.filter((_, i) => i % 2 === 0);
+  return t;
+}
+function width(el) { return Math.max(240, Math.floor(el.getBoundingClientRect().width)); }
+function svgIn(el, w, h, label) {
+  return d3.select(el).append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`).attr('role', 'img').attr('aria-label', label);
+}
+// Spread dots on one row so none overlap: each moves up or down the row until free.
+function beeswarm(xs, r, maxDy) {
+  const placed = [];
+  return xs.map((x) => {
+    let dy = 0;
+    for (const k of [0, -1, 1, -2, 2, -3, 3]) {
+      dy = Math.max(-maxDy, Math.min(maxDy, k * (r * 1.7)));
+      if (!placed.some((p) => Math.hypot(p.x - x, p.dy - dy) < 2 * r + 0.5)) break;
+    }
+    placed.push({ x, dy });
+    return dy;
+  });
+}
+
+// ---- header facts
+(function facts() {
+  const ul = document.getElementById('facts');
+  const items = [[runs.length, 'finished runs'], [new Set(runs.map((r) => r.model)).size, 'models'],
+    [new Set(runs.map((r) => r.task)).size, 'tasks'], [runs.filter((r) => r.status === 'door').length, 'working doors'],
+    [d3.format('$,.0f')(d3.sum(runs, (r) => r.cost)), 'API-equivalent cost']];
+  for (const [v, l] of items) {
+    const li = ul.appendChild(document.createElement('li'));
+    li.innerHTML = `<b></b><span></span>`;
+    li.querySelector('b').textContent = typeof v === 'number' ? fmtInt(v) : v;
+    li.querySelector('span').textContent = l;
+  }
+})();
+
+// ---- Figure 1: door rate grid
+(function grid() {
+  const cols = [['2×2', T.s22], ['3×2', T.s32], ['3×3', T.s33], ['4×4', T.s44], ['5×5', T.s55]];
+  const table = document.getElementById('grid');
+  const head = table.createTHead().insertRow();
+  head.appendChild(document.createElement('th')).textContent = 'Model';
+  for (const [name] of cols) head.appendChild(document.createElement('th')).textContent = name;
+  const body = table.createTBody();
+  for (const m of MODELS) {
+    const tr = body.insertRow();
+    const th = tr.insertCell();
+    th.innerHTML = `<i class="sw"></i>`; th.querySelector('.sw').style.background = color(m);
+    th.appendChild(document.createTextNode(m));
+    for (const [, task] of cols) {
+      const td = tr.insertCell();
+      const rs = runs.filter((r) => r.task === task && r.model === m);
+      if (!rs.length) { td.innerHTML = '<span class="notrun">–</span>'; continue; }
+      const n = rs.filter((r) => r.status === 'door').length;
+      const pips = td.appendChild(document.createElement('span'));
+      pips.className = 'pips'; pips.style.color = color(m);
+      rs.sort((a, b) => (b.status === 'door') - (a.status === 'door')).forEach((r) => {
+        const p = pips.appendChild(document.createElement('i'));
+        p.className = 'pip' + (r.status === 'door' ? ' on' : '');
+        p.title = `${r.run}: ${r.status === 'door' ? `volume ${fmtInt(r.volume)}` : 'no door'}`;
+      });
+      const rate = td.appendChild(document.createElement('span'));
+      rate.className = 'rate'; rate.textContent = `${n}/${rs.length}`;
+    }
+  }
+})();
+
+// Facets: create every box first so the grid has its final columns, then measure and draw.
+function facets(host, specs) {
+  host.replaceChildren();
+  const boxes = specs.map((sp) => {
+    const box = host.appendChild(document.createElement('div'));
+    box.className = 'facet chart';
+    box.innerHTML = `<h3></h3><p class="sub"></p>`;
+    box.querySelector('h3').textContent = sp.title;
+    box.querySelector('.sub').textContent = sp.sub || '';
+    return box;
+  });
+  specs.forEach((sp, i) => sp.draw(boxes[i]));
+}
+
+// ---- Figure 2: dot plots per task
+function dotFacet(box, task, title, ref) {
+  const rs = runs.filter((r) => r.task === task);
+  const models = MODELS.filter((m) => rs.some((r) => r.model === m));
+  const doors = rs.filter((r) => r.status === 'door');
+  const w = width(box), rowH = 46;
+  const m = { top: 22, right: 14, bottom: 34, left: 76 };
+  const h = m.top + rowH * models.length + m.bottom;
+  const svg = svgIn(box, w, h, `${title}: final door volume of each run by model`);
+  const dom = logDomain(doors.map((r) => r.volume).concat(ref ? [ref.v] : []), 1.35);
+  const x = d3.scaleLog().domain(dom).range([m.left, w - m.right]);
+  const ticks = logTicks(dom, Math.max(3, Math.floor((w - m.left) / 60)));
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(0,${h - m.bottom})`)
+    .call(d3.axisBottom(x).tickValues(ticks).tickSize(-(h - m.top - m.bottom)).tickFormat(''));
+  svg.append('g').attr('class', 'tick-axis').attr('transform', `translate(0,${h - m.bottom + 6})`)
+    .call(d3.axisBottom(x).tickValues(ticks).tickFormat(fmtInt).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('class', 'axis-title').attr('x', w - m.right).attr('y', h - 4).attr('text-anchor', 'end').text('volume, log scale');
+  if (ref) {
+    svg.append('line').attr('class', 'ref').attr('x1', x(ref.v)).attr('x2', x(ref.v)).attr('y1', m.top - 4).attr('y2', h - m.bottom);
+    svg.append('text').attr('class', 'ref-label').attr('x', x(ref.v)).attr('y', m.top - 9).attr('text-anchor', 'middle').text(ref.label);
+  }
+  const tip = tooltip(box);
+  models.forEach((model, i) => {
+    const cy = m.top + rowH * i + rowH / 2;
+    svg.append('text').attr('class', 'row-label').attr('x', 0).attr('y', cy - 1).text(short(model));
+    const mine = rs.filter((r) => r.model === model);
+    const md = mine.filter((r) => r.status === 'door').sort((a, b) => a.volume - b.volume);
+    if (!md.length) {
+      svg.append('text').attr('class', 'none').attr('x', m.left).attr('y', cy + 4).text(`no working door in ${mine.length} run${mine.length > 1 ? 's' : ''}`);
+      svg.append('text').attr('class', 'num').attr('x', 0).attr('y', cy + 13).text('no door');
+      return;
+    }
+    const dys = beeswarm(md.map((r) => x(r.volume)), 6, rowH / 2 - 8);
+    const med = d3.median(md, (r) => r.volume);
+    svg.append('line').attr('class', 'median').attr('x1', x(med)).attr('x2', x(med)).attr('y1', cy - 13).attr('y2', cy + 13);
+    svg.append('text').attr('class', 'num').attr('x', 0).attr('y', cy + 13).text(`median ${fmtInt(Math.round(med))}`);
+    md.forEach((r, j) => {
+      svg.append('circle').attr('class', 'dot').attr('cx', x(r.volume)).attr('cy', cy + dys[j]).attr('r', 6).style('fill', color(model));
+      svg.append('circle').attr('class', 'hit').attr('cx', x(r.volume)).attr('cy', cy + dys[j]).attr('r', 11)
+        .on('pointerenter pointermove', (ev) => tip.show(ev, runLines(r))).on('pointerleave', tip.hide);
+    });
+    const failed = mine.length - md.length;
+    if (failed) svg.append('text').attr('class', 'row-sub').attr('x', w - m.right).attr('y', cy + 4).attr('text-anchor', 'end').text(`+${failed} with no door`);
+  });
+}
+function figure2() {
+  facets(document.getElementById('f2c'), [
+    { title: '3×2 door', sub: 'new shape, 120 minutes', draw: (b) => dotFacet(b, T.s32, '3×2 door', { v: 42, label: 'ref 42' }) },
+    { title: '3×3 door', sub: '120 minutes', draw: (b) => dotFacet(b, T.s33, '3×3 door', { v: 192, label: 'ref 192' }) },
+    { title: '4×4 door', sub: '150 minutes', draw: (b) => dotFacet(b, T.s44, '4×4 door', { v: 132, label: 'claim 132' }) },
+  ]);
+}
+
+// ---- Figure 3: progress over time
+function progressFacet(box, task, title, limit) {
+  const ps = DATA.progress.filter((p) => p.task === task);
+  const w = width(box), h = 300;
+  const m = { top: 12, right: 92, bottom: 34, left: 44 };
+  const svg = svgIn(box, w, h, `${title}: smallest working door so far against minutes, one line per run`);
+  const vals = ps.flatMap((p) => p.steps.map((s) => s[1]));
+  const dom = logDomain(vals, 1.2);
+  const y = d3.scaleLog().domain(dom).range([h - m.bottom, m.top]);
+  const x = d3.scaleLinear().domain([0, limit]).range([m.left, w - m.right]);
+  const yt = logTicks(dom, 6);
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${m.left},0)`).call(d3.axisLeft(y).tickValues(yt).tickSize(-(w - m.left - m.right)).tickFormat(''));
+  svg.append('g').attr('transform', `translate(${m.left - 6},0)`).call(d3.axisLeft(y).tickValues(yt).tickFormat(fmtInt).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('class', 'baseline').attr('x1', m.left).attr('x2', w - m.right).attr('y1', h - m.bottom).attr('y2', h - m.bottom);
+  svg.append('g').attr('transform', `translate(0,${h - m.bottom + 6})`).call(d3.axisBottom(x).ticks(Math.min(6, limit / 30)).tickFormat((v) => `${v}`).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('class', 'axis-title').attr('x', w - m.right).attr('y', h - 4).attr('text-anchor', 'end').text('minutes into the run');
+  svg.append('line').attr('x1', x(60)).attr('x2', x(60)).attr('y1', m.top).attr('y2', h - m.bottom).style('stroke', 'var(--axis)').style('stroke-dasharray', '2 3');
+  svg.append('text').attr('class', 'ref-label halo').attr('x', x(60) + 4).attr('y', h - m.bottom - 6).text('1 hour');
+  const tip = tooltip(box);
+  const ends = [];
+  for (const model of MODELS) {
+    const mine = ps.filter((p) => p.model === model);
+    if (!mine.length) continue;
+    for (const p of mine) {
+      const pts = p.steps.concat([[Math.min(limit, p.end || limit), p.steps[p.steps.length - 1][1]]]);
+      const line = d3.line().curve(d3.curveStepAfter).x((s) => x(s[0])).y((s) => y(s[1]));
+      svg.append('path').attr('d', line(pts)).attr('fill', 'none').style('stroke', color(model)).attr('stroke-width', 2).attr('stroke-opacity', 0.75).attr('stroke-linejoin', 'round');
+      svg.append('circle').attr('class', 'dot').attr('cx', x(p.steps[0][0])).attr('cy', y(p.steps[0][1])).attr('r', 3.5).style('fill', color(model));
+      const last = pts[pts.length - 1];
+      svg.append('circle').attr('class', 'dot').attr('cx', x(last[0])).attr('cy', y(last[1])).attr('r', 4.5).style('fill', color(model));
+      const r = runs.find((d) => d.run === p.run);
+      svg.append('path').attr('d', line(pts)).attr('fill', 'none').style('stroke', 'transparent').attr('stroke-width', 12)
+        .on('pointerenter pointermove', (ev) => tip.show(ev, [[`${short(model)} · ${p.run}`], [`first door ${fmtInt(p.steps[0][1])} at ${Math.round(p.steps[0][0])} min`], [`final ${fmtInt(p.final)}`, true]]))
+        .on('pointerleave', tip.hide);
+    }
+    const med = d3.median(mine, (p) => p.final);
+    ends.push({ model, y: y(med), text: `${short(model)}`, sub: `median ${fmtInt(Math.round(med))}` });
+  }
+  // direct labels in the right margin, spread apart so they never collide
+  ends.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) ends[i].y = Math.max(ends[i].y, ends[i - 1].y + 30);
+  for (const e of ends) {
+    svg.append('text').attr('x', w - m.right + 10).attr('y', e.y).attr('class', 'row-label').style('fill', color(e.model)).text(e.text);
+    svg.append('text').attr('x', w - m.right + 10).attr('y', e.y + 14).attr('class', 'num').text(e.sub);
+  }
+}
+function figure3() {
+  const n = (t) => DATA.progress.filter((p) => p.task === t).length;
+  facets(document.getElementById('f3c'), [
+    { title: '3×3 door', sub: `${n(T.s33)} runs with a working door`, draw: (b) => progressFacet(b, T.s33, '3×3 door', 120) },
+    { title: '4×4 door', sub: `${n(T.s44)} runs with a working door`, draw: (b) => progressFacet(b, T.s44, '4×4 door', 150) },
+  ]);
+}
+
+// ---- Figures 4 and 6: one condition against another, per model
+function compare(boxId, models, conds, ref, axisText) {
+  const box = document.getElementById(boxId); box.replaceChildren();
+  const groups = [];
+  for (const model of models) {
+    for (const c of conds) groups.push({ model, ...c, rs: runs.filter((r) => r.task === c.task && r.model === model && r.status === 'door') });
+  }
+  const w = width(box), rowH = 40, gapH = 18;
+  const m = { top: 24, right: 16, bottom: 34, left: 150 };
+  const h = m.top + rowH * groups.length + gapH * (models.length - 1) + m.bottom;
+  const svg = svgIn(box, w, h, `${axisText} per run, by condition, for ${models.map(short).join(' and ')}`);
+  const dom = logDomain(groups.flatMap((g) => g.rs.map((r) => r.volume)).concat([ref.v]), 1.3);
+  const x = d3.scaleLog().domain(dom).range([m.left, w - m.right]);
+  const ticks = logTicks(dom, Math.max(3, Math.floor((w - m.left) / 60)));
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(0,${h - m.bottom})`).call(d3.axisBottom(x).tickValues(ticks).tickSize(-(h - m.top - m.bottom)).tickFormat(''));
+  svg.append('g').attr('transform', `translate(0,${h - m.bottom + 6})`).call(d3.axisBottom(x).tickValues(ticks).tickFormat(fmtInt).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('class', 'axis-title').attr('x', w - m.right).attr('y', h - 4).attr('text-anchor', 'end').text(axisText);
+  svg.append('line').attr('class', 'ref').attr('x1', x(ref.v)).attr('x2', x(ref.v)).attr('y1', m.top - 4).attr('y2', h - m.bottom);
+  svg.append('text').attr('class', 'ref-label').attr('x', x(ref.v)).attr('y', m.top - 9).attr('text-anchor', 'middle').text(ref.label);
+  const tip = tooltip(box);
+  groups.forEach((g, i) => {
+    const block = Math.floor(i / conds.length);
+    const cy = m.top + rowH * i + gapH * block + rowH / 2;
+    if (i % conds.length === 0) svg.append('text').attr('class', 'row-label').attr('x', 0).attr('y', cy + 4).style('fill', color(g.model)).text(short(g.model));
+    svg.append('text').attr('class', 'row-sub').attr('x', 62).attr('y', cy + 1).text(g.label);
+    if (!g.rs.length) return;
+    const med = d3.median(g.rs, (r) => r.volume);
+    const dys = beeswarm(g.rs.map((r) => x(r.volume)), 6, rowH / 2 - 7);
+    svg.append('line').attr('class', 'median').attr('x1', x(med)).attr('x2', x(med)).attr('y1', cy - 12).attr('y2', cy + 12);
+    g.rs.forEach((r, j) => {
+      svg.append('circle').attr('class', 'dot').attr('cx', x(r.volume)).attr('cy', cy + dys[j]).attr('r', 6)
+        .style('fill', g.hollow ? 'var(--bg)' : color(g.model)).style('stroke', color(g.model)).attr('stroke-width', 2);
+      svg.append('circle').attr('class', 'hit').attr('cx', x(r.volume)).attr('cy', cy + dys[j]).attr('r', 11)
+        .on('pointerenter pointermove', (ev) => tip.show(ev, runLines(r))).on('pointerleave', tip.hide);
+    });
+    svg.append('text').attr('class', 'num').attr('x', 62).attr('y', cy + 16).text(`median ${fmtInt(Math.round(med))}`);
+  });
+}
+function figure4() {
+  compare('f4c', ['Fable 5.2', 'Opus 5.5'], [{ task: T.s33, label: 'standard', hollow: true }, { task: T.p33, label: 'changed timings' }],
+    { v: 192, label: 'ref 192' }, '3×3 door volume, log scale');
+}
+function figure6() {
+  compare('f6c', ['Fable 5.2', 'Opus 5.5'], [{ task: T.s44, label: 'original kit', hollow: true }, { task: T.k44, label: 'kit 2' }],
+    { v: 132, label: 'claim 132' }, '4×4 door volume, log scale');
+}
+
+// ---- Figure 5: cost against volume
+function costFacet(box, task, title) {
+  const rs = runs.filter((r) => r.task === task);
+  const doors = rs.filter((r) => r.status === 'door'), none = rs.filter((r) => r.status !== 'door');
+  const w = width(box), strip = none.length ? 30 : 0, h = 280 + strip;
+  const m = { top: 12, right: 16, bottom: 34, left: 52 };
+  const plotB = h - m.bottom - strip;
+  const svg = svgIn(box, w, h, `${title}: cost of each run against its final door volume`);
+  const ydom = logDomain(doors.map((r) => r.volume), 1.3);
+  const xdom = logDomain(rs.map((r) => r.cost), 1.4);
+  const y = d3.scaleLog().domain(ydom).range([plotB, m.top]);
+  const x = d3.scaleLog().domain(xdom).range([m.left, w - m.right]);
+  const yt = logTicks(ydom, 6);
+  const xt = [0.5, 1, 2, 5, 10, 20, 50, 100].filter((v) => v >= xdom[0] && v <= xdom[1]);
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${m.left},0)`).call(d3.axisLeft(y).tickValues(yt).tickSize(-(w - m.left - m.right)).tickFormat(''));
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(0,${h - m.bottom})`).call(d3.axisBottom(x).tickValues(xt).tickSize(-(h - m.top - m.bottom)).tickFormat(''));
+  svg.append('g').attr('transform', `translate(${m.left - 6},0)`).call(d3.axisLeft(y).tickValues(yt).tickFormat(fmtInt).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('transform', `translate(0,${h - m.bottom + 6})`).call(d3.axisBottom(x).tickValues(xt).tickFormat((v) => `$${v}`).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('class', 'axis-title').attr('x', w - m.right).attr('y', h - 4).attr('text-anchor', 'end').text('cost per run (log scale)');
+  if (strip) {
+    svg.append('rect').attr('x', m.left).attr('y', plotB + 6).attr('width', w - m.left - m.right).attr('height', strip - 6).style('fill', 'var(--chip)');
+    svg.append('text').attr('class', 'num').attr('x', m.left - 6).attr('y', plotB + 6 + (strip - 6) / 2 + 4).attr('text-anchor', 'end').text('none');
+  }
+  const tip = tooltip(box);
+  const labels = [];
+  for (const model of MODELS) {
+    const md = doors.filter((r) => r.model === model);
+    md.forEach((r) => {
+      svg.append('circle').attr('class', 'dot').attr('cx', x(r.cost)).attr('cy', y(r.volume)).attr('r', 6).style('fill', color(model));
+      svg.append('circle').attr('class', 'hit').attr('cx', x(r.cost)).attr('cy', y(r.volume)).attr('r', 11)
+        .on('pointerenter pointermove', (ev) => tip.show(ev, runLines(r))).on('pointerleave', tip.hide);
+    });
+    none.filter((r) => r.model === model).forEach((r) => {
+      svg.append('circle').attr('cx', x(r.cost)).attr('cy', plotB + 6 + (strip - 6) / 2).attr('r', 5).style('fill', 'var(--bg)').style('stroke', color(model)).attr('stroke-width', 2);
+      svg.append('circle').attr('class', 'hit').attr('cx', x(r.cost)).attr('cy', plotB + 6 + (strip - 6) / 2).attr('r', 10)
+        .on('pointerenter pointermove', (ev) => tip.show(ev, runLines(r))).on('pointerleave', tip.hide);
+    });
+    // label each model once, at the centre of its runs (geometric mean cost), above its highest dot
+    if (md.length) {
+      labels.push({ model, x: x(Math.exp(d3.mean(md, (r) => Math.log(r.cost)))), y: d3.min(md, (r) => y(r.volume)) - 12 });
+    } else if (rs.some((r) => r.model === model)) {
+      const nm = none.filter((r) => r.model === model);
+      labels.push({ model, x: x(d3.max(nm, (r) => r.cost)) + 10, y: plotB + 6 + (strip - 6) / 2 + 4, anchor: 'start' });
+    }
+  }
+  placeLabels(svg, labels, w, m);
+}
+function placeLabels(svg, labels, w, m) {
+  labels.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < labels.length; i++) {
+    const p = labels[i - 1], c = labels[i];
+    if (Math.abs(c.x - p.x) < 60 && c.y - p.y < 16) c.y = p.y + 16;
+  }
+  for (const l of labels) {
+    const anchor = l.anchor || 'middle';
+    const lx = anchor === 'middle' ? Math.max(m.left + 24, Math.min(w - m.right - 24, l.x)) : l.x;
+    svg.append('text').attr('class', 'row-label halo').attr('x', lx).attr('y', Math.max(m.top + 10, l.y)).attr('text-anchor', anchor)
+      .style('fill', color(l.model)).text(short(l.model));
+  }
+}
+function figure5() {
+  const n = (t) => runs.filter((r) => r.task === t).length;
+  facets(document.getElementById('f5c'), [
+    { title: '3×3 door', sub: `${n(T.s33)} runs`, draw: (b) => costFacet(b, T.s33, '3×3 door') },
+    { title: '4×4 door', sub: `${n(T.s44)} runs`, draw: (b) => costFacet(b, T.s44, '4×4 door') },
+  ]);
+}
+
+function drawAll() { figure2(); figure3(); figure4(); figure5(); figure6(); }
+drawAll();
+let lastW = document.querySelector('.page').getBoundingClientRect().width, pending = 0;
+new ResizeObserver(() => {
+  const w = document.querySelector('.page').getBoundingClientRect().width;
+  if (Math.abs(w - lastW) < 4) return;
+  lastW = w; cancelAnimationFrame(pending); pending = requestAnimationFrame(drawAll);
+}).observe(document.querySelector('.page'));
+</script>

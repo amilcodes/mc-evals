@@ -1,0 +1,214 @@
+{
+ "wave": "w8",
+ "task": "3x3 seamless, Opus only: standard vs changed physics (repeater step 3, observer delay 3), launched together",
+ "track": "seamless",
+ "n": 3,
+ "minutes": 120,
+ "loop_rule": "An agent that stops before its time is up gets the same neutral continue message (reprompt.py), at most 3 times per run.",
+ "notes": [
+  "Matched comparison: 3 standard and 3 changed-physics Opus runs started at the same time on the same harness and kit 1, so harness drift between waves 1/3 and 5 cannot explain a difference.",
+  "Pool with waves 1 and 3 (standard, 4 Opus runs) and wave 5 (changed, 3 Opus runs) for a larger sample.",
+  "Launch prompt identical to waves 1-7.",
+  "Result (all 6 passed the final grade): standard 264, 360, 520; changed 70, 112, 264. Pooled with waves 1/3/5: median 264 (n=7) vs 112 (n=6), one-sided permutation p = 0.05. See RESULTS.md."
+ ],
+ "runs": [
+  {
+   "name": "w8-3x3-std-a-opus",
+   "model": "opus",
+   "port": 8991,
+   "n": 3,
+   "minutes": 120,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-std-a-opus/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-std-a-opus/kit",
+   "agent": "a77d079ed553b80dc",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a77d079ed553b80dc.output",
+   "status": "finished: stopped after the third continue message",
+   "launched_unix": 1794797984,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794802949,
+     "minutes_used": 82.8,
+     "best": 456
+    },
+    {
+     "unix": 1794803278,
+     "minutes_used": 88.3,
+     "best": 456
+    },
+    {
+     "unix": 1794803403,
+     "minutes_used": 90.4,
+     "best": 432
+    }
+   ]
+  },
+  {
+   "name": "w8-3x3-chg-a-opus",
+   "model": "opus",
+   "port": 8992,
+   "n": 3,
+   "minutes": 120,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-chg-a-opus/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-chg-a-opus/kit",
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "agent": "aa6dc38ed0e4151fa",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/aa6dc38ed0e4151fa.output",
+   "status": "finished: stopped after the third continue message",
+   "launched_unix": 1794797984,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794803249,
+     "minutes_used": 87.8,
+     "best": 264
+    },
+    {
+     "unix": 1794803325,
+     "minutes_used": 89.1,
+     "best": 264
+    },
+    {
+     "unix": 1794803378,
+     "minutes_used": 90.0,
+     "best": 264
+    }
+   ]
+  },
+  {
+   "name": "w8-3x3-std-b-opus",
+   "model": "opus",
+   "port": 8993,
+   "n": 3,
+   "minutes": 120,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-std-b-opus/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-std-b-opus/kit",
+   "agent": "a27894255bda17196",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a27894255bda17196.output",
+   "status": "finished: stopped after the third continue message",
+   "launched_unix": 1794797984,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794801931,
+     "minutes_used": 65.8,
+     "best": 520
+    },
+    {
+     "unix": 1794802102,
+     "minutes_used": 68.7,
+     "best": 520
+    },
+    {
+     "unix": 1794802221,
+     "minutes_used": 70.7,
+     "best": 520
+    }
+   ]
+  },
+  {
+   "name": "w8-3x3-chg-b-opus",
+   "model": "opus",
+   "port": 8994,
+   "n": 3,
+   "minutes": 120,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-chg-b-opus/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-chg-b-opus/kit",
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "agent": "a44e2e519268d51f3",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a44e2e519268d51f3.output",
+   "status": "finished: stopped after the third continue message",
+   "launched_unix": 1794797984,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794801820,
+     "minutes_used": 64.0,
+     "best": 70
+    },
+    {
+     "unix": 1794802018,
+     "minutes_used": 67.3,
+     "best": 70
+    },
+    {
+     "unix": 1794802084,
+     "minutes_used": 68.4,
+     "best": 70
+    }
+   ]
+  },
+  {
+   "name": "w8-3x3-std-c-opus",
+   "model": "opus",
+   "port": 8995,
+   "n": 3,
+   "minutes": 120,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-std-c-opus/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-std-c-opus/kit",
+   "agent": "a0f9ffab98ce38442",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a0f9ffab98ce38442.output",
+   "status": "finished: stopped after the third continue message",
+   "launched_unix": 1794797984,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794801523,
+     "minutes_used": 59.0,
+     "best": 288
+    },
+    {
+     "unix": 1794801924,
+     "minutes_used": 65.7,
+     "best": 264
+    },
+    {
+     "unix": 1794801991,
+     "minutes_used": 66.8,
+     "best": 264
+    }
+   ]
+  },
+  {
+   "name": "w8-3x3-chg-c-opus",
+   "model": "opus",
+   "port": 8996,
+   "n": 3,
+   "minutes": 120,
+   "log": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-chg-c-opus/log.jsonl",
+   "kit": "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/w8/w8-3x3-chg-c-opus/kit",
+   "physics": {
+    "repeater_unit": 3,
+    "observer_delay": 3
+   },
+   "agent": "a40ee86c912597252",
+   "transcript": "/private/tmp/claude-501/-Users-AmilAgrawal-Library-Application-Support-Claude-scratch-workspaces-d9080dc0-6400-4a71-ba8b-e896651c820d-d48e81fa-2e2e-421b-9196-f7a0199ec441-scratch-2026-11-09-4800c6/604acb09-bbd6-4e70-8cb0-eae470f68849/tasks/a40ee86c912597252.output",
+   "status": "finished: stopped after the third continue message",
+   "launched_unix": 1794797984,
+   "rounds": 4,
+   "reprompts": [
+    {
+     "unix": 1794802410,
+     "minutes_used": 73.8,
+     "best": 168
+    },
+    {
+     "unix": 1794802603,
+     "minutes_used": 77.0,
+     "best": 168
+    },
+    {
+     "unix": 1794802748,
+     "minutes_used": 79.5,
+     "best": 112
+    }
+   ]
+  }
+ ]
+}
