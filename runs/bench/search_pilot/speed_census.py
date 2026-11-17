@@ -207,7 +207,7 @@ def main():
             d = doors[r]
             while True:  # disk guard: macOS swap shares this volume
                 free = os.statvfs("/private/tmp")
-                if free.f_bavail * free.f_frsize > 400e6:
+                if free.f_bavail * free.f_frsize > 1500e6:
                     break
                 print(f"  waiting for disk space ({free.f_bavail * free.f_frsize / 1e6:.0f} MB free)", flush=True)
                 time.sleep(60)

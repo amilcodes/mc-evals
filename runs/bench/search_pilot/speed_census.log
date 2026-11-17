@@ -1,85 +1,66 @@
-physics {}: 23 doors
-  round 1: 1 doors, 220 edits, 18s, 0 doors with a faster neighbour
-  w9-3x3-std-a-opus: 28/18 -> 28/18 (0 edits) 18s
-  round 1: 1 doors, 280 edits, 31s, 0 doors with a faster neighbour
-  w1-sonnet-a: 34/22 -> 34/22 (0 edits) 49s
-  round 1: 1 doors, 290 edits, 26s, 1 doors with a faster neighbour
-  round 2: 1 doors, 290 edits, 16s, 0 doors with a faster neighbour
-  w9-3x3-std-c-opus: 32/28 -> 24/26 (2 edits) 95s
-  round 1: 1 doors, 331 edits, 27s, 0 doors with a faster neighbour
-  w8-3x3-std-b-opus: 42/44 -> 42/44 (0 edits) 122s
-  round 1: 1 doors, 282 edits, 48s, 1 doors with a faster neighbour
-  round 2: 1 doors, 282 edits, 14s, 0 doors with a faster neighbour
-  w8-3x3-std-a-opus: 46/41 -> 40/38 (1 edits) 190s
-  round 1: 1 doors, 313 edits, 39s, 1 doors with a faster neighbour
-  round 2: 1 doors, 313 edits, 18s, 1 doors with a faster neighbour
-  round 3: 1 doors, 313 edits, 24s, 0 doors with a faster neighbour
-  w1-opus-b: 46/16 -> 30/15 (6 edits) 278s
-  round 1: 1 doors, 321 edits, 37s, 1 doors with a faster neighbour
-  round 2: 1 doors, 317 edits, 23s, 1 doors with a faster neighbour
-  round 3: 1 doors, 317 edits, 22s, 1 doors with a faster neighbour
-  w9-3x3-std-b-opus: 44/58 -> 30/38 (8 edits) 374s
-  round 1: 1 doors, 757 edits, 50s, 1 doors with a faster neighbour
-  round 2: 1 doors, 757 edits, 46s, 0 doors with a faster neighbour
-  w2-4x4-fable-a: 90/66 -> 70/60 (3 edits) 475s
-  round 1: 1 doors, 359 edits, 25s, 1 doors with a faster neighbour
-  round 2: 1 doors, 355 edits, 22s, 0 doors with a faster neighbour
-  w3-sonnet-d: 60/32 -> 36/16 (4 edits) 530s
-  round 1: 1 doors, 966 edits, 70s, 1 doors with a faster neighbour
-  round 2: 1 doors, 970 edits, 77s, 1 doors with a faster neighbour
-  round 3: 1 doors, 974 edits, 65s, 0 doors with a faster neighbour
-  w1-sonnet-b: 114/60 -> 62/40 (6 edits) 749s
-  round 1: 1 doors, 315 edits, 41s, 1 doors with a faster neighbour
-  round 2: 1 doors, 313 edits, 26s, 0 doors with a faster neighbour
-  w4-4x4-fable-f: 34/16 -> 26/16 (1 edits) 821s
-  round 1: 1 doors, 589 edits, 79s, 1 doors with a faster neighbour
-  round 2: 1 doors, 589 edits, 67s, 0 doors with a faster neighbour
-  w2-4x4-fable-b: 76/76 -> 70/70 (3 edits) 976s
-  round 1: 1 doors, 486 edits, 53s, 1 doors with a faster neighbour
-  round 2: 1 doors, 486 edits, 39s, 0 doors with a faster neighbour
-  w7-4x4k2-opus-b: 40/52 -> 40/48 (1 edits) 1073s
-  round 1: 1 doors, 854 edits, 66s, 1 doors with a faster neighbour
-  round 2: 1 doors, 858 edits, 116s, 1 doors with a faster neighbour
-  round 3: 1 doors, 858 edits, 89s, 0 doors with a faster neighbour
-  w7-4x4k2-opus-c: 82/82 -> 60/60 (6 edits) 1354s
-  round 1: 1 doors, 469 edits, 70s, 1 doors with a faster neighbour
-  round 2: 1 doors, 465 edits, 50s, 1 doors with a faster neighbour
-  round 3: 1 doors, 468 edits, 51s, 0 doors with a faster neighbour
-  w7-4x4k2-fable-c: 82/36 -> 62/30 (7 edits) 1536s
-  waiting for disk space (307 MB free)
-  round 1: 1 doors, 1038 edits, 48s, 1 doors with a faster neighbour
-multiprocessing.pool.RemoteTraceback: 
-"""
-Traceback (most recent call last):
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 125, in worker
-    result = (True, func(*args, **kwds))
-                    ~~~~^^^^^^^^^^^^^^^
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/search_pilot/speed_census.py", line 113, in task_combine
-    r = brief(grade(_K, cand, n, "seamless", "dev"))
-              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/grader/pdgrader/grade.py", line 109, in grade
-    res = kernel.run_job(build_job(n, blocks, lever, mode, time_cap, origin, legacy_placement))
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/grader/pdgrader/kernel.py", line 197, in run_job
-    return self._run_job(job, timeout)
-           ~~~~~~~~~~~~~^^^^^^^^^^^^^^
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/grader/pdgrader/kernel.py", line 203, in _run_job
-    self.proc.stdin.write(str(path) + "\n")
-    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-BrokenPipeError: [Errno 32] Broken pipe
-"""
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/search_pilot/speed_census.py", line 230, in <module>
-    main()
-    ~~~~^^
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/search_pilot/speed_census.py", line 214, in main
-    s = run_group({r: good[r]}, physics, workers).get(r) if r in good else None
-        ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/AmilAgrawal/Library/Application Support/Claude/scratch-workspaces/d9080dc0-6400-4a71-ba8b-e896651c820d/d48e81fa-2e2e-421b-9196-f7a0199ec441/scratch-2026-11-09-4800c6/runs/bench/search_pilot/speed_census.py", line 158, in run_group
-    for r, design, cur, applied in pool.imap_unordered(task_combine, combine):
-                                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 873, in next
-    raise value
-BrokenPipeError: [Errno 32] Broken pipe
+physics {}: 8 doors
+  round 1: 1 doors, 1038 edits, 135s, 1 doors with a faster neighbour
+  round 2: 1 doors, 1040 edits, 141s, 1 doors with a faster neighbour
+  round 3: 1 doors, 1040 edits, 113s, 0 doors with a faster neighbour
+  w7-4x4k2-fable-a: 110/104 -> 98/86 (6 edits) 400s
+  round 1: 1 doors, 1206 edits, 156s, 0 doors with a faster neighbour
+  w7-4x4k2-opus-a: 110/110 -> 110/110 (0 edits) 556s
+  round 1: 1 doors, 1009 edits, 124s, 1 doors with a faster neighbour
+  round 2: 1 doors, 993 edits, 117s, 0 doors with a faster neighbour
+  w7-4x4k2-fable-b: 98/110 -> 82/92 (7 edits) 804s
+  round 1: 1 doors, 663 edits, 101s, 1 doors with a faster neighbour
+  round 2: 1 doors, 661 edits, 92s, 0 doors with a faster neighbour
+  w3-sonnet-c: 62/38 -> 58/36 (2 edits) 1007s
+  round 1: 1 doors, 1026 edits, 169s, 1 doors with a faster neighbour
+  round 2: 1 doors, 1026 edits, 155s, 1 doors with a faster neighbour
+  round 3: 1 doors, 1024 edits, 154s, 0 doors with a faster neighbour
+  w2-4x4-opus-a: 64/30 -> 62/28 (2 edits) 1507s
+  round 1: 1 doors, 892 edits, 118s, 1 doors with a faster neighbour
+  round 2: 1 doors, 888 edits, 95s, 0 doors with a faster neighbour
+  w4-4x4-fable-e: 76/52 -> 62/40 (6 edits) 1730s
+  round 1: 1 doors, 1040 edits, 130s, 1 doors with a faster neighbour
+  round 2: 1 doors, 1040 edits, 115s, 1 doors with a faster neighbour
+  round 3: 1 doors, 1040 edits, 114s, 0 doors with a faster neighbour
+  w4-4x4-opus-f: 46/14 -> 42/14 (2 edits) 2100s
+  round 1: 1 doors, 2336 edits, 508s, 1 doors with a faster neighbour
+  round 2: 1 doors, 2334 edits, 442s, 0 doors with a faster neighbour
+  w2-4x4-opus-b: 86/63 -> 82/63 (1 edits) 3072s
+  group done in 3072s
+physics {"observer_delay": 3, "repeater_unit": 3}: 12 doors
+  round 1: 1 doors, 101 edits, 9s, 0 doors with a faster neighbour
+  w8-3x3-chg-b-opus: 38/26 -> 38/26 (0 edits) 9s
+  round 1: 1 doors, 142 edits, 11s, 1 doors with a faster neighbour
+  round 2: 1 doors, 142 edits, 5s, 1 doors with a faster neighbour
+  round 3: 1 doors, 146 edits, 5s, 1 doors with a faster neighbour
+  w5-3x3p-opus-a: 41/23 -> 38/21 (3 edits) 33s
+  round 1: 1 doors, 204 edits, 14s, 1 doors with a faster neighbour
+  round 2: 1 doors, 204 edits, 8s, 0 doors with a faster neighbour
+  w5-3x3p-fable-b: 90/60 -> 84/60 (1 edits) 58s
+  round 1: 1 doors, 246 edits, 16s, 0 doors with a faster neighbour
+  w5-3x3p-fable-a: 77/77 -> 77/77 (0 edits) 74s
+  round 1: 1 doors, 246 edits, 15s, 1 doors with a faster neighbour
+  round 2: 1 doors, 250 edits, 9s, 0 doors with a faster neighbour
+  w5-3x3p-opus-b: 62/62 -> 56/56 (2 edits) 101s
+  round 1: 1 doors, 96 edits, 10s, 1 doors with a faster neighbour
+  round 2: 1 doors, 96 edits, 4s, 0 doors with a faster neighbour
+  w5-3x3p-fable-c: 48/21 -> 46/20 (2 edits) 117s
+  round 1: 1 doors, 322 edits, 19s, 1 doors with a faster neighbour
+  round 2: 1 doors, 322 edits, 12s, 0 doors with a faster neighbour
+  w8-3x3-chg-c-opus: 87/77 -> 86/76 (1 edits) 152s
+  round 1: 1 doors, 318 edits, 18s, 1 doors with a faster neighbour
+  round 2: 1 doors, 314 edits, 12s, 0 doors with a faster neighbour
+  w9-3x3-chg-c-opus: 60/54 -> 54/54 (1 edits) 185s
+  round 1: 1 doors, 154 edits, 12s, 1 doors with a faster neighbour
+  round 2: 1 doors, 152 edits, 6s, 1 doors with a faster neighbour
+  round 3: 1 doors, 152 edits, 5s, 0 doors with a faster neighbour
+  w5-3x3p-opus-c: 35/32 -> 20/14 (3 edits) 211s
+  round 1: 1 doors, 233 edits, 17s, 1 doors with a faster neighbour
+  round 2: 1 doors, 233 edits, 10s, 0 doors with a faster neighbour
+  w9-3x3-chg-a-opus: 26/40 -> 26/26 (1 edits) 241s
+  round 1: 1 doors, 220 edits, 16s, 1 doors with a faster neighbour
+  round 2: 1 doors, 220 edits, 10s, 0 doors with a faster neighbour
+  w8-3x3-chg-a-opus: 75/53 -> 63/38 (2 edits) 273s
+  round 1: 1 doors, 557 edits, 50s, 0 doors with a faster neighbour
+  w9-3x3-chg-b-opus: 75/38 -> 75/38 (0 edits) 323s
+  group done in 323s
+ALL DONE
