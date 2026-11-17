@@ -81,7 +81,7 @@
 
 <div class="page">
   <header>
-    <p class="eyebrow">Piston Door Bench · results as of 15 Nov 2026</p>
+    <p class="eyebrow">Piston Door Bench · results as of 16 Nov 2026</p>
     <h1>Agents designing Minecraft piston doors, scored by how small the door is</h1>
     <p class="lede">Each run gives one model a time limit and a door size. The agent builds a seamless piston door, tests it in the real game engine and tries to shrink it. The score is the volume of the door's bounding box: smaller is better, and a door that fails the test scores nothing.</p>
     <ul class="facts" id="facts"></ul>
@@ -92,7 +92,7 @@
     <h2>Each step up in door size stops another model</h2>
     <p class="how">Share of runs that built a working door, by door size. Each square is one run: filled means it built a door that passed the final test, hollow means it did not.</p>
     <div class="grid-wrap"><table class="grid-table" id="grid" aria-label="Runs that built a working door, by model and door size"></table></div>
-    <figcaption><b>Note:</b> standard physics and the original tools only; a dash means the model was not run at that size. Time limits: 60 minutes for 2×2, 120 for 3×2 and 3×3, 150 for 4×4, 180 for 5×5.</figcaption>
+    <figcaption><b>Note:</b> standard physics and the original tools only; a dash means the model was not run at that size. Time limits: 60 minutes for 2×2, 120 for 3×2 and 3×3 (50 in wave 9), 150 for 4×4, 180 for 5×5.</figcaption>
   </figure>
 
   <figure id="f2">
@@ -106,9 +106,9 @@
   <figure id="f3">
     <p class="fignum">Figure 3</p>
     <h2>Agents keep shrinking their doors for the whole run</h2>
-    <p class="how">Each line is one run's smallest working door so far, from its first working door to the end of the run, on a log scale. On 3×3, 41% of the shrinking (measured on the log scale) came after the first hour; on 4×4, 89% did.</p>
+    <p class="how">Each line is one run's smallest working door so far, from its first working door to the end of the run, on a log scale. Pooled over runs and measured on the log scale, 54% of the shrinking on 3×3 came after the first hour; on 4×4, 89% did.</p>
     <div class="facets two" id="f3c"></div>
-    <figcaption><b>Note:</b> an agent that stops early is told its best volume and asked to continue, up to three times, so some late improvements came after such a prompt. Runs that never built a door have no line.</figcaption>
+    <figcaption><b>Note:</b> an agent that stops early is told its best volume and asked to continue, up to three times, so some late improvements came after such a prompt. Runs that never built a door have no line, and wave 9's 50-minute runs are left out.</figcaption>
   </figure>
 
   <figure id="f4">
@@ -116,28 +116,36 @@
     <h2>Changing the game's timings did not make the top models worse</h2>
     <p class="how">3×3 door volume per run in standard Minecraft and in a world where a repeater step and an observer's reaction both take 3 ticks instead of 2. The brief told the agents about the change. Hollow circles are standard runs, filled circles changed ones; the tick and the number under each label are the median. Fable's best standard door (70) does not work in the changed world.</p>
     <div class="chart" id="f4c"></div>
-    <figcaption><b>Note:</b> Opus has 7 standard and 6 changed runs, including a matched set (wave 8) of 3 standard and 3 changed runs started at the same moment on the same harness: 264, 360, 520 standard against 70, 112, 264 changed. Pooled, Opus's median is 264 standard and 112 changed (one-sided permutation p = 0.05). Fable has 3 changed runs, stopped at minute 80 of 120 to save usage, so they had less time than its standard runs.</figcaption>
+    <figcaption><b>Note:</b> Opus has 10 standard and 9 changed runs, including two matched waves of 3 standard and 3 changed runs started together on the same harness. Wave 8 (120 minutes): 264, 360, 520 standard against 70, 112, 264 changed. Wave 9 (50 minutes): 140, 495, 729 against 126, 384, 1,950, so wave 9 did not repeat wave 8's gap. Pooled, Opus's median is 288 standard and 126 changed (one-sided permutation p = 0.23, down from 0.05 before wave 9): changed timings did not hurt, but did not clearly help either. Fable has 3 changed runs, stopped at minute 80 of 120 to save usage.</figcaption>
   </figure>
 
   <figure id="f5">
     <p class="fignum">Figure 5</p>
-    <h2>Opus costs about 40% less per run than Fable</h2>
+    <h2>Opus costs about half as much per run as Fable</h2>
     <p class="how">Each dot is one run: its API-equivalent cost against its final door volume, both on log scales. Lower left is a small door for little money. Runs with no working door sit in the band at the bottom, at what they cost.</p>
     <div class="facets two" id="f5c"></div>
-    <figcaption><b>Note:</b> cost is what each run's tokens would cost at Claude API list prices, read from its transcript. Mean cost per run: Fable $41 on 3×3 and $46 on 4×4; Opus $23 and $28.</figcaption>
+    <figcaption><b>Note:</b> cost is what each run's tokens would cost at Claude API list prices, read from its transcript. Mean cost per run: Fable $41 on 3×3 and $46 on 4×4; Opus $22 and $28 at the same time limits. Wave 9's 50-minute Opus runs cost about $8 each, which pulls Opus's 3×3 mean down to $18.</figcaption>
   </figure>
 
   <figure id="f6">
     <p class="fignum">Figure 6</p>
-    <h2>Richer tools made Opus's 4×4 doors more consistent</h2>
+    <h2>Richer tools narrowed Opus's 4×4 spread, but did not beat its best door</h2>
     <p class="how">4×4 door volume per run with the original tools and with kit 2, which adds a tick-by-tick recording of each run as data, structured test results and thirteen facts earlier agents found missing. Hollow circles are the original kit, filled circles kit 2; the tick and the number under each label are the median.</p>
     <div class="chart" id="f6c"></div>
-    <figcaption><b>Note:</b> the Fable kit-2 runs were stopped at minute 68 of 150 to save usage, so they are not a fair comparison; the Opus kit-2 runs had the full time. Three or four runs per cell. Two of the three Opus kit-2 agents used the recording tool, one did not.</figcaption>
+    <figcaption><b>Note:</b> the Fable kit-2 runs were stopped at minute 68 of 150 to save usage, so they are not a fair comparison; the Opus kit-2 runs had the full time. Three or four runs per cell. Two of the three Opus kit-2 agents used the recording tool, one did not. Opus's kit-2 median is lower (600 against 2,002), but 3 runs against 4 is weak evidence (one-sided permutation p = 0.11), and kit 1 still holds the best door (240).</figcaption>
+  </figure>
+
+  <figure id="f7">
+    <p class="fignum">Figure 7</p>
+    <h2>A simple search makes two thirds of the doors faster without making them bigger</h2>
+    <p class="how">Each dot is one working door: its open + close time in game ticks as the agent built it, against its time after a greedy search over repeater, observer and comparator swaps. Both axes are log scales. Hollow dots on the diagonal could not be sped up; filled dots below it got faster at the same volume.</p>
+    <div class="chart" id="f7c"></div>
+    <figcaption><b>Note:</b> a swap was kept only if the door still passed, was no larger and was strictly faster. Every faster door was re-checked with the final test, 11 shifted placements and a 180° turn: 34 of the 35 pass all of them, and the last passes the same 7 of 11 placements as its original. The smallest doors (the 2×2s, the 3×2s, Opus's 140 3×3 and Fable's 72s) could not be sped up. Human-built doors are still 2–3× faster at similar sizes. Separately, all 12,376 one-block changes to the Fable 70 and the Opus 240 were tested, and none makes either door smaller.</figcaption>
   </figure>
 
   <footer>
-    <span><b>Source:</b> Piston Door Bench, waves 1 to 8, 58 finished runs. Every door was re-tested in a fresh simulator, through eight open-and-close cycles at varied timing, before it counted.</span>
-    <span>Volume is width × height × depth of the smallest box holding every block the door uses at any moment, the doorway included and the lever's cell left out. Runs per cell are small (one to four), so neighbouring results are not statistically settled.</span>
+    <span><b>Source:</b> Piston Door Bench, waves 1 to 9, 64 finished runs. Every door was re-tested in a fresh simulator, through eight open-and-close cycles at varied timing, before it counted.</span>
+    <span>Volume is width × height × depth of the smallest box holding every block the door uses at any moment, the doorway included and the lever's cell left out. Runs per cell are small (one to ten), so neighbouring results are not statistically settled.</span>
   </footer>
 </div>
 
@@ -309,7 +317,7 @@ function dotFacet(box, task, title, ref) {
 function figure2() {
   facets(document.getElementById('f2c'), [
     { title: '3×2 door', sub: 'new shape, 120 minutes', draw: (b) => dotFacet(b, T.s32, '3×2 door', { v: 42, label: 'ref 42' }) },
-    { title: '3×3 door', sub: '120 minutes', draw: (b) => dotFacet(b, T.s33, '3×3 door', { v: 192, label: 'ref 192' }) },
+    { title: '3×3 door', sub: '120 minutes (50 in wave 9)', draw: (b) => dotFacet(b, T.s33, '3×3 door', { v: 192, label: 'ref 192' }) },
     { title: '4×4 door', sub: '150 minutes', draw: (b) => dotFacet(b, T.s44, '4×4 door', { v: 132, label: 'claim 132' }) },
   ]);
 }
@@ -483,7 +491,48 @@ function figure5() {
   ]);
 }
 
-function drawAll() { figure2(); figure3(); figure4(); figure5(); figure6(); }
+// ---- Figure 7: speed search, ticks before against after
+function figure7() {
+  const box = document.getElementById('f7c'); box.replaceChildren();
+  const rows = DATA.speed.map((s) => ({ ...s, b: s.before[0] + s.before[1], a: s.after[0] + s.after[1] }));
+  const w = width(box), h = Math.round(Math.min(440, Math.max(300, w * 0.62)));
+  const m = { top: 16, right: 18, bottom: 40, left: 46 };
+  const svg = svgIn(box, w, h, 'Open plus close ticks of each door before and after the speed search');
+  const dom = [3, 260];
+  const x = d3.scaleLog().domain(dom).range([m.left, w - m.right]);
+  const y = d3.scaleLog().domain(dom).range([h - m.bottom, m.top]);
+  const ticks = [5, 10, 20, 50, 100, 200];
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${m.left},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(-(w - m.left - m.right)).tickFormat(''));
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(0,${h - m.bottom})`).call(d3.axisBottom(x).tickValues(ticks).tickSize(-(h - m.top - m.bottom)).tickFormat(''));
+  svg.append('g').attr('transform', `translate(${m.left - 6},0)`).call(d3.axisLeft(y).tickValues(ticks).tickFormat(fmtInt).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('transform', `translate(0,${h - m.bottom + 6})`).call(d3.axisBottom(x).tickValues(ticks).tickFormat(fmtInt).tickSize(0)).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('class', 'axis-title').attr('x', w - m.right).attr('y', h - 4).attr('text-anchor', 'end').text('ticks as built (open + close)');
+  svg.append('text').attr('class', 'axis-title halo').attr('x', m.left + 6).attr('y', m.top + 10).text('ticks after search');
+  svg.append('line').attr('class', 'ref').attr('x1', x(dom[0])).attr('y1', y(dom[0])).attr('x2', x(dom[1])).attr('y2', y(dom[1]));
+  svg.append('text').attr('class', 'ref-label halo').attr('x', x(8)).attr('y', y(8) - 10).attr('text-anchor', 'middle').text('no change');
+  const tip = tooltip(box);
+  rows.sort((p, q) => (p.a === p.b) - (q.a === q.b) || q.b - p.b);
+  for (const r of rows) {
+    const same = r.a === r.b;
+    svg.append('circle').attr('class', 'dot').attr('cx', x(r.b)).attr('cy', y(r.a)).attr('r', 5.5)
+      .style('fill', same ? 'var(--bg)' : color(r.model)).style('stroke', color(r.model)).attr('stroke-width', 2);
+    svg.append('circle').attr('class', 'hit').attr('cx', x(r.b)).attr('cy', y(r.a)).attr('r', 10)
+      .on('pointerenter pointermove', (ev) => tip.show(ev, [[`${short(r.model)} · ${r.run}`], [`${r.task}, volume ${fmtInt(r.volume)}`],
+        [same ? `${r.before[0]}/${r.before[1]} ticks (open/close), no faster version found`
+          : `${r.before[0]}/${r.before[1]} → ${r.after[0]}/${r.after[1]} ticks, ${r.edits} edit${r.edits === 1 ? '' : 's'}, ${Math.round(100 * (1 - r.a / r.b))}% faster`, true]]))
+      .on('pointerleave', tip.hide);
+  }
+  const best = rows.reduce((p, q) => (q.a / q.b < p.a / p.b ? q : p));
+  svg.append('text').attr('class', 'num halo').attr('x', x(best.b) + 9).attr('y', y(best.a) + 14)
+    .text(`${short(best.model)} ${best.volume}: ${best.b} → ${best.a}`);
+  const fast = rows.filter((r) => r.a < r.b).length;
+  [[true, `faster (${fast})`], [false, `no change (${rows.length - fast})`]].forEach(([filled, label], i) => {
+    const lx = w - m.right - 120, ly = h - m.bottom - 36 + i * 18;
+    svg.append('circle').attr('cx', lx).attr('cy', ly).attr('r', 5).style('fill', filled ? 'var(--ink-3)' : 'var(--bg)').style('stroke', 'var(--ink-3)').attr('stroke-width', 2);
+    svg.append('text').attr('class', 'num').attr('x', lx + 10).attr('y', ly + 4).text(label);
+  });
+}
+function drawAll() { figure2(); figure3(); figure4(); figure5(); figure6(); figure7(); }
 drawAll();
 let lastW = document.querySelector('.page').getBoundingClientRect().width, pending = 0;
 new ResizeObserver(() => {
